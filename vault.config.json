@@ -1,0 +1,29 @@
+{
+  "siteTitle": "Canticle of the End",
+  "landingTagline": "A Regency-era Call of Cthulhu campaign, wherein certain persons of quality pursue a dreadful music across the capitals of Europe.",
+  "siteUrl": "https://antthelimey.github.io/canticle-of-the-end/",
+  "vaultPath": "/Users/antonypegg/Documents/CTHULHU/Canticle",
+  "outputDir": "./docs",
+  "attachmentsDir": "_attachments",
+  "folderMap": {
+    "Characters/PCs": "characters/pcs",
+    "Characters/NPCs": "characters/npcs",
+    "Player Characters": "player-characters",
+    "Locations": "locations",
+    "Factions & Organizations": "factions",
+    "Items & Artifacts": "items",
+    "Creatures": "creatures",
+    "Events": "events",
+    "Documents": "documents",
+    "Clues": "clues",
+    "Chapters": "chapters",
+    "_Campaign": "campaign"
+  },
+  "excludeDirs": ["_meta", "_Templates", "_resources", "_QA", ".claude", ".obsidian", ".smart-env"],
+  "excludeSections": ["GM Notes", "DM Notes", "Source References"],
+  "excludeFields": ["secrets", "current_plan", "plan_progress"],
+  "campaignImage": "_attachments/campaign-image.svg",
+  "fourOhFour": {
+    "message": "This document has been sealed by Lord Harcourt. Clearance from the Earl of Wrexham is required."
+  }
+}

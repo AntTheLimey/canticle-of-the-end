@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Georgia,+serif&family=system-ui,+sans-serif&display=swap');
+
+:root {
+  --theme-primary: #1a2f3a;
+  --theme-accent: #3d8a7a;
+  --theme-bg: #e8f0f3;
+  --theme-text: #1a1a1a;
+  --theme-heading-font: 'Georgia, serif', serif;
+  --theme-body-font: 'system-ui, sans-serif', sans-serif;
+}

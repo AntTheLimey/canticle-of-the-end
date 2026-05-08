@@ -5,410 +5,248 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Georgiana Wentworth — Canticle of the End</title>
   <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/themes/horror.css">
   <link rel="stylesheet" href="../../css/theme.css">
 </head>
 <body>
 
-<header class="site-header">
-  <button class="menu-toggle" onclick="document.getElementById('nav').classList.add('open')" aria-label="Menu">&#9776;</button>
-  <h1><a href="../../index.html">Canticle of the End</a></h1>
+<header class="top-nav">
+  <a href="../../index.html" class="nav-brand">Canticle of the End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <button class="nav-group-toggle">Story</button>
+        <div class="nav-dropdown">
+        <a href="../../chapters/index.html">Story</a>
+        <a href="../../timeline.html">Events</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../../player-characters.html">Player Characters</a>
+        <a href="../npcs/index.html">NPCs</a>
+        <a href="../../creatures/index.html">Creatures</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../../locations/index.html">Locations</a>
+        <a href="../../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../../documents/index.html">Documents</a>
+        <a href="../../clues/index.html">Clues</a>
+        <a href="../../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
 </header>
-
-<nav id="nav" class="site-nav">
-  <button class="nav-close" onclick="document.getElementById('nav').classList.remove('open')" aria-label="Close">&times;</button>
-  <h2>Campaign</h2>
-<ul>
-<li><a href="../../player-characters.html">player characters</a></li>
-<li><a href="../../campaign/regency-slang-glossary.html">Regency Slang Glossary</a></li>
-<li><a href="../../campaign/timeline.html">Timeline</a></li>
-</ul>
-<h2>Player Characters</h2>
-<ul>
-<li><a href="adrien-de-montferrand.html">Adrien de Montferrand</a></li>
-<li><a href="augustus-bolt.html">Augustus Bolt</a></li>
-<li><a href="charlotte-thorne.html">Charlotte Thorne</a></li>
-<li><a href="emma-wentworth.html">Emma Wentworth</a></li>
-<li><a href="freddy-cavendish.html">Freddy Cavendish</a></li>
-<li><a href="georgiana-dillwyn.html">Georgiana Dillwyn</a></li>
-<li><a href="georgiana-wentworth.html">Georgiana Wentworth</a></li>
-<li><a href="jacob.html">Jacob</a></li>
-<li><a href="james-bennet.html">James Bennet</a></li>
-<li><a href="jane-radcliffe.html">Jane Radcliffe</a></li>
-<li><a href="katherine-ward.html">Katherine Ward</a></li>
-<li><a href="marina-garrick.html">Marina Garrick</a></li>
-<li><a href="varrio-harrowmont.html">Varrio Harrowmont</a></li>
-</ul>
-<h2>NPCs</h2>
-<ul>
-<li><a href="../npcs/abbe-etienne-duplessis.html">Abbe Etienne Duplessis</a></li>
-<li><a href="../npcs/abbe-ferrant.html">Abbe Ferrant</a></li>
-<li><a href="../npcs/agnes-hartley.html">Agnes Hartley</a></li>
-<li><a href="../npcs/albert-lambert.html">Albert Lambert</a></li>
-<li><a href="../npcs/albin-herzfeld.html">Albin Herzfeld</a></li>
-<li><a href="../npcs/andrei-volkonsky.html">Andrei Volkonsky</a></li>
-<li><a href="../npcs/anna-lindqvist.html">Anna Lindqvist</a></li>
-<li><a href="../npcs/annika-laughton.html">Annika Laughton</a></li>
-<li><a href="../npcs/antoine-lefevre.html">Antoine Lefevre</a></li>
-<li><a href="../npcs/anton-adler.html">Anton Adler</a></li>
-<li><a href="../npcs/benoit-chasseloup.html">Benoit Chasseloup</a></li>
-<li><a href="../npcs/captain-king.html">Captain King</a></li>
-<li><a href="../npcs/captain-richard-forsyth.html">Captain Richard Forsyth</a></li>
-<li><a href="../npcs/captain-thomas-keene.html">Captain Thomas Keene</a></li>
-<li><a href="../npcs/caroline-hartley.html">Caroline Hartley</a></li>
-<li><a href="../npcs/cecile-vaillant.html">Cecile Vaillant</a></li>
-<li><a href="../npcs/charles-duval.html">Charles Duval</a></li>
-<li><a href="../npcs/charlotte-thorne.html">Charlotte Thorne</a></li>
-<li><a href="../npcs/clara-fen.html">Clara Fen</a></li>
-<li><a href="../npcs/clementine-delaroche.html">Clementine Delaroche</a></li>
-<li><a href="../npcs/collarbone-jack.html">Collarbone Jack</a></li>
-<li><a href="../npcs/colonel-alastair-mccrae.html">Colonel Alastair McCrae</a></li>
-<li><a href="../npcs/colonel-etienne-moreau.html">Colonel Etienne Moreau</a></li>
-<li><a href="../npcs/colonel-fittlewick.html">Colonel Fittlewick</a></li>
-<li><a href="../npcs/colonel-maarten-van-hoorne.html">Colonel Maarten van Hoorne</a></li>
-<li><a href="../npcs/commissaire-jules-delaroche.html">Commissaire Jules Delaroche</a></li>
-<li><a href="../npcs/comte-henri-vallin.html">Comte Henri Vallin</a></li>
-<li><a href="../npcs/doctor-emile-carreau.html">Doctor Emile Carreau</a></li>
-<li><a href="../npcs/dr-ambrose-hargreaves.html">Dr Ambrose Hargreaves</a></li>
-<li><a href="../npcs/dr-erasmus-hume.html">Dr Erasmus Hume</a></li>
-<li><a href="../npcs/dr-heinrich-voss.html">Dr Heinrich Voss</a></li>
-<li><a href="../npcs/dr-odilon-mercier.html">Dr Odilon Mercier</a></li>
-<li><a href="../npcs/dr-thornton-beamish.html">Dr Thornton Beamish</a></li>
-<li><a href="../npcs/duchesse-de-brissac.html">Duchesse de Brissac</a></li>
-<li><a href="../npcs/edna-greaves.html">Edna Greaves</a></li>
-<li><a href="../npcs/elbert-fenwick.html">Elbert Fenwick</a></li>
-<li><a href="../npcs/eli-barlow.html">Eli Barlow</a></li>
-<li><a href="../npcs/eli-tadcombe.html">Eli Tadcombe</a></li>
-<li><a href="../npcs/eliza-sharpe.html">Eliza Sharpe</a></li>
-<li><a href="../npcs/emeric-de-puyrault.html">Emeric de Puyrault</a></li>
-<li><a href="../npcs/emile-fouchard.html">Emile Fouchard</a></li>
-<li><a href="../npcs/ephraim-colley.html">Ephraim Colley</a></li>
-<li><a href="../npcs/ernst-falkner.html">Ernst Falkner</a></li>
-<li><a href="../npcs/father-jeremiah-creel.html">Father Jeremiah Creel</a></li>
-<li><a href="../npcs/francois-barbier.html">Francois Barbier</a></li>
-<li><a href="../npcs/franz-huber.html">Franz Huber</a></li>
-<li><a href="../npcs/franz-kaunitz.html">Franz Kaunitz</a></li>
-<li><a href="../npcs/giles-mercer.html">Giles Mercer</a></li>
-<li><a href="../npcs/gottfried-reiner.html">Gottfried Reiner</a></li>
-<li><a href="../npcs/gustav-metzger.html">Gustav Metzger</a></li>
-<li><a href="../npcs/henri-marchand.html">Henri Marchand</a></li>
-<li><a href="../npcs/herr-grillparzer.html">Herr Grillparzer</a></li>
-<li><a href="../npcs/imogen-bellamy.html">Imogen Bellamy</a></li>
-<li><a href="../npcs/ingrid-sperl.html">Ingrid Sperl</a></li>
-<li><a href="../npcs/josiah-hartley.html">Josiah Hartley</a></li>
-<li><a href="../npcs/jules-steward.html">Jules Steward</a></li>
-<li><a href="../npcs/klaus-bauer.html">Klaus Bauer</a></li>
-<li><a href="../npcs/lady-bagtonbury.html">Lady Bagtonbury</a></li>
-<li><a href="../npcs/lady-bletchley.html">Lady Bletchley</a></li>
-<li><a href="../npcs/lady-euphemia-langridge.html">Lady Euphemia Langridge</a></li>
-<li><a href="../npcs/lady-honoria-lyndhurst.html">Lady Honoria Lyndhurst</a></li>
-<li><a href="../npcs/lady-octavia-danforth.html">Lady Octavia Danforth</a></li>
-<li><a href="../npcs/lady-rowena-calthorpe.html">Lady Rowena Calthorpe</a></li>
-<li><a href="../npcs/lady-wilhelmina-danvers.html">Lady Wilhelmina Danvers</a></li>
-<li><a href="../npcs/leopold-fischbein.html">Leopold Fischbein</a></li>
-<li><a href="../npcs/leopold-von-trautmannsdorff.html">Leopold von Trautmannsdorff</a></li>
-<li><a href="../npcs/liesel-hartmann.html">Liesel Hartmann</a></li>
-<li><a href="../npcs/lieut-john-orville.html">Lieut John Orville</a></li>
-<li><a href="../npcs/lieutenant-jonathan-pellam.html">Lieutenant Jonathan Pellam</a></li>
-<li><a href="../npcs/lord-cosgrove.html">Lord Cosgrove</a></li>
-<li><a href="../npcs/lord-digby-wycombe.html">Lord Digby Wycombe</a></li>
-<li><a href="../npcs/lord-felix-montroy.html">Lord Felix Montroy</a></li>
-<li><a href="../npcs/lord-percival-harcourt.html">Lord Percival Harcourt</a></li>
-<li><a href="../npcs/lord-ratcliffe.html">Lord Ratcliffe</a></li>
-<li><a href="../npcs/luc-fouchard.html">Luc Fouchard</a></li>
-<li><a href="../npcs/lucien-goupil.html">Lucien Goupil</a></li>
-<li><a href="../npcs/lucien-stablehand.html">Lucien Stablehand</a></li>
-<li><a href="../npcs/lucienne-moreau.html">Lucienne Moreau</a></li>
-<li><a href="../npcs/ludwig-vogel.html">Ludwig Vogel</a></li>
-<li><a href="../npcs/lydia-hartley.html">Lydia Hartley</a></li>
-<li><a href="../npcs/madame-beauregard.html">Madame Beauregard</a></li>
-<li><a href="../npcs/madame-delacroix.html">Madame Delacroix</a></li>
-<li><a href="../npcs/madame-elodie-marchand.html">Madame Elodie Marchand</a></li>
-<li><a href="../npcs/madame-sylvie-de-noyelles.html">Madame Sylvie de Noyelles</a></li>
-<li><a href="../npcs/magistrate-beraud.html">Magistrate Beraud</a></li>
-<li><a href="../npcs/major-lionel-ashcombe.html">Major Lionel Ashcombe</a></li>
-<li><a href="../npcs/maria-von-thun.html">Maria von Thun</a></li>
-<li><a href="../npcs/marquise-eloise-de-camberonne.html">Marquise Eloise de Camberonne</a></li>
-<li><a href="../npcs/mathieu-durand.html">Mathieu Durand</a></li>
-<li><a href="../npcs/mathilde-savarin.html">Mathilde Savarin</a></li>
-<li><a href="../npcs/maximilian-von-sternberg.html">Maximilian von Sternberg</a></li>
-<li><a href="../npcs/miriam-doyle.html">Miriam Doyle</a></li>
-<li><a href="../npcs/miss-alice-wetherby.html">Miss Alice Wetherby</a></li>
-<li><a href="../npcs/miss-aurelia-fairchild.html">Miss Aurelia Fairchild</a></li>
-<li><a href="../npcs/miss-beatrice-harrow.html">Miss Beatrice Harrow</a></li>
-<li><a href="../npcs/miss-bridget-clarke.html">Miss Bridget Clarke</a></li>
-<li><a href="../npcs/miss-dorothea-bexley.html">Miss Dorothea Bexley</a></li>
-<li><a href="../npcs/miss-edith-talbot.html">Miss Edith Talbot</a></li>
-<li><a href="../npcs/miss-eleanor-finch.html">Miss Eleanor Finch</a></li>
-<li><a href="../npcs/miss-eleanor-mortimer.html">Miss Eleanor Mortimer</a></li>
-<li><a href="../npcs/miss-isabel-glossop.html">Miss Isabel Glossop</a></li>
-<li><a href="../npcs/miss-mary-glossop.html">Miss Mary Glossop</a></li>
-<li><a href="../npcs/miss-theodosia-dawes.html">Miss Theodosia Dawes</a></li>
-<li><a href="../npcs/mlle-marie-lucile-dumain.html">Mlle Marie Lucile Dumain</a></li>
-<li><a href="../npcs/mr-alfred-smythe.html">Mr Alfred Smythe</a></li>
-<li><a href="../npcs/mr-aurelian-dean.html">Mr Aurelian Dean</a></li>
-<li><a href="../npcs/mr-benedict-fairfax.html">Mr Benedict Fairfax</a></li>
-<li><a href="../npcs/mr-berkley.html">Mr Berkley</a></li>
-<li><a href="../npcs/mr-bernard-hathaway.html">Mr Bernard Hathaway</a></li>
-<li><a href="../npcs/mr-gideon-crow.html">Mr Gideon Crow</a></li>
-<li><a href="../npcs/mr-hampton.html">Mr Hampton</a></li>
-<li><a href="../npcs/mr-horatio-fairbourne.html">Mr Horatio Fairbourne</a></li>
-<li><a href="../npcs/mr-jameson.html">Mr Jameson</a></li>
-<li><a href="../npcs/mr-oliver-hawksley.html">Mr Oliver Hawksley</a></li>
-<li><a href="../npcs/mr-thomas-wickes.html">Mr Thomas Wickes</a></li>
-<li><a href="../npcs/mr-tipple.html">Mr Tipple</a></li>
-<li><a href="../npcs/mr-tobias-whitmore.html">Mr Tobias Whitmore</a></li>
-<li><a href="../npcs/mrs-agnes-rothwell.html">Mrs Agnes Rothwell</a></li>
-<li><a href="../npcs/mrs-charlotte-mortimer.html">Mrs Charlotte Mortimer</a></li>
-<li><a href="../npcs/mrs-hampton.html">Mrs Hampton</a></li>
-<li><a href="../npcs/mrs-margaret-fairchild.html">Mrs Margaret Fairchild</a></li>
-<li><a href="../npcs/mrs-pemberton-brighton.html">Mrs Pemberton Brighton</a></li>
-<li><a href="../npcs/mrs-winifred-fowler.html">Mrs Winifred Fowler</a></li>
-<li><a href="../npcs/ms-amelia-cooper.html">Ms Amelia Cooper</a></li>
-<li><a href="../npcs/ms-hannah-shibden.html">Ms Hannah Shibden</a></li>
-<li><a href="../npcs/nathan-pryce.html">Nathan Pryce</a></li>
-<li><a href="../npcs/nathaniel-rooke.html">Nathaniel Rooke</a></li>
-<li><a href="../npcs/nell-coker.html">Nell Coker</a></li>
-<li><a href="../npcs/nikolai-volkonsky.html">Nikolai Volkonsky</a></li>
-<li><a href="../npcs/old-jenkins.html">Old Jenkins</a></li>
-<li><a href="../npcs/pemberton.html">Pemberton</a></li>
-<li><a href="../npcs/phineas-lang.html">Phineas Lang</a></li>
-<li><a href="../npcs/professor-cyrus-elliston.html">Professor Cyrus Elliston</a></li>
-<li><a href="../npcs/prudence-middleham.html">Prudence Middleham</a></li>
-<li><a href="../npcs/rev-henry-mortimer.html">Rev Henry Mortimer</a></li>
-<li><a href="../npcs/russian-officers-volkonsky-detail.html">Russian Officers Volkonsky Detail</a></li>
-<li><a href="../npcs/sabine.html">Sabine</a></li>
-<li><a href="../npcs/sabine-lambert.html">Sabine Lambert</a></li>
-<li><a href="../npcs/silent-nun.html">Silent Nun</a></li>
-<li><a href="../npcs/sir-andrew-duncan.html">Sir Andrew Duncan</a></li>
-<li><a href="../npcs/sir-jasper-dulfrey.html">Sir Jasper Dulfrey</a></li>
-<li><a href="../npcs/sir-lionel-peregrine.html">Sir Lionel Peregrine</a></li>
-<li><a href="../npcs/slade.html">Slade</a></li>
-<li><a href="../npcs/squire-anthony-goodwin.html">Squire Anthony Goodwin</a></li>
-<li><a href="../npcs/therese.html">Therese</a></li>
-<li><a href="../npcs/thomas-wyndham.html">Thomas Wyndham</a></li>
-<li><a href="../npcs/thomlin-kerridge.html">Thomlin Kerridge</a></li>
-<li><a href="../npcs/tobias-greaves.html">Tobias Greaves</a></li>
-<li><a href="../npcs/vicomte-henri-lavigne.html">Vicomte Henri Lavigne</a></li>
-<li><a href="../npcs/victoire-lefevre.html">Victoire Lefevre</a></li>
-<li><a href="../npcs/victoire-lenoir.html">Victoire Lenoir</a></li>
-<li><a href="../npcs/walter-baines.html">Walter Baines</a></li>
-<li><a href="../npcs/walter-pennyman.html">Walter Pennyman</a></li>
-<li><a href="../npcs/werner-bauer.html">Werner Bauer</a></li>
-<li><a href="../npcs/wilhelm-brenner.html">Wilhelm Brenner</a></li>
-<li><a href="../npcs/wilkins.html">Wilkins</a></li>
-<li><a href="../npcs/william-thurner.html">William Thurner</a></li>
-</ul>
-<h2>Factions &amp; Organizations</h2>
-<ul>
-<li><a href="../../factions/aeternum-choir.html">Aeternum Choir</a></li>
-<li><a href="../../factions/blue-sashes.html">Blue Sashes</a></li>
-<li><a href="../../factions/brotherhood-of-the-open-measure.html">Brotherhood of the Open Measure</a></li>
-<li><a href="../../factions/confraternita-del-bel-canto.html">Confraternita del Bel Canto</a></li>
-<li><a href="../../factions/congress-of-vienna.html">Congress of Vienna</a></li>
-<li><a href="../../factions/geheimpolizei.html">Geheimpolizei</a></li>
-<li><a href="../../factions/order-of-st-aelfric.html">Order of St Aelfric</a></li>
-<li><a href="../../factions/orphean-society.html">Orphean Society</a></li>
-<li><a href="../../factions/polizeidirektion.html">Polizeidirektion</a></li>
-<li><a href="../../factions/soci-t-harmonique-de-l-aube.html">Société Harmonique de l Aube</a></li>
-</ul>
-<h2>Events</h2>
-<ul>
-<li><a href="../../events/goupil-masquerade.html">Goupil Masquerade</a></li>
-<li><a href="../../events/grand-masquerade-palais-lobkowitz.html">Grand Masquerade Palais Lobkowitz</a></li>
-<li><a href="../../events/harcourt-reunion.html">Harcourt Reunion</a></li>
-<li><a href="../../events/long-corridor-incident.html">Long Corridor Incident</a></li>
-<li><a href="../../events/marina-recruitment-portsmouth.html">Marina Recruitment Portsmouth</a></li>
-<li><a href="../../events/moreau-graben-assassination.html">Moreau Graben Assassination</a></li>
-<li><a href="../../events/nightgaunt-attack-palais-kinsky.html">Nightgaunt Attack Palais Kinsky</a></li>
-<li><a href="../../events/orphans-hospital-raid.html">Orphans Hospital Raid</a></li>
-<li><a href="../../events/osney-grange-incident.html">Osney Grange Incident</a></li>
-<li><a href="../../events/silkweavers-guild-assault.html">Silkweavers Guild Assault</a></li>
-<li><a href="../../events/stonehenge-ritual.html">Stonehenge Ritual</a></li>
-</ul>
-<h2>Locations</h2>
-<ul>
-<li><a href="../../locations/auberge-des-deux-chenes.html">Auberge des Deux Chenes</a></li>
-<li><a href="../../locations/beauregard-modiste.html">Beauregard Modiste</a></li>
-<li><a href="../../locations/brighton.html">Brighton</a></li>
-<li><a href="../../locations/brighton-assembly-rooms.html">Brighton Assembly Rooms</a></li>
-<li><a href="../../locations/brighton-harbormasters-office.html">Brighton Harbormasters Office</a></li>
-<li><a href="../../locations/british-museum-montagu-house.html">British Museum Montagu House</a></li>
-<li><a href="../../locations/cafe-frauenhuber.html">Cafe Frauenhuber</a></li>
-<li><a href="../../locations/captain-kings-drawing-room.html">Captain Kings Drawing Room</a></li>
-<li><a href="../../locations/crooked-chimney-tavern.html">Crooked Chimney Tavern</a></li>
-<li><a href="../../locations/fourviere.html">Fourviere</a></li>
-<li><a href="../../locations/fox-and-hound-portsmouth.html">Fox and Hound Portsmouth</a></li>
-<li><a href="../../locations/foxglove-and-thistle.html">Foxglove and Thistle</a></li>
-<li><a href="../../locations/gasthof-schwarzer-bar.html">Gasthof Schwarzer Bar</a></li>
-<li><a href="../../locations/gasthof-weisser-ochsen.html">Gasthof Weisser Ochsen</a></li>
-<li><a href="../../locations/goldener-hirsch.html">Goldener Hirsch</a></li>
-<li><a href="../../locations/gough-square-no7.html">Gough Square No7</a></li>
-<li><a href="../../locations/greaves-and-sons.html">Greaves and Sons</a></li>
-<li><a href="../../locations/grosvenor-works.html">Grosvenor Works</a></li>
-<li><a href="../../locations/hampton-residence.html">Hampton Residence</a></li>
-<li><a href="../../locations/hartwell-house.html">Hartwell House</a></li>
-<li><a href="../../locations/hawkswood-and-shaw.html">Hawkswood and Shaw</a></li>
-<li><a href="../../locations/hawthorne-grange.html">Hawthorne Grange</a></li>
-<li><a href="../../locations/hofburg-palace.html">Hofburg Palace</a></li>
-<li><a href="../../locations/hopital-de-la-charite.html">Hopital de la Charite</a></li>
-<li><a href="../../locations/hotel-de-brissac.html">Hotel de Brissac</a></li>
-<li><a href="../../locations/hotel-de-camberonne.html">Hotel de Camberonne</a></li>
-<li><a href="../../locations/kensington-coach-stables.html">Kensington Coach Stables</a></li>
-<li><a href="../../locations/la-belle-esperance.html">La Belle Esperance</a></li>
-<li><a href="../../locations/le-coteau-des-ombres.html">Le Coteau des Ombres</a></li>
-<li><a href="../../locations/le-lys-de-marbre.html">Le Lys de Marbre</a></li>
-<li><a href="../../locations/leopoldstadt.html">Leopoldstadt</a></li>
-<li><a href="../../locations/maison-des-cinq-portes.html">Maison des Cinq Portes</a></li>
-<li><a href="../../locations/maison-du-corbeau.html">Maison du Corbeau</a></li>
-<li><a href="../../locations/marchbank-terrace.html">Marchbank Terrace</a></li>
-<li><a href="../../locations/northlake-hall.html">Northlake Hall</a></li>
-<li><a href="../../locations/orphean-society-building.html">Orphean Society Building</a></li>
-<li><a href="../../locations/osney-grange.html">Osney Grange</a></li>
-<li><a href="../../locations/palais-kinsky.html">Palais Kinsky</a></li>
-<li><a href="../../locations/palais-lobkowitz.html">Palais Lobkowitz</a></li>
-<li><a href="../../locations/palais-modena.html">Palais Modena</a></li>
-<li><a href="../../locations/palais-thun-hohenstein.html">Palais Thun Hohenstein</a></li>
-<li><a href="../../locations/ravenwood-house.html">Ravenwood House</a></li>
-<li><a href="../../locations/roman-temple-aeternox.html">Roman Temple Aeternox</a></li>
-<li><a href="../../locations/royal-academy-of-music.html">Royal Academy of Music</a></li>
-<li><a href="../../locations/schonbrunn-palace.html">Schonbrunn Palace</a></li>
-<li><a href="../../locations/sealed-anatomical-theatre.html">Sealed Anatomical Theatre</a></li>
-<li><a href="../../locations/silkweavers-guild.html">Silkweavers Guild</a></li>
-<li><a href="../../locations/silver-quay-tavern.html">Silver Quay Tavern</a></li>
-<li><a href="../../locations/society-of-antiquaries.html">Society of Antiquaries</a></li>
-<li><a href="../../locations/st-stephens-cathedral.html">St Stephens Cathedral</a></li>
-<li><a href="../../locations/stonehenge.html">Stonehenge</a></li>
-<li><a href="../../locations/tarryford.html">Tarryford</a></li>
-<li><a href="../../locations/thaliastrasse-12-safehouse.html">Thaliastrasse 12 Safehouse</a></li>
-<li><a href="../../locations/the-laughing-fox.html">The Laughing Fox</a></li>
-<li><a href="../../locations/thistle-lane.html">Thistle Lane</a></li>
-<li><a href="../../locations/university-of-vienna.html">University of Vienna</a></li>
-<li><a href="../../locations/vienna-conservatory.html">Vienna Conservatory</a></li>
-<li><a href="../../locations/vienna-overview.html">Vienna Overview</a></li>
-<li><a href="../../locations/whitlow-and-sons.html">Whitlow and Sons</a></li>
-<li><a href="../../locations/widow-katz-boarding-house.html">Widow Katz Boarding House</a></li>
-</ul>
-<h2>Items &amp; Artifacts</h2>
-<ul>
-<li><a href="../../items/adler-brotherhood-signet-ring.html">Adler Brotherhood Signet Ring</a></li>
-<li><a href="../../items/aelfric-brooch.html">Aelfric Brooch</a></li>
-<li><a href="../../items/aelfric-cravat-pin.html">Aelfric Cravat Pin</a></li>
-<li><a href="../../items/command-tuning-fork.html">Command Tuning Fork</a></li>
-<li><a href="../../items/northlake-jewel.html">Northlake Jewel</a></li>
-<li><a href="../../items/revelations-of-glaaki.html">Revelations of Glaaki</a></li>
-</ul>
-<h2>Documents</h2>
-<ul>
-<li><a href="../../documents/bauer-release-order.html">Bauer Release Order</a></li>
-<li><a href="../../documents/herzfeld-letter-to-savarin.html">Herzfeld Letter to Savarin</a></li>
-<li><a href="../../documents/thurner-operational-packet.html">Thurner Operational Packet</a></li>
-</ul>
-<h2>Clues</h2>
-<ul>
-<li><a href="../../clues/5-of-8-ritual-requirement.html">5 of 8 Ritual Requirement</a></li>
-<li><a href="../../clues/a432hz-engine-resonance.html">A432Hz Engine Resonance</a></li>
-<li><a href="../../clues/august-15-ritual-date.html">August 15 Ritual Date</a></li>
-<li><a href="../../clues/backerstrasse-14-adler-rooms.html">Backerstrasse 14 Adler Rooms</a></li>
-<li><a href="../../clues/black-bear-tavern-bauer-lodging.html">Black Bear Tavern Bauer Lodging</a></li>
-<li><a href="../../clues/der-kantor-munich-coordination.html">Der Kantor Munich Coordination</a></li>
-<li><a href="../../clues/engine-beneath-university.html">Engine Beneath University</a></li>
-</ul>
-<h2>Chapters</h2>
-<ul>
-<li><a href="../../chapters/Chapter 0.1 - The Beginning/chapter-0-1-wrap-up.html">Chapter 0.1 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 1 - London/chapter-1-wrap-up.html">Chapter 1 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 2 - Lyon/chapter-2-wrap-up.html">Chapter 2 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/One_Shot_The_Audition/one-shot-the-audition.html">One Shot The Audition</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 1/session-01-wrap-up.html">Session 01 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 2/session-02-wrap-up.html">Session 02 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 7/session-07-wrap-up.html">Session 07 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 8/session-08-wrap-up.html">Session 08 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 9/session-09-wrap-up.html">Session 09 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 10/session-10-wrap-up.html">Session 10 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/vienna-chapter-summary.html">Vienna Chapter Summary</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/vienna-events-calendar-handout.html">Vienna Events Calendar Handout</a></li>
-</ul>
-<h2>Creatures</h2>
-<ul>
-<li><a href="../../creatures/chakota.html">Chakota</a></li>
-<li><a href="../../creatures/ciimba-children.html">Ciimba Children</a></li>
-<li><a href="../../creatures/harmonic-engine-victims.html">Harmonic Engine Victims</a></li>
-<li><a href="../../creatures/harmonische-wachter.html">Harmonische Wachter</a></li>
-<li><a href="../../creatures/horror-long-corridor.html">Horror Long Corridor</a></li>
-<li><a href="../../creatures/hound-of-tindalos.html">Hound of Tindalos</a></li>
-<li><a href="../../creatures/nightgaunt.html">Nightgaunt</a></li>
-<li><a href="../../creatures/yog-sothoth.html">Yog Sothoth</a></li>
-</ul>
-
-</nav>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3>Story</h3>
+  <ul>
+    <li><a href="../../chapters/index.html">Story</a></li>
+    <li><a href="../../timeline.html">Events</a></li>
+  </ul>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../../player-characters.html">Player Characters</a></li>
+    <li><a href="../npcs/index.html">NPCs</a></li>
+    <li><a href="../../creatures/index.html">Creatures</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../../locations/index.html">Locations</a></li>
+    <li><a href="../../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../../documents/index.html">Documents</a></li>
+    <li><a href="../../clues/index.html">Clues</a></li>
+    <li><a href="../../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
 
 <main class="content">
-
-<div class="char-header">
-  
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span class="sep">&rsaquo;</span>Characters<span class="sep">&rsaquo;</span><a href="index.html">Player Characters</a><span class="sep">&rsaquo;</span>Georgiana Wentworth</nav>
+<div class="hero-cinematic hero-cinematic-no-img">
+  <div class="pc-portrait" style="width:5rem;height:5rem;font-size:2rem;margin-bottom:1rem">GW</div>
   <h1>Georgiana Wentworth</h1>
-  <p class="concept">Sharp-minded, Tactical combatant, Phobias of theatre and fish, Identified Nightgaunt from Revelations of Gla'aki</p>
   <div class="meta">
     <span><span class="label">Player</span> Beth</span>
+    <span><span class="label">Occupation</span> Gentlewoman Researcher (Tarryford, Wiltshire)</span>
     <span><span class="label">Age</span> 20</span>
     <span><span class="label">Nationality</span> British</span>
-    <span><span class="label">Background</span> Gentlewoman Researcher (Tarryford, Wiltshire)</span>
     <span><span class="label">Status</span> alive</span>
   </div>
 </div>
-<nav class="section-nav" aria-label="Sheet sections"><a href="#attributes">Attributes</a>
-<a href="#skills">Skills</a>
+<div class="pull-quote">Sharp-minded, Tactical combatant, Phobias of theatre and fish, Identified Nightgaunt from Revelations of Gla'aki</div>
+<div class="tab-bar">
+  <button class="pc-tab active" data-tab="sheet" onclick="switchTab('sheet')">Character Sheet</button>
+  <button class="pc-tab" data-tab="equipment" onclick="switchTab('equipment')">Equipment</button>
+  <button class="pc-tab" data-tab="story" onclick="switchTab('story')">Story</button>
+  <button class="pc-tab" data-tab="journey" onclick="switchTab('journey')">Journey</button>
+</div>
+<div class="tab-panel active" id="tab-sheet">
+<nav class="section-nav" aria-label="Sheet sections"><a href="#stat-sheet">Stat Sheet</a>
 <a href="#background">Background</a>
+<a href="#skills">Skills</a>
+<a href="#injuries-scars">Injuries &amp; Scars</a>
+<a href="#phobias-manias">Phobias &amp; Manias</a>
+<a href="#arcane-tomes-spells">Arcane Tomes &amp; Spells</a>
+<a href="#encounters-with-strange-entities">Encounters with Strange Entities</a>
+<a href="#combat">Combat</a>
+<a href="#fellow-investigators">Fellow Investigators</a>
+<a href="#masquerade">Masquerade</a>
 <a href="#current-status">Current Status</a>
-<a href="#key-moments">Key Moments</a>
-<a href="#connections">Connections</a>
-<a href="#phobias">Phobias</a></nav>
+<a href="#notes">Notes</a></nav>
 
-<div class="accordion" id="attributes">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Attributes</button>
+<div class="accordion" id="stat-sheet">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Stat Sheet</button>
   <div class="accordion-body">
-    <table>
+    <h3>Characteristics</h3>
+<table>
 <thead>
 <tr>
-<th>STR</th>
-<th>CON</th>
-<th>DEX</th>
-<th>INT</th>
-<th>SIZ</th>
-<th>POW</th>
-<th>APP</th>
-<th>EDU</th>
+<th>Characteristic</th>
+<th>Regular</th>
+<th>Half</th>
+<th>Fifth</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>STR</td>
 <td>40</td>
+<td>20</td>
+<td>8</td>
+</tr>
+<tr>
+<td>CON</td>
 <td>60</td>
+<td>30</td>
+<td>12</td>
+</tr>
+<tr>
+<td>DEX</td>
 <td>50</td>
+<td>25</td>
+<td>10</td>
+</tr>
+<tr>
+<td>INT</td>
 <td>70</td>
+<td>35</td>
+<td>14</td>
+</tr>
+<tr>
+<td>SIZ</td>
 <td>50</td>
+<td>25</td>
+<td>10</td>
+</tr>
+<tr>
+<td>POW</td>
 <td>80</td>
+<td>40</td>
+<td>16</td>
+</tr>
+<tr>
+<td>APP</td>
 <td>50</td>
+<td>25</td>
+<td>10</td>
+</tr>
+<tr>
+<td>EDU</td>
 <td>60</td>
+<td>30</td>
+<td>12</td>
 </tr>
 </tbody>
 </table>
+<h3>Derived</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Max</th>
+<th>Current</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HP</td>
+<td>11</td>
+<td>11</td>
+</tr>
+<tr>
+<td>MP</td>
+<td>16</td>
+<td></td>
+</tr>
+<tr>
+<td>Luck</td>
+<td>—</td>
+<td></td>
+</tr>
+<tr>
+<td>Sanity</td>
+<td>80</td>
+<td>79</td>
+</tr>
+</tbody>
+</table>
+<h3>Combat</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Move</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Build</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Damage Bonus</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Dodge (Regular)</td>
+<td>25</td>
+</tr>
+<tr>
+<td>Dodge (Half)</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Dodge (Fifth)</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<h3>Status</h3>
 <ul>
-<li><strong>HP:</strong> 11 | <strong>SAN:</strong> 80 | <strong>Luck:</strong> —</li>
-</ul>
-
-  </div>
-</div>
-
-<div class="accordion" id="skills">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Skills</button>
-  <div class="accordion-body">
-    <ul>
-<li>Archaeology 40</li>
-<li>History 45</li>
-<li>Library Use 50</li>
-<li>Spot Hidden 45</li>
-<li>Piano 25</li>
+<li>[ ] Temporary Insanity</li>
+<li>[ ] Indefinite Insanity</li>
+<li>[ ] Major Wound</li>
+<li>[ ] Unconscious</li>
+<li>[ ] Dying</li>
 </ul>
 
   </div>
@@ -417,7 +255,177 @@
 <div class="accordion" id="background">
   <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Background</button>
   <div class="accordion-body">
-    <p>Georgiana Wentworth is a 20-year-old gentlewoman and researcher from <a href="../../locations/tarryford.html">Tarryford</a>, Wiltshire. She first joined the campaign during The Long Corridor (Chapter 0.1, Autumn 1813) at Northlake Hall alongside her sister <a href="emma-wentworth.html">Emma</a>. She is sharp-minded and carries lasting phobias from the investigations: fear of theatre (from the Drury Lane incident, Chapter 0.5) and fear of fish (from the river/siren’s cave incident in <em>The Viscount Who Loves Me</em>, Chapter 0.6).</p>
+    <p><strong>Personal Description:</strong> A young English gentlewoman of twenty, slight of frame but steady of hand. Her manner is composed, her gaze direct, and her posture carries the particular stillness of someone who listens before she speaks. She dresses simply by the standards of her station and wears no ornament save the <a href="../../items/aelfric-brooch.html">Aelfric_Brooch</a>.</p>
+<p><strong>Traits:</strong> Sharp-minded and analytical. Approaches the supernatural with a scholar’s instinct to categorise before an investigator’s instinct to destroy. Willing to take social risks and absorb failure without retreat. Tactically sound in combat despite no formal military training. Carries a quiet warmth toward those she trusts that is expressed through action rather than words.</p>
+<p><strong>Ideology &amp; Beliefs:</strong> Educated in the Church of England but increasingly defined by a rationalist’s faith in observation and evidence. The horrors she has witnessed have not destroyed her belief in an ordered world so much as expanded her understanding of how large and how indifferent that order truly is.</p>
+<p><strong>Significant People:</strong> <a href="emma-wentworth.html">Emma Wentworth</a> (sister, constant companion since <a href="../../locations/tarryford.html">Tarryford</a>); <a href="../npcs/nikolai-volkonsky.html">Nikolai_Volkonsky</a> (bond forged through shared intelligence and shared survival at the masquerade); <a href="../npcs/lord-percival-harcourt.html">Lord_Percival_Harcourt</a> (Order commander, recruited her after <a href="../../locations/northlake-hall.html">Northlake_Hall</a>).</p>
+<p><strong>Meaningful Locations:</strong> <a href="../../locations/tarryford.html">Tarryford</a>, Wiltshire (home); <a href="../../locations/northlake-hall.html">Northlake_Hall</a> (where the investigations began); <a href="../../locations/hartwell-house.html">Hartwell_House</a>, London (Order training and residence); <a href="../../locations/palais-lobkowitz.html">Palais_Lobkowitz</a> (the masquerade, the Wachter combat, the fork).</p>
+<p><strong>Treasured Possessions:</strong> The <a href="../../items/aelfric-brooch.html">Aelfric_Brooch</a>, symbol of Order initiation. The <a href="../../items/command-tuning-fork.html">Command_Tuning_Fork</a>, taken from <a href="../npcs/anton-adler.html">Adler’s</a> grip at <a href="../../locations/palais-lobkowitz.html">Palais_Lobkowitz</a> and carried since. A pair of swords she drew in her nightgown against a <a href="../../creatures/nightgaunt.html">Nightgaunt</a>.</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="skills">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Skills</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Base</th>
+<th>Regular</th>
+<th>Half</th>
+<th>Fifth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Archaeology</td>
+<td>01</td>
+<td>40</td>
+<td>20</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Art/Craft (Piano)</td>
+<td>05</td>
+<td>25</td>
+<td>12</td>
+<td>5</td>
+</tr>
+<tr>
+<td>History</td>
+<td>05</td>
+<td>45</td>
+<td>22</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Library Use</td>
+<td>20</td>
+<td>50</td>
+<td>25</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Spot Hidden</td>
+<td>25</td>
+<td>45</td>
+<td>22</td>
+<td>9</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>[!info] Keeper Only
+Only skills with trained values above base are listed. The full character sheet may contain additional skills at base or with minor training increments not captured in vault records.</p>
+</blockquote>
+
+  </div>
+</div>
+
+<div class="accordion" id="injuries-scars">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Injuries &amp; Scars</button>
+  <div class="accordion-body">
+    <ul>
+<li><strong>Cleaver wound to the shoulder</strong> (Chapter 2 — Lyon, Orphans’ Hospital raid). A surgeon’s apprentice struck her during the basement assault. The wound healed but the scar remains.</li>
+</ul>
+
+  </div>
+</div>
+
+<div class="accordion" id="phobias-manias">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Phobias &amp; Manias</button>
+  <div class="accordion-body">
+    <ul>
+<li><strong>Theatre</strong> (acquired Chapter 0.5 — Drury Lane, December 1813). Fear of the enclosed architecture of theatres, born from the time loop and the mirror beneath the stage.</li>
+<li><strong>Fish</strong> (acquired Chapter 0.6 — The Viscount Who Loved Me, May 1814). Instinctive revulsion toward anything piscine, rooted in whatever she encountered in the river and the siren’s cave beneath Bath.</li>
+</ul>
+
+  </div>
+</div>
+
+<div class="accordion" id="arcane-tomes-spells">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Arcane Tomes &amp; Spells</button>
+  <div class="accordion-body">
+    <ul>
+<li><strong>Revelations of Gla’aki</strong> — read; used to identify the <a href="../../creatures/nightgaunt.html">Nightgaunt</a> during the Session 6 attack at <a href="../../locations/palais-kinsky.html">Palais_Kinsky</a>. The tome was confiscated by the Polizeidirektion in Session 4 and recovered during the Session 10 heist.</li>
+</ul>
+
+  </div>
+</div>
+
+<div class="accordion" id="encounters-with-strange-entities">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Encounters with Strange Entities</button>
+  <div class="accordion-body">
+    <ul>
+<li><strong><a href="../../creatures/horror-long-corridor.html">Horrors</a></strong> (Chapter 0.1, <a href="../../locations/northlake-hall.html">Northlake_Hall</a>). Squat, headless, fur-covered creatures with fanged mouths on their torsos. First encounter with the supernatural. Performed the blood ritual to close the portal.</li>
+<li><strong><a href="../../creatures/nightgaunt.html">Nightgaunt</a></strong> (Session 6, <a href="../../locations/palais-kinsky.html">Palais_Kinsky</a>). Faceless, oily, bat-winged creature from the dreamlands. Georgiana fought it with swords in her nightgown and identified it from the Revelations of Gla’aki.</li>
+<li><strong><a href="../../creatures/harmonische-wachter.html">Harmonische Wachter</a></strong> (Sessions 8-9, <a href="../../locations/palais-lobkowitz.html">Palais_Lobkowitz</a>). Bronze-scaled creatures, the failed by-products of the Brotherhood’s integration process. Georgiana raked one with her sword, hamstrung <a href="../npcs/anton-adler.html">Adler</a> who controlled them, and briefly established a psychic link with a surviving Wachter through the <a href="../../items/command-tuning-fork.html">command fork</a> — seeing through its alien senses at the cost of 1 SAN.</li>
+<li><strong><a href="../../creatures/formless-spawn.html">Formless_Spawn</a></strong> (Chapter 2, <a href="../../locations/maison-du-corbeau.html">Maison_du_Corbeau</a>, Lyon). Witnessed during a child sacrifice at the masked soiree. The investigators observed but did not intervene.</li>
+</ul>
+
+  </div>
+</div>
+
+<div class="accordion" id="combat">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Combat</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Weapon</th>
+<th>Skill %</th>
+<th>Damage</th>
+<th>Attacks</th>
+<th>Range</th>
+<th>Ammo</th>
+<th>Malf</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unarmed</td>
+<td></td>
+<td>1D3+DB</td>
+<td>1</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Sword (paired)</td>
+<td></td>
+<td>1D8+DB</td>
+<td>1</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
+
+<div class="accordion" id="fellow-investigators">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Fellow Investigators</button>
+  <div class="accordion-body">
+    <ul>
+<li><a href="emma-wentworth.html">Emma_Wentworth</a> — Sister. Inseparable since <a href="../../locations/tarryford.html">Tarryford</a>. The other longest-running PC in the campaign.</li>
+<li><a href="adrien-de-montferrand.html">Adrien_de_Montferrand</a> — French Vicomte, fellow investigator since the road to Vienna.</li>
+<li><a href="varrio-harrowmont.html">Varrio_Harrowmont</a> — Italian operative. Mutual warmth since his dissociative episode and the Italian poem (Session 3).</li>
+<li><a href="katherine-ward.html">Katherine_Ward</a> — Order operative, arrived Session 7. Carried the fork before handing it to Georgiana.</li>
+<li><a href="freddy-cavendish.html">Freddy_Cavendish</a> — English gentleman, joined the party Session 6 after Colonel Moreau’s death.</li>
+</ul>
+
+  </div>
+</div>
+
+<div class="accordion" id="masquerade">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Masquerade</button>
+  <div class="accordion-body">
+    <p>!georgiana-mask.png</p>
 
   </div>
 </div>
@@ -425,65 +433,495 @@
 <div class="accordion" id="current-status">
   <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Current Status</button>
   <div class="accordion-body">
-    <p>At <a href="../../locations/thaliastrasse-12-safehouse.html">Thaliastraße 12</a> with the command fork as of dawn, 9 August 1814. Lost 1 SAN to the Wächter-sight trespass. Otherwise physically uninjured. The closest of the party to <a href="../npcs/nikolai-volkonsky.html">Nikolai</a> as a grieving comrade.</p>
-<p>Georgiana is combat-capable and tactically sound. During the Nightgaunt attack at Palais Kinsky (Session 6), she drew swords in her nightgown and fought effectively. Crucially, she identified the creature as a Nightgaunt using the Revelations of Gla’aki — an identification that gave the party context for what they faced.</p>
+    <p>At <a href="../../locations/thaliastrasse-12-safehouse.html">Thaliastraße 12</a> as of late afternoon, 9 August 1814 (end of Session 10). Physically uninjured. SAN reduced by 1 to 79 from the Wachter-sight trespass through the <a href="../../items/command-tuning-fork.html">fork</a> (Session 9). The fork came to her hand while she slept (Session 10), and the colours of the room shifted through an alien spectrum before settling. The psychic conduit between Georgiana and the Engine is deepening — the fork is using her, or she is gaining control. The distinction may not matter.</p>
+<p>Georgiana is the closest of the party to <a href="../npcs/nikolai-volkonsky.html">Nikolai</a> as a grieving comrade. She holds <a href="../npcs/william-thurner.html">Thurner’s</a> full operational packet (safe house, weapons cache, guard rotations, secret passage). She deployed Metternich’s writ at the <a href="../../factions/polizeidirektion.html">Polizeidirektion</a> to recover the stolen tomes. Five days remain until the ritual. <a href="../npcs/caroline-hartley.html">Caroline_Hartley</a> is inside the University. The woman who performed a blood ritual at <a href="../../locations/northlake-hall.html">Northlake_Hall</a> to close a portal now carries a device that opens one.</p>
 
   </div>
 </div>
 
-<div class="accordion" id="key-moments">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Key Moments</button>
+<div class="accordion" id="notes">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Notes</button>
   <div class="accordion-body">
-    <ul>
-<li><strong>London Through Vienna</strong>: Original investigator, no character changes</li>
-<li><strong>Nightgaunt Combat (Session 6)</strong>: Drew swords mid-attack, fought tactically</li>
-<li><strong>Creature Identification</strong>: Recognized and identified the Nightgaunt using occult knowledge</li>
-<li><strong>Masquerade Ball Session 8</strong>: Identified <a href="../npcs/anton-adler.html">Adler</a> publicly to <a href="../npcs/nikolai-volkonsky.html">Nikolai</a>, triggering the Russian pursuit; extracted <a href="../npcs/anna-lindqvist.html">Anna</a> from Adler’s control</li>
-<li><strong>Masquerade Ball Session 9 — Defining combatant</strong>: Spotted <a href="../npcs/franz-kaunitz.html">Baron von Kaunitz</a> slipping away via the balcony and identified <a href="../npcs/ludwig-vogel.html">Captain Vogel</a> beneath his domino mask. Raked a <a href="../../creatures/harmonische-wachter.html">Wächter</a> with her sword in the corridor, spilling dark ichor. Hamstrung <a href="../npcs/anton-adler.html">Adler</a> by slicing both Achilles tendons in a single sword stroke, ending his escape. Briefly established a psychic link with a Wächter through the <a href="../../items/command-tuning-fork.html">command fork</a>, seeing through its alien senses and forcing it to sit submissively — the link cost <strong>1 SAN</strong>. Took possession of the fork from <a href="katherine-ward.html">Katherine</a> in the withdrawing room; it has not left her person since.</li>
-</ul>
-
-  </div>
-</div>
-
-<div class="accordion" id="connections">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Connections</button>
-  <div class="accordion-body">
-    <ul>
-<li><strong>Sister Bond</strong>: Emma is her sister; they travel together</li>
-<li><strong>The Party</strong>: Full investigator, no formal Order affiliation stated</li>
-<li><strong><a href="../../items/aelfric-brooch.html">Aelfric_Brooch</a></strong>: Ælfric Brooch, symbol of Order initiation</li>
-<li><strong>Occult Knowledge</strong>: Demonstrated familiarity with Mythos references</li>
-<li><strong><a href="../../items/command-tuning-fork.html">Command_Tuning_Fork</a></strong>: In Georgiana’s possession since the withdrawing room at <a href="../../locations/palais-lobkowitz.html">Palais_Lobkowitz</a>, dawn 9 August 1814. The fork <em>looked back</em> at her — a subplot seed.</li>
-<li><strong><a href="../npcs/nikolai-volkonsky.html">Nikolai_Volkonsky</a></strong>: Bond deepened from waltz partner to comrades who survived the same night</li>
-</ul>
-
-  </div>
-</div>
-
-<div class="accordion" id="phobias">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Phobias</button>
-  <div class="accordion-body">
-    <ul>
-<li>Theatre (from Drury Lane)</li>
-<li>Fish (from the river/siren’s cave — <em>The Viscount Who Loves Me</em>, Chapter 0.6)</li>
-</ul>
+    <p>{Player-facing notes. Protected — skills never modify.}</p>
 
   </div>
 </div>
 <h2>Relationships</h2>
 <ul class="relationship-list">
-<li><strong class="rel-label">Friend of</strong> <a href="emma-wentworth.html" class="entity-link">Emma Wentworth</a> &mdash; Sister</li>
-<li><strong class="rel-label">Knows</strong> <a href="adrien-de-montferrand.html" class="entity-link">Adrien de Montferrand</a> &mdash; Palais Kinsky host, fellow investigator</li>
-<li><strong class="rel-label">Knows</strong> <a href="katherine-ward.html" class="entity-link">Katherine Ward</a> &mdash; Order operative, fellow party member</li>
-<li><strong class="rel-label">Knows</strong> <a href="varrio-harrowmont.html" class="entity-link">Varrio Harrowmont</a> &mdash; Order member, party member</li>
+<li><strong class="rel-label">Sister of</strong> <a href="emma-wentworth.html" class="entity-link">Emma Wentworth</a> &mdash; Sister; they travel together and have been inseparable since Tarryford</li>
+<li><strong class="rel-label">Knows</strong> <a href="adrien-de-montferrand.html" class="entity-link">Adrien de Montferrand</a> &mdash; Fellow investigator since Vienna</li>
+<li><strong class="rel-label">Knows</strong> <a href="katherine-ward.html" class="entity-link">Katherine Ward</a> &mdash; Order operative, fellow party member since Session 7</li>
+<li><strong class="rel-label">Knows</strong> <a href="varrio-harrowmont.html" class="entity-link">Varrio Harrowmont</a> &mdash; Fellow investigator; mutual warmth since the Italian poem (Session 3)</li>
+<li><strong class="rel-label">Allied with</strong> <a href="../npcs/nikolai-volkonsky.html" class="entity-link">Nikolai Volkonsky</a> &mdash; Bond deepened from waltz partner to comrades who survived the masquerade together</li>
+<li><strong class="rel-label">Knows</strong> <a href="freddy-cavendish.html" class="entity-link">Freddy Cavendish</a> &mdash; Fellow investigator since Session 6</li>
+<li><strong class="rel-label">Located at</strong> <a href="../../locations/thaliastrasse-12-safehouse.html" class="entity-link">Thaliastrasse 12 Safehouse</a> &mdash; Current base of operations as of 9 August 1814</li>
 </ul>
+</div>
+<div class="tab-panel" id="tab-equipment">
+<h3>Equipment</h3>
+<p><strong>Gear &amp; Possessions:</strong></p>
+<ul>
+<li>Paired swords (carried since at least Session 6)</li>
+<li><a href="../../items/aelfric-brooch.html">Aelfric_Brooch</a> — symbol of <a href="../../factions/order-of-st-aelfric.html">Order_of_St_Aelfric</a> initiation</li>
+<li><a href="../../items/command-tuning-fork.html">Command_Tuning_Fork</a> — brass, A=432 Hz, etched with the Brotherhood crest. In Georgiana’s possession since the withdrawing room at <a href="../../locations/palais-lobkowitz.html">Palais_Lobkowitz</a>, dawn 9 August 1814. The fork establishes a psychic link with nearby <a href="../../creatures/harmonische-wachter.html">Wachter</a> when handled. It came to her hand while she slept (Session 10). The conduit between Georgiana and the Engine is deepening.</li>
+<li><a href="../../items/liber-ivonis.html">Liber_Ivonis</a> and De_Vermis_Mysteriis — recovered from the Polizeidirektion in Session 10 (party possession, not personal)</li>
+</ul>
+<p><strong>Wealth:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spending Level</td>
+<td></td>
+</tr>
+<tr>
+<td>Cash</td>
+<td>~4,000 gulden (Session 1 letter of credit)</td>
+</tr>
+<tr>
+<td>Assets</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+<div class="tab-panel" id="tab-story">
+  <div class="story-prose">
+    <h2>Chapter 0.1 — The Long Corridor</h2>
+<p>In the autumn of 1813, Georgiana Wentworth attended the Northlake Ball at <a href="../../locations/northlake-hall.html">Northlake_Hall</a> with her younger sister <a href="emma-wentworth.html">Emma</a>, as she had attended every significant gathering in <a href="../../locations/tarryford.html">Tarryford</a> for as long as she could remember. She was twenty years old, sharp-minded, scholarly by temperament, and utterly unprepared for what the evening would reveal. The Long Corridor was a portal into a dark realm, and the creatures that dwelt within it — squat, headless, fur-covered things with fanged mouths on their torsos — were the first impossibility she had ever been required to accept as fact. On the second expedition into the corridor, Georgiana performed a blood ritual at the altar to close the portal, an act of analytical courage that would define her approach to the horrors ahead: study the problem, then act on what you have learned. The <a href="../../creatures/horror-long-corridor.html">Horrors</a> descended as the portal closed. <a href="james-bennet.html">James_Bennet</a> was overtaken, dismembered, and consumed — the first death she witnessed in this work. The surviving women walked out together, and Georgiana left <a href="../../locations/tarryford.html">Tarryford</a> knowing that the world she had understood was a surface stretched over something vast and indifferent.</p>
+<p><a href="../npcs/lady-honoria-lyndhurst.html">Lady_Honoria_Lyndhurst</a> brought the survivors to London. At <a href="../../locations/hartwell-house.html">Hartwell_House</a>, Georgiana and Emma were given instruction by six tutors — combat, languages, etiquette, occult scholarship — and the sisters settled into a life that bore no resemblance to the one they had left in Wiltshire. Georgiana’s intellect found purchase in the Order’s library, in the texts and case files that gave names to the things she had seen. The scholarly temperament that had once been a social curiosity became the foundation of her usefulness.</p>
+<h2>Chapter 0.5 — The Scandal Beneath the Stage</h2>
+<p>The investigation at Drury Lane in December 1813 brought Georgiana and <a href="emma-wentworth.html">Emma</a> into the orbit of <a href="../npcs/giles-mercer.html">Giles_Mercer</a>’s mirror and the time loop that had consumed the theatre. Its lasting mark on Georgiana was precise and permanent: a phobia of theatres, acquired in the bowels of a building that had become something other than a place of entertainment. The fear is specific — not of performance but of the architecture itself, the enclosed space where an audience sits passive while something on the stage reaches back through the fourth wall. It is a scholar’s phobia: born not from ignorance but from having understood too clearly what a theatre can become when the wrong forces take the stage.</p>
+<h2>Chapter 0.6 — The Viscount Who Loved Me</h2>
+<p>The wedding of Harriet_Palmer and Viscount Huntley at Bath Abbey in May 1814 drew Georgiana and <a href="emma-wentworth.html">Emma</a> into the investigation of the Siren beneath the river and the curse that killed the Viscount on his wedding night. It was here, in the river cave where the Siren’s bones waited, that Georgiana acquired her second lasting phobia: fish. The phobia persists — an instinctive revulsion toward anything piscine, rooted in whatever she encountered in that subterranean water. The chapter carried a lighter note as well: the dashing Lieutenant Oliver Hawksley — red-haired, wounded, melancholic, and pointedly Scottish — was among the wedding guests, and Georgiana found herself drawn into conversation with a warmth she had not expected.</p>
+<h2>Chapter 1 — London: The Orphean Society</h2>
+<p>In early June 1814, <a href="../npcs/lord-percival-harcourt.html">Lord_Percival_Harcourt</a> dispatched the investigators to find two missing <a href="../../factions/order-of-st-aelfric.html">Order</a> agents connected to the <a href="../../locations/orphean-society-building.html">Orphean Society</a> at 43 Grosvenor Street. Georgiana took the lead at the <a href="../../locations/royal-academy-of-music.html">Royal_Academy_of_Music</a>, confronting the registrar <a href="../npcs/phineas-lang.html">Phineas_Lang</a> directly with the names of three dead students. The Charm roll failed. Lang’s warmth drained to bureaucratic ice, but his discomfort betrayed that he suspected something rotten in his own institution. Georgiana pressed on regardless — a willingness to take social risks and absorb failure that would become one of her defining qualities.</p>
+<p>The investigation carried her through London’s social geography in disguise — coarse wool and muddied hems to pass as a charwoman in Limehouse — and into the sub-basement of the Orphean Society, where <a href="augustus-bolt.html">Augustus_Bolt</a> mercy-killed the Choir Below in the Catacoustic Chamber. At <a href="../../locations/stonehenge.html">Stonehenge</a>, on the night of June 12th, the cult erected tuning crucifixes along the solstice axis and a servant of <a href="../../creatures/yog-sothoth.html">Yog_Sothoth</a> began to form above the stone circle. Georgiana survived the assault, was formally inducted into the <a href="../../factions/order-of-st-aelfric.html">Order_of_St_Aelfric</a>, and carried the knowledge of what she had seen southward toward Lyon.</p>
+<h2>Chapter 2 — Lyon</h2>
+<p>Lyon declared itself before they even reached <a href="../../locations/le-coteau-des-ombres.html">the Puyrault estate</a>. On the road up from the city, <a href="../../creatures/ciimba-children.html">ciimba</a> — zombie children with their mouths sewn shut — attacked the party. At the masked soiree at the <a href="../../locations/maison-du-corbeau.html">Maison_du_Corbeau</a>, Georgiana witnessed the <a href="../../creatures/formless-spawn.html">Formless_Spawn</a> and a child sacrifice in the hidden chamber. The investigators watched and did not intervene. The knowledge was carried away like a splinter under the skin.</p>
+<p>The Orphans’ Hospital raid cost the party dearly. <a href="augustus-bolt.html">Augustus_Bolt</a> fell to mortal wounds and a botched first-aid attempt. <a href="jacob.html">Jacob</a> was shot dead by <a href="marina-garrick.html">Marina_Garrick</a> in a bout of temporary insanity. Georgiana herself took a cleaver to the shoulder from a surgeon’s apprentice — a wound that would scar and that she carries still. The final assault on the <a href="../../locations/silkweavers-guild.html">Silkweavers_Guild</a> ended with Marina’s death — the campaign’s original protagonist detonating herself with lantern oil and gunpowder to destroy the Chakota — and <a href="../npcs/mathilde-savarin.html">Mathilde_Savarin</a> cut down by a veterans’ volley. The Lyon cell was destroyed, but four lives were the price.</p>
+<p>In the aftermath, Georgiana fended off the persistent romantic attentions of <a href="../npcs/emeric-de-puyrault.html">Comte Emeric de Puyrault</a>, who had attached himself to her since the Paris ball where she returned his family ring. He proposed before the party’s departure. She shut it down with the directness that characterized her: she had to move on. The road to Vienna waited, and whatever Georgiana had been before Lyon — a scholar, a researcher, a woman who studied problems before acting — had been tempered by violence into something harder and more certain.</p>
+<h2>Session 1 — Arrival in Vienna</h2>
+<p>The party arrived at the Linienwall customs gate on the morning of August 3rd. Georgiana secured four thousand gulden through her letter of credit and noted with scholarly interest <a href="../npcs/ernst-falkner.html">Dr Falkner’s</a> letters identifying them as visiting scholars at the University. She declined Lady_Ashworth’s invitation to the Burgtheater for Don Giovanni, remaining at <a href="../../locations/palais-kinsky.html">Palais_Kinsky</a> with <a href="charlotte-thorne.html">Charlotte</a> — a decision that placed her outside the opera’s social theatre where <a href="../npcs/franz-kaunitz.html">Baron von Kaunitz</a> first made contact with <a href="emma-wentworth.html">Emma</a>. The evening was quiet, but the University access letters were already turning in Georgiana’s mind.</p>
+<h2>Session 2 — The Opera and the Dead Man</h2>
+<p>While <a href="emma-wentworth.html">Emma</a> attended the opera and inadvertently told <a href="../npcs/franz-kaunitz.html">Kaunitz</a> their address, Georgiana led the Leopoldstadt expedition with <a href="charlotte-thorne.html">Charlotte</a> and <a href="varrio-harrowmont.html">Varrio</a>. Disguised as a man — more convincingly than Charlotte, as it happened — she navigated the back streets to Widow Katz’s boarding house, where she revealed her gender to the sharp-eyed Jewish landlady to gain entry. Upstairs, in a wretched attic of empty bottles and a single candle, Brenner told them everything: the Engine, the living tissue, the voices cut from throats and integrated into the machine. The horror of it settled over Georgiana with the particular weight it reserves for those who understand precisely what they are hearing. She left the room before <a href="varrio-harrowmont.html">Varrio</a> made his cold calculation about the loose end Brenner represented, and returned to <a href="../../locations/palais-kinsky.html">Palais_Kinsky</a> carrying knowledge that would not let her sleep.</p>
+<h2>Session 3 — The Salon and the Night</h2>
+<p>Georgiana spent the morning of August 5th researching Vienna’s history and discovered that the anatomical theatre beneath the University had been sealed in 1794, connected by service corridors from the old mortuary — an independent confirmation of Brenner’s account that gave the Engine a physical location in documented fact. At the <a href="../npcs/maria-von-thun.html">Countess von Thun’s</a> salon that evening, she accepted a waltz with <a href="../npcs/nikolai-volkonsky.html">Count Volkonsky</a> and stumbled catastrophically — tripped hem, stepped on his foot, bumped other couples. Volkonsky laughed it off and steered her through with grace, and over vodka afterward he revealed that three Russian musicians had disappeared in Vienna over the past year and his ambassador would not investigate. It was intelligence freely given and gratefully received: a second independent source confirming the pattern of vanishing musicians. Later, when <a href="varrio-harrowmont.html">Varrio</a> suffered a dissociative episode triggered by a servant dropping a tray, Georgiana tried to snap him out of it. He recovered by reciting an Italian love poem — crimson flowers, summer breezes, kisses — and something warm passed between them. After the salon, the party attempted a night scouting of the University that ended in a failed bribe at the porter’s gate.</p>
+<h2>Session 4 — Organs and Tomes</h2>
+<p>On the morning of August 6th, Georgiana helped secure British delegation invitations and visited <a href="../npcs/maria-von-thun.html">Countess von Thun</a>, winning the older woman over through intellectual conversation where <a href="../npcs/thomas-wyndham.html">Thomas’s</a> awkward charm had merely amused her. At the Conservatory, she and <a href="emma-wentworth.html">Emma</a> befriended <a href="../npcs/anna-lindqvist.html">Anna Lindqvist</a> near the refreshments — helped fix her hair, settled her nerves — and saw <a href="../npcs/anton-adler.html">Adler</a> enter through a side door to watch with unsettling intensity, his long fingers twitching in time with the music. When Georgiana and Emma tried to approach Anna afterward, Adler pulled the soprano through a side door, and when the sisters followed to his office, Adler half-drew a knife: <em>“I’m afraid I must insist.”</em> They left, but the image of Anna’s warm smile from Adler’s doorway — waving while the man behind her held a blade — would not leave Georgiana’s mind.</p>
+<p>At the Imperial Reception that evening, Georgiana met <a href="../npcs/nikolai-volkonsky.html">Volkonsky</a> on a balcony, where he slipped her a notebook containing the names of missing Russian musicians: Sokolov, Petrov, Markov, Orlov. She copied the contents and returned the notebook — an asset acquired through trust rather than deception. When Beethoven’s Seventh Symphony filled the Redoutensaal, Georgiana heard the shape of the Engine beneath the music. The beautiful became horrible. She returned to <a href="../../locations/palais-kinsky.html">Palais_Kinsky</a> to find their rooms professionally searched, their Mythos tomes and <a href="marina-garrick.html">Marina’s</a> notebook stolen, and a single white rose on <a href="emma-wentworth.html">Emma’s</a> dressing table. The cult had been in their bedrooms. The investigation was over. The hunt had begun.</p>
+<h2>Session 5 — Blood on the Graben</h2>
+<p>The morning of August 7th opened with the reconnaissance of the University, where Georgiana noted the hidden mortuary entrance on the south side behind wooden hoarding. While <a href="adrien-de-montferrand.html">Adrien</a> and <a href="charlotte-thorne.html">Charlotte</a> extracted Count von Trautmannsdorff and his torrent of confession, Georgiana accompanied <a href="emma-wentworth.html">Emma</a> and <a href="../npcs/thomas-wyndham.html">Thomas</a> to the Conservatory, where they met Anna again. But the afternoon’s intelligence-gathering was cut short by catastrophe: Colonel Moreau was assassinated in broad daylight on the Graben, <a href="varrio-harrowmont.html">Varrio</a> was wounded and detained by compromised police, and the party reassembled at <a href="../../locations/palais-kinsky.html">Palais_Kinsky</a> with two empty seats at supper. The silence where Moreau and Varrio should have been was heavier than any horror Georgiana had yet encountered in a tunnel or a basement.</p>
+<h2>Session 6 — A Bite in the Dark</h2>
+<p>The <a href="../../creatures/nightgaunt.html">Nightgaunt</a> came in the small hours of August 8th. It crawled down the side of <a href="../../locations/palais-kinsky.html">Palais_Kinsky</a>, frost crystallising on stone, and shattered <a href="charlotte-thorne.html">Charlotte’s</a> window with its barbed tail. Charlotte was slashed before she could react. <a href="emma-wentworth.html">Emma’s</a> pistol bounced off the creature’s oily hide, and it grappled her and began dragging her toward the window. Georgiana drew swords — in her nightgown — and struck the creature’s legs and back, scoring lines that drew a whistle-like shriek and dark fluid. When the men burst through the locked door, Georgiana was already manoeuvring to block the window, cutting off the Nightgaunt’s escape route. It was <a href="emma-wentworth.html">Emma</a> who bit through its neck and <a href="adrien-de-montferrand.html">Adrien</a> who drove the killing blow, but Georgiana’s contribution was the one that mattered most in the aftermath: she identified the creature as a Nightgaunt from the Revelations of Gla’aki. The horror had a name, a taxonomy, a place in the literature. The scholarly mind that had performed the blood ritual at <a href="../../locations/northlake-hall.html">Northlake_Hall</a> a year earlier was still the sharpest weapon in the room.</p>
+<h2>Session 7 — Whispers, Widows, and Wounded Warriors</h2>
+<p>The morning of August 8th brought the arrival of <a href="katherine-ward.html">Katherine_Ward</a> — a new <a href="../../factions/order-of-st-aelfric.html">Order</a> operative from Krakow — and the coordinated relocation from <a href="../../locations/palais-kinsky.html">Palais_Kinsky</a> to the <a href="../../locations/gasthof-weisser-ochsen.html">White Ox Inn</a> on Wipplingerstrasse. That afternoon, Georgiana attended a musical gathering at the <a href="../npcs/maria-von-thun.html">Countess von Thun’s</a> townhouse and witnessed <a href="../npcs/anna-lindqvist.html">Anna</a> sing. The windows vibrated. A wine glass cracked. The bone-deep pressure of the Engine’s frequency pressed against every chest in the room, and those who had felt that resonance before recognised it instantly: Anna’s voice was the missing piece, inverted and complementary, as though the soprano and the machine had always been reaching for each other across the membrane of the world. After the performance, Georgiana approached Anna and made the medical observation that would give the party its moral imperative: dilated pupils unresponsive to light, deep purple-grey bruising along the throat and jaw concealed beneath a fashionable collar, persistent hand tremors. This was not training. This was systematic abuse. <a href="../npcs/anton-adler.html">Adler</a> appeared, took Anna’s arm, whispered something low and vehement, and steered her toward the door with one sharp glance back at the Wentworth sisters.</p>
+<h2>Session 8 — The Duel, the Diva, and the Demon</h2>
+<p>The Grand Masquerade at <a href="../../locations/palais-lobkowitz.html">Palais_Lobkowitz</a> was the convergence of every thread in the Vienna chapter, and Georgiana operated at its centre as the evening’s chief intelligence gatherer. She waltzed with <a href="../npcs/nikolai-volkonsky.html">Nikolai</a>, who revealed that he had watched her reading Anna’s body at the afternoon salon and recognised the bruises before anyone else in the room had understood. A second officer swept her into another dance and revealed himself as <a href="../npcs/william-thurner.html">Major Wilhelm Thurner</a> of the <a href="../../factions/order-of-st-aelfric.html">Order</a>: a safe house at <a href="../../locations/thaliastrasse-12-safehouse.html">Thaliastraße 12</a>, a weapons cache, University guard rotations, a hidden passage behind the bookshelves in <a href="../npcs/albin-herzfeld.html">Herzfeld’s</a> office leading to the basement, and a coded contact system. Georgiana received the operational packet mid-waltz with the composure of someone who had been trained for precisely this.</p>
+<p>When the extraction plan was formed, it was Georgiana who weaponised the intelligence. She told <a href="../npcs/nikolai-volkonsky.html">Nikolai</a> that <a href="../npcs/anton-adler.html">Adler</a> was the Kapellmeister responsible for the disappearance of his friend Dmitri Volkov. The charm and poetry dropped from Nikolai’s face like a mask, and what was left was cold fury. He gathered his officers without a word of doubt. The plan was set in motion the moment Anna’s performance ended — and the performance itself was a horror beyond the social, Anna’s final note climbing to something that should not have been possible while every person in the room stopped breathing. Then the great stained-glass window exploded inward, and two <a href="../../creatures/harmonische-wachter.html">Harmonische Wachter</a> were loose inside the ballroom.</p>
+<h2>Session 9 — The Burning Ball and the Broken Baron</h2>
+<p>Georgiana entered the combat at <a href="../../locations/palais-lobkowitz.html">Palais_Lobkowitz</a> as both tactician and combatant. She spotted <a href="../npcs/franz-kaunitz.html">Baron von Kaunitz</a> slipping away via the balcony with the calm of a man who had simply grown bored of the evening. She identified <a href="../npcs/ludwig-vogel.html">Captain Vogel</a> beneath his domino mask — the Geheimpolizei mole, frozen with a half-drawn pistol, a witness caught in a scene he had not been warned about. She raked her sword across a <a href="../../creatures/harmonische-wachter.html">Wachter’s</a> flank in a single fluid cut that spilled dark ichor across the dance floor. And when <a href="../npcs/anton-adler.html">Adler</a> scrambled to his feet and sprinted for the withdrawing-room window, Georgiana was already in position. She swept her sword low and sliced through both of his Achilles tendons in one decisive stroke, ending his escape permanently.</p>
+<p>In the withdrawing room, as the party gathered to plan their flight, <a href="katherine-ward.html">Katherine</a> held the <a href="../../items/command-tuning-fork.html">command tuning fork</a> recovered from Adler’s grip. Georgiana touched the fork in Katherine’s hand and was struck by something that defied every category her scholarly mind possessed: she saw through the surviving Wachter’s eyes, an alien colour spectrum replacing her own vision, the creature’s claws felt as her own limbs. For a moment she forced the thing to sit submissively on the cobblestones outside. The link fractured and she lost it, paying a point of sanity for the trespass. She asked for the fork, and Katherine handed it to her without a word. It has not left her person since.</p>
+<h2>Session 10 — The Fork in the Road</h2>
+<p>Georgiana’s nightmare was the strangest. The Drury Lane Theatre with its burgundy carpets and its audience of children whose mouths were sewn shut, the stage holding a brass engine behind a mirror that showed her not her own face but her hands: bronze, scaled, clawed. She opened her mouth to scream and what came out was a sustained inhuman harmonic tone, and the theatre collapsed around her like a closing fist. She woke with the <a href="../../items/command-tuning-fork.html">fork</a> warm in her hand — certain she had not been holding it when she closed her eyes — and for several long seconds the colours of the room were wrong, shifting through a spectrum that belongs to no earthly light before settling back to normal. The psychic conduit between Georgiana and the Engine is deepening. The fork came to her hand while she slept.</p>
+<p>That morning, Georgiana deployed Metternich’s writ at the <a href="../../factions/polizeidirektion.html">Polizeidirektion</a> with decisive calm, overriding the desk sergeant’s resistance when <a href="../npcs/leopold-fischbein.html">Fischbein’s</a> legal pressure alone proved insufficient. The <a href="../../items/liber-ivonis.html">Liber_Ivonis</a>, the De_Vermis_Mysteriis, and <a href="marina-garrick.html">Marina’s</a> notebook were recovered from the ground-floor strong room and carried out before <a href="../npcs/ludwig-vogel.html">Captain Vogel</a> could learn what had walked out of his evidence locker. The books are back in hand. The fork is warm against Georgiana’s skin. Five days remain until the ritual beneath the University, and the woman who performed a blood ritual at <a href="../../locations/northlake-hall.html">Northlake_Hall</a> a year ago to close a portal is now carrying a device that opens one.</p>
+<h2>Session 11 — The Duelling Ground</h2>
+<p>Georgiana woke on the morning of the tenth holding the <a href="../../items/command-tuning-fork.html">tuning fork</a>. She had hidden it under the floorboards before sleeping. She had wedged it deep, out of reach, wrapped in cloth. And yet it lay in her open palm, warm, as though it had crawled through the dark and found its way home. The second consecutive morning. Her nightmares had been kaleidoscopic, tinted with the alien colour spectrum she now recognised as the vision of something that was not her, seeing through eyes that had no lids in a world that was all sound and pressure. She set the fork on the table and did not touch it again for an hour, and the hour was difficult.</p>
+<p>She spotted <a href="../npcs/thomas-wyndham.html">Thomas</a> and <a href="varrio-harrowmont.html">Varrio</a> sneaking out of the safehouse in the pre-dawn dark and woke <a href="emma-wentworth.html">Emma</a>. The party followed in a second carriage to the <a href="../../events/sternberg-duel-linienwallgasse.html">Linienwall gates</a>, where grey light lay heavy on the grass and a surgeon was already laying out instruments on the running board. Thomas and <a href="../npcs/maximilian-von-sternberg.html">Sternberg</a> fired and both missed. Varrio talked both seconds into switching to sabres. Thomas drove his blade into Sternberg’s armpit and chest, and the Austrian went to his knees with a collapsed lung. Thomas kissed Emma on the duelling ground. Four sessions of romantic tension, resolved in steel and silence, and Georgiana watched her younger sister find something real and fierce in the worst possible circumstances.</p>
+<p>That afternoon, Georgiana rode with <a href="../npcs/nikolai-volkonsky.html">Nikolai</a> to the Palais_Razumovsky, where the Russian delegation occupied a wing that smelled of boot polish and tobacco. <a href="../npcs/andrei-volkonsky.html">Major Andrei Volkonsky</a> received her in a small, functional office with nothing on the desk but a map of Vienna weighted down with pistol balls. He was a compact, weathered man with close-cropped grey hair and pale eyes that did not move when he was listening, essentially the man Nikolai would become if he survived another twenty years and stopped drinking. Georgiana presented the writ from Metternich as evidence of their standing, showed <a href="../npcs/lord-percival-harcourt.html">Harcourt’s</a> brooch, and described the <a href="../../factions/brotherhood-of-the-open-measure.html">Brotherhood’s</a> methods and the creature attacks with unflinching directness. The Major asked precise questions and listened to everything she did not say as much as what she did. He poured vodka. He laughed, and Nikolai told her afterward it was the first time in recent memory. The deal was struck: five Russian soldiers including the Major himself, conditional on the party providing detailed intelligence on the university’s layout and guard routines. It was the largest single alliance Georgiana had brokered since Metternich, and she had done it with nothing but evidence, a brooch, and the willingness to describe impossible things to a man who respected the truth. Afterward, she shared <a href="charlotte-thorne.html">Charlotte’s</a> intelligence with the party: the cult kept its captives alive while their voices were useful. <a href="../npcs/caroline-hartley.html">Caroline</a> could sing. Caroline was alive. The fork waited in her pocket, warm against her thigh, patient as geometry.</p>
+<h2>Session 12 — The War Council</h2>
+<p>Georgiana cast the spell on the third-floor desk compartment because <a href="varrio-harrowmont.html">Varrio</a> had asked, and because she had learned in London that the things people hide behind false panels are rarely safe to touch without precaution. What emerged from her hands was not what she expected. The glowing mass expanded into a geometric constellation that covered every surface in the room, a map of interconnected stars that burned with the clarity of mathematical proof before fading into nothing. She felt it pass through her without resistance, the way the <a href="../../items/command-tuning-fork.html">tuning fork’s</a> resonance passed through stone. Varrio’s reaction was worse. He stood frozen, then something changed behind his eyes, and she watched the consulting surgeon develop an obsession with magic that he would carry out of that room like a wound.</p>
+<p>The <a href="../../items/resonance-compass.html">harmonic compass</a> confirmed what she had suspected. The needle led her through the safehouse with trembling, audible oscillations, tracking the resonant frequency to its source: the <a href="../../items/command-tuning-fork.html">tuning fork</a>, hidden and wrapped in fabric exactly where <a href="emma-wentworth.html">Emma</a> had insisted she put it, and vibrating regardless. The fork was active. The Engine beneath the <a href="../../locations/university-of-vienna.html">university</a> was running, and the two were speaking to each other across the city in a frequency that made her chest ache.</p>
+<p>The <a href="../../items/liber-ivonis.html">Liber_Ivonis</a> gave her the framework. She worked through the Latin with the focused patience of a woman who had been reading dead languages since <a href="../../locations/hartwell-house.html">Hartwell_House</a>, and the text opened onto harmonic gate theory: specific sound frequencies could thin the barrier between dimensions, and 432 Hertz was the resonant key tied to <a href="../../creatures/yog-sothoth.html">Yog-Sothoth’s</a> domain. The knowledge hit her like a physical blow. She lost herself for several minutes, laughing and crying simultaneously in a fugue of half-glimpsed visions, while the rest of the party watched in alarm. <a href="../npcs/nikolai-volkonsky.html">Nikolai’s</a> gifted flask of vodka brought her back to the surface. Across the parlor, <a href="adrien-de-montferrand.html">Adrien</a> had it worse: the <a href="../../items/de-vermiis-mysteriis.html">De Vermis Mysteriis</a> dropped him unconscious, and his worst memory, the Pyrenees abbey massacre, played across the window like a moving picture for everyone to see. When he woke, he had the other half of what she needed. Counter-frequencies. Tonal inversions that collapsed harmonic fields rather than sustained them. Between the two books, between the fork’s 432 Hz and the inversions in the De Vermis Mysteriis, she could see the shape of something that might work. A counter-ritual. The party’s only option that did not require overpowering <a href="../npcs/albin-herzfeld.html">Herzfeld’s</a> machine by force alone.</p>
+<p>At the <a href="../../locations/heuriger-zum-rebstock.html">Heuriger Zum Rebstock</a>, she told the assembled coalition what she believed she could do, and the Russians accepted it without hesitation while the Sardinians regarded her with the polite skepticism of men who trusted steel and powder over Latin and vibration. She accepted the skepticism. She would have felt the same, once. Then the <a href="../../creatures/harmonische-wachter.html">Wächter</a> crashed through the pergola and the burning oil spread across the flagstones, and the fork in her chest hummed in recognition.</p>
+
+  </div>
+</div>
+<div class="tab-panel" id="tab-journey">
+<h2>Connections</h2>
+<div class="relationship-graph"><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="font-family: var(--font-body, system-ui);">
+  <line x1="300" y1="200" x2="300" y2="80" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="312.1401986384919" y2="80.61568119297259" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="324.1558224106392" y2="82.45640704970066" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="335.92357475680296" y2="85.50328923199415" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="347.3227026135982" y2="89.72506260557233" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="358.23623550372974" y2="95.07840606265015" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="368.55218581137507" y2="101.50838705512685" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="378.1646979266667" y2="108.9490252768651" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="386.9751344674944" y2="117.32396971091762" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="394.8930884325238" y2="126.54728209428046" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="401.8373108993701" y2="136.52431876076452" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="407.736544748489" y2="147.15270181308387" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="412.53025585764965" y2="158.32336965862157" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="416.1692542639445" y2="169.92169612895356" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="418.61619891937335" y2="181.8286666994508" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="419.8459808605263" y2="193.92209973935445" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="419.8459808605263" y2="206.07790026064552" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="418.61619891937335" y2="218.17133330054924" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="416.1692542639445" y2="230.07830387104644" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="412.53025585764965" y2="241.67663034137843" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="407.736544748489" y2="252.84729818691613" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="401.8373108993701" y2="263.47568123923554" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="394.8930884325239" y2="273.4527179057195" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="386.9751344674944" y2="282.67603028908235" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="378.1646979266667" y2="291.0509747231349" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="368.55218581137507" y2="298.49161294487317" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="358.23623550372974" y2="304.9215939373498" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="347.3227026135982" y2="310.27493739442764" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="335.92357475680296" y2="314.49671076800587" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="324.1558224106392" y2="317.54359295029934" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="312.14019863849194" y2="319.3843188070274" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="300" y2="320" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="287.8598013615082" y2="319.3843188070274" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="275.8441775893608" y2="317.54359295029934" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="264.07642524319704" y2="314.49671076800587" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="252.6772973864018" y2="310.2749373944277" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="241.7637644962703" y2="304.9215939373499" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="231.44781418862493" y2="298.49161294487317" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="221.83530207333337" y2="291.0509747231349" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="213.02486553250563" y2="282.6760302890824" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="205.10691156747617" y2="273.4527179057195" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="198.1626891006299" y2="263.47568123923554" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="192.263455251511" y2="252.8472981869161" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="187.46974414235035" y2="241.67663034137848" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="183.83074573605552" y2="230.07830387104656" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="181.38380108062665" y2="218.17133330054924" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="180.1540191394737" y2="206.0779002606456" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="180.1540191394737" y2="193.92209973935442" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="181.38380108062665" y2="181.8286666994508" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="183.83074573605546" y2="169.92169612895358" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="187.46974414235035" y2="158.32336965862157" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="192.263455251511" y2="147.15270181308392" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="198.1626891006299" y2="136.52431876076452" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="205.10691156747612" y2="126.5472820942805" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="213.0248655325056" y2="117.32396971091762" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="221.83530207333337" y2="108.94902527686506" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="231.44781418862493" y2="101.50838705512685" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="241.76376449627023" y2="95.07840606265017" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="252.67729738640176" y2="89.72506260557233" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="264.076425243197" y2="85.50328923199416" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="275.8441775893607" y2="82.45640704970069" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="287.8598013615082" y2="80.61568119297259" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <a href="georgiana-wentworth.html"><g opacity="1">
+    <circle cx="300" cy="200" r="28" fill="var(--accent, #58a6ff)" stroke="var(--accent, #58a6ff)" stroke-width="2"/>
+    <text x="300" y="243" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Georgiana Wen…</text>
+  </g></a>
+  <a href="emma-wentworth.html"><g opacity="1">
+    <circle cx="300" cy="80" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Emma Wentworth</text>
+  </g></a>
+  <a href="adrien-de-montferrand.html"><g opacity="1">
+    <circle cx="312.1401986384919" cy="80.61568119297259" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="312.1401986384919" y="115.61568119297259" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Adrien de Mon…</text>
+  </g></a>
+  <a href="katherine-ward.html"><g opacity="1">
+    <circle cx="324.1558224106392" cy="82.45640704970066" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="324.1558224106392" y="117.45640704970066" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Katherine Ward</text>
+  </g></a>
+  <a href="varrio-harrowmont.html"><g opacity="1">
+    <circle cx="335.92357475680296" cy="85.50328923199415" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="335.92357475680296" y="120.50328923199415" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Varrio Harrow…</text>
+  </g></a>
+  <a href="../npcs/nikolai-volkonsky.html"><g opacity="1">
+    <circle cx="347.3227026135982" cy="89.72506260557233" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="347.3227026135982" y="124.72506260557233" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Nikolai Volko…</text>
+  </g></a>
+  <a href="freddy-cavendish.html"><g opacity="1">
+    <circle cx="358.23623550372974" cy="95.07840606265015" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="358.23623550372974" y="130.07840606265015" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Freddy Cavend…</text>
+  </g></a>
+  <a href="../../locations/thaliastrasse-12-safehouse.html"><g opacity="1">
+    <rect x="348.55218581137507" y="81.50838705512685" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="368.55218581137507" y="136.50838705512683" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Thaliastrasse…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 0.1 - The Beginning/chapter-0-1-wrap-up.html"><g opacity="1">
+    <circle cx="378.1646979266667" cy="108.9490252768651" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="378.1646979266667" y="143.9490252768651" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Chapter 0.1 W…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 1 - London/chapter-1-wrap-up.html"><g opacity="1">
+    <circle cx="386.9751344674944" cy="117.32396971091762" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="386.9751344674944" y="152.32396971091762" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Chapter 1 Wra…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 2 - Lyon/chapter-2-wrap-up.html"><g opacity="1">
+    <circle cx="394.8930884325238" cy="126.54728209428046" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="394.8930884325238" y="161.54728209428046" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Chapter 2 Wra…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 10/session-10-wrap-up.html"><g opacity="1">
+    <circle cx="401.8373108993701" cy="136.52431876076452" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="401.8373108993701" y="171.52431876076452" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 10 Wr…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 11/session-11-wrap-up.html"><g opacity="1">
+    <circle cx="407.736544748489" cy="147.15270181308387" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="407.736544748489" y="182.15270181308387" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 11 Wr…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 12/session-12-wrap-up.html"><g opacity="1">
+    <circle cx="412.53025585764965" cy="158.32336965862157" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="412.53025585764965" y="193.32336965862157" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 12 Wr…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 2/session-02-wrap-up.html"><g opacity="1">
+    <circle cx="416.1692542639445" cy="169.92169612895356" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="416.1692542639445" y="204.92169612895356" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 02 Wr…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 7/session-07-wrap-up.html"><g opacity="1">
+    <circle cx="418.61619891937335" cy="181.8286666994508" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="418.61619891937335" y="216.8286666994508" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 07 Wr…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 8/session-08-wrap-up.html"><g opacity="1">
+    <circle cx="419.8459808605263" cy="193.92209973935445" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="419.8459808605263" y="228.92209973935445" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 08 Wr…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 9/session-09-wrap-up.html"><g opacity="1">
+    <circle cx="419.8459808605263" cy="206.07790026064552" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="419.8459808605263" y="241.07790026064552" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 09 Wr…</text>
+  </g></a>
+  <a href="../npcs/andrei-volkonsky.html"><g opacity="1">
+    <circle cx="418.61619891937335" cy="218.17133330054924" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="418.61619891937335" y="253.17133330054924" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Andrei Volkon…</text>
+  </g></a>
+  <a href="../npcs/anna-lindqvist.html"><g opacity="1">
+    <circle cx="416.1692542639445" cy="230.07830387104644" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="416.1692542639445" y="265.07830387104644" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Anna Lindqvist</text>
+  </g></a>
+  <a href="../npcs/anton-adler.html"><g opacity="1">
+    <circle cx="412.53025585764965" cy="241.67663034137843" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="412.53025585764965" y="276.6766303413784" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Anton Adler</text>
+  </g></a>
+  <a href="../npcs/dr-heinrich-voss.html"><g opacity="1">
+    <circle cx="407.736544748489" cy="252.84729818691613" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="407.736544748489" y="287.84729818691613" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Dr Heinrich V…</text>
+  </g></a>
+  <a href="../npcs/emeric-de-puyrault.html"><g opacity="1">
+    <circle cx="401.8373108993701" cy="263.47568123923554" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="401.8373108993701" y="298.47568123923554" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Emeric de Puy…</text>
+  </g></a>
+  <a href="../npcs/lady-rowena-calthorpe.html"><g opacity="1">
+    <circle cx="394.8930884325239" cy="273.4527179057195" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="394.8930884325239" y="308.4527179057195" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Lady Rowena C…</text>
+  </g></a>
+  <a href="../npcs/ludwig-vogel.html"><g opacity="1">
+    <circle cx="386.9751344674944" cy="282.67603028908235" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="386.9751344674944" y="317.67603028908235" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Ludwig Vogel</text>
+  </g></a>
+  <a href="../npcs/miss-alice-wetherby.html"><g opacity="1">
+    <circle cx="378.1646979266667" cy="291.0509747231349" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="378.1646979266667" y="326.0509747231349" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Miss Alice We…</text>
+  </g></a>
+  <a href="../npcs/miss-edith-talbot.html"><g opacity="1">
+    <circle cx="368.55218581137507" cy="298.49161294487317" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="368.55218581137507" y="333.49161294487317" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Miss Edith Ta…</text>
+  </g></a>
+  <a href="../npcs/mr-bernard-hathaway.html"><g opacity="1">
+    <circle cx="358.23623550372974" cy="304.9215939373498" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="358.23623550372974" y="339.9215939373498" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Mr Bernard Ha…</text>
+  </g></a>
+  <a href="../npcs/mr-horatio-fairbourne.html"><g opacity="1">
+    <circle cx="347.3227026135982" cy="310.27493739442764" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="347.3227026135982" y="345.27493739442764" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Mr Horatio Fa…</text>
+  </g></a>
+  <a href="../npcs/mr-oliver-hawksley.html"><g opacity="1">
+    <circle cx="335.92357475680296" cy="314.49671076800587" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="335.92357475680296" y="349.49671076800587" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Mr Oliver Haw…</text>
+  </g></a>
+  <a href="../npcs/mr-thomas-wickes.html"><g opacity="1">
+    <circle cx="324.1558224106392" cy="317.54359295029934" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="324.1558224106392" y="352.54359295029934" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Mr Thomas Wic…</text>
+  </g></a>
+  <a href="../npcs/mrs-winifred-fowler.html"><g opacity="1">
+    <circle cx="312.14019863849194" cy="319.3843188070274" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="312.14019863849194" y="354.3843188070274" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Mrs Winifred …</text>
+  </g></a>
+  <a href="../npcs/phineas-lang.html"><g opacity="1">
+    <circle cx="300" cy="320" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="355" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Phineas Lang</text>
+  </g></a>
+  <a href="../npcs/russian-officers-volkonsky-detail.html"><g opacity="1">
+    <circle cx="287.8598013615082" cy="319.3843188070274" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="287.8598013615082" y="354.3843188070274" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Russian Offic…</text>
+  </g></a>
+  <a href="../npcs/william-thurner.html"><g opacity="1">
+    <circle cx="275.8441775893608" cy="317.54359295029934" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="275.8441775893608" y="352.54359295029934" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">William Thurner</text>
+  </g></a>
+  <a href="augustus-bolt.html"><g opacity="1">
+    <circle cx="264.07642524319704" cy="314.49671076800587" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="264.07642524319704" y="349.49671076800587" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Augustus Bolt</text>
+  </g></a>
+  <a href="charlotte-thorne.html"><g opacity="1">
+    <circle cx="252.6772973864018" cy="310.2749373944277" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="252.6772973864018" y="345.2749373944277" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Charlotte Tho…</text>
+  </g></a>
+  <a href="james-bennet.html"><g opacity="1">
+    <circle cx="241.7637644962703" cy="304.9215939373499" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="241.7637644962703" y="339.9215939373499" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">James Bennet</text>
+  </g></a>
+  <a href="marina-garrick.html"><g opacity="1">
+    <circle cx="231.44781418862493" cy="298.49161294487317" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="231.44781418862493" y="333.49161294487317" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Marina Garrick</text>
+  </g></a>
+  <a href="../../clues/a432hz-engine-resonance.html"><g opacity="1">
+    <circle cx="221.83530207333337" cy="291.0509747231349" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="221.83530207333337" y="326.0509747231349" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">A432Hz Engine…</text>
+  </g></a>
+  <a href="../../creatures/harmonische-wachter.html"><g opacity="1">
+    <circle cx="213.02486553250563" cy="282.6760302890824" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="213.02486553250563" y="317.6760302890824" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Harmonische W…</text>
+  </g></a>
+  <a href="../../creatures/horror-long-corridor.html"><g opacity="1">
+    <circle cx="205.10691156747617" cy="273.4527179057195" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="205.10691156747617" y="308.4527179057195" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Horror Long C…</text>
+  </g></a>
+  <a href="../../documents/thurner-operational-packet.html"><g opacity="1">
+    <circle cx="198.1626891006299" cy="263.47568123923554" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="198.1626891006299" y="298.47568123923554" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Thurner Opera…</text>
+  </g></a>
+  <a href="../../events/long-corridor-incident.html"><g opacity="1">
+    <circle cx="192.263455251511" cy="252.8472981869161" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="192.263455251511" y="287.8472981869161" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Long Corridor…</text>
+  </g></a>
+  <a href="../../events/nightgaunt-attack-palais-kinsky.html"><g opacity="1">
+    <circle cx="187.46974414235035" cy="241.67663034137848" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="187.46974414235035" y="276.6766303413785" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Nightgaunt At…</text>
+  </g></a>
+  <a href="../../events/orphans-hospital-raid.html"><g opacity="1">
+    <circle cx="183.83074573605552" cy="230.07830387104656" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="183.83074573605552" y="265.07830387104656" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Orphans Hospi…</text>
+  </g></a>
+  <a href="../../events/stonehenge-ritual.html"><g opacity="1">
+    <circle cx="181.38380108062665" cy="218.17133330054924" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="181.38380108062665" y="253.17133330054924" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Stonehenge Ri…</text>
+  </g></a>
+  <a href="../../factions/brotherhood-of-the-open-measure.html"><g opacity="1">
+    <polygon points="197.47452721516245,196.0779002606456 197.47452721516245,216.0779002606456 180.1540191394737,226.0779002606456 162.83351106378493,216.0779002606456 162.8335110637849,196.0779002606456 180.15401913947366,186.0779002606456" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="180.1540191394737" y="241.0779002606456" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Brotherhood o…</text>
+  </g></a>
+  <a href="../../factions/order-of-st-aelfric.html"><g opacity="1">
+    <polygon points="197.47452721516245,183.92209973935442 197.47452721516245,203.92209973935442 180.1540191394737,213.92209973935442 162.83351106378493,203.92209973935442 162.8335110637849,183.92209973935442 180.15401913947366,173.92209973935442" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="180.1540191394737" y="228.92209973935442" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Order of St A…</text>
+  </g></a>
+  <a href="../../items/command-tuning-fork.html"><g opacity="1">
+    <polygon points="181.38380108062665,161.8286666994508 201.38380108062665,181.8286666994508 181.38380108062665,201.8286666994508 161.38380108062665,181.8286666994508" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="181.38380108062665" y="216.8286666994508" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Command Tunin…</text>
+  </g></a>
+  <a href="../../items/de-vermiis-mysteriis.html"><g opacity="1">
+    <polygon points="183.83074573605546,149.92169612895358 203.83074573605546,169.92169612895358 183.83074573605546,189.92169612895358 163.83074573605546,169.92169612895358" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="183.83074573605546" y="204.92169612895358" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">De Vermiis My…</text>
+  </g></a>
+  <a href="../../items/liber-ivonis.html"><g opacity="1">
+    <polygon points="187.46974414235035,138.32336965862157 207.46974414235035,158.32336965862157 187.46974414235035,178.32336965862157 167.46974414235035,158.32336965862157" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="187.46974414235035" y="193.32336965862157" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Liber Ivonis</text>
+  </g></a>
+  <a href="../../items/refractions-of-the-soul.html"><g opacity="1">
+    <polygon points="192.263455251511,127.15270181308392 212.263455251511,147.15270181308392 192.263455251511,167.15270181308392 172.263455251511,147.15270181308392" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="192.263455251511" y="182.15270181308392" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Refractions o…</text>
+  </g></a>
+  <a href="../../items/revelations-of-glaaki.html"><g opacity="1">
+    <polygon points="198.1626891006299,116.52431876076452 218.1626891006299,136.52431876076452 198.1626891006299,156.52431876076452 178.1626891006299,136.52431876076452" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="198.1626891006299" y="171.52431876076452" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Revelations o…</text>
+  </g></a>
+  <a href="../../locations/gough-square-no7.html"><g opacity="1">
+    <rect x="185.10691156747612" y="106.5472820942805" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="205.10691156747612" y="161.5472820942805" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Gough Square …</text>
+  </g></a>
+  <a href="../../locations/hawthorne-grange.html"><g opacity="1">
+    <rect x="193.0248655325056" y="97.32396971091762" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="213.0248655325056" y="152.32396971091762" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Hawthorne Gra…</text>
+  </g></a>
+  <a href="../../locations/hopital-de-la-charite.html"><g opacity="1">
+    <rect x="201.83530207333337" y="88.94902527686506" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="221.83530207333337" y="143.94902527686506" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Hopital de la…</text>
+  </g></a>
+  <a href="../../locations/le-coteau-des-ombres.html"><g opacity="1">
+    <rect x="211.44781418862493" y="81.50838705512685" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="231.44781418862493" y="136.50838705512683" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Le Coteau des…</text>
+  </g></a>
+  <a href="../../locations/northlake-hall.html"><g opacity="1">
+    <rect x="221.76376449627023" y="75.07840606265017" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="241.76376449627023" y="130.07840606265017" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Northlake Hall</text>
+  </g></a>
+  <a href="../../locations/palais-lobkowitz.html"><g opacity="1">
+    <rect x="232.67729738640176" y="69.72506260557233" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="252.67729738640176" y="124.72506260557233" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Palais Lobkow…</text>
+  </g></a>
+  <a href="../../locations/tarryford.html"><g opacity="1">
+    <rect x="244.07642524319698" y="65.50328923199416" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="264.076425243197" y="120.50328923199416" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Tarryford</text>
+  </g></a>
+  <a href="../../campaign/timeline.html"><g opacity="1">
+    <circle cx="275.8441775893607" cy="82.45640704970069" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="275.8441775893607" y="117.45640704970069" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Timeline</text>
+  </g></a>
+  <a href="../../player-characters.html"><g opacity="1">
+    <circle cx="287.8598013615082" cy="80.61568119297259" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="287.8598013615082" y="115.61568119297259" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">player charac…</text>
+  </g></a>
+</svg></div>
+</div>
+
+<script>
+function switchTab(tab) {
+  document.querySelectorAll('.pc-tab').forEach(function(t) { t.classList.remove('active'); });
+  document.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
+  document.getElementById('tab-' + tab).classList.add('active');
+  document.querySelector('[data-tab="' + tab + '"]').classList.add('active');
+  history.replaceState(null, '', '#' + tab);
+}
+function openAccordion(id) {
+  var el = document.getElementById(id);
+  if (el && el.classList.contains('accordion')) {
+    el.classList.add('open');
+    var btn = el.querySelector('.accordion-header');
+    if (btn) btn.setAttribute('aria-expanded', 'true');
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('.section-nav a');
+  if (link) {
+    e.preventDefault();
+    var id = link.getAttribute('href').slice(1);
+    openAccordion(id);
+  }
+});
+(function() {
+  var hash = location.hash.slice(1);
+  if (['sheet', 'equipment', 'story', 'journey'].includes(hash)) switchTab(hash);
+  else if (hash) openAccordion(hash);
+})();
+</script>
 </main>
 
 
 
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../../js/nav.js"></script>
+<script src="../../js/lightbox.js"></script>
+<script src="../../js/search.js"></script>
 <script>
-document.querySelectorAll('.site-nav a').forEach(a => {
-  a.addEventListener('click', () => document.getElementById('nav').classList.remove('open'));
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
 });
 </script>
 

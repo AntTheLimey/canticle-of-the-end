@@ -5,376 +5,261 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Varrio Harrowmont — Canticle of the End</title>
   <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/themes/horror.css">
   <link rel="stylesheet" href="../../css/theme.css">
 </head>
 <body>
 
-<header class="site-header">
-  <button class="menu-toggle" onclick="document.getElementById('nav').classList.add('open')" aria-label="Menu">&#9776;</button>
-  <h1><a href="../../index.html">Canticle of the End</a></h1>
+<header class="top-nav">
+  <a href="../../index.html" class="nav-brand">Canticle of the End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <button class="nav-group-toggle">Story</button>
+        <div class="nav-dropdown">
+        <a href="../../chapters/index.html">Story</a>
+        <a href="../../timeline.html">Events</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../../player-characters.html">Player Characters</a>
+        <a href="../npcs/index.html">NPCs</a>
+        <a href="../../creatures/index.html">Creatures</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../../locations/index.html">Locations</a>
+        <a href="../../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../../documents/index.html">Documents</a>
+        <a href="../../clues/index.html">Clues</a>
+        <a href="../../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
 </header>
-
-<nav id="nav" class="site-nav">
-  <button class="nav-close" onclick="document.getElementById('nav').classList.remove('open')" aria-label="Close">&times;</button>
-  <h2>Campaign</h2>
-<ul>
-<li><a href="../../player-characters.html">player characters</a></li>
-<li><a href="../../campaign/regency-slang-glossary.html">Regency Slang Glossary</a></li>
-<li><a href="../../campaign/timeline.html">Timeline</a></li>
-</ul>
-<h2>Player Characters</h2>
-<ul>
-<li><a href="adrien-de-montferrand.html">Adrien de Montferrand</a></li>
-<li><a href="augustus-bolt.html">Augustus Bolt</a></li>
-<li><a href="charlotte-thorne.html">Charlotte Thorne</a></li>
-<li><a href="emma-wentworth.html">Emma Wentworth</a></li>
-<li><a href="freddy-cavendish.html">Freddy Cavendish</a></li>
-<li><a href="georgiana-dillwyn.html">Georgiana Dillwyn</a></li>
-<li><a href="georgiana-wentworth.html">Georgiana Wentworth</a></li>
-<li><a href="jacob.html">Jacob</a></li>
-<li><a href="james-bennet.html">James Bennet</a></li>
-<li><a href="jane-radcliffe.html">Jane Radcliffe</a></li>
-<li><a href="katherine-ward.html">Katherine Ward</a></li>
-<li><a href="marina-garrick.html">Marina Garrick</a></li>
-<li><a href="varrio-harrowmont.html">Varrio Harrowmont</a></li>
-</ul>
-<h2>NPCs</h2>
-<ul>
-<li><a href="../npcs/abbe-etienne-duplessis.html">Abbe Etienne Duplessis</a></li>
-<li><a href="../npcs/abbe-ferrant.html">Abbe Ferrant</a></li>
-<li><a href="../npcs/agnes-hartley.html">Agnes Hartley</a></li>
-<li><a href="../npcs/albert-lambert.html">Albert Lambert</a></li>
-<li><a href="../npcs/albin-herzfeld.html">Albin Herzfeld</a></li>
-<li><a href="../npcs/andrei-volkonsky.html">Andrei Volkonsky</a></li>
-<li><a href="../npcs/anna-lindqvist.html">Anna Lindqvist</a></li>
-<li><a href="../npcs/annika-laughton.html">Annika Laughton</a></li>
-<li><a href="../npcs/antoine-lefevre.html">Antoine Lefevre</a></li>
-<li><a href="../npcs/anton-adler.html">Anton Adler</a></li>
-<li><a href="../npcs/benoit-chasseloup.html">Benoit Chasseloup</a></li>
-<li><a href="../npcs/captain-king.html">Captain King</a></li>
-<li><a href="../npcs/captain-richard-forsyth.html">Captain Richard Forsyth</a></li>
-<li><a href="../npcs/captain-thomas-keene.html">Captain Thomas Keene</a></li>
-<li><a href="../npcs/caroline-hartley.html">Caroline Hartley</a></li>
-<li><a href="../npcs/cecile-vaillant.html">Cecile Vaillant</a></li>
-<li><a href="../npcs/charles-duval.html">Charles Duval</a></li>
-<li><a href="../npcs/charlotte-thorne.html">Charlotte Thorne</a></li>
-<li><a href="../npcs/clara-fen.html">Clara Fen</a></li>
-<li><a href="../npcs/clementine-delaroche.html">Clementine Delaroche</a></li>
-<li><a href="../npcs/collarbone-jack.html">Collarbone Jack</a></li>
-<li><a href="../npcs/colonel-alastair-mccrae.html">Colonel Alastair McCrae</a></li>
-<li><a href="../npcs/colonel-etienne-moreau.html">Colonel Etienne Moreau</a></li>
-<li><a href="../npcs/colonel-fittlewick.html">Colonel Fittlewick</a></li>
-<li><a href="../npcs/colonel-maarten-van-hoorne.html">Colonel Maarten van Hoorne</a></li>
-<li><a href="../npcs/commissaire-jules-delaroche.html">Commissaire Jules Delaroche</a></li>
-<li><a href="../npcs/comte-henri-vallin.html">Comte Henri Vallin</a></li>
-<li><a href="../npcs/doctor-emile-carreau.html">Doctor Emile Carreau</a></li>
-<li><a href="../npcs/dr-ambrose-hargreaves.html">Dr Ambrose Hargreaves</a></li>
-<li><a href="../npcs/dr-erasmus-hume.html">Dr Erasmus Hume</a></li>
-<li><a href="../npcs/dr-heinrich-voss.html">Dr Heinrich Voss</a></li>
-<li><a href="../npcs/dr-odilon-mercier.html">Dr Odilon Mercier</a></li>
-<li><a href="../npcs/dr-thornton-beamish.html">Dr Thornton Beamish</a></li>
-<li><a href="../npcs/duchesse-de-brissac.html">Duchesse de Brissac</a></li>
-<li><a href="../npcs/edna-greaves.html">Edna Greaves</a></li>
-<li><a href="../npcs/elbert-fenwick.html">Elbert Fenwick</a></li>
-<li><a href="../npcs/eli-barlow.html">Eli Barlow</a></li>
-<li><a href="../npcs/eli-tadcombe.html">Eli Tadcombe</a></li>
-<li><a href="../npcs/eliza-sharpe.html">Eliza Sharpe</a></li>
-<li><a href="../npcs/emeric-de-puyrault.html">Emeric de Puyrault</a></li>
-<li><a href="../npcs/emile-fouchard.html">Emile Fouchard</a></li>
-<li><a href="../npcs/ephraim-colley.html">Ephraim Colley</a></li>
-<li><a href="../npcs/ernst-falkner.html">Ernst Falkner</a></li>
-<li><a href="../npcs/father-jeremiah-creel.html">Father Jeremiah Creel</a></li>
-<li><a href="../npcs/francois-barbier.html">Francois Barbier</a></li>
-<li><a href="../npcs/franz-huber.html">Franz Huber</a></li>
-<li><a href="../npcs/franz-kaunitz.html">Franz Kaunitz</a></li>
-<li><a href="../npcs/giles-mercer.html">Giles Mercer</a></li>
-<li><a href="../npcs/gottfried-reiner.html">Gottfried Reiner</a></li>
-<li><a href="../npcs/gustav-metzger.html">Gustav Metzger</a></li>
-<li><a href="../npcs/henri-marchand.html">Henri Marchand</a></li>
-<li><a href="../npcs/herr-grillparzer.html">Herr Grillparzer</a></li>
-<li><a href="../npcs/imogen-bellamy.html">Imogen Bellamy</a></li>
-<li><a href="../npcs/ingrid-sperl.html">Ingrid Sperl</a></li>
-<li><a href="../npcs/josiah-hartley.html">Josiah Hartley</a></li>
-<li><a href="../npcs/jules-steward.html">Jules Steward</a></li>
-<li><a href="../npcs/klaus-bauer.html">Klaus Bauer</a></li>
-<li><a href="../npcs/lady-bagtonbury.html">Lady Bagtonbury</a></li>
-<li><a href="../npcs/lady-bletchley.html">Lady Bletchley</a></li>
-<li><a href="../npcs/lady-euphemia-langridge.html">Lady Euphemia Langridge</a></li>
-<li><a href="../npcs/lady-honoria-lyndhurst.html">Lady Honoria Lyndhurst</a></li>
-<li><a href="../npcs/lady-octavia-danforth.html">Lady Octavia Danforth</a></li>
-<li><a href="../npcs/lady-rowena-calthorpe.html">Lady Rowena Calthorpe</a></li>
-<li><a href="../npcs/lady-wilhelmina-danvers.html">Lady Wilhelmina Danvers</a></li>
-<li><a href="../npcs/leopold-fischbein.html">Leopold Fischbein</a></li>
-<li><a href="../npcs/leopold-von-trautmannsdorff.html">Leopold von Trautmannsdorff</a></li>
-<li><a href="../npcs/liesel-hartmann.html">Liesel Hartmann</a></li>
-<li><a href="../npcs/lieut-john-orville.html">Lieut John Orville</a></li>
-<li><a href="../npcs/lieutenant-jonathan-pellam.html">Lieutenant Jonathan Pellam</a></li>
-<li><a href="../npcs/lord-cosgrove.html">Lord Cosgrove</a></li>
-<li><a href="../npcs/lord-digby-wycombe.html">Lord Digby Wycombe</a></li>
-<li><a href="../npcs/lord-felix-montroy.html">Lord Felix Montroy</a></li>
-<li><a href="../npcs/lord-percival-harcourt.html">Lord Percival Harcourt</a></li>
-<li><a href="../npcs/lord-ratcliffe.html">Lord Ratcliffe</a></li>
-<li><a href="../npcs/luc-fouchard.html">Luc Fouchard</a></li>
-<li><a href="../npcs/lucien-goupil.html">Lucien Goupil</a></li>
-<li><a href="../npcs/lucien-stablehand.html">Lucien Stablehand</a></li>
-<li><a href="../npcs/lucienne-moreau.html">Lucienne Moreau</a></li>
-<li><a href="../npcs/ludwig-vogel.html">Ludwig Vogel</a></li>
-<li><a href="../npcs/lydia-hartley.html">Lydia Hartley</a></li>
-<li><a href="../npcs/madame-beauregard.html">Madame Beauregard</a></li>
-<li><a href="../npcs/madame-delacroix.html">Madame Delacroix</a></li>
-<li><a href="../npcs/madame-elodie-marchand.html">Madame Elodie Marchand</a></li>
-<li><a href="../npcs/madame-sylvie-de-noyelles.html">Madame Sylvie de Noyelles</a></li>
-<li><a href="../npcs/magistrate-beraud.html">Magistrate Beraud</a></li>
-<li><a href="../npcs/major-lionel-ashcombe.html">Major Lionel Ashcombe</a></li>
-<li><a href="../npcs/maria-von-thun.html">Maria von Thun</a></li>
-<li><a href="../npcs/marquise-eloise-de-camberonne.html">Marquise Eloise de Camberonne</a></li>
-<li><a href="../npcs/mathieu-durand.html">Mathieu Durand</a></li>
-<li><a href="../npcs/mathilde-savarin.html">Mathilde Savarin</a></li>
-<li><a href="../npcs/maximilian-von-sternberg.html">Maximilian von Sternberg</a></li>
-<li><a href="../npcs/miriam-doyle.html">Miriam Doyle</a></li>
-<li><a href="../npcs/miss-alice-wetherby.html">Miss Alice Wetherby</a></li>
-<li><a href="../npcs/miss-aurelia-fairchild.html">Miss Aurelia Fairchild</a></li>
-<li><a href="../npcs/miss-beatrice-harrow.html">Miss Beatrice Harrow</a></li>
-<li><a href="../npcs/miss-bridget-clarke.html">Miss Bridget Clarke</a></li>
-<li><a href="../npcs/miss-dorothea-bexley.html">Miss Dorothea Bexley</a></li>
-<li><a href="../npcs/miss-edith-talbot.html">Miss Edith Talbot</a></li>
-<li><a href="../npcs/miss-eleanor-finch.html">Miss Eleanor Finch</a></li>
-<li><a href="../npcs/miss-eleanor-mortimer.html">Miss Eleanor Mortimer</a></li>
-<li><a href="../npcs/miss-isabel-glossop.html">Miss Isabel Glossop</a></li>
-<li><a href="../npcs/miss-mary-glossop.html">Miss Mary Glossop</a></li>
-<li><a href="../npcs/miss-theodosia-dawes.html">Miss Theodosia Dawes</a></li>
-<li><a href="../npcs/mlle-marie-lucile-dumain.html">Mlle Marie Lucile Dumain</a></li>
-<li><a href="../npcs/mr-alfred-smythe.html">Mr Alfred Smythe</a></li>
-<li><a href="../npcs/mr-aurelian-dean.html">Mr Aurelian Dean</a></li>
-<li><a href="../npcs/mr-benedict-fairfax.html">Mr Benedict Fairfax</a></li>
-<li><a href="../npcs/mr-berkley.html">Mr Berkley</a></li>
-<li><a href="../npcs/mr-bernard-hathaway.html">Mr Bernard Hathaway</a></li>
-<li><a href="../npcs/mr-gideon-crow.html">Mr Gideon Crow</a></li>
-<li><a href="../npcs/mr-hampton.html">Mr Hampton</a></li>
-<li><a href="../npcs/mr-horatio-fairbourne.html">Mr Horatio Fairbourne</a></li>
-<li><a href="../npcs/mr-jameson.html">Mr Jameson</a></li>
-<li><a href="../npcs/mr-oliver-hawksley.html">Mr Oliver Hawksley</a></li>
-<li><a href="../npcs/mr-thomas-wickes.html">Mr Thomas Wickes</a></li>
-<li><a href="../npcs/mr-tipple.html">Mr Tipple</a></li>
-<li><a href="../npcs/mr-tobias-whitmore.html">Mr Tobias Whitmore</a></li>
-<li><a href="../npcs/mrs-agnes-rothwell.html">Mrs Agnes Rothwell</a></li>
-<li><a href="../npcs/mrs-charlotte-mortimer.html">Mrs Charlotte Mortimer</a></li>
-<li><a href="../npcs/mrs-hampton.html">Mrs Hampton</a></li>
-<li><a href="../npcs/mrs-margaret-fairchild.html">Mrs Margaret Fairchild</a></li>
-<li><a href="../npcs/mrs-pemberton-brighton.html">Mrs Pemberton Brighton</a></li>
-<li><a href="../npcs/mrs-winifred-fowler.html">Mrs Winifred Fowler</a></li>
-<li><a href="../npcs/ms-amelia-cooper.html">Ms Amelia Cooper</a></li>
-<li><a href="../npcs/ms-hannah-shibden.html">Ms Hannah Shibden</a></li>
-<li><a href="../npcs/nathan-pryce.html">Nathan Pryce</a></li>
-<li><a href="../npcs/nathaniel-rooke.html">Nathaniel Rooke</a></li>
-<li><a href="../npcs/nell-coker.html">Nell Coker</a></li>
-<li><a href="../npcs/nikolai-volkonsky.html">Nikolai Volkonsky</a></li>
-<li><a href="../npcs/old-jenkins.html">Old Jenkins</a></li>
-<li><a href="../npcs/pemberton.html">Pemberton</a></li>
-<li><a href="../npcs/phineas-lang.html">Phineas Lang</a></li>
-<li><a href="../npcs/professor-cyrus-elliston.html">Professor Cyrus Elliston</a></li>
-<li><a href="../npcs/prudence-middleham.html">Prudence Middleham</a></li>
-<li><a href="../npcs/rev-henry-mortimer.html">Rev Henry Mortimer</a></li>
-<li><a href="../npcs/russian-officers-volkonsky-detail.html">Russian Officers Volkonsky Detail</a></li>
-<li><a href="../npcs/sabine.html">Sabine</a></li>
-<li><a href="../npcs/sabine-lambert.html">Sabine Lambert</a></li>
-<li><a href="../npcs/silent-nun.html">Silent Nun</a></li>
-<li><a href="../npcs/sir-andrew-duncan.html">Sir Andrew Duncan</a></li>
-<li><a href="../npcs/sir-jasper-dulfrey.html">Sir Jasper Dulfrey</a></li>
-<li><a href="../npcs/sir-lionel-peregrine.html">Sir Lionel Peregrine</a></li>
-<li><a href="../npcs/slade.html">Slade</a></li>
-<li><a href="../npcs/squire-anthony-goodwin.html">Squire Anthony Goodwin</a></li>
-<li><a href="../npcs/therese.html">Therese</a></li>
-<li><a href="../npcs/thomas-wyndham.html">Thomas Wyndham</a></li>
-<li><a href="../npcs/thomlin-kerridge.html">Thomlin Kerridge</a></li>
-<li><a href="../npcs/tobias-greaves.html">Tobias Greaves</a></li>
-<li><a href="../npcs/vicomte-henri-lavigne.html">Vicomte Henri Lavigne</a></li>
-<li><a href="../npcs/victoire-lefevre.html">Victoire Lefevre</a></li>
-<li><a href="../npcs/victoire-lenoir.html">Victoire Lenoir</a></li>
-<li><a href="../npcs/walter-baines.html">Walter Baines</a></li>
-<li><a href="../npcs/walter-pennyman.html">Walter Pennyman</a></li>
-<li><a href="../npcs/werner-bauer.html">Werner Bauer</a></li>
-<li><a href="../npcs/wilhelm-brenner.html">Wilhelm Brenner</a></li>
-<li><a href="../npcs/wilkins.html">Wilkins</a></li>
-<li><a href="../npcs/william-thurner.html">William Thurner</a></li>
-</ul>
-<h2>Factions &amp; Organizations</h2>
-<ul>
-<li><a href="../../factions/aeternum-choir.html">Aeternum Choir</a></li>
-<li><a href="../../factions/blue-sashes.html">Blue Sashes</a></li>
-<li><a href="../../factions/brotherhood-of-the-open-measure.html">Brotherhood of the Open Measure</a></li>
-<li><a href="../../factions/confraternita-del-bel-canto.html">Confraternita del Bel Canto</a></li>
-<li><a href="../../factions/congress-of-vienna.html">Congress of Vienna</a></li>
-<li><a href="../../factions/geheimpolizei.html">Geheimpolizei</a></li>
-<li><a href="../../factions/order-of-st-aelfric.html">Order of St Aelfric</a></li>
-<li><a href="../../factions/orphean-society.html">Orphean Society</a></li>
-<li><a href="../../factions/polizeidirektion.html">Polizeidirektion</a></li>
-<li><a href="../../factions/soci-t-harmonique-de-l-aube.html">Société Harmonique de l Aube</a></li>
-</ul>
-<h2>Events</h2>
-<ul>
-<li><a href="../../events/goupil-masquerade.html">Goupil Masquerade</a></li>
-<li><a href="../../events/grand-masquerade-palais-lobkowitz.html">Grand Masquerade Palais Lobkowitz</a></li>
-<li><a href="../../events/harcourt-reunion.html">Harcourt Reunion</a></li>
-<li><a href="../../events/long-corridor-incident.html">Long Corridor Incident</a></li>
-<li><a href="../../events/marina-recruitment-portsmouth.html">Marina Recruitment Portsmouth</a></li>
-<li><a href="../../events/moreau-graben-assassination.html">Moreau Graben Assassination</a></li>
-<li><a href="../../events/nightgaunt-attack-palais-kinsky.html">Nightgaunt Attack Palais Kinsky</a></li>
-<li><a href="../../events/orphans-hospital-raid.html">Orphans Hospital Raid</a></li>
-<li><a href="../../events/osney-grange-incident.html">Osney Grange Incident</a></li>
-<li><a href="../../events/silkweavers-guild-assault.html">Silkweavers Guild Assault</a></li>
-<li><a href="../../events/stonehenge-ritual.html">Stonehenge Ritual</a></li>
-</ul>
-<h2>Locations</h2>
-<ul>
-<li><a href="../../locations/auberge-des-deux-chenes.html">Auberge des Deux Chenes</a></li>
-<li><a href="../../locations/beauregard-modiste.html">Beauregard Modiste</a></li>
-<li><a href="../../locations/brighton.html">Brighton</a></li>
-<li><a href="../../locations/brighton-assembly-rooms.html">Brighton Assembly Rooms</a></li>
-<li><a href="../../locations/brighton-harbormasters-office.html">Brighton Harbormasters Office</a></li>
-<li><a href="../../locations/british-museum-montagu-house.html">British Museum Montagu House</a></li>
-<li><a href="../../locations/cafe-frauenhuber.html">Cafe Frauenhuber</a></li>
-<li><a href="../../locations/captain-kings-drawing-room.html">Captain Kings Drawing Room</a></li>
-<li><a href="../../locations/crooked-chimney-tavern.html">Crooked Chimney Tavern</a></li>
-<li><a href="../../locations/fourviere.html">Fourviere</a></li>
-<li><a href="../../locations/fox-and-hound-portsmouth.html">Fox and Hound Portsmouth</a></li>
-<li><a href="../../locations/foxglove-and-thistle.html">Foxglove and Thistle</a></li>
-<li><a href="../../locations/gasthof-schwarzer-bar.html">Gasthof Schwarzer Bar</a></li>
-<li><a href="../../locations/gasthof-weisser-ochsen.html">Gasthof Weisser Ochsen</a></li>
-<li><a href="../../locations/goldener-hirsch.html">Goldener Hirsch</a></li>
-<li><a href="../../locations/gough-square-no7.html">Gough Square No7</a></li>
-<li><a href="../../locations/greaves-and-sons.html">Greaves and Sons</a></li>
-<li><a href="../../locations/grosvenor-works.html">Grosvenor Works</a></li>
-<li><a href="../../locations/hampton-residence.html">Hampton Residence</a></li>
-<li><a href="../../locations/hartwell-house.html">Hartwell House</a></li>
-<li><a href="../../locations/hawkswood-and-shaw.html">Hawkswood and Shaw</a></li>
-<li><a href="../../locations/hawthorne-grange.html">Hawthorne Grange</a></li>
-<li><a href="../../locations/hofburg-palace.html">Hofburg Palace</a></li>
-<li><a href="../../locations/hopital-de-la-charite.html">Hopital de la Charite</a></li>
-<li><a href="../../locations/hotel-de-brissac.html">Hotel de Brissac</a></li>
-<li><a href="../../locations/hotel-de-camberonne.html">Hotel de Camberonne</a></li>
-<li><a href="../../locations/kensington-coach-stables.html">Kensington Coach Stables</a></li>
-<li><a href="../../locations/la-belle-esperance.html">La Belle Esperance</a></li>
-<li><a href="../../locations/le-coteau-des-ombres.html">Le Coteau des Ombres</a></li>
-<li><a href="../../locations/le-lys-de-marbre.html">Le Lys de Marbre</a></li>
-<li><a href="../../locations/leopoldstadt.html">Leopoldstadt</a></li>
-<li><a href="../../locations/maison-des-cinq-portes.html">Maison des Cinq Portes</a></li>
-<li><a href="../../locations/maison-du-corbeau.html">Maison du Corbeau</a></li>
-<li><a href="../../locations/marchbank-terrace.html">Marchbank Terrace</a></li>
-<li><a href="../../locations/northlake-hall.html">Northlake Hall</a></li>
-<li><a href="../../locations/orphean-society-building.html">Orphean Society Building</a></li>
-<li><a href="../../locations/osney-grange.html">Osney Grange</a></li>
-<li><a href="../../locations/palais-kinsky.html">Palais Kinsky</a></li>
-<li><a href="../../locations/palais-lobkowitz.html">Palais Lobkowitz</a></li>
-<li><a href="../../locations/palais-modena.html">Palais Modena</a></li>
-<li><a href="../../locations/palais-thun-hohenstein.html">Palais Thun Hohenstein</a></li>
-<li><a href="../../locations/ravenwood-house.html">Ravenwood House</a></li>
-<li><a href="../../locations/roman-temple-aeternox.html">Roman Temple Aeternox</a></li>
-<li><a href="../../locations/royal-academy-of-music.html">Royal Academy of Music</a></li>
-<li><a href="../../locations/schonbrunn-palace.html">Schonbrunn Palace</a></li>
-<li><a href="../../locations/sealed-anatomical-theatre.html">Sealed Anatomical Theatre</a></li>
-<li><a href="../../locations/silkweavers-guild.html">Silkweavers Guild</a></li>
-<li><a href="../../locations/silver-quay-tavern.html">Silver Quay Tavern</a></li>
-<li><a href="../../locations/society-of-antiquaries.html">Society of Antiquaries</a></li>
-<li><a href="../../locations/st-stephens-cathedral.html">St Stephens Cathedral</a></li>
-<li><a href="../../locations/stonehenge.html">Stonehenge</a></li>
-<li><a href="../../locations/tarryford.html">Tarryford</a></li>
-<li><a href="../../locations/thaliastrasse-12-safehouse.html">Thaliastrasse 12 Safehouse</a></li>
-<li><a href="../../locations/the-laughing-fox.html">The Laughing Fox</a></li>
-<li><a href="../../locations/thistle-lane.html">Thistle Lane</a></li>
-<li><a href="../../locations/university-of-vienna.html">University of Vienna</a></li>
-<li><a href="../../locations/vienna-conservatory.html">Vienna Conservatory</a></li>
-<li><a href="../../locations/vienna-overview.html">Vienna Overview</a></li>
-<li><a href="../../locations/whitlow-and-sons.html">Whitlow and Sons</a></li>
-<li><a href="../../locations/widow-katz-boarding-house.html">Widow Katz Boarding House</a></li>
-</ul>
-<h2>Items &amp; Artifacts</h2>
-<ul>
-<li><a href="../../items/adler-brotherhood-signet-ring.html">Adler Brotherhood Signet Ring</a></li>
-<li><a href="../../items/aelfric-brooch.html">Aelfric Brooch</a></li>
-<li><a href="../../items/aelfric-cravat-pin.html">Aelfric Cravat Pin</a></li>
-<li><a href="../../items/command-tuning-fork.html">Command Tuning Fork</a></li>
-<li><a href="../../items/northlake-jewel.html">Northlake Jewel</a></li>
-<li><a href="../../items/revelations-of-glaaki.html">Revelations of Glaaki</a></li>
-</ul>
-<h2>Documents</h2>
-<ul>
-<li><a href="../../documents/bauer-release-order.html">Bauer Release Order</a></li>
-<li><a href="../../documents/herzfeld-letter-to-savarin.html">Herzfeld Letter to Savarin</a></li>
-<li><a href="../../documents/thurner-operational-packet.html">Thurner Operational Packet</a></li>
-</ul>
-<h2>Clues</h2>
-<ul>
-<li><a href="../../clues/5-of-8-ritual-requirement.html">5 of 8 Ritual Requirement</a></li>
-<li><a href="../../clues/a432hz-engine-resonance.html">A432Hz Engine Resonance</a></li>
-<li><a href="../../clues/august-15-ritual-date.html">August 15 Ritual Date</a></li>
-<li><a href="../../clues/backerstrasse-14-adler-rooms.html">Backerstrasse 14 Adler Rooms</a></li>
-<li><a href="../../clues/black-bear-tavern-bauer-lodging.html">Black Bear Tavern Bauer Lodging</a></li>
-<li><a href="../../clues/der-kantor-munich-coordination.html">Der Kantor Munich Coordination</a></li>
-<li><a href="../../clues/engine-beneath-university.html">Engine Beneath University</a></li>
-</ul>
-<h2>Chapters</h2>
-<ul>
-<li><a href="../../chapters/Chapter 0.1 - The Beginning/chapter-0-1-wrap-up.html">Chapter 0.1 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 1 - London/chapter-1-wrap-up.html">Chapter 1 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 2 - Lyon/chapter-2-wrap-up.html">Chapter 2 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/One_Shot_The_Audition/one-shot-the-audition.html">One Shot The Audition</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 1/session-01-wrap-up.html">Session 01 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 2/session-02-wrap-up.html">Session 02 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 7/session-07-wrap-up.html">Session 07 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 8/session-08-wrap-up.html">Session 08 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 9/session-09-wrap-up.html">Session 09 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 10/session-10-wrap-up.html">Session 10 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/vienna-chapter-summary.html">Vienna Chapter Summary</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/vienna-events-calendar-handout.html">Vienna Events Calendar Handout</a></li>
-</ul>
-<h2>Creatures</h2>
-<ul>
-<li><a href="../../creatures/chakota.html">Chakota</a></li>
-<li><a href="../../creatures/ciimba-children.html">Ciimba Children</a></li>
-<li><a href="../../creatures/harmonic-engine-victims.html">Harmonic Engine Victims</a></li>
-<li><a href="../../creatures/harmonische-wachter.html">Harmonische Wachter</a></li>
-<li><a href="../../creatures/horror-long-corridor.html">Horror Long Corridor</a></li>
-<li><a href="../../creatures/hound-of-tindalos.html">Hound of Tindalos</a></li>
-<li><a href="../../creatures/nightgaunt.html">Nightgaunt</a></li>
-<li><a href="../../creatures/yog-sothoth.html">Yog Sothoth</a></li>
-</ul>
-
-</nav>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3>Story</h3>
+  <ul>
+    <li><a href="../../chapters/index.html">Story</a></li>
+    <li><a href="../../timeline.html">Events</a></li>
+  </ul>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../../player-characters.html">Player Characters</a></li>
+    <li><a href="../npcs/index.html">NPCs</a></li>
+    <li><a href="../../creatures/index.html">Creatures</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../../locations/index.html">Locations</a></li>
+    <li><a href="../../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../../documents/index.html">Documents</a></li>
+    <li><a href="../../clues/index.html">Clues</a></li>
+    <li><a href="../../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
 
 <main class="content">
-
-<div class="char-header">
-  <img src="../../images/characters/varrio-harrowmont.png" alt="Dr. Septimus Harrowmont" class="portrait">
-  <h1>Varrio Harrowmont</h1>
-  <p class="concept">Disrupted Venice cell off-camera, PTSD from witnessing Moreau's death, Fainted at sight of Nightgaunt, Killed Brenner after Engine revelation, Extracted from captivity via Dr. Fischbein's legal intervention</p>
-  <div class="meta">
-    <span><span class="label">Player</span> Phil</span>
-    
-    
-    <span><span class="label">Background</span> Order of St. Aelfric consulting surgeon</span>
-    <span><span class="label">Status</span> alive</span>
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span class="sep">&rsaquo;</span>Characters<span class="sep">&rsaquo;</span><a href="index.html">Player Characters</a><span class="sep">&rsaquo;</span>Varrio Harrowmont</nav>
+<div class="hero-cinematic">
+  <img class="hero-cinematic-img" src="../../images/characters/varrio-harrowmont.png" alt="Varrio Harrowmont">
+  <div class="hero-cinematic-overlay">
+    <h1>Varrio Harrowmont</h1>
+    <div class="meta">
+      <span><span class="label">Player</span> Phil</span>
+      <span><span class="label">Occupation</span> Order of St. Aelfric consulting surgeon</span>
+      <span><span class="label">Status</span> alive</span>
+    </div>
   </div>
 </div>
-<nav class="section-nav" aria-label="Sheet sections"><a href="#background">Background</a>
-<a href="#attributes">Attributes</a>
+<div class="pull-quote">Disrupted Venice cell off-camera, PTSD from witnessing Moreau's death, Fainted at sight of Nightgaunt, Killed Brenner after Engine revelation, Extracted from captivity via Dr. Fischbein's legal intervention, Established fire doctrine against Wächter at the Masquerade</div>
+<div class="tab-bar">
+  <button class="pc-tab active" data-tab="sheet" onclick="switchTab('sheet')">Character Sheet</button>
+  <button class="pc-tab" data-tab="equipment" onclick="switchTab('equipment')">Equipment</button>
+  <button class="pc-tab" data-tab="story" onclick="switchTab('story')">Story</button>
+  <button class="pc-tab" data-tab="journey" onclick="switchTab('journey')">Journey</button>
+</div>
+<div class="tab-panel active" id="tab-sheet">
+<nav class="section-nav" aria-label="Sheet sections"><a href="#stat-sheet">Stat Sheet</a>
+<a href="#background">Background</a>
 <a href="#skills">Skills</a>
+<a href="#injuries-scars">Injuries &amp; Scars</a>
+<a href="#phobias-manias">Phobias &amp; Manias</a>
+<a href="#arcane-tomes-spells">Arcane Tomes &amp; Spells</a>
+<a href="#encounters-with-strange-entities">Encounters with Strange Entities</a>
+<a href="#combat">Combat</a>
+<a href="#fellow-investigators">Fellow Investigators</a>
 <a href="#current-status">Current Status</a>
-<a href="#key-moments">Key Moments</a>
-<a href="#connections">Connections</a></nav>
+<a href="#notes">Notes</a></nav>
+
+<div class="accordion" id="stat-sheet">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Stat Sheet</button>
+  <div class="accordion-body">
+    <h3>Characteristics</h3>
+<table>
+<thead>
+<tr>
+<th>Characteristic</th>
+<th>Regular</th>
+<th>Half</th>
+<th>Fifth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STR</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CON</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>DEX</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>INT</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SIZ</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>POW</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>EDU</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>Derived</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Max</th>
+<th>Current</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HP</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MP</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Luck</td>
+<td>—</td>
+<td></td>
+</tr>
+<tr>
+<td>Sanity</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>Combat</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Move</td>
+<td></td>
+</tr>
+<tr>
+<td>Build</td>
+<td></td>
+</tr>
+<tr>
+<td>Damage Bonus</td>
+<td></td>
+</tr>
+<tr>
+<td>Dodge (Regular)</td>
+<td></td>
+</tr>
+<tr>
+<td>Dodge (Half)</td>
+<td></td>
+</tr>
+<tr>
+<td>Dodge (Fifth)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>Status</h3>
+<ul>
+<li>[ ] Temporary Insanity</li>
+<li>[ ] Indefinite Insanity</li>
+<li>[ ] Major Wound</li>
+<li>[ ] Unconscious</li>
+<li>[ ] Dying</li>
+</ul>
+
+  </div>
+</div>
 
 <div class="accordion" id="background">
   <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Background</button>
   <div class="accordion-body">
-    <p>Varrio Harrowmont (Dr. Septimus Harrowmont) is an Order of St. Aelfric consulting surgeon. He disrupted the Venice cell (Confraternita del Bel Canto) off-camera during Chapter 2.5 before joining the main party in Vienna.</p>
-
-  </div>
-</div>
-
-<div class="accordion" id="attributes">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Attributes</button>
-  <div class="accordion-body">
-    <p><em>Character statistics not yet recorded.</em></p>
+    <p><strong>Personal Description:</strong> A medical man of indeterminate age — precise in movement, sharp in observation, and carrying the bearing of a surgeon who has spent as much time in the field as in the operating theatre. His hands are steady when they need to be, which is not always.</p>
+<p><strong>Traits:</strong> Methodical, resourceful, and capable of cold calculation under pressure. Beneath the clinical exterior lies a poetic nature — Italian verse, a half-step dance with a nervous companion, charm deployed as readily as a scalpel. The psychological wounds from Venice, from Brenner’s attic, and from the Graben run deeper than the physical ones.</p>
+<p><strong>Ideology &amp; Beliefs:</strong> A member of the <a href="../../factions/order-of-st-aelfric.html">Order_of_St_Aelfric</a>, committed to opposing the <a href="../../factions/aeternum-choir.html">Aeternum Choir’s</a> designs. The Order sent him to Venice as a consulting surgeon and received back an operative.</p>
+<p><strong>Significant People:</strong> Dr_Leopold_Fischbein (legal asset who secured his release from custody), <a href="../npcs/maria-von-thun.html">Countess von Thun</a> (social asset, private invitation extended), Colonel_Henri_Moreau (deceased — died beside Varrio in the Graben ambush, the source of his deepest psychological wound).</p>
+<p><strong>Meaningful Locations:</strong> Widow Katz’s boarding house, Leopoldstadt (where Brenner died); the Graben (where Moreau was killed); <a href="../../locations/palais-lobkowitz.html">Palais_Lobkowitz</a> ballroom (where fire doctrine was born); <a href="../../locations/thaliastrasse-12-safehouse.html">Thaliastrasse 12</a> garret observation post (discovered by Varrio).</p>
+<p><strong>Treasured Possessions:</strong> <a href="../../items/aelfric-cravat-pin.html">Aelfric_Cravat_Pin</a> — symbol of Order initiation.</p>
 
   </div>
 </div>
@@ -382,10 +267,226 @@
 <div class="accordion" id="skills">
   <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Skills</button>
   <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Base</th>
+<th>Regular</th>
+<th>Half</th>
+<th>Fifth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Medicine</td>
+<td>01</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>First Aid</td>
+<td>30</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Natural Philosophy</td>
+<td>01</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Charm</td>
+<td>15</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Fast Talk</td>
+<td>05</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Spot Hidden</td>
+<td>25</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Stealth</td>
+<td>20</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Listen</td>
+<td>20</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Navigate</td>
+<td>10</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Language (German)</td>
+<td>01</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Language (Italian)</td>
+<td>01</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Disguise</td>
+<td>05</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Fighting (Brawl)</td>
+<td>25</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Dodge</td>
+<td>DEX/2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Known Competencies (no numeric values recorded):</strong></p>
+<ul>
+<li><strong>Surgical and anatomical expertise</strong> — consulting surgeon for the Order; the party’s primary medical resource</li>
+<li><strong>Counter-surveillance</strong> — confronted a brown-coated watcher through passive intimidation (stale crackers at the Am Hof fountain); spotted courier networks inside the Hofburg</li>
+<li><strong>Fire doctrine</strong> — improvised incendiary weapons from chair legs, tablecloth, and cognac; killed two <a href="../../creatures/harmonische-wachter.html">Wachter</a> with fire at the Masquerade</li>
+<li><strong>Social charm</strong> — charmed Countess von Thun’s dance card clear, bonded with Signor Morosi over moustache wax, rearranged Sternberg’s duel terms over shared Tokaji</li>
+<li><strong>Interrogation (unconventional)</strong> — botched first aid on <a href="../npcs/anton-adler.html">Adler</a> produced more intelligence than deliberate intimidation</li>
+<li><strong>Languages</strong> — functional German (lodging inquiries, tavern orders, assumed-name registration); Italian (love poetry under dissociation)</li>
+</ul>
+
+  </div>
+</div>
+
+<div class="accordion" id="injuries-scars">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Injuries &amp; Scars</button>
+  <div class="accordion-body">
+    <p><strong>Session 5 — Graben Ambush (7 August 1814):</strong> Stabbed in the right thigh by a <a href="../npcs/klaus-bauer.html">Bauer brother</a> during a carriage chase through the Graben. The wound was stitched at a police infirmary. Varrio was limping through Session 7 but remained mobile and operational.</p>
+<p><strong>Session 8 — Champagne Glass (8 August 1814, Masquerade):</strong> During a SAN failure triggered by <a href="../npcs/anna-lindqvist.html">Anna’s</a> performance, Varrio dissociated and bit clean through a champagne glass, filling his mouth with crystal shards and blood. Glass cuts to lips, tongue, and gums. Self-inflicted under supernatural duress.</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="phobias-manias">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Phobias &amp; Manias</button>
+  <div class="accordion-body">
+    <p><strong>PTSD — Moreau’s Death (Session 5 onward):</strong> Varrio witnessed Colonel Moreau stabbed and killed beside him in the Graben ambush. The trauma manifests as a collapse response to creatures associated with the killing — he fainted at the sight of the <a href="../../creatures/harmonische-wachter.html">Nightgaunt</a> in Session 6. The connection between “creatures” and Moreau’s death is the psychological wound he carries deepest.</p>
+<p><strong>Dissociative Episodes (Sessions 3, 4, 8):</strong> Varrio has experienced multiple dissociative breaks under stress: freezing after a servant dropped a tray (Session 3, recovered via Italian poetry), running across the Imperial Reception ballroom during temporary insanity (Session 4, triggered by Beethoven’s Seventh), and biting through a champagne glass during Anna’s performance at the Masquerade (Session 8). The frequency of these episodes suggests ongoing instability.</p>
+<p><strong>Engine Nightmares (Session 10):</strong> The Engine dreamed back at Varrio — <a href="../npcs/wilhelm-brenner.html">Brenner</a> in the attic with his neck at the angle Varrio put it at, brass pipes growing through the plaster, the sound of a last gasp made mechanical. Then a pillow pressed over Moreau’s face. Varrio woke screaming and bolted into the street. The nightmares connect his two killings — the deliberate (Brenner) and the witnessed (Moreau) — through the Engine’s harmonic architecture.</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="arcane-tomes-spells">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Arcane Tomes &amp; Spells</button>
+  <div class="accordion-body">
+    <p>No tomes read. No spells learned.</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="encounters-with-strange-entities">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Encounters with Strange Entities</button>
+  <div class="accordion-body">
+    <p><strong>The Harmonic Engine (Session 2 — described, not witnessed):</strong> <a href="../npcs/wilhelm-brenner.html">Brenner’s</a> confession in the Leopoldstadt attic — a thirty-foot biomechanical instrument built from living tissue, voices cut from conscious throats. Cost: 3 SAN (plus 1 SAN for the subsequent murder of Brenner).</p>
+<p><strong>The Nightgaunt (Session 6 — <a href="../../locations/palais-kinsky.html">Palais_Kinsky</a>):</strong> A faceless, oily-skinned creature that crawled down the building face-first, leaving frost in its wake. It shattered <a href="charlotte-thorne.html">Charlotte’s</a> window and attacked the party. Varrio fainted at the sight due to PTSD from Moreau’s death. The creature was killed by <a href="emma-wentworth.html">Emma</a> (who bit its neck) and <a href="adrien-de-montferrand.html">Adrien</a> (who pinned it with a sword). It dissolved into black goo.</p>
+<p><strong>Harmonische Wachter (Session 8-9 — <a href="../../locations/palais-lobkowitz.html">Palais_Lobkowitz</a>):</strong> Bronze-scaled, almost-human creatures deployed by <a href="../npcs/anton-adler.html">Adler</a> via the <a href="../../items/command-tuning-fork.html">command tuning fork</a>. Varrio killed two with fire — one by thrusting a torch into its jaw on the ballroom floor, another by setting it ablaze in the courtyard. A third was deployed but never reached him. Fire is their hard counter, and Varrio is the one who proved it.</p>
+<p><strong>Engine Resonance (Sessions 4, 7, 8):</strong> The Engine’s frequency has been detected through music twice in Varrio’s presence — in Beethoven’s Seventh at the Imperial Reception (temporary insanity) and in Anna Lindqvist’s singing at the Masquerade (dissociation, champagne glass). The Engine also reached him through nightmares (Session 10).</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="combat">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Combat</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Weapon</th>
+<th>Skill %</th>
+<th>Damage</th>
+<th>Attacks</th>
+<th>Range</th>
+<th>Ammo</th>
+<th>Malf</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unarmed</td>
+<td></td>
+<td>1D3+DB</td>
+<td>1</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Improvised Torch</td>
+<td></td>
+<td>Special (fire)</td>
+<td>1</td>
+<td>Melee</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Improvised Cudgel (stool leg)</td>
+<td></td>
+<td>1D6+DB</td>
+<td>1</td>
+<td>Melee</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
+
+<div class="accordion" id="fellow-investigators">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Fellow Investigators</button>
+  <div class="accordion-body">
     <ul>
-<li>Surgical and anatomical expertise</li>
-<li>Counter-surveillance awareness</li>
-<li>Improvised weapons and fire doctrine (from the Masquerade Wächter encounters)</li>
+<li><a href="emma-wentworth.html">Emma_Wentworth</a> — Wiltshire gentlewoman. The woman who bit a Nightgaunt.</li>
+<li><a href="georgiana-wentworth.html">Georgiana_Wentworth</a> — Emma’s sister. Sharp-minded researcher and tactical combatant. Carries the <a href="../../items/command-tuning-fork.html">command fork</a>.</li>
+<li><a href="adrien-de-montferrand.html">Adrien_de_Montferrand</a> — French Viscount. Hosts the party. Led the Trautmannsdorff extraction.</li>
+<li><a href="freddy-cavendish.html">Freddy_Cavendish</a> — The Honourable Frederick Cavendish. Social connections and operational logistics.</li>
+<li><a href="katherine-ward.html">Katherine_Ward</a> — Order operative. Spy, lockpick, infiltrator. Dispatched by <a href="../npcs/lord-percival-harcourt.html">Harcourt</a>.</li>
 </ul>
 
   </div>
@@ -394,40 +495,17 @@
 <div class="accordion" id="current-status">
   <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Current Status</button>
   <div class="accordion-body">
-    <p>At <a href="../../locations/thaliastrasse-12-safehouse.html">Thaliastraße 12</a> as of dawn, 9 August 1814. Physically uninjured. Carried the heaviest composite operational load through Session 9 — extraction, courtyard, carriage, safehouse, cellar. Discovered the garret observation post.</p>
-<p>Varrio was introduced to the table during Vienna Chapter 3, Session 2 onward. He has experienced significant trauma:</p>
-<ul>
-<li><strong>Session 5</strong>: Captured in street ambush near the Graben; witnessed Colonel Moreau’s assassination by the Bauer brothers</li>
-<li><strong>Session 6</strong>: Witnessed the Nightgaunt attack; fainted at the sight of the creature due to PTSD</li>
-<li><strong>Interrogation &amp; Release</strong>: Captured during Vienna operations; extracted by Dr. Leopold Fischbein’s legal intervention on the Order’s behalf</li>
-</ul>
+    <p>At <a href="../../locations/thaliastrasse-12-safehouse.html">Thaliastrasse 12</a> as of late afternoon, 9 August 1814. Physically functional — thigh wound healing, glass cuts minor. Carried the heaviest composite operational load through Session 9: extraction, courtyard, carriage, safehouse, cellar. Discovered the garret observation post with its rooftop escape hatch spanning three houses.</p>
+<p>Serving as <a href="../npcs/thomas-wyndham.html">Thomas’s</a> second for the duel against <a href="../npcs/maximilian-von-sternberg.html">Graf von Sternberg</a> — dawn, 10 August, pistols, Linienwallgasse. Rescheduled <a href="../npcs/maria-von-thun.html">Countess von Thun’s</a> evening invitation to 10 August.</p>
+<p><a href="../npcs/liesel-hartmann.html">Liesel_Hartmann</a> remains a live complication — she approached Varrio at the Masquerade about <a href="../npcs/wilhelm-brenner.html">Brenner’s</a> disappearance and was denied. She is inside the University and may confront him when the party reaches the anatomical theatre.</p>
 
   </div>
 </div>
 
-<div class="accordion" id="key-moments">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Key Moments</button>
+<div class="accordion" id="notes">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Notes</button>
   <div class="accordion-body">
-    <ul>
-<li><strong>Venice (Off-Camera)</strong>: Successfully disrupted the Confraternita del Bel Canto cell from within</li>
-<li><strong>The Harmonic Engine Revelation (Session 2)</strong>: Killed Brenner after the cultist revealed details of the Engine</li>
-<li><strong>Trauma &amp; PTSD</strong>: Suffering ongoing psychological effects from witnessing Moreau’s death</li>
-<li><strong>Masquerade Ball Session 9 — Fire doctrine established</strong>: Built an improvised torch from a chair leg, tablecloth, and cognac. Thrust it into a <a href="../../creatures/harmonische-wachter.html">Wächter’s</a> jaw as the creature leapt at him — the Wächter ignited instantly and burned to death on the ballroom floor. Stepped on <a href="../npcs/anton-adler.html">Adler’s</a> wrist and pressed the torch to his hand until the <a href="../../items/command-tuning-fork.html">tuning fork</a> dropped. Set a second Wächter on fire in the courtyard (unaware <a href="georgiana-wentworth.html">Georgiana</a> had psychically forced it to sit). Navigated the palace gardens to find <a href="../npcs/charles-duval.html">Charles</a> and the carriage. Explored the <a href="../../locations/thaliastrasse-12-safehouse.html">safehouse</a> garret and discovered the observation post and rooftop escape hatch.</li>
-</ul>
-
-  </div>
-</div>
-
-<div class="accordion" id="connections">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Connections</button>
-  <div class="accordion-body">
-    <ul>
-<li><strong>Order Operative</strong>: Full member, consulting surgeon</li>
-<li><strong><a href="../../items/aelfric-cravat-pin.html">Aelfric_Cravat_Pin</a></strong>: Ælfric Pin, symbol of Order initiation</li>
-<li><strong>Medical Expertise</strong>: Surgical and anatomical knowledge crucial for understanding the Harmonic Engine</li>
-<li><strong>Legal Asset</strong>: Dr. Fischbein successfully leveraged Viennese law to extract him from police custody</li>
-<li><strong>Fire doctrine</strong>: Varrio’s torch went from desperate gamble to mission doctrine in two rounds. Fire is the Wächter’s hard counter.</li>
-</ul>
+    <p>{Player-facing notes. Protected — skills never modify.}</p>
 
   </div>
 </div>
@@ -435,19 +513,378 @@
 <ul class="relationship-list">
 <li><strong class="rel-label">Member of</strong> <a href="../../factions/order-of-st-aelfric.html" class="entity-link">Order of St Aelfric</a> &mdash; Consulting surgeon for the Order</li>
 <li><strong class="rel-label">Enemy of</strong> <a href="../../factions/confraternita-del-bel-canto.html" class="entity-link">Confraternita del Bel Canto</a> &mdash; Disrupted the Venice cell from within before joining main party</li>
+<li><strong class="rel-label">Located at</strong> <a href="../../locations/thaliastrasse-12-safehouse.html" class="entity-link">Thaliastrasse 12 Safehouse</a> &mdash; Current lodging as of 9 August 1814</li>
 <li><strong class="rel-label">Knows</strong> <a href="emma-wentworth.html" class="entity-link">Emma Wentworth</a> &mdash; Party member</li>
-<li><strong class="rel-label">Knows</strong> <a href="georgiana-wentworth.html" class="entity-link">Georgiana Wentworth</a> &mdash; Party member</li>
+<li><strong class="rel-label">Knows</strong> <a href="georgiana-wentworth.html" class="entity-link">Georgiana Wentworth</a> &mdash; Party member; shared the Italian poem dissociation moment; she witnessed his recovery</li>
 <li><strong class="rel-label">Knows</strong> <a href="adrien-de-montferrand.html" class="entity-link">Adrien de Montferrand</a> &mdash; Party member, Order member</li>
 <li><strong class="rel-label">Knows</strong> <a href="katherine-ward.html" class="entity-link">Katherine Ward</a> &mdash; Party member, Order operative</li>
+<li><strong class="rel-label">Knows</strong> <a href="freddy-cavendish.html" class="entity-link">Freddy Cavendish</a> &mdash; Party member; Freddy recruited Fischbein who secured Varrio's release</li>
 <li><strong class="rel-label">Knows</strong> Dr Leopold Fischbein &mdash; Viennese lawyer who secured his release from custody</li>
+<li><strong class="rel-label">Knows</strong> <a href="../npcs/maria-von-thun.html" class="entity-link">Maria von Thun</a> &mdash; Countess charmed at the Masquerade; private evening invitation rescheduled to 10 August</li>
+<li><strong class="rel-label">Antagonist of</strong> <a href="../npcs/maximilian-von-sternberg.html" class="entity-link">Maximilian von Sternberg</a> &mdash; Punched Sternberg at the Masquerade; serving as Thomas's second in the resulting duel</li>
+<li><strong class="rel-label">Knows</strong> <a href="../npcs/liesel-hartmann.html" class="entity-link">Liesel Hartmann</a> &mdash; Brenner's assistant; approached Varrio at the Masquerade about Brenner's disappearance; Varrio denied knowledge</li>
 </ul>
+</div>
+<div class="tab-panel" id="tab-equipment">
+<h3>Equipment</h3>
+<p><strong>Gear &amp; Possessions:</strong></p>
+<ul>
+<li>Surgical instruments (carried from Venice)</li>
+<li><a href="../../items/aelfric-cravat-pin.html">Aelfric_Cravat_Pin</a></li>
+<li>Improvised torch materials (doctrine established: tablecloth, chair leg, spirits)</li>
+</ul>
+<p><strong>Wealth:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spending Level</td>
+<td></td>
+</tr>
+<tr>
+<td>Cash</td>
+<td></td>
+</tr>
+<tr>
+<td>Assets</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+<div class="tab-panel" id="tab-story">
+  <div class="story-prose">
+    <h2>Chapter 2.5 — Venice</h2>
+<p>The work in Venice was solitary, precise, and largely unrecorded. Dr Septimus Harrowmont — Varrio to the few who knew him by anything other than his professional name — arrived in the city with surgical instruments and <a href="../../factions/order-of-st-aelfric.html">Order</a> credentials, and left it with the <a href="../../factions/confraternita-del-bel-canto.html">Confraternita_del_Bel_Canto</a> in disarray. What he did there, how he dismantled the cell from within, and what it cost him remained his own affair. The Order had sent a consulting surgeon to Venice and received back an operative.</p>
+<p>He joined the survivors of Lyon at the <a href="../../locations/le-coteau-des-ombres.html">Puyrault estate</a> just before departure for Vienna. He carried with him the quiet competence of a man who had learned, somewhere between the scalpel and the mission brief, that survival required more than knowledge. The road to Vienna lay ahead, and Varrio walked it with people who had buried four of their own in French soil.</p>
+<h2>Session 1 — Arrival in Vienna</h2>
+<p>Vienna announced itself with church bells, four languages, and a military band playing a waltz that offended every British sensibility in the party. At the Linienwall customs gate, <a href="../npcs/thomas-wyndham.html">Thomas</a> vouched for the group when Inspector Novak’s men discovered an extensive arsenal in their coaches. Varrio made lodging inquiries in German — a useful skill in a city where the party’s command of the local tongue was otherwise limited — and contributed to the strategy discussions that followed <a href="../npcs/ernst-falkner.html">Dr Falkner’s</a> intelligence briefing at the Naturhistorisches_Institut. The briefing was the first time the investigators heard the name <a href="../npcs/albin-herzfeld.html">Herzfeld</a>, the first time they learned of the vanished musicians, and the first time someone described the sealed anatomical theatre beneath the University. Varrio listened with the clinical attention of a man whose profession involved opening bodies, and understood at once what “acoustic research” in an anatomical theatre implied.</p>
+<p>He carried no personal letter of credit, relying on group funds. The surgeon travelled light.</p>
+<h2>Session 2 — The Opera and the Dead Man</h2>
+<p>The party split for the evening of August 4th. <a href="charlotte-thorne.html">Charlotte</a>, <a href="georgiana-wentworth.html">Georgiana</a>, and Varrio stayed behind from the opera to hunt <a href="../npcs/wilhelm-brenner.html">Brenner</a>, <a href="../npcs/albin-herzfeld.html">Herzfeld’s</a> expelled assistant. At Der Schiefe Schornstein in the <a href="../../locations/leopoldstadt.html">Leopoldstadt</a>, Varrio ordered the manliest drink the tavern sold and knocked back a blue-flamed spirit that Charlotte could not bring to her lips. The barkeep directed them to Widow Katz’s boarding house — the yellow door, two streets over — with the warning that men with “killing eyes” in brown coats had already come asking.</p>
+<p>In the attic, <a href="../npcs/wilhelm-brenner.html">Brenner</a> was a wreck of empty bottles and trembling hands. He told them everything: a thirty-foot biomechanical instrument built from living tissue, voices cut from conscious throats, a paralytic that kept the victims aware. The Harmonic Engine. The description cost Varrio three points of sanity, and he fainted from the horror of it. When he recovered, Charlotte and Georgiana had left the room. And Varrio, alone with a man who knew too much and could not be trusted to keep silent, made a cold calculation. He attempted suffocation with a pillow. <a href="../npcs/wilhelm-brenner.html">Brenner</a> squirmed free. Varrio yanked the covers. Brenner slid off the bed, struck the bedframe, and his neck broke. Varrio staged it as an accident — a brandy bottle positioned under the dead man’s arm — and walked out with wild eyes and five fewer points of sanity than he had entered with. “We’re good,” he told the women in the corridor. “Let’s go.”</p>
+<p>The murder was the surgeon’s first act of deliberate violence in Vienna. It would not be the last.</p>
+<h2>Session 3 — Whispers and Waltzes</h2>
+<p>The afternoon of August 5th brought Varrio’s first reckoning with what he had done. A servant dropped a tray in the Palais lounge and the crash sent him into full dissociation — frozen, unresponsive, his mind somewhere between Brenner’s attic and the present moment. <a href="georgiana-wentworth.html">Georgiana</a> tried to bring him back. What finally reached him was a fragment of an Italian love poem, spoken aloud in a voice that surprised them both — crimson flowers, summer breezes, kisses. The recitation revealed a poetic nature that the surgeon’s clinical exterior had concealed entirely. Georgiana was charmed. The servants were bewildered. Varrio was still shaking.</p>
+<p>At the <a href="../npcs/maria-von-thun.html">Countess von Thun’s</a> salon that evening, Varrio danced with <a href="../npcs/madame-delacroix.html">Madame_Delacroix</a> and deliberately stayed half a step behind to steady her nerves. When <a href="../npcs/maximilian-von-sternberg.html">Graf von Sternberg</a> arrived in full Hussar regalia and <a href="../npcs/thomas-wyndham.html">Thomas’s</a> jealousy over <a href="emma-wentworth.html">Emma</a> threatened to crack the evening open, Varrio intervened to calm him. The night ended with a street urchin pressing a folded note into his hand: <em>Sie haben ihn gefunden.</em> They found him. The cult knew what had happened in that attic, and they knew who had been there.</p>
+<h2>Session 4 — The Imperial Reception</h2>
+<p>The morning of August 6th found Varrio securing Italian-Sardinian delegation invitations by bonding with Signor Morosi over moustache wax — a display of commitment to craft that won the man over entirely. Then he turned his attention to the brown-coated watcher at the Am Hof fountain. Varrio sat down beside him, ate stale crackers in pointed silence, and waited. The watcher left. It was counter-surveillance conducted through sheer awkwardness, and it worked.</p>
+<p>At the Imperial Reception that evening, Beethoven’s Seventh Symphony tore the veil from Varrio’s composure. The second movement carried the shape of the Engine beneath its strings — the beautiful rendered horrible — and the surgeon suffered a bout of temporary insanity. He ran across the ballroom declaring he could not feel his posterior. <a href="../npcs/leopold-von-trautmannsdorff.html">Count Trautmannsdorff</a> grabbed at him to verify its presence. The moment was absurd, humiliating, and cost Varrio five points of reputation. He would have preferred a wound.</p>
+<p>The party returned to <a href="../../locations/palais-kinsky.html">Palais_Kinsky</a> to find their rooms professionally searched, occult tomes stolen, and a single fresh white rose on <a href="emma-wentworth.html">Emma’s</a> dressing table — <a href="../npcs/franz-kaunitz.html">Kaunitz’s</a> signature, placed in her bedroom while they danced. Varrio overturned every piece of furniture in his room. The violation was total.</p>
+<h2>Session 5 — Blood on the Graben</h2>
+<p>Varrio charmed the concierge at <a href="../../locations/palais-kinsky.html">Palais_Kinsky</a> into revealing <a href="../npcs/anna-lindqvist.html">Anna Lindqvist’s</a> address and went directly to the Graben Lodging House with Colonel Moreau. Frau Becker, the landlady, confirmed Anna’s daily routine — picked up at nine, Conservatory, back by evening — and became visibly frightened when Varrio mentioned missing musicians. It was solid investigation: targeted, efficient, and immediately actionable.</p>
+<p>They stepped out of the lodging house and walked into a kill team. Four men, no warning. One seized Moreau from behind and pinned his arms; another drove a dagger into his stomach. Varrio dodged the blade aimed at him and ran for the Graben, shouting for help. Two of the <a href="../npcs/klaus-bauer.html">Bauer</a> brothers pursued with knives. He grabbed a passing carriage and rode it through the crowds — one pursuer climbed aboard and stabbed him in the thigh. Police arrived. The attacker was apprehended. And Colonel Moreau bled out alone on the cobblestones before anyone could reach him.</p>
+<p>Varrio was taken to an infirmary and then to police headquarters, where he was placed in a barred room with a stitched thigh and a guard on the door. The man who had broken Brenner’s neck sat in a cell and waited.</p>
+<h2>Session 6 — A Bite in the Dark</h2>
+<p><a href="../npcs/ludwig-vogel.html">Captain Vogel’s</a> interrogation was professional and probing. He confirmed Moreau’s death — watching for the reaction — and pressed on connections to <a href="adrien-de-montferrand.html">Montferrand’s</a> household, to Vandorf, to <a href="../npcs/anton-adler.html">Adler</a>. Varrio deflected every question with practised ease, spinning a cover story about street thugs and romantic pursuits. Vogel learned nothing actionable. The surgeon’s composure under pressure was its own kind of violence — a refusal to yield that left the interrogator with nothing but the taste of failure.</p>
+<p>Liberation came in the form of <a href="../npcs/leopold-fischbein.html">Dr Leopold Fischbein</a>, a half-drunk Viennese lawyer recruited by <a href="freddy-cavendish.html">Freddy</a> on a Luck roll and dispatched to the Polizeidirektion with the full force of Austrian civil procedure at his command. Fischbein quoted chapter and verse at full volume until Vogel was forced to march Varrio downstairs and release him. The humiliation was exquisite.</p>
+<p>Back at <a href="../../locations/palais-kinsky.html">Palais_Kinsky</a>, Varrio told the party that Moreau had been killed by <em>creatures</em> — not thugs — reframing the assassination in terms the party could not easily dismiss. Then the <a href="../../creatures/harmonische-wachter.html">Nightgaunt</a> came. It shattered Charlotte’s window with its barbed tail and tore into the room. <a href="emma-wentworth.html">Emma</a> fired. The bullet bounced off. The creature grappled her and began dragging her toward the window. And Varrio — the man who had watched similar creatures kill Moreau — saw it and fainted. The PTSD was absolute. His body refused to let him face what it already knew.</p>
+<p>He recovered. He scrambled for weapons. But the moment belonged to others: Emma biting the creature’s neck, <a href="adrien-de-montferrand.html">Adrien</a> pinning it to the wall, the dissolution into black goo. Varrio’s collapse was honest and appropriate — and it would haunt him until he found the answer to the things that burned.</p>
+<h2>Session 7 — Whispers, Widows, and Wounded Warriors</h2>
+<p>Despite a thigh wound that made every step an exercise in grim determination, Varrio accomplished the morning’s most practically useful act: he hobbled out of <a href="../../locations/palais-kinsky.html">Palais_Kinsky</a> ahead of the others, located the <a href="../../locations/gasthof-weisser-ochsen.html">Gasthof zum Weissen Ochsen</a> on Wipplingerstrasse, and secured rooms under assumed names while the rest of the party shook their <a href="../../factions/brotherhood-of-the-open-measure.html">Brotherhood</a> tails. The relocation was clean. The surgeon found cover before anyone else found their coats.</p>
+<p>He collapsed onto a couch in the sitting room with <a href="../npcs/thomas-wyndham.html">Thomas</a> and was snoring before anyone could argue about the sleeping arrangements. The afternoon’s salon at <a href="../npcs/maria-von-thun.html">Countess von Thun’s</a> townhouse passed without him — Varrio had earned his rest, and his body demanded it. But the salon carried word back to the safehouse that would shape everything to come: <a href="../npcs/anna-lindqvist.html">Anna’s</a> voice carried the resonance of the Engine, inverted and complementary, and the bruises on her throat told the story of what <a href="../npcs/anton-adler.html">Adler’s</a> “training” had cost her.</p>
+<h2>Session 8 — The Duel, the Diva, and the Demon</h2>
+<p>The Grand Masquerade at <a href="../../locations/palais-lobkowitz.html">Palais_Lobkowitz</a> was the evening Varrio found his stride. He charmed <a href="../npcs/maria-von-thun.html">Countess von Thun</a> so thoroughly that she had her ladies cross out names already written on her dance card to make room for him, and secured a private invitation to call at her townhouse the following evening. He absorbed <a href="../npcs/franz-kaunitz.html">Baron von Kaunitz’s</a> quiet threat about “accidents that befall visitors who involve themselves in matters they do not understand” without breaking stride — mid-walk and grinning. When <a href="../npcs/liesel-hartmann.html">Liesel_Hartmann</a> approached him in distress about <a href="../npcs/wilhelm-brenner.html">Brenner’s</a> disappearance, the surgeon denied all knowledge and watched her flee. The lie settled into the same place as the murder.</p>
+<p>Then <a href="../npcs/maximilian-von-sternberg.html">Graf von Sternberg</a>, thoroughly drunk, stumbled into the party’s conversation and insulted <a href="../npcs/thomas-wyndham.html">Thomas’s</a> station. Varrio punched him in the face. A clean strike that split Sternberg’s lip and dropped him to the marble. The Count touched the blood on his mouth and issued a formal challenge. Thomas stepped forward to take it up with undisguised delight, immediately asking Varrio to serve as his second. The duel was set.</p>
+<p>When <a href="../npcs/anna-lindqvist.html">Anna</a> sang, the chandeliers vibrated and a flute on a side table shattered. The supernatural pressure of her voice — the Engine’s missing frequency made human — overwhelmed Varrio’s fraying sanity. He dissociated, bit clean through his champagne glass, and filled his mouth with shards and blood. He came back to himself in time to watch the great stained-glass window explode inward and a bronze-scaled <a href="../../creatures/harmonische-wachter.html">Wachter</a> drop from the chandelier.</p>
+<p>The surgeon’s mind, stripped of pretence by shattered glass and supernatural horror, found its answer in the oldest technology of civilisation. He tore the legs off a wooden stool and began working on a torch.</p>
+<h2>Session 9 — The Burning Ball and the Broken Baron</h2>
+<p>The torch was tablecloth wrapped around a chair leg, soaked in cognac from a cracked bottle bleeding across the parquet. Varrio paused to take a swig, then lit it from a candle stub that had fallen from the shattered chandelier. The flame erupted and the nearest <a href="../../creatures/harmonische-wachter.html">Wachter</a> reared back from <a href="../npcs/russian-officers-volkonsky-detail.html">Vladimir</a> with an unearthly screech. Fire. The creatures were terrified of fire.</p>
+<p>When the second Wachter leapt at him, Varrio thrust the torch directly into its jaw. The creature ignited instantly and completely, going up like a Roman candle in a roar of unnatural flame — thrashing and shrieking on the ballroom floor until it was still. The methodical mind had found the hard counter. In the courtyard below, after the escape through broken windows and walled rose parterres, Varrio came around a corner and found another Wachter sitting submissively on the cobblestones — <a href="georgiana-wentworth.html">Georgiana</a> had forced it to sit through the <a href="../../items/command-tuning-fork.html">tuning fork</a>, though Varrio knew nothing of that. He set it on fire without hesitation. It burned.</p>
+<p>Between those two kills, he stepped on <a href="../npcs/anton-adler.html">Adler’s</a> wrist and pressed the torch to his hand until the fork clattered free. The surgeon’s tools had changed — from scalpel to flame — but the precision remained.</p>
+<p>At <a href="../../locations/thaliastrasse-12-safehouse.html">Thaliastrasse 12</a>, Varrio carried the heaviest composite operational load of the night. He navigated the palace gardens to find <a href="../npcs/charles-duval.html">Charles</a> and the carriage. He explored the safehouse from cellar to garret and discovered the upper observation post — a clear view of the street below and a rooftop hatch opening onto neighbouring rooftops, an escape route spanning three houses in either direction. In the cellar, behind false brickwork, the weapons cache was exactly as <a href="../npcs/william-thurner.html">Thurner</a> had described.</p>
+<p>The interrogation of <a href="../npcs/anton-adler.html">Adler</a> in that cellar was thorough and unconventional. Every attempt to render first aid to the screaming prisoner seemed only to make his wounds worse, until Adler was begging them to stop helping and simply answer their questions. The surgeon’s bedside manner, applied to a man with severed Achilles tendons and a blackened hand, proved more effective than any deliberate intimidation.</p>
+<h2>Session 10 — The Fork in the Road</h2>
+<p>The night’s dreams found <a href="../npcs/wilhelm-brenner.html">Brenner</a> in the attic at Widow Katz’s boarding house, his neck at the angle Varrio had put it at, his voice carried through brass pipes that had grown through the plaster like roots. The Engine’s bellows cycled the sound of a last gasp — Brenner’s last breath, made mechanical. Then Varrio was holding a pillow over Colonel Moreau’s face. He woke screaming, bolted from the safehouse into the dawn, and yelled at God until he ran directly into <a href="../npcs/charles-duval.html">Charles</a> and <a href="../npcs/dr-heinrich-voss.html">Dr Heinrich Voss</a> arriving at the door.</p>
+<p>The morning brought practical work. Varrio peeled away from the party to find <a href="../npcs/maximilian-von-sternberg.html">Graf von Sternberg</a> at the Hotel zum Romischen Kaiser, still dressed from the aborted dawn duel and working through a bottle of Tokaji. Acting as <a href="../npcs/thomas-wyndham.html">Thomas’s</a> second, Varrio charmed Sternberg over a shared drink into accepting a delay — dawn the following morning, pistols, Linienwallgasse. The terms were plain: if Thomas did not appear, Sternberg would publish him as a coward in every salon in Vienna, and Miss Wentworth would hear about the outcome either way. The surgeon also sent a note to <a href="../npcs/maria-von-thun.html">Countess von Thun</a>, rescheduling her evening invitation to the 10th.</p>
+<p>By late afternoon, Metternich had sanctioned the University raid, <a href="../npcs/ludwig-vogel.html">Vogel</a> was hours from arrest, and the party held a writ bearing the Staatskanzler’s seal. Five days remained until the fifteenth. Somewhere beneath the University’s West Wing, the Engine waited — built from the bodies of the taken, tuned to a frequency that dreamed its way into the sleep of those who had heard it, and missing the soprano voice that had been pulled from its grasp at the Lobkowitz. The surgeon who had broken a man’s neck in a Leopoldstadt attic, who had fainted at the sight of a Nightgaunt, who had set two creatures ablaze on a ballroom floor with cognac and a chair leg, carried his torch forward into whatever remained.</p>
+<h2>Session 11 — The Duelling Ground</h2>
+<p>The night brought <a href="../npcs/wilhelm-brenner.html">Brenner</a> again. The broken-necked ghost stood in the attic at Widow Katz’s boarding house with his head at the angle Varrio had put it at, watching him through eyes that should not have been open. Varrio woke in the dark and brewed eight shots of espresso in the safehouse kitchen. Nobody wanted any. “I am not a beggar,” he told the room, and considered throwing it all out. The dignity was real. The tremor in his hands was also real.</p>
+<p>Dawn on the tenth found Varrio at the <a href="../../events/sternberg-duel-linienwallgasse.html">Linienwall gates</a> in the capacity he had earned: <a href="../npcs/thomas-wyndham.html">Thomas’s</a> second. The pistol exchange failed cleanly. Thomas missed. <a href="../npcs/maximilian-von-sternberg.html">Sternberg’s</a> flintlock misfired on a wet pan, the powder failing to catch in the damp morning air. Neither man was hit. Sternberg’s second crossed the field to ask whether honour had been satisfied. Thomas was already reloading. Varrio stepped between them and made the pitch: sabres. The damp conditions had made pistols unreliable, and honour demanded steel. It was a Hard Charm roll and it landed, and the full circle was complete. Sternberg had demanded sabres at the masquerade. Varrio had talked him down to pistols over Tokaji. Now Varrio put steel back in their hands on a rain-damp meadow where the only thing that mattered was the outcome. Thomas struck first and struck hard, driving his blade into Sternberg’s armpit and chest in a riposte that put the Austrian on his knees with a collapsed lung. The surgeon rushed in. Thomas cleaned his blade with a smile that could have lit the entire meadow.</p>
+<p>That afternoon, Varrio made his way to the Palais_Thune_Hockenstein for a salon evening hosted by <a href="../npcs/maria-von-thun.html">Countess von Thun</a>. He spread the story of Thomas’s dawn duel to an eager audience and nearly caused a scandal by suggesting the fight had been over a chambermaid before frantically correcting himself with the clarification that the lady in question was of considerably higher standing. The gossip spread through the room like wildfire. <a href="../npcs/baronin-von-kessel.html">Baronin_von_Kessel</a> mentioned that the Generalfeldmarschall (<a href="../npcs/franz-kaunitz.html">Kaunitz</a>) had not been seen in two days, intelligence Varrio filed for later. More usefully, the Countess introduced him to <a href="../npcs/signor-morosi.html">Signor_Morosi</a>, an Italian diplomat from the Sardinian embassy with a magnificent moustache and an eye for opportunity. Morosi offered access to Capitano_Ferrante and a company of Sardinian mercenaries, officially in Vienna as delegation security consultants, in exchange for either political intelligence on post-Napoleonic border negotiations or one hundred Austrian golden. Varrio agreed to a breakfast meeting the following morning to finalize the arrangement.</p>
+<p>The evening took its unexpected turn when the other guests departed and the Countess dismissed her servants, closed the doors, and made her intentions toward Varrio unmistakably clear. She crossed the room, straddled him on the couch, and began unbuckling his pants with considerable enthusiasm. Varrio, caught entirely off guard, claimed to be in love with another and made for the door with as much dignity as he could muster. The Countess was deeply offended and kicked him out of her apartments. The arrangement with Morosi survived. Varrio consoled himself that his honour, at least, was still his own. The surgeon who had engineered a duel outcome on charm alone, brokered a mercenary alliance over small talk, and fled a Countess’s bedchamber in the same evening had more engineering ahead of him, and none of it would be settled with a shared drink and a smile.</p>
+<h2>Session 12 — The War Council</h2>
+<p>The morning of August 11th found Varrio at the <a href="../../locations/cafe-zur-blauen-flasche.html">Café Zur Blauen Flasche</a> with <a href="../npcs/thomas-wyndham.html">Thomas</a>, sitting across from a man whose nose had been broken at least twice and who carried the bearing of someone equally comfortable with a musket and a shovel. <a href="../npcs/capitano-luca-ferrante.html">Captain Luca Ferrante</a> listened to the mission briefing with the focused patience of a professional, pressed hard for details the party’s story did not quite explain, and changed entirely when Varrio described the <a href="../../creatures/harmonische-wachter.html">bronze-scaled creatures</a> and their vulnerability to fire. Two hundred florins for five men. The contract was clean.</p>
+<p>It was the writing desk that changed things. On the third floor of <a href="../../locations/thaliastrasse-12-safehouse.html">Thaliastraße 12</a>, Varrio noticed the shadow behind the false panel and brought <a href="georgiana-wentworth.html">Georgiana</a> up to check for traps. What she did next broke something open in his head. She reached into the air and pulled forth a glowing mass, then threw it apart with both hands, and the room filled with a vast geometric map of interconnected stars that layered over every surface before fading into nothing. Varrio stood frozen. Then something fundamental shifted behind his eyes, a door swinging open onto a corridor he had not known existed, and he could not look away from where it led. The obsession settled into him like a fever, immediate and total. Magic. The word had meant nothing to him before that moment, a fairy-story concept for people who had not studied anatomy or held a scalpel steady through arterial spray. Now it meant everything, and the consulting surgeon who had killed a man with a pillow and brokered a mercenary alliance over Turkish coffee could not think about anything else. The desk yielded a leather portfolio of forged papers and two hundred florins that solved the Ferrante payment problem, but Varrio barely registered the find. The stars were still burning behind his eyelids.</p>
+<p>He conducted <a href="../npcs/werner-bauer.html">Werner Bauer’s</a> interrogation in the basement with the clinical efficiency of a man whose hands remembered their training even when his mind was somewhere else entirely. The grave robber talked because he wanted to live: <a href="../npcs/albin-herzfeld.html">Herzfeld</a> working around the clock, <a href="../npcs/caroline-hartley.html">Caroline</a> locked in the south corridor, the machine humming so loud the guards’ teeth ached. At the <a href="../../locations/heuriger-zum-rebstock.html">Heuriger Zum Rebstock</a> that evening, when <a href="georgiana-wentworth.html">Georgiana</a> explained the counter-ritual she believed she could construct using the <a href="../../items/command-tuning-fork.html">tuning fork</a> and the frequencies from the <a href="../../items/liber-ivonis.html">Liber_Ivonis</a>, Varrio listened with an intensity that had nothing to do with tactical planning and everything to do with the door that had opened in his mind. The Russians accepted. The Sardinians were politely skeptical. Varrio believed. Then the <a href="../../creatures/harmonische-wachter.html">Wächter</a> came through the pergola, and the night caught fire.</p>
+
+  </div>
+</div>
+<div class="tab-panel" id="tab-journey">
+<h2>Connections</h2>
+<div class="relationship-graph"><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="font-family: var(--font-body, system-ui);">
+  <line x1="300" y1="200" x2="300" y2="80" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="318.7721358048277" y2="81.47739912858347" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="337.0820393249937" y2="85.87321804458158" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="354.4788599687456" y2="93.07921709739587" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="370.5342302750968" y2="102.9179606750063" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="384.8528137423857" y2="115.14718625761431" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="397.08203932499373" y2="129.46576972490323" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="406.9207829026042" y2="145.5211400312544" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="414.12678195541844" y2="162.91796067500633" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="418.52260087141656" y2="181.2278641951723" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="420" y2="200" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="418.52260087141656" y2="218.77213580482768" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="414.12678195541844" y2="237.08203932499367" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="406.9207829026042" y2="254.4788599687456" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="397.08203932499373" y2="270.5342302750968" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="384.8528137423857" y2="284.8528137423857" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="370.5342302750968" y2="297.08203932499373" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="354.4788599687456" y2="306.9207829026041" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="337.0820393249937" y2="314.12678195541844" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="318.7721358048277" y2="318.52260087141656" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="300" y2="320" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="281.2278641951723" y2="318.52260087141656" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="262.9179606750064" y2="314.12678195541844" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="245.5211400312544" y2="306.9207829026042" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="229.46576972490323" y2="297.08203932499373" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="215.1471862576143" y2="284.8528137423857" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="202.91796067500633" y2="270.5342302750968" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="193.07921709739588" y2="254.4788599687456" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="185.87321804458156" y2="237.0820393249937" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="181.4773991285835" y2="218.7721358048277" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="180" y2="200.00000000000003" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="181.47739912858347" y2="181.22786419517232" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="185.87321804458156" y2="162.91796067500633" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="193.07921709739585" y2="145.5211400312544" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="202.9179606750063" y2="129.46576972490323" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="215.1471862576143" y2="115.14718625761431" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="229.46576972490323" y2="102.91796067500631" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="245.52114003125436" y2="93.07921709739587" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="262.91796067500627" y2="85.87321804458158" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="281.2278641951723" y2="81.47739912858349" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <a href="varrio-harrowmont.html"><g opacity="1">
+    <circle cx="300" cy="200" r="28" fill="var(--accent, #58a6ff)" stroke="var(--accent, #58a6ff)" stroke-width="2"/>
+    <text x="300" y="243" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Varrio Harrow…</text>
+  </g></a>
+  <a href="../../factions/order-of-st-aelfric.html"><g opacity="1">
+    <polygon points="317.3205080756888,70 317.3205080756888,90 300,100 282.6794919243112,90 282.6794919243112,70 300,60" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Order of St A…</text>
+  </g></a>
+  <a href="../../factions/confraternita-del-bel-canto.html"><g opacity="1">
+    <polygon points="336.0926438805165,71.47739912858347 336.0926438805165,91.47739912858347 318.7721358048277,101.47739912858347 301.4516277291389,91.47739912858347 301.4516277291389,71.47739912858347 318.7721358048277,61.47739912858347" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="318.7721358048277" y="116.47739912858347" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Confraternita…</text>
+  </g></a>
+  <a href="../../locations/thaliastrasse-12-safehouse.html"><g opacity="1">
+    <rect x="317.0820393249937" y="65.87321804458158" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="337.0820393249937" y="120.87321804458158" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Thaliastrasse…</text>
+  </g></a>
+  <a href="emma-wentworth.html"><g opacity="1">
+    <circle cx="354.4788599687456" cy="93.07921709739587" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="354.4788599687456" y="128.07921709739588" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Emma Wentworth</text>
+  </g></a>
+  <a href="georgiana-wentworth.html"><g opacity="1">
+    <circle cx="370.5342302750968" cy="102.9179606750063" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="370.5342302750968" y="137.9179606750063" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Georgiana Wen…</text>
+  </g></a>
+  <a href="adrien-de-montferrand.html"><g opacity="1">
+    <circle cx="384.8528137423857" cy="115.14718625761431" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="384.8528137423857" y="150.1471862576143" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Adrien de Mon…</text>
+  </g></a>
+  <a href="katherine-ward.html"><g opacity="1">
+    <circle cx="397.08203932499373" cy="129.46576972490323" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="397.08203932499373" y="164.46576972490323" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Katherine Ward</text>
+  </g></a>
+  <a href="freddy-cavendish.html"><g opacity="1">
+    <circle cx="406.9207829026042" cy="145.5211400312544" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="406.9207829026042" y="180.5211400312544" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Freddy Cavend…</text>
+  </g></a>
+  <g opacity="1">
+    <circle cx="414.12678195541844" cy="162.91796067500633" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="414.12678195541844" y="197.91796067500633" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Dr Leopold Fi…</text>
+  </g>
+  <a href="../npcs/maria-von-thun.html"><g opacity="1">
+    <circle cx="418.52260087141656" cy="181.2278641951723" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="418.52260087141656" y="216.2278641951723" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Maria von Thun</text>
+  </g></a>
+  <a href="../npcs/maximilian-von-sternberg.html"><g opacity="1">
+    <circle cx="420" cy="200" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="420" y="235" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Maximilian vo…</text>
+  </g></a>
+  <a href="../npcs/liesel-hartmann.html"><g opacity="1">
+    <circle cx="418.52260087141656" cy="218.77213580482768" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="418.52260087141656" y="253.77213580482768" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Liesel Hartmann</text>
+  </g></a>
+  <a href="../../chapters/Chapter 2 - Lyon/chapter-2-wrap-up.html"><g opacity="1">
+    <circle cx="414.12678195541844" cy="237.08203932499367" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="414.12678195541844" y="272.0820393249937" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Chapter 2 Wra…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 10/session-10-wrap-up.html"><g opacity="1">
+    <circle cx="406.9207829026042" cy="254.4788599687456" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="406.9207829026042" y="289.4788599687456" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 10 Wr…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 11/session-11-wrap-up.html"><g opacity="1">
+    <circle cx="397.08203932499373" cy="270.5342302750968" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="397.08203932499373" y="305.5342302750968" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 11 Wr…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 12/session-12-wrap-up.html"><g opacity="1">
+    <circle cx="384.8528137423857" cy="284.8528137423857" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="384.8528137423857" y="319.8528137423857" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 12 Wr…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 2/session-02-wrap-up.html"><g opacity="1">
+    <circle cx="370.5342302750968" cy="297.08203932499373" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="370.5342302750968" y="332.08203932499373" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 02 Wr…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 7/session-07-wrap-up.html"><g opacity="1">
+    <circle cx="354.4788599687456" cy="306.9207829026041" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="354.4788599687456" y="341.9207829026041" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 07 Wr…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 8/session-08-wrap-up.html"><g opacity="1">
+    <circle cx="337.0820393249937" cy="314.12678195541844" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="337.0820393249937" y="349.12678195541844" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 08 Wr…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 9/session-09-wrap-up.html"><g opacity="1">
+    <circle cx="318.7721358048277" cy="318.52260087141656" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="318.7721358048277" y="353.52260087141656" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 09 Wr…</text>
+  </g></a>
+  <a href="../npcs/anton-adler.html"><g opacity="1">
+    <circle cx="300" cy="320" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="355" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Anton Adler</text>
+  </g></a>
+  <a href="../npcs/capitano-luca-ferrante.html"><g opacity="1">
+    <circle cx="281.2278641951723" cy="318.52260087141656" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="281.2278641951723" y="353.52260087141656" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Capitano Luca…</text>
+  </g></a>
+  <a href="../npcs/captain-von-straussen.html"><g opacity="1">
+    <circle cx="262.9179606750064" cy="314.12678195541844" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="262.9179606750064" y="349.12678195541844" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Captain von S…</text>
+  </g></a>
+  <a href="../npcs/charles-duval.html"><g opacity="1">
+    <circle cx="245.5211400312544" cy="306.9207829026042" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="245.5211400312544" y="341.9207829026042" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Charles Duval</text>
+  </g></a>
+  <a href="../npcs/madame-delacroix.html"><g opacity="1">
+    <circle cx="229.46576972490323" cy="297.08203932499373" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="229.46576972490323" y="332.08203932499373" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Madame Delacr…</text>
+  </g></a>
+  <a href="../npcs/nikolai-volkonsky.html"><g opacity="1">
+    <circle cx="215.1471862576143" cy="284.8528137423857" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="215.1471862576143" y="319.8528137423857" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Nikolai Volko…</text>
+  </g></a>
+  <a href="../npcs/signor-morosi.html"><g opacity="1">
+    <circle cx="202.91796067500633" cy="270.5342302750968" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="202.91796067500633" y="305.5342302750968" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Signor Morosi</text>
+  </g></a>
+  <a href="../npcs/thomas-wyndham.html"><g opacity="1">
+    <circle cx="193.07921709739588" cy="254.4788599687456" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="193.07921709739588" y="289.4788599687456" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Thomas Wyndham</text>
+  </g></a>
+  <a href="jacob.html"><g opacity="1">
+    <circle cx="185.87321804458156" cy="237.0820393249937" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="185.87321804458156" y="272.08203932499373" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Jacob</text>
+  </g></a>
+  <a href="../../clues/engine-beneath-university.html"><g opacity="1">
+    <circle cx="181.4773991285835" cy="218.7721358048277" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="181.4773991285835" y="253.7721358048277" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Engine Beneat…</text>
+  </g></a>
+  <a href="../../creatures/harmonische-wachter.html"><g opacity="1">
+    <circle cx="180" cy="200.00000000000003" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="180" y="235.00000000000003" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Harmonische W…</text>
+  </g></a>
+  <a href="../../events/harcourt-reunion.html"><g opacity="1">
+    <circle cx="181.47739912858347" cy="181.22786419517232" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="181.47739912858347" y="216.22786419517232" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Harcourt Reun…</text>
+  </g></a>
+  <a href="../../events/nightgaunt-attack-palais-kinsky.html"><g opacity="1">
+    <circle cx="185.87321804458156" cy="162.91796067500633" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="185.87321804458156" y="197.91796067500633" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Nightgaunt At…</text>
+  </g></a>
+  <a href="../../events/sternberg-duel-linienwallgasse.html"><g opacity="1">
+    <circle cx="193.07921709739585" cy="145.5211400312544" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="193.07921709739585" y="180.5211400312544" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Sternberg Due…</text>
+  </g></a>
+  <a href="../../factions/brotherhood-of-the-open-measure.html"><g opacity="1">
+    <polygon points="220.23846875069506,119.46576972490323 220.23846875069506,139.46576972490323 202.9179606750063,149.46576972490323 185.59745259931753,139.46576972490323 185.59745259931753,119.46576972490323 202.91796067500627,109.46576972490323" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="202.9179606750063" y="164.46576972490323" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Brotherhood o…</text>
+  </g></a>
+  <a href="../../items/command-tuning-fork.html"><g opacity="1">
+    <polygon points="215.1471862576143,95.14718625761431 235.1471862576143,115.14718625761431 215.1471862576143,135.1471862576143 195.1471862576143,115.14718625761431" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="215.1471862576143" y="150.1471862576143" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Command Tunin…</text>
+  </g></a>
+  <a href="../../locations/goldener-hirsch.html"><g opacity="1">
+    <rect x="209.46576972490323" y="82.91796067500631" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="229.46576972490323" y="137.91796067500633" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Goldener Hirsch</text>
+  </g></a>
+  <a href="../../locations/palais-lobkowitz.html"><g opacity="1">
+    <rect x="225.52114003125436" y="73.07921709739587" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="245.52114003125436" y="128.07921709739588" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Palais Lobkow…</text>
+  </g></a>
+  <a href="../../campaign/timeline.html"><g opacity="1">
+    <circle cx="262.91796067500627" cy="85.87321804458158" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="262.91796067500627" y="120.87321804458158" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Timeline</text>
+  </g></a>
+  <a href="../../player-characters.html"><g opacity="1">
+    <circle cx="281.2278641951723" cy="81.47739912858349" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="281.2278641951723" y="116.47739912858349" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">player charac…</text>
+  </g></a>
+</svg></div>
+</div>
+
+<script>
+function switchTab(tab) {
+  document.querySelectorAll('.pc-tab').forEach(function(t) { t.classList.remove('active'); });
+  document.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
+  document.getElementById('tab-' + tab).classList.add('active');
+  document.querySelector('[data-tab="' + tab + '"]').classList.add('active');
+  history.replaceState(null, '', '#' + tab);
+}
+function openAccordion(id) {
+  var el = document.getElementById(id);
+  if (el && el.classList.contains('accordion')) {
+    el.classList.add('open');
+    var btn = el.querySelector('.accordion-header');
+    if (btn) btn.setAttribute('aria-expanded', 'true');
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('.section-nav a');
+  if (link) {
+    e.preventDefault();
+    var id = link.getAttribute('href').slice(1);
+    openAccordion(id);
+  }
+});
+(function() {
+  var hash = location.hash.slice(1);
+  if (['sheet', 'equipment', 'story', 'journey'].includes(hash)) switchTab(hash);
+  else if (hash) openAccordion(hash);
+})();
+</script>
 </main>
 
 
 
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../../js/nav.js"></script>
+<script src="../../js/lightbox.js"></script>
+<script src="../../js/search.js"></script>
 <script>
-document.querySelectorAll('.site-nav a').forEach(a => {
-  a.addEventListener('click', () => document.getElementById('nav').classList.remove('open'));
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
 });
 </script>
 

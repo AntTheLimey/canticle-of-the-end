@@ -5,356 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Albin Herzfeld — Canticle of the End</title>
   <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/themes/horror.css">
   <link rel="stylesheet" href="../../css/theme.css">
 </head>
 <body>
 
-<header class="site-header">
-  <button class="menu-toggle" onclick="document.getElementById('nav').classList.add('open')" aria-label="Menu">&#9776;</button>
-  <h1><a href="../../index.html">Canticle of the End</a></h1>
+<header class="top-nav">
+  <a href="../../index.html" class="nav-brand">Canticle of the End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <button class="nav-group-toggle">Story</button>
+        <div class="nav-dropdown">
+        <a href="../../chapters/index.html">Story</a>
+        <a href="../../timeline.html">Events</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../../player-characters.html">Player Characters</a>
+        <a href="index.html">NPCs</a>
+        <a href="../../creatures/index.html">Creatures</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../../locations/index.html">Locations</a>
+        <a href="../../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../../documents/index.html">Documents</a>
+        <a href="../../clues/index.html">Clues</a>
+        <a href="../../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
 </header>
-
-<nav id="nav" class="site-nav">
-  <button class="nav-close" onclick="document.getElementById('nav').classList.remove('open')" aria-label="Close">&times;</button>
-  <h2>Campaign</h2>
-<ul>
-<li><a href="../../player-characters.html">player characters</a></li>
-<li><a href="../../campaign/regency-slang-glossary.html">Regency Slang Glossary</a></li>
-<li><a href="../../campaign/timeline.html">Timeline</a></li>
-</ul>
-<h2>Player Characters</h2>
-<ul>
-<li><a href="../pcs/adrien-de-montferrand.html">Adrien de Montferrand</a></li>
-<li><a href="../pcs/augustus-bolt.html">Augustus Bolt</a></li>
-<li><a href="../pcs/charlotte-thorne.html">Charlotte Thorne</a></li>
-<li><a href="../pcs/emma-wentworth.html">Emma Wentworth</a></li>
-<li><a href="../pcs/freddy-cavendish.html">Freddy Cavendish</a></li>
-<li><a href="../pcs/georgiana-dillwyn.html">Georgiana Dillwyn</a></li>
-<li><a href="../pcs/georgiana-wentworth.html">Georgiana Wentworth</a></li>
-<li><a href="../pcs/jacob.html">Jacob</a></li>
-<li><a href="../pcs/james-bennet.html">James Bennet</a></li>
-<li><a href="../pcs/jane-radcliffe.html">Jane Radcliffe</a></li>
-<li><a href="../pcs/katherine-ward.html">Katherine Ward</a></li>
-<li><a href="../pcs/marina-garrick.html">Marina Garrick</a></li>
-<li><a href="../pcs/varrio-harrowmont.html">Varrio Harrowmont</a></li>
-</ul>
-<h2>NPCs</h2>
-<ul>
-<li><a href="abbe-etienne-duplessis.html">Abbe Etienne Duplessis</a></li>
-<li><a href="abbe-ferrant.html">Abbe Ferrant</a></li>
-<li><a href="agnes-hartley.html">Agnes Hartley</a></li>
-<li><a href="albert-lambert.html">Albert Lambert</a></li>
-<li><a href="albin-herzfeld.html">Albin Herzfeld</a></li>
-<li><a href="andrei-volkonsky.html">Andrei Volkonsky</a></li>
-<li><a href="anna-lindqvist.html">Anna Lindqvist</a></li>
-<li><a href="annika-laughton.html">Annika Laughton</a></li>
-<li><a href="antoine-lefevre.html">Antoine Lefevre</a></li>
-<li><a href="anton-adler.html">Anton Adler</a></li>
-<li><a href="benoit-chasseloup.html">Benoit Chasseloup</a></li>
-<li><a href="captain-king.html">Captain King</a></li>
-<li><a href="captain-richard-forsyth.html">Captain Richard Forsyth</a></li>
-<li><a href="captain-thomas-keene.html">Captain Thomas Keene</a></li>
-<li><a href="caroline-hartley.html">Caroline Hartley</a></li>
-<li><a href="cecile-vaillant.html">Cecile Vaillant</a></li>
-<li><a href="charles-duval.html">Charles Duval</a></li>
-<li><a href="charlotte-thorne.html">Charlotte Thorne</a></li>
-<li><a href="clara-fen.html">Clara Fen</a></li>
-<li><a href="clementine-delaroche.html">Clementine Delaroche</a></li>
-<li><a href="collarbone-jack.html">Collarbone Jack</a></li>
-<li><a href="colonel-alastair-mccrae.html">Colonel Alastair McCrae</a></li>
-<li><a href="colonel-etienne-moreau.html">Colonel Etienne Moreau</a></li>
-<li><a href="colonel-fittlewick.html">Colonel Fittlewick</a></li>
-<li><a href="colonel-maarten-van-hoorne.html">Colonel Maarten van Hoorne</a></li>
-<li><a href="commissaire-jules-delaroche.html">Commissaire Jules Delaroche</a></li>
-<li><a href="comte-henri-vallin.html">Comte Henri Vallin</a></li>
-<li><a href="doctor-emile-carreau.html">Doctor Emile Carreau</a></li>
-<li><a href="dr-ambrose-hargreaves.html">Dr Ambrose Hargreaves</a></li>
-<li><a href="dr-erasmus-hume.html">Dr Erasmus Hume</a></li>
-<li><a href="dr-heinrich-voss.html">Dr Heinrich Voss</a></li>
-<li><a href="dr-odilon-mercier.html">Dr Odilon Mercier</a></li>
-<li><a href="dr-thornton-beamish.html">Dr Thornton Beamish</a></li>
-<li><a href="duchesse-de-brissac.html">Duchesse de Brissac</a></li>
-<li><a href="edna-greaves.html">Edna Greaves</a></li>
-<li><a href="elbert-fenwick.html">Elbert Fenwick</a></li>
-<li><a href="eli-barlow.html">Eli Barlow</a></li>
-<li><a href="eli-tadcombe.html">Eli Tadcombe</a></li>
-<li><a href="eliza-sharpe.html">Eliza Sharpe</a></li>
-<li><a href="emeric-de-puyrault.html">Emeric de Puyrault</a></li>
-<li><a href="emile-fouchard.html">Emile Fouchard</a></li>
-<li><a href="ephraim-colley.html">Ephraim Colley</a></li>
-<li><a href="ernst-falkner.html">Ernst Falkner</a></li>
-<li><a href="father-jeremiah-creel.html">Father Jeremiah Creel</a></li>
-<li><a href="francois-barbier.html">Francois Barbier</a></li>
-<li><a href="franz-huber.html">Franz Huber</a></li>
-<li><a href="franz-kaunitz.html">Franz Kaunitz</a></li>
-<li><a href="giles-mercer.html">Giles Mercer</a></li>
-<li><a href="gottfried-reiner.html">Gottfried Reiner</a></li>
-<li><a href="gustav-metzger.html">Gustav Metzger</a></li>
-<li><a href="henri-marchand.html">Henri Marchand</a></li>
-<li><a href="herr-grillparzer.html">Herr Grillparzer</a></li>
-<li><a href="imogen-bellamy.html">Imogen Bellamy</a></li>
-<li><a href="ingrid-sperl.html">Ingrid Sperl</a></li>
-<li><a href="josiah-hartley.html">Josiah Hartley</a></li>
-<li><a href="jules-steward.html">Jules Steward</a></li>
-<li><a href="klaus-bauer.html">Klaus Bauer</a></li>
-<li><a href="lady-bagtonbury.html">Lady Bagtonbury</a></li>
-<li><a href="lady-bletchley.html">Lady Bletchley</a></li>
-<li><a href="lady-euphemia-langridge.html">Lady Euphemia Langridge</a></li>
-<li><a href="lady-honoria-lyndhurst.html">Lady Honoria Lyndhurst</a></li>
-<li><a href="lady-octavia-danforth.html">Lady Octavia Danforth</a></li>
-<li><a href="lady-rowena-calthorpe.html">Lady Rowena Calthorpe</a></li>
-<li><a href="lady-wilhelmina-danvers.html">Lady Wilhelmina Danvers</a></li>
-<li><a href="leopold-fischbein.html">Leopold Fischbein</a></li>
-<li><a href="leopold-von-trautmannsdorff.html">Leopold von Trautmannsdorff</a></li>
-<li><a href="liesel-hartmann.html">Liesel Hartmann</a></li>
-<li><a href="lieut-john-orville.html">Lieut John Orville</a></li>
-<li><a href="lieutenant-jonathan-pellam.html">Lieutenant Jonathan Pellam</a></li>
-<li><a href="lord-cosgrove.html">Lord Cosgrove</a></li>
-<li><a href="lord-digby-wycombe.html">Lord Digby Wycombe</a></li>
-<li><a href="lord-felix-montroy.html">Lord Felix Montroy</a></li>
-<li><a href="lord-percival-harcourt.html">Lord Percival Harcourt</a></li>
-<li><a href="lord-ratcliffe.html">Lord Ratcliffe</a></li>
-<li><a href="luc-fouchard.html">Luc Fouchard</a></li>
-<li><a href="lucien-goupil.html">Lucien Goupil</a></li>
-<li><a href="lucien-stablehand.html">Lucien Stablehand</a></li>
-<li><a href="lucienne-moreau.html">Lucienne Moreau</a></li>
-<li><a href="ludwig-vogel.html">Ludwig Vogel</a></li>
-<li><a href="lydia-hartley.html">Lydia Hartley</a></li>
-<li><a href="madame-beauregard.html">Madame Beauregard</a></li>
-<li><a href="madame-delacroix.html">Madame Delacroix</a></li>
-<li><a href="madame-elodie-marchand.html">Madame Elodie Marchand</a></li>
-<li><a href="madame-sylvie-de-noyelles.html">Madame Sylvie de Noyelles</a></li>
-<li><a href="magistrate-beraud.html">Magistrate Beraud</a></li>
-<li><a href="major-lionel-ashcombe.html">Major Lionel Ashcombe</a></li>
-<li><a href="maria-von-thun.html">Maria von Thun</a></li>
-<li><a href="marquise-eloise-de-camberonne.html">Marquise Eloise de Camberonne</a></li>
-<li><a href="mathieu-durand.html">Mathieu Durand</a></li>
-<li><a href="mathilde-savarin.html">Mathilde Savarin</a></li>
-<li><a href="maximilian-von-sternberg.html">Maximilian von Sternberg</a></li>
-<li><a href="miriam-doyle.html">Miriam Doyle</a></li>
-<li><a href="miss-alice-wetherby.html">Miss Alice Wetherby</a></li>
-<li><a href="miss-aurelia-fairchild.html">Miss Aurelia Fairchild</a></li>
-<li><a href="miss-beatrice-harrow.html">Miss Beatrice Harrow</a></li>
-<li><a href="miss-bridget-clarke.html">Miss Bridget Clarke</a></li>
-<li><a href="miss-dorothea-bexley.html">Miss Dorothea Bexley</a></li>
-<li><a href="miss-edith-talbot.html">Miss Edith Talbot</a></li>
-<li><a href="miss-eleanor-finch.html">Miss Eleanor Finch</a></li>
-<li><a href="miss-eleanor-mortimer.html">Miss Eleanor Mortimer</a></li>
-<li><a href="miss-isabel-glossop.html">Miss Isabel Glossop</a></li>
-<li><a href="miss-mary-glossop.html">Miss Mary Glossop</a></li>
-<li><a href="miss-theodosia-dawes.html">Miss Theodosia Dawes</a></li>
-<li><a href="mlle-marie-lucile-dumain.html">Mlle Marie Lucile Dumain</a></li>
-<li><a href="mr-alfred-smythe.html">Mr Alfred Smythe</a></li>
-<li><a href="mr-aurelian-dean.html">Mr Aurelian Dean</a></li>
-<li><a href="mr-benedict-fairfax.html">Mr Benedict Fairfax</a></li>
-<li><a href="mr-berkley.html">Mr Berkley</a></li>
-<li><a href="mr-bernard-hathaway.html">Mr Bernard Hathaway</a></li>
-<li><a href="mr-gideon-crow.html">Mr Gideon Crow</a></li>
-<li><a href="mr-hampton.html">Mr Hampton</a></li>
-<li><a href="mr-horatio-fairbourne.html">Mr Horatio Fairbourne</a></li>
-<li><a href="mr-jameson.html">Mr Jameson</a></li>
-<li><a href="mr-oliver-hawksley.html">Mr Oliver Hawksley</a></li>
-<li><a href="mr-thomas-wickes.html">Mr Thomas Wickes</a></li>
-<li><a href="mr-tipple.html">Mr Tipple</a></li>
-<li><a href="mr-tobias-whitmore.html">Mr Tobias Whitmore</a></li>
-<li><a href="mrs-agnes-rothwell.html">Mrs Agnes Rothwell</a></li>
-<li><a href="mrs-charlotte-mortimer.html">Mrs Charlotte Mortimer</a></li>
-<li><a href="mrs-hampton.html">Mrs Hampton</a></li>
-<li><a href="mrs-margaret-fairchild.html">Mrs Margaret Fairchild</a></li>
-<li><a href="mrs-pemberton-brighton.html">Mrs Pemberton Brighton</a></li>
-<li><a href="mrs-winifred-fowler.html">Mrs Winifred Fowler</a></li>
-<li><a href="ms-amelia-cooper.html">Ms Amelia Cooper</a></li>
-<li><a href="ms-hannah-shibden.html">Ms Hannah Shibden</a></li>
-<li><a href="nathan-pryce.html">Nathan Pryce</a></li>
-<li><a href="nathaniel-rooke.html">Nathaniel Rooke</a></li>
-<li><a href="nell-coker.html">Nell Coker</a></li>
-<li><a href="nikolai-volkonsky.html">Nikolai Volkonsky</a></li>
-<li><a href="old-jenkins.html">Old Jenkins</a></li>
-<li><a href="pemberton.html">Pemberton</a></li>
-<li><a href="phineas-lang.html">Phineas Lang</a></li>
-<li><a href="professor-cyrus-elliston.html">Professor Cyrus Elliston</a></li>
-<li><a href="prudence-middleham.html">Prudence Middleham</a></li>
-<li><a href="rev-henry-mortimer.html">Rev Henry Mortimer</a></li>
-<li><a href="russian-officers-volkonsky-detail.html">Russian Officers Volkonsky Detail</a></li>
-<li><a href="sabine.html">Sabine</a></li>
-<li><a href="sabine-lambert.html">Sabine Lambert</a></li>
-<li><a href="silent-nun.html">Silent Nun</a></li>
-<li><a href="sir-andrew-duncan.html">Sir Andrew Duncan</a></li>
-<li><a href="sir-jasper-dulfrey.html">Sir Jasper Dulfrey</a></li>
-<li><a href="sir-lionel-peregrine.html">Sir Lionel Peregrine</a></li>
-<li><a href="slade.html">Slade</a></li>
-<li><a href="squire-anthony-goodwin.html">Squire Anthony Goodwin</a></li>
-<li><a href="therese.html">Therese</a></li>
-<li><a href="thomas-wyndham.html">Thomas Wyndham</a></li>
-<li><a href="thomlin-kerridge.html">Thomlin Kerridge</a></li>
-<li><a href="tobias-greaves.html">Tobias Greaves</a></li>
-<li><a href="vicomte-henri-lavigne.html">Vicomte Henri Lavigne</a></li>
-<li><a href="victoire-lefevre.html">Victoire Lefevre</a></li>
-<li><a href="victoire-lenoir.html">Victoire Lenoir</a></li>
-<li><a href="walter-baines.html">Walter Baines</a></li>
-<li><a href="walter-pennyman.html">Walter Pennyman</a></li>
-<li><a href="werner-bauer.html">Werner Bauer</a></li>
-<li><a href="wilhelm-brenner.html">Wilhelm Brenner</a></li>
-<li><a href="wilkins.html">Wilkins</a></li>
-<li><a href="william-thurner.html">William Thurner</a></li>
-</ul>
-<h2>Factions &amp; Organizations</h2>
-<ul>
-<li><a href="../../factions/aeternum-choir.html">Aeternum Choir</a></li>
-<li><a href="../../factions/blue-sashes.html">Blue Sashes</a></li>
-<li><a href="../../factions/brotherhood-of-the-open-measure.html">Brotherhood of the Open Measure</a></li>
-<li><a href="../../factions/confraternita-del-bel-canto.html">Confraternita del Bel Canto</a></li>
-<li><a href="../../factions/congress-of-vienna.html">Congress of Vienna</a></li>
-<li><a href="../../factions/geheimpolizei.html">Geheimpolizei</a></li>
-<li><a href="../../factions/order-of-st-aelfric.html">Order of St Aelfric</a></li>
-<li><a href="../../factions/orphean-society.html">Orphean Society</a></li>
-<li><a href="../../factions/polizeidirektion.html">Polizeidirektion</a></li>
-<li><a href="../../factions/soci-t-harmonique-de-l-aube.html">Société Harmonique de l Aube</a></li>
-</ul>
-<h2>Events</h2>
-<ul>
-<li><a href="../../events/goupil-masquerade.html">Goupil Masquerade</a></li>
-<li><a href="../../events/grand-masquerade-palais-lobkowitz.html">Grand Masquerade Palais Lobkowitz</a></li>
-<li><a href="../../events/harcourt-reunion.html">Harcourt Reunion</a></li>
-<li><a href="../../events/long-corridor-incident.html">Long Corridor Incident</a></li>
-<li><a href="../../events/marina-recruitment-portsmouth.html">Marina Recruitment Portsmouth</a></li>
-<li><a href="../../events/moreau-graben-assassination.html">Moreau Graben Assassination</a></li>
-<li><a href="../../events/nightgaunt-attack-palais-kinsky.html">Nightgaunt Attack Palais Kinsky</a></li>
-<li><a href="../../events/orphans-hospital-raid.html">Orphans Hospital Raid</a></li>
-<li><a href="../../events/osney-grange-incident.html">Osney Grange Incident</a></li>
-<li><a href="../../events/silkweavers-guild-assault.html">Silkweavers Guild Assault</a></li>
-<li><a href="../../events/stonehenge-ritual.html">Stonehenge Ritual</a></li>
-</ul>
-<h2>Locations</h2>
-<ul>
-<li><a href="../../locations/auberge-des-deux-chenes.html">Auberge des Deux Chenes</a></li>
-<li><a href="../../locations/beauregard-modiste.html">Beauregard Modiste</a></li>
-<li><a href="../../locations/brighton.html">Brighton</a></li>
-<li><a href="../../locations/brighton-assembly-rooms.html">Brighton Assembly Rooms</a></li>
-<li><a href="../../locations/brighton-harbormasters-office.html">Brighton Harbormasters Office</a></li>
-<li><a href="../../locations/british-museum-montagu-house.html">British Museum Montagu House</a></li>
-<li><a href="../../locations/cafe-frauenhuber.html">Cafe Frauenhuber</a></li>
-<li><a href="../../locations/captain-kings-drawing-room.html">Captain Kings Drawing Room</a></li>
-<li><a href="../../locations/crooked-chimney-tavern.html">Crooked Chimney Tavern</a></li>
-<li><a href="../../locations/fourviere.html">Fourviere</a></li>
-<li><a href="../../locations/fox-and-hound-portsmouth.html">Fox and Hound Portsmouth</a></li>
-<li><a href="../../locations/foxglove-and-thistle.html">Foxglove and Thistle</a></li>
-<li><a href="../../locations/gasthof-schwarzer-bar.html">Gasthof Schwarzer Bar</a></li>
-<li><a href="../../locations/gasthof-weisser-ochsen.html">Gasthof Weisser Ochsen</a></li>
-<li><a href="../../locations/goldener-hirsch.html">Goldener Hirsch</a></li>
-<li><a href="../../locations/gough-square-no7.html">Gough Square No7</a></li>
-<li><a href="../../locations/greaves-and-sons.html">Greaves and Sons</a></li>
-<li><a href="../../locations/grosvenor-works.html">Grosvenor Works</a></li>
-<li><a href="../../locations/hampton-residence.html">Hampton Residence</a></li>
-<li><a href="../../locations/hartwell-house.html">Hartwell House</a></li>
-<li><a href="../../locations/hawkswood-and-shaw.html">Hawkswood and Shaw</a></li>
-<li><a href="../../locations/hawthorne-grange.html">Hawthorne Grange</a></li>
-<li><a href="../../locations/hofburg-palace.html">Hofburg Palace</a></li>
-<li><a href="../../locations/hopital-de-la-charite.html">Hopital de la Charite</a></li>
-<li><a href="../../locations/hotel-de-brissac.html">Hotel de Brissac</a></li>
-<li><a href="../../locations/hotel-de-camberonne.html">Hotel de Camberonne</a></li>
-<li><a href="../../locations/kensington-coach-stables.html">Kensington Coach Stables</a></li>
-<li><a href="../../locations/la-belle-esperance.html">La Belle Esperance</a></li>
-<li><a href="../../locations/le-coteau-des-ombres.html">Le Coteau des Ombres</a></li>
-<li><a href="../../locations/le-lys-de-marbre.html">Le Lys de Marbre</a></li>
-<li><a href="../../locations/leopoldstadt.html">Leopoldstadt</a></li>
-<li><a href="../../locations/maison-des-cinq-portes.html">Maison des Cinq Portes</a></li>
-<li><a href="../../locations/maison-du-corbeau.html">Maison du Corbeau</a></li>
-<li><a href="../../locations/marchbank-terrace.html">Marchbank Terrace</a></li>
-<li><a href="../../locations/northlake-hall.html">Northlake Hall</a></li>
-<li><a href="../../locations/orphean-society-building.html">Orphean Society Building</a></li>
-<li><a href="../../locations/osney-grange.html">Osney Grange</a></li>
-<li><a href="../../locations/palais-kinsky.html">Palais Kinsky</a></li>
-<li><a href="../../locations/palais-lobkowitz.html">Palais Lobkowitz</a></li>
-<li><a href="../../locations/palais-modena.html">Palais Modena</a></li>
-<li><a href="../../locations/palais-thun-hohenstein.html">Palais Thun Hohenstein</a></li>
-<li><a href="../../locations/ravenwood-house.html">Ravenwood House</a></li>
-<li><a href="../../locations/roman-temple-aeternox.html">Roman Temple Aeternox</a></li>
-<li><a href="../../locations/royal-academy-of-music.html">Royal Academy of Music</a></li>
-<li><a href="../../locations/schonbrunn-palace.html">Schonbrunn Palace</a></li>
-<li><a href="../../locations/sealed-anatomical-theatre.html">Sealed Anatomical Theatre</a></li>
-<li><a href="../../locations/silkweavers-guild.html">Silkweavers Guild</a></li>
-<li><a href="../../locations/silver-quay-tavern.html">Silver Quay Tavern</a></li>
-<li><a href="../../locations/society-of-antiquaries.html">Society of Antiquaries</a></li>
-<li><a href="../../locations/st-stephens-cathedral.html">St Stephens Cathedral</a></li>
-<li><a href="../../locations/stonehenge.html">Stonehenge</a></li>
-<li><a href="../../locations/tarryford.html">Tarryford</a></li>
-<li><a href="../../locations/thaliastrasse-12-safehouse.html">Thaliastrasse 12 Safehouse</a></li>
-<li><a href="../../locations/the-laughing-fox.html">The Laughing Fox</a></li>
-<li><a href="../../locations/thistle-lane.html">Thistle Lane</a></li>
-<li><a href="../../locations/university-of-vienna.html">University of Vienna</a></li>
-<li><a href="../../locations/vienna-conservatory.html">Vienna Conservatory</a></li>
-<li><a href="../../locations/vienna-overview.html">Vienna Overview</a></li>
-<li><a href="../../locations/whitlow-and-sons.html">Whitlow and Sons</a></li>
-<li><a href="../../locations/widow-katz-boarding-house.html">Widow Katz Boarding House</a></li>
-</ul>
-<h2>Items &amp; Artifacts</h2>
-<ul>
-<li><a href="../../items/adler-brotherhood-signet-ring.html">Adler Brotherhood Signet Ring</a></li>
-<li><a href="../../items/aelfric-brooch.html">Aelfric Brooch</a></li>
-<li><a href="../../items/aelfric-cravat-pin.html">Aelfric Cravat Pin</a></li>
-<li><a href="../../items/command-tuning-fork.html">Command Tuning Fork</a></li>
-<li><a href="../../items/northlake-jewel.html">Northlake Jewel</a></li>
-<li><a href="../../items/revelations-of-glaaki.html">Revelations of Glaaki</a></li>
-</ul>
-<h2>Documents</h2>
-<ul>
-<li><a href="../../documents/bauer-release-order.html">Bauer Release Order</a></li>
-<li><a href="../../documents/herzfeld-letter-to-savarin.html">Herzfeld Letter to Savarin</a></li>
-<li><a href="../../documents/thurner-operational-packet.html">Thurner Operational Packet</a></li>
-</ul>
-<h2>Clues</h2>
-<ul>
-<li><a href="../../clues/5-of-8-ritual-requirement.html">5 of 8 Ritual Requirement</a></li>
-<li><a href="../../clues/a432hz-engine-resonance.html">A432Hz Engine Resonance</a></li>
-<li><a href="../../clues/august-15-ritual-date.html">August 15 Ritual Date</a></li>
-<li><a href="../../clues/backerstrasse-14-adler-rooms.html">Backerstrasse 14 Adler Rooms</a></li>
-<li><a href="../../clues/black-bear-tavern-bauer-lodging.html">Black Bear Tavern Bauer Lodging</a></li>
-<li><a href="../../clues/der-kantor-munich-coordination.html">Der Kantor Munich Coordination</a></li>
-<li><a href="../../clues/engine-beneath-university.html">Engine Beneath University</a></li>
-</ul>
-<h2>Chapters</h2>
-<ul>
-<li><a href="../../chapters/Chapter 0.1 - The Beginning/chapter-0-1-wrap-up.html">Chapter 0.1 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 1 - London/chapter-1-wrap-up.html">Chapter 1 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 2 - Lyon/chapter-2-wrap-up.html">Chapter 2 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/One_Shot_The_Audition/one-shot-the-audition.html">One Shot The Audition</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 1/session-01-wrap-up.html">Session 01 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 2/session-02-wrap-up.html">Session 02 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 7/session-07-wrap-up.html">Session 07 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 8/session-08-wrap-up.html">Session 08 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 9/session-09-wrap-up.html">Session 09 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 10/session-10-wrap-up.html">Session 10 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/vienna-chapter-summary.html">Vienna Chapter Summary</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/vienna-events-calendar-handout.html">Vienna Events Calendar Handout</a></li>
-</ul>
-<h2>Creatures</h2>
-<ul>
-<li><a href="../../creatures/chakota.html">Chakota</a></li>
-<li><a href="../../creatures/ciimba-children.html">Ciimba Children</a></li>
-<li><a href="../../creatures/harmonic-engine-victims.html">Harmonic Engine Victims</a></li>
-<li><a href="../../creatures/harmonische-wachter.html">Harmonische Wachter</a></li>
-<li><a href="../../creatures/horror-long-corridor.html">Horror Long Corridor</a></li>
-<li><a href="../../creatures/hound-of-tindalos.html">Hound of Tindalos</a></li>
-<li><a href="../../creatures/nightgaunt.html">Nightgaunt</a></li>
-<li><a href="../../creatures/yog-sothoth.html">Yog Sothoth</a></li>
-</ul>
-
-</nav>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3>Story</h3>
+  <ul>
+    <li><a href="../../chapters/index.html">Story</a></li>
+    <li><a href="../../timeline.html">Events</a></li>
+  </ul>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../../player-characters.html">Player Characters</a></li>
+    <li><a href="index.html">NPCs</a></li>
+    <li><a href="../../creatures/index.html">Creatures</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../../locations/index.html">Locations</a></li>
+    <li><a href="../../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../../documents/index.html">Documents</a></li>
+    <li><a href="../../clues/index.html">Clues</a></li>
+    <li><a href="../../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
 
 <main class="content">
-
-<div class="char-header">
-  
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span class="sep">&rsaquo;</span>Characters<span class="sep">&rsaquo;</span><a href="index.html">NPCs</a><span class="sep">&rsaquo;</span>Albin Herzfeld</nav>
+<div class="content-with-sidebar"><div class="main"><div class="hero-banner hero-banner-no-img">
+  <div class="pc-portrait" style="width:4rem;height:4rem;font-size:1.5rem;margin-bottom:0.75rem">AH</div>
   <h1>Albin Herzfeld</h1>
-  <div class="meta">
-    <span><span class="label">Role</span> Professor of Music Theory, University of Vienna; Cult Leader</span>
-    <span><span class="label">Nationality</span> Austrian</span>
-    <span><span class="label">Status</span> alive</span>
-    <span><span class="label">Age</span> 47</span>
-    
-  </div>
+  <div class="meta"><span><span class="label">Role</span> Professor of Music Theory, University of Vienna; Cult Leader</span>
+<span><span class="label">Nationality</span> Austrian</span>
+<span><span class="label">Status</span> alive</span>
+<span><span class="label">Age</span> 47</span></div>
 </div>
+<div class="pull-quote">Overview
+Professor Albin Herzfeld is a 47-year-old music theorist, mathematician, and occultist who leads the Vienna chapter of the Aeternum Choir. He is the designer of the Harmonic_Engine and has tr</div>
 <h2>Overview</h2>
 <p>Professor Albin Herzfeld is a 47-year-old music theorist, mathematician, and occultist who leads the Vienna chapter of the Aeternum Choir. He is the designer of the Harmonic_Engine and has transformed the sealed anatomical theatre beneath the University of Vienna into a construction site for his vision of “perfect harmony” — achieved by mechanizing the human components of sacred music.</p>
 <p>Herzfeld genuinely believes he is elevating humanity, not murdering it. He does not see his victims as people but as raw materials, imperfect instruments to be refined and incorporated into something transcendent.</p>
@@ -516,6 +248,19 @@ The ritual is scheduled for midnight on the Feast of the Assumption. Success wou
 <p>He will not deny the facts but will reframe them philosophically. “They have become immortal. They are part of something eternal. Their suffering is temporary; their transcendence is permanent.”</p>
 <h2>Session Appearances</h2>
 <p>Herzfeld should be present but peripheral in early sessions (Sessions 7–8), becoming increasingly visible and dangerous as the investigators close in. He should never be directly confronted until the climactic ritual night (Session 10, August 15).</p>
+<h2>Session 12 Update — Accelerating; Timeline Shifted (11 August 1814)</h2>
+<p>Intelligence extracted from <a href="werner-bauer.html">Werner Bauer</a> during interrogation at <a href="../../locations/thaliastrasse-12-safehouse.html">Thaliastraße 12</a> confirmed the following:</p>
+<ul>
+<li><strong>Herzfeld has not been sleeping.</strong> He is spending extended time in the sealed theatre beyond his usual evening pattern. This is visible even to hired muscle like Bauer who is not privy to the academic work.</li>
+<li><strong>The ritual timeline has shifted from August 15 to August 13.</strong> This compresses the party’s window by two days. The assault is now planned for pre-dawn 12 August.</li>
+<li><strong>Presumed responsible for the Wächter attack at the Heuriger.</strong> The Wächter that attacked the war council was almost certainly deployed by Herzfeld, or activated by the Engine itself in response to the proximity of the <a href="../../items/command-tuning-fork.html">fork</a>. Whether Herzfeld directed it consciously or the Engine acted semi-autonomously is not yet established.</li>
+</ul>
+<h3>Updated Status (11 August 1814)</h3>
+<ul>
+<li><strong>Sleep:</strong> Not sleeping. Deteriorating.</li>
+<li><strong>Location:</strong> University sealed theatre for extended periods, plus his Innere Stadt apartments</li>
+<li><strong>Ritual readiness:</strong> Unknown, but the accelerated timeline suggests the Engine is closer to operational than the party realised</li>
+</ul>
 <h2>Final Notes</h2>
 <p>Herzfeld represents clinical, bureaucratic evil — the horror of rationalization, of removing human feeling from atrocity and replacing it with mathematics. He is not a melodramatic villain. He is a man convinced he is right, and that conviction makes him more dangerous than any cackling cultist.</p>
 <blockquote>
@@ -531,14 +276,302 @@ If captured before the ritual, Herzfeld will initially be defiant but will revea
 <li><strong class="rel-label">Depends on</strong> <a href="leopold-von-trautmannsdorff.html" class="entity-link">Leopold von Trautmannsdorff</a> &mdash; Count provides funding and political protection</li>
 <li><strong class="rel-label">Designed</strong> Harmonic Engine &mdash; Architect of the Engine; devoted to its completion</li>
 <li><strong class="rel-label">Targets</strong> <a href="anna-lindqvist.html" class="entity-link">Anna Lindqvist</a> &mdash; Soprano component acquisition target; ideal vocal candidate</li>
+<li><strong class="rel-label">Presumed responsible for</strong> Wachter Ambush Heuriger Aug 11 &mdash; Presumed to have deployed the Wächter that attacked the war council at the Heuriger, or the Engine directed it independently</li>
 </ul>
+<div class="whos-here">
+  <h2>Connections</h2>
+  <div class="relationship-cards"><a class="rel-card" href="../../../factions/brotherhood-of-the-open-measure.html">
+  <div class="rel-type">leads</div>
+  <div class="rel-name">Brotherhood of the Open Measure</div>
+</a>
+<a class="rel-card" href="../anton-adler.html">
+  <div class="rel-type">serves with</div>
+  <div class="rel-name">Anton Adler</div>
+</a>
+<a class="rel-card" href="../franz-kaunitz.html">
+  <div class="rel-type">employs</div>
+  <div class="rel-name">Franz Kaunitz</div>
+</a>
+<a class="rel-card" href="../leopold-von-trautmannsdorff.html">
+  <div class="rel-type">depends on</div>
+  <div class="rel-name">Leopold von Trautmannsdorff</div>
+</a>
+<div class="rel-card">
+  <div class="rel-type">designed</div>
+  <div class="rel-name">Harmonic Engine</div>
+</div>
+<a class="rel-card" href="../anna-lindqvist.html">
+  <div class="rel-type">targets</div>
+  <div class="rel-name">Anna Lindqvist</div>
+</a>
+<div class="rel-card">
+  <div class="rel-type">presumed responsible for</div>
+  <div class="rel-name">Wachter Ambush Heuriger Aug 11</div>
+</div></div>
+</div>
+<div class="relationship-graph"><h2>Connections Graph</h2><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="font-family: var(--font-body, system-ui);">
+  <line x1="300" y1="200" x2="300" y2="80" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="320.2800984386219" y2="81.72609075827498" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="339.9767753690469" y2="86.8547065446699" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="358.52339325763614" y2="95.23830642065742" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="375.3863996754771" y2="106.63570948178726" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="390.08067663032693" y2="120.71903319319023" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="402.18349652799736" y2="137.0831259731322" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="411.34668327558114" y2="155.25722266636296" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="417.30662867372234" y2="174.71848760051284" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="419.8918759445618" y2="194.9070556164622" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="419.0280522310652" y2="215.24213836962545" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="414.7400081687101" y2="235.138732553186" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="407.1511029779482" y2="254.0244493781208" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="396.47965564403285" y2="271.3559811565144" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="383.03266427730557" y2="286.6347312745429" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="367.19697433651146" y2="299.42115790926107" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="349.42814978927913" y2="309.34741884657626" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="330.237367366215" y2="316.12795363201985" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="310.17671093706116" y2="319.56769862510316" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="289.82328906293895" y2="319.56769862510316" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="269.76263263378496" y2="316.12795363201985" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="250.57185021072087" y2="309.34741884657626" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="232.8030256634886" y2="299.42115790926107" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="216.9673357226945" y2="286.63473127454296" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="203.52034435596713" y2="271.35598115651436" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="192.8488970220518" y2="254.02444937812083" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="185.25999183128988" y2="235.13873255318603" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="180.9719477689348" y2="215.2421383696255" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="180.10812405543822" y2="194.9070556164622" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="182.69337132627766" y2="174.7184876005128" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="188.65331672441886" y2="155.257222666363" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="197.8165034720026" y2="137.08312597313227" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="209.91932336967307" y2="120.71903319319024" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="224.61360032452293" y2="106.63570948178726" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="241.4766067423639" y2="95.2383064206574" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="260.0232246309531" y2="86.8547065446699" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="279.71990156137804" y2="81.72609075827499" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <a href="albin-herzfeld.html"><g opacity="1">
+    <circle cx="300" cy="200" r="28" fill="var(--accent, #58a6ff)" stroke="var(--accent, #58a6ff)" stroke-width="2"/>
+    <text x="300" y="243" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Albin Herzfeld</text>
+  </g></a>
+  <a href="../../factions/brotherhood-of-the-open-measure.html"><g opacity="1">
+    <polygon points="317.3205080756888,70 317.3205080756888,90 300,100 282.6794919243112,90 282.6794919243112,70 300,60" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Brotherhood o…</text>
+  </g></a>
+  <a href="anton-adler.html"><g opacity="1">
+    <circle cx="320.2800984386219" cy="81.72609075827498" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="320.2800984386219" y="116.72609075827498" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Anton Adler</text>
+  </g></a>
+  <a href="franz-kaunitz.html"><g opacity="1">
+    <circle cx="339.9767753690469" cy="86.8547065446699" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="339.9767753690469" y="121.8547065446699" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Franz Kaunitz</text>
+  </g></a>
+  <a href="leopold-von-trautmannsdorff.html"><g opacity="1">
+    <circle cx="358.52339325763614" cy="95.23830642065742" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="358.52339325763614" y="130.2383064206574" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Leopold von T…</text>
+  </g></a>
+  <g opacity="1">
+    <circle cx="375.3863996754771" cy="106.63570948178726" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="375.3863996754771" y="141.63570948178727" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Harmonic Engine</text>
+  </g>
+  <a href="anna-lindqvist.html"><g opacity="1">
+    <circle cx="390.08067663032693" cy="120.71903319319023" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="390.08067663032693" y="155.71903319319023" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Anna Lindqvist</text>
+  </g></a>
+  <g opacity="1">
+    <circle cx="402.18349652799736" cy="137.0831259731322" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="402.18349652799736" y="172.0831259731322" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Wachter Ambus…</text>
+  </g>
+  <a href="../../chapters/Chapter 1 - London/chapter-1-wrap-up.html"><g opacity="1">
+    <circle cx="411.34668327558114" cy="155.25722266636296" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="411.34668327558114" y="190.25722266636296" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Chapter 1 Wra…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 1/session-01-wrap-up.html"><g opacity="1">
+    <circle cx="417.30662867372234" cy="174.71848760051284" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="417.30662867372234" y="209.71848760051284" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 01 Wr…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 10/session-10-wrap-up.html"><g opacity="1">
+    <circle cx="419.8918759445618" cy="194.9070556164622" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="419.8918759445618" y="229.9070556164622" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 10 Wr…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 11/session-11-wrap-up.html"><g opacity="1">
+    <circle cx="419.0280522310652" cy="215.24213836962545" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="419.0280522310652" y="250.24213836962545" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 11 Wr…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 12/session-12-wrap-up.html"><g opacity="1">
+    <circle cx="414.7400081687101" cy="235.138732553186" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="414.7400081687101" y="270.138732553186" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 12 Wr…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 2/session-02-wrap-up.html"><g opacity="1">
+    <circle cx="407.1511029779482" cy="254.0244493781208" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="407.1511029779482" y="289.02444937812083" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 02 Wr…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 8/session-08-wrap-up.html"><g opacity="1">
+    <circle cx="396.47965564403285" cy="271.3559811565144" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="396.47965564403285" y="306.3559811565144" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 08 Wr…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 9/session-09-wrap-up.html"><g opacity="1">
+    <circle cx="383.03266427730557" cy="286.6347312745429" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="383.03266427730557" y="321.6347312745429" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 09 Wr…</text>
+  </g></a>
+  <a href="caroline-hartley.html"><g opacity="1">
+    <circle cx="367.19697433651146" cy="299.42115790926107" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="367.19697433651146" y="334.42115790926107" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Caroline Hart…</text>
+  </g></a>
+  <a href="../pcs/charlotte-thorne.html"><g opacity="1">
+    <circle cx="349.42814978927913" cy="309.34741884657626" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="349.42814978927913" y="344.34741884657626" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Charlotte Tho…</text>
+  </g></a>
+  <a href="lady-honoria-lyndhurst.html"><g opacity="1">
+    <circle cx="330.237367366215" cy="316.12795363201985" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="330.237367366215" y="351.12795363201985" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Lady Honoria …</text>
+  </g></a>
+  <a href="lady-octavia-danforth.html"><g opacity="1">
+    <circle cx="310.17671093706116" cy="319.56769862510316" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="310.17671093706116" y="354.56769862510316" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Lady Octavia …</text>
+  </g></a>
+  <a href="leopold-fischbein.html"><g opacity="1">
+    <circle cx="289.82328906293895" cy="319.56769862510316" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="289.82328906293895" y="354.56769862510316" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Leopold Fisch…</text>
+  </g></a>
+  <a href="liesel-hartmann.html"><g opacity="1">
+    <circle cx="269.76263263378496" cy="316.12795363201985" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="269.76263263378496" y="351.12795363201985" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Liesel Hartmann</text>
+  </g></a>
+  <a href="lydia-hartley.html"><g opacity="1">
+    <circle cx="250.57185021072087" cy="309.34741884657626" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="250.57185021072087" y="344.34741884657626" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Lydia Hartley</text>
+  </g></a>
+  <a href="maria-von-thun.html"><g opacity="1">
+    <circle cx="232.8030256634886" cy="299.42115790926107" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="232.8030256634886" y="334.42115790926107" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Maria von Thun</text>
+  </g></a>
+  <a href="william-thurner.html"><g opacity="1">
+    <circle cx="216.9673357226945" cy="286.63473127454296" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="216.9673357226945" y="321.63473127454296" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">William Thurner</text>
+  </g></a>
+  <a href="../pcs/adrien-de-montferrand.html"><g opacity="1">
+    <circle cx="203.52034435596713" cy="271.35598115651436" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="203.52034435596713" y="306.35598115651436" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Adrien de Mon…</text>
+  </g></a>
+  <a href="../pcs/emma-wentworth.html"><g opacity="1">
+    <circle cx="192.8488970220518" cy="254.02444937812083" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="192.8488970220518" y="289.02444937812083" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Emma Wentworth</text>
+  </g></a>
+  <a href="../../clues/5-of-8-ritual-requirement.html"><g opacity="1">
+    <circle cx="185.25999183128988" cy="235.13873255318603" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="185.25999183128988" y="270.13873255318606" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">5 of 8 Ritual…</text>
+  </g></a>
+  <a href="../../clues/august-15-ritual-date.html"><g opacity="1">
+    <circle cx="180.9719477689348" cy="215.2421383696255" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="180.9719477689348" y="250.2421383696255" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">August 15 Rit…</text>
+  </g></a>
+  <a href="../../clues/backerstrasse-14-adler-rooms.html"><g opacity="1">
+    <circle cx="180.10812405543822" cy="194.9070556164622" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="180.10812405543822" y="229.9070556164622" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Backerstrasse…</text>
+  </g></a>
+  <a href="../../clues/der-kantor-munich-coordination.html"><g opacity="1">
+    <circle cx="182.69337132627766" cy="174.7184876005128" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="182.69337132627766" y="209.7184876005128" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Der Kantor Mu…</text>
+  </g></a>
+  <a href="../../clues/engine-beneath-university.html"><g opacity="1">
+    <circle cx="188.65331672441886" cy="155.257222666363" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="188.65331672441886" y="190.257222666363" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Engine Beneat…</text>
+  </g></a>
+  <a href="../../creatures/harmonische-wachter.html"><g opacity="1">
+    <circle cx="197.8165034720026" cy="137.08312597313227" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="197.8165034720026" y="172.08312597313227" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Harmonische W…</text>
+  </g></a>
+  <a href="../../documents/herzfeld-letter-to-savarin.html"><g opacity="1">
+    <circle cx="209.91932336967307" cy="120.71903319319024" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="209.91932336967307" y="155.71903319319023" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Herzfeld Lett…</text>
+  </g></a>
+  <a href="../../documents/thurner-operational-packet.html"><g opacity="1">
+    <circle cx="224.61360032452293" cy="106.63570948178726" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="224.61360032452293" y="141.63570948178727" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Thurner Opera…</text>
+  </g></a>
+  <a href="../../items/adler-brotherhood-signet-ring.html"><g opacity="1">
+    <polygon points="241.4766067423639,75.2383064206574 261.4766067423639,95.2383064206574 241.4766067423639,115.2383064206574 221.4766067423639,95.2383064206574" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="241.4766067423639" y="130.2383064206574" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Adler Brother…</text>
+  </g></a>
+  <a href="../../items/revelations-of-glaaki.html"><g opacity="1">
+    <polygon points="260.0232246309531,66.8547065446699 280.0232246309531,86.8547065446699 260.0232246309531,106.8547065446699 240.0232246309531,86.8547065446699" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="260.0232246309531" y="121.8547065446699" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Revelations o…</text>
+  </g></a>
+  <a href="../../campaign/timeline.html"><g opacity="1">
+    <circle cx="279.71990156137804" cy="81.72609075827499" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="279.71990156137804" y="116.72609075827499" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Timeline</text>
+  </g></a>
+</svg></div></div><aside class="context-sidebar">
+<h3>Relationships</h3>
+<ul><li><a href="../../factions/brotherhood-of-the-open-measure.html">Brotherhood of the Open Measure</a> <span class="sidebar-badge">leads</span></li>
+<li><a href="anton-adler.html">Anton Adler</a> <span class="sidebar-badge">serves with</span></li>
+<li><a href="franz-kaunitz.html">Franz Kaunitz</a> <span class="sidebar-badge">employs</span></li>
+<li><a href="leopold-von-trautmannsdorff.html">Leopold von Trautmannsdorff</a> <span class="sidebar-badge">depends on</span></li>
+<li>Harmonic Engine <span class="sidebar-badge">designed</span></li>
+<li><a href="anna-lindqvist.html">Anna Lindqvist</a> <span class="sidebar-badge">targets</span></li>
+<li>Wachter Ambush Heuriger Aug 11 <span class="sidebar-badge">presumed responsible for</span></li></ul>
+<h3>Mentioned In</h3>
+<ul><li><a href="../../chapters/Chapter 1 - London/chapter-1-wrap-up.html">Chapter 1 Wrap Up</a> <span class="sidebar-badge">session_note</span></li>
+<li><a href="../../chapters/Chapter 3 - Vienna/Session 1/session-01-wrap-up.html">Session 01 Wrap Up</a> <span class="sidebar-badge">session_wrap</span></li>
+<li><a href="../../chapters/Chapter 3 - Vienna/Session 10/session-10-wrap-up.html">Session 10 Wrap Up</a> <span class="sidebar-badge">session_wrap</span></li>
+<li><a href="../../chapters/Chapter 3 - Vienna/Session 11/session-11-wrap-up.html">Session 11 Wrap Up</a> <span class="sidebar-badge">session_wrap</span></li>
+<li><a href="../../chapters/Chapter 3 - Vienna/Session 12/session-12-wrap-up.html">Session 12 Wrap Up</a> <span class="sidebar-badge">session-wrap-up</span></li>
+<li><a href="../../chapters/Chapter 3 - Vienna/Session 2/session-02-wrap-up.html">Session 02 Wrap Up</a> <span class="sidebar-badge">session_wrap</span></li>
+<li><a href="../../chapters/Chapter 3 - Vienna/Session 8/session-08-wrap-up.html">Session 08 Wrap Up</a> <span class="sidebar-badge">session_wrap_up</span></li>
+<li><a href="../../chapters/Chapter 3 - Vienna/Session 9/session-09-wrap-up.html">Session 09 Wrap Up</a> <span class="sidebar-badge">session_wrap</span></li>
+<li><a href="anna-lindqvist.html">Anna Lindqvist</a> <span class="sidebar-badge">npc</span></li>
+<li><a href="anton-adler.html">Anton Adler</a> <span class="sidebar-badge">npc</span></li>
+<li><a href="caroline-hartley.html">Caroline Hartley</a> <span class="sidebar-badge">npc</span></li>
+<li><a href="charlotte-thorne.html">Charlotte Thorne</a> <span class="sidebar-badge">npc</span></li>
+<li><a href="franz-kaunitz.html">Franz Kaunitz</a> <span class="sidebar-badge">npc</span></li>
+<li><a href="lady-honoria-lyndhurst.html">Lady Honoria Lyndhurst</a> <span class="sidebar-badge">npc</span></li>
+<li><a href="lady-octavia-danforth.html">Lady Octavia Danforth</a> <span class="sidebar-badge">npc</span></li>
+<li><a href="leopold-fischbein.html">Leopold Fischbein</a> <span class="sidebar-badge">npc</span></li>
+<li><a href="liesel-hartmann.html">Liesel Hartmann</a> <span class="sidebar-badge">npc</span></li>
+<li><a href="lydia-hartley.html">Lydia Hartley</a> <span class="sidebar-badge">npc</span></li>
+<li><a href="maria-von-thun.html">Maria von Thun</a> <span class="sidebar-badge">npc</span></li>
+<li><a href="william-thurner.html">William Thurner</a> <span class="sidebar-badge">npc</span></li>
+<li><a href="../pcs/adrien-de-montferrand.html">Adrien de Montferrand</a> <span class="sidebar-badge">pc</span></li>
+<li><a href="../pcs/emma-wentworth.html">Emma Wentworth</a> <span class="sidebar-badge">pc</span></li>
+<li><a href="../../clues/5-of-8-ritual-requirement.html">5 of 8 Ritual Requirement</a> <span class="sidebar-badge">clue</span></li>
+<li><a href="../../clues/august-15-ritual-date.html">August 15 Ritual Date</a> <span class="sidebar-badge">clue</span></li>
+<li><a href="../../clues/backerstrasse-14-adler-rooms.html">Backerstrasse 14 Adler Rooms</a> <span class="sidebar-badge">clue</span></li>
+<li><a href="../../clues/der-kantor-munich-coordination.html">Der Kantor Munich Coordination</a> <span class="sidebar-badge">clue</span></li>
+<li><a href="../../clues/engine-beneath-university.html">Engine Beneath University</a> <span class="sidebar-badge">clue</span></li>
+<li><a href="../../creatures/harmonische-wachter.html">Harmonische Wachter</a> <span class="sidebar-badge">creature</span></li>
+<li><a href="../../documents/herzfeld-letter-to-savarin.html">Herzfeld Letter to Savarin</a> <span class="sidebar-badge">document</span></li>
+<li><a href="../../documents/thurner-operational-packet.html">Thurner Operational Packet</a> <span class="sidebar-badge">document</span></li>
+<li><a href="../../factions/brotherhood-of-the-open-measure.html">Brotherhood of the Open Measure</a> <span class="sidebar-badge">faction</span></li>
+<li><a href="../../items/adler-brotherhood-signet-ring.html">Adler Brotherhood Signet Ring</a> <span class="sidebar-badge">item</span></li>
+<li><a href="../../items/revelations-of-glaaki.html">Revelations of Glaaki</a> <span class="sidebar-badge">item</span></li>
+<li><a href="../../campaign/timeline.html">Timeline</a> <span class="sidebar-badge">timeline</span></li></ul>
+</aside></div>
 </main>
 
 
 
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../../js/nav.js"></script>
+<script src="../../js/lightbox.js"></script>
+<script src="../../js/search.js"></script>
 <script>
-document.querySelectorAll('.site-nav a').forEach(a => {
-  a.addEventListener('click', () => document.getElementById('nav').classList.remove('open'));
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
 });
 </script>
 

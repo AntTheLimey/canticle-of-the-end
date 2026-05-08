@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>De Vermiis Mysteriis — Canticle of the End</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/themes/horror.css">
+  <link rel="stylesheet" href="../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../index.html" class="nav-brand">Canticle of the End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <button class="nav-group-toggle">Story</button>
+        <div class="nav-dropdown">
+        <a href="../chapters/index.html">Story</a>
+        <a href="../timeline.html">Events</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../player-characters.html">Player Characters</a>
+        <a href="../characters/npcs/index.html">NPCs</a>
+        <a href="../creatures/index.html">Creatures</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../locations/index.html">Locations</a>
+        <a href="../factions/index.html">Factions &amp; Organizations</a>
+        <a href="index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../documents/index.html">Documents</a>
+        <a href="../clues/index.html">Clues</a>
+        <a href="../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3>Story</h3>
+  <ul>
+    <li><a href="../chapters/index.html">Story</a></li>
+    <li><a href="../timeline.html">Events</a></li>
+  </ul>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../player-characters.html">Player Characters</a></li>
+    <li><a href="../characters/npcs/index.html">NPCs</a></li>
+    <li><a href="../creatures/index.html">Creatures</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../locations/index.html">Locations</a></li>
+    <li><a href="../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../documents/index.html">Documents</a></li>
+    <li><a href="../clues/index.html">Clues</a></li>
+    <li><a href="../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">&rsaquo;</span><a href="index.html">Items</a><span class="sep">&rsaquo;</span>De Vermiis Mysteriis</nav>
+<div class="content-with-sidebar"><div class="main">
+<div class="char-header">
+  
+  <h1>De Vermiis Mysteriis</h1>
+</div>
+<div class="metadata-badges"><span class="metadata-badge">tome</span></div>
+
+<p class="item-holder"><strong>Current Holder:</strong> <a href="../characters/pcs/georgiana-wentworth.html">Georgiana_Wentworth</a></p>
+<p class="item-origin"><strong>Origin:</strong> Recovered during the London investigation (Chapter 1)</p>
+<h2>Physical Description</h2>
+<p>A Latin text in heavy quarto binding, the leather dark with age and stamped with faded geometric patterns that do not correspond to any standard bookbinding tradition. The pages are thick rag paper, browned at the edges, with woodcut illustrations of unsettling precision — anatomical diagrams that blend human and non-human structures, ritual configurations rendered in technical cross-section, and sigils that appear to shift slightly in peripheral vision. The text is dense, scholarly, and written with the clinical detachment of a man describing procedures he has personally performed.</p>
+<h2>Provenance</h2>
+<p>Attributed to Ludwig Prinn, written c. 1542 and first published (suppressed) in Cologne. This copy is a Latin edition, likely 17th century, recovered during the Chapter 1 London investigation. It was in the party’s possession by the time they reached Vienna and was among the items seized from their rooms at <a href="../locations/palais-kinsky.html">Palais_Kinsky</a> during the Polizeidirektion search (Session 4).</p>
+<h2>CoC 7e Tome Statistics</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Language</strong></td>
+<td>Latin</td>
+</tr>
+<tr>
+<td><strong>Reading Time</strong></td>
+<td>40 weeks (full study)</td>
+</tr>
+<tr>
+<td><strong>Cthulhu Mythos Gain</strong></td>
+<td>+10% (initial) / +13% (full)</td>
+</tr>
+<tr>
+<td><strong>Sanity Loss</strong></td>
+<td>1D8 / 2D8</td>
+</tr>
+<tr>
+<td><strong>Spells</strong></td>
+<td>Multiple Contact spells, elder bindings, summoning and dismissal formulae</td>
+</tr>
+</tbody>
+</table>
+<p>(Source: CoC 7e Keeper Rulebook, Mythos Tomes)</p>
+<h2>Campaign Relevance — The Counter-Ritual</h2>
+<p>The <em>De Vermiis Mysteriis</em> is the party’s only source for a potential counter to the Harmonic_Engine. As established in the Session 11 assault planning scene:</p>
+<ul>
+<li><strong>A partial counter-ritual exists in the text</strong> — a harmonic inversion that could theoretically disrupt the Engine’s resonance. Prinn describes it as a method for “unmaking that which has been bound by sustained tone,” originally intended for dismissing entities summoned through harmonic means.</li>
+<li><strong>The counter-ritual requires three things:</strong> the <a href="command-tuning-fork.html">fork</a>, a specific sequence of strikes (described in the text as a “contrary pattern”), and physical proximity to the Engine.</li>
+<li><strong>The cost is not specified.</strong> Prinn does not describe what happens to the person performing the inversion. The text says only that the binding must be “returned through the instrument that shaped it,” which implies the fork acts as both weapon and conduit.</li>
+<li><strong>Georgiana’s connection:</strong> The counter-ritual is the inverse of what she did when she controlled the <a href="../creatures/harmonische-wachter.html">Wächter</a> — pushing instead of pulling. The implications for her psychic bond with the Engine are unclear and frightening. Using the fork to disrupt the Engine may deepen the bond catastrophically, or it may sever it. The text offers no guidance.</li>
+</ul>
+<h2>Known Uses in Play</h2>
+<ul>
+<li><strong>Chapter 1:</strong> Recovered during the London investigation (exact scene unconfirmed).</li>
+<li><strong>Session 4:</strong> Stolen from the party’s rooms at <a href="../locations/palais-kinsky.html">Palais_Kinsky</a> during the Polizeidirektion search.</li>
+<li><strong>Session 10:</strong> Recovered from the Polizeidirektion using Metternich’s writ.</li>
+<li><strong>Session 11 (planned):</strong> Available for Georgiana’s research during assault planning. Partial study yields the counter-ritual fragments.</li>
+</ul>
+<h2>Session 12 Update — Studied at Thaliastraße 12 (11 August 1814)</h2>
+<p><a href="../characters/pcs/adrien-de-montferrand.html">Adrien</a> studied the De Vermiis Mysteriis during the forbidden texts study session at <a href="../locations/thaliastrasse-12-safehouse.html">Thaliastraße 12</a> on 11 August.</p>
+<h3>Intelligence Revealed</h3>
+<ul>
+<li><strong>Counter-frequencies:</strong> The text describes tonal inversions that collapse harmonic fields. This is the specific technique Prinn calls “returning the binding through the instrument that shaped it.” The counter-ritual the party is planning for the assault is grounded in this passage.</li>
+<li><strong>Operational detail:</strong> The strike sequences described are the “contrary pattern” required by the counter-ritual. Adrien now holds this knowledge, alongside <a href="../characters/pcs/georgiana-wentworth.html">Georgiana</a>, who holds the fork.</li>
+</ul>
+<h3>Sanity Cost</h3>
+<p>Adrien suffered a severe mental break during the study. He fainted. When unconscious, traumatic memories from a Pyrenees abbey were projected visually onto the parlor window, visible to anyone present. The episode has implications for Adrien’s state going into the assault.</p>
+<h3>Known Uses in Play (Updated)</h3>
+<ul>
+<li><strong>Chapter 1:</strong> Recovered during the London investigation (exact scene unconfirmed).</li>
+<li><strong>Session 4:</strong> Stolen from the party’s rooms at <a href="../locations/palais-kinsky.html">Palais_Kinsky</a> during the Polizeidirektion search.</li>
+<li><strong>Session 10:</strong> Recovered from the Polizeidirektion using Metternich’s writ.</li>
+<li><strong>Session 12:</strong> Studied by Adrien on 11 August. Revealed counter-frequencies and tonal inversions. Adrien suffered severe mental break: fainted, traumatic Pyrenees abbey memories projected visually onto the parlor window.</li>
+</ul>
+
+<h2>Relationships</h2>
+<ul class="relationship-list">
+<li><strong class="rel-label">Carried by</strong> <a href="../characters/pcs/georgiana-wentworth.html" class="entity-link">Georgiana Wentworth</a> &mdash; In Georgiana's possession; contains the partial counter-ritual for the Engine</li>
+<li><strong class="rel-label">Counter to</strong> Harmonic Engine &mdash; Contains a partial harmonic inversion ritual that could disrupt the Engine's resonance</li>
+<li><strong class="rel-label">Requires</strong> <a href="command-tuning-fork.html" class="entity-link">Command Tuning Fork</a> &mdash; The counter-ritual requires the fork, specific strike sequences, and proximity to the Engine</li>
+<li><strong class="rel-label">Studied during</strong> Forbidden Texts Study Aug 11 &mdash; Studied by Adrien on 11 August; revealed counter-frequencies and tonal inversions. Adrien suffered severe mental break during study.</li>
+</ul>
+<div class="relationship-graph"><h2>Connections</h2><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="font-family: var(--font-body, system-ui);">
+  <line x1="300" y1="200" x2="300" y2="80" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="393.8197778961636" y2="125.18122377695198" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="416.9913494618188" y2="226.70251207475772" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="352.066048694107" y2="308.11626414829027" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="247.93395130589303" y2="308.11626414829027" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="183.00865053818117" y2="226.70251207475775" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="206.1802221038364" y2="125.181223776952" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="80" x2="427.27922061357856" y2="72.72077938642146" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="473.86664873203233" y2="153.41257188154626" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="473.86664873203233" y2="246.58742811845372" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="427.27922061357856" y2="327.27922061357856" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="346.5874281184538" y2="373.8666487320323" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="253.41257188154626" y2="373.86664873203233" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="172.72077938642144" y2="327.27922061357856" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="126.13335126796773" y2="246.58742811845377" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="126.1333512679677" y2="153.41257188154634" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="172.7207793864214" y2="72.72077938642146" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="253.41257188154628" y2="26.133351267967697" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="346.58742811845366" y2="26.133351267967697" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <a href="de-vermiis-mysteriis.html"><g opacity="1">
+    <polygon points="300,172 328,200 300,228 272,200" fill="var(--accent, #58a6ff)" stroke="var(--accent, #58a6ff)" stroke-width="2"/>
+    <text x="300" y="243" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">De Vermiis My…</text>
+  </g></a>
+  <a href="../characters/pcs/georgiana-wentworth.html"><g opacity="1">
+    <circle cx="300" cy="80" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Georgiana Wen…</text>
+  </g></a>
+  <g opacity="1">
+    <circle cx="393.8197778961636" cy="125.18122377695198" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="393.8197778961636" y="160.18122377695198" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Harmonic Engine</text>
+  </g>
+  <a href="command-tuning-fork.html"><g opacity="1">
+    <polygon points="416.9913494618188,206.70251207475772 436.9913494618188,226.70251207475772 416.9913494618188,246.70251207475772 396.9913494618188,226.70251207475772" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="416.9913494618188" y="261.7025120747577" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Command Tunin…</text>
+  </g></a>
+  <g opacity="1">
+    <circle cx="352.066048694107" cy="308.11626414829027" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="352.066048694107" y="343.11626414829027" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Forbidden Tex…</text>
+  </g>
+  <a href="../chapters/Chapter 3 - Vienna/Session 12/session-12-wrap-up.html"><g opacity="1">
+    <circle cx="247.93395130589303" cy="308.11626414829027" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="247.93395130589303" y="343.11626414829027" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 12 Wr…</text>
+  </g></a>
+  <a href="cultes-des-ghoules.html"><g opacity="1">
+    <polygon points="183.00865053818117,206.70251207475775 203.00865053818117,226.70251207475775 183.00865053818117,246.70251207475775 163.00865053818117,226.70251207475775" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="183.00865053818117" y="261.70251207475775" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Cultes Des Gh…</text>
+  </g></a>
+  <a href="../campaign/timeline.html"><g opacity="1">
+    <circle cx="206.1802221038364" cy="125.181223776952" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="206.1802221038364" y="160.18122377695198" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Timeline</text>
+  </g></a>
+  <a href="../characters/pcs/emma-wentworth.html"><g opacity="0.5">
+    <circle cx="427.27922061357856" cy="72.72077938642146" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="427.27922061357856" y="99.72077938642146" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Emma Wentworth</text>
+  </g></a>
+  <a href="../characters/pcs/adrien-de-montferrand.html"><g opacity="0.5">
+    <circle cx="473.86664873203233" cy="153.41257188154626" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="473.86664873203233" y="180.41257188154626" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Adrien de Mon…</text>
+  </g></a>
+  <a href="../characters/pcs/katherine-ward.html"><g opacity="0.5">
+    <circle cx="473.86664873203233" cy="246.58742811845372" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="473.86664873203233" y="273.5874281184537" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Katherine Ward</text>
+  </g></a>
+  <a href="../characters/pcs/varrio-harrowmont.html"><g opacity="0.5">
+    <circle cx="427.27922061357856" cy="327.27922061357856" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="427.27922061357856" y="354.27922061357856" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Varrio Harrow…</text>
+  </g></a>
+  <a href="../characters/npcs/nikolai-volkonsky.html"><g opacity="0.5">
+    <circle cx="346.5874281184538" cy="373.8666487320323" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="346.5874281184538" y="400.8666487320323" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Nikolai Volko…</text>
+  </g></a>
+  <a href="../characters/pcs/freddy-cavendish.html"><g opacity="0.5">
+    <circle cx="253.41257188154626" cy="373.86664873203233" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="253.41257188154626" y="400.86664873203233" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Freddy Cavend…</text>
+  </g></a>
+  <a href="../locations/thaliastrasse-12-safehouse.html"><g opacity="0.5">
+    <rect x="158.72077938642144" y="313.27922061357856" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="172.72077938642144" y="354.27922061357856" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Thaliastrasse…</text>
+  </g></a>
+  <a href="../chapters/Chapter 0.1 - The Beginning/chapter-0-1-wrap-up.html"><g opacity="0.5">
+    <circle cx="126.13335126796773" cy="246.58742811845377" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="126.13335126796773" y="273.5874281184538" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Chapter 0.1 W…</text>
+  </g></a>
+  <a href="../chapters/Chapter 1 - London/chapter-1-wrap-up.html"><g opacity="0.5">
+    <circle cx="126.1333512679677" cy="153.41257188154634" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="126.1333512679677" y="180.41257188154634" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Chapter 1 Wra…</text>
+  </g></a>
+  <a href="../chapters/Chapter 2 - Lyon/chapter-2-wrap-up.html"><g opacity="0.5">
+    <circle cx="172.7207793864214" cy="72.72077938642146" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="172.7207793864214" y="99.72077938642146" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Chapter 2 Wra…</text>
+  </g></a>
+  <a href="../chapters/Chapter 3 - Vienna/Session 10/session-10-wrap-up.html"><g opacity="0.5">
+    <circle cx="253.41257188154628" cy="26.133351267967697" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="253.41257188154628" y="53.1333512679677" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Session 10 Wr…</text>
+  </g></a>
+  <a href="../chapters/Chapter 3 - Vienna/Session 11/session-11-wrap-up.html"><g opacity="0.5">
+    <circle cx="346.58742811845366" cy="26.133351267967697" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="346.58742811845366" y="53.1333512679677" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Session 11 Wr…</text>
+  </g></a>
+</svg></div></div><aside class="context-sidebar">
+<h3>Relationships</h3>
+<ul><li><a href="../characters/pcs/georgiana-wentworth.html">Georgiana Wentworth</a> <span class="sidebar-badge">carried by</span></li>
+<li>Harmonic Engine <span class="sidebar-badge">counter to</span></li>
+<li><a href="command-tuning-fork.html">Command Tuning Fork</a> <span class="sidebar-badge">requires</span></li>
+<li>Forbidden Texts Study Aug 11 <span class="sidebar-badge">studied during</span></li></ul>
+<h3>Mentioned In</h3>
+<ul><li><a href="../chapters/Chapter 3 - Vienna/Session 12/session-12-wrap-up.html">Session 12 Wrap Up</a> <span class="sidebar-badge">session-wrap-up</span></li>
+<li><a href="command-tuning-fork.html">Command Tuning Fork</a> <span class="sidebar-badge">item</span></li>
+<li><a href="cultes-des-ghoules.html">Cultes Des Ghoules</a> <span class="sidebar-badge">item</span></li>
+<li><a href="../campaign/timeline.html">Timeline</a> <span class="sidebar-badge">timeline</span></li></ul>
+</aside></div>
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../js/nav.js"></script>
+<script src="../js/lightbox.js"></script>
+<script src="../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>

@@ -5,380 +5,276 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Katherine Ward — Canticle of the End</title>
   <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/themes/horror.css">
   <link rel="stylesheet" href="../../css/theme.css">
 </head>
 <body>
 
-<header class="site-header">
-  <button class="menu-toggle" onclick="document.getElementById('nav').classList.add('open')" aria-label="Menu">&#9776;</button>
-  <h1><a href="../../index.html">Canticle of the End</a></h1>
+<header class="top-nav">
+  <a href="../../index.html" class="nav-brand">Canticle of the End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <button class="nav-group-toggle">Story</button>
+        <div class="nav-dropdown">
+        <a href="../../chapters/index.html">Story</a>
+        <a href="../../timeline.html">Events</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../../player-characters.html">Player Characters</a>
+        <a href="../npcs/index.html">NPCs</a>
+        <a href="../../creatures/index.html">Creatures</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../../locations/index.html">Locations</a>
+        <a href="../../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../../documents/index.html">Documents</a>
+        <a href="../../clues/index.html">Clues</a>
+        <a href="../../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
 </header>
-
-<nav id="nav" class="site-nav">
-  <button class="nav-close" onclick="document.getElementById('nav').classList.remove('open')" aria-label="Close">&times;</button>
-  <h2>Campaign</h2>
-<ul>
-<li><a href="../../player-characters.html">player characters</a></li>
-<li><a href="../../campaign/regency-slang-glossary.html">Regency Slang Glossary</a></li>
-<li><a href="../../campaign/timeline.html">Timeline</a></li>
-</ul>
-<h2>Player Characters</h2>
-<ul>
-<li><a href="adrien-de-montferrand.html">Adrien de Montferrand</a></li>
-<li><a href="augustus-bolt.html">Augustus Bolt</a></li>
-<li><a href="charlotte-thorne.html">Charlotte Thorne</a></li>
-<li><a href="emma-wentworth.html">Emma Wentworth</a></li>
-<li><a href="freddy-cavendish.html">Freddy Cavendish</a></li>
-<li><a href="georgiana-dillwyn.html">Georgiana Dillwyn</a></li>
-<li><a href="georgiana-wentworth.html">Georgiana Wentworth</a></li>
-<li><a href="jacob.html">Jacob</a></li>
-<li><a href="james-bennet.html">James Bennet</a></li>
-<li><a href="jane-radcliffe.html">Jane Radcliffe</a></li>
-<li><a href="katherine-ward.html">Katherine Ward</a></li>
-<li><a href="marina-garrick.html">Marina Garrick</a></li>
-<li><a href="varrio-harrowmont.html">Varrio Harrowmont</a></li>
-</ul>
-<h2>NPCs</h2>
-<ul>
-<li><a href="../npcs/abbe-etienne-duplessis.html">Abbe Etienne Duplessis</a></li>
-<li><a href="../npcs/abbe-ferrant.html">Abbe Ferrant</a></li>
-<li><a href="../npcs/agnes-hartley.html">Agnes Hartley</a></li>
-<li><a href="../npcs/albert-lambert.html">Albert Lambert</a></li>
-<li><a href="../npcs/albin-herzfeld.html">Albin Herzfeld</a></li>
-<li><a href="../npcs/andrei-volkonsky.html">Andrei Volkonsky</a></li>
-<li><a href="../npcs/anna-lindqvist.html">Anna Lindqvist</a></li>
-<li><a href="../npcs/annika-laughton.html">Annika Laughton</a></li>
-<li><a href="../npcs/antoine-lefevre.html">Antoine Lefevre</a></li>
-<li><a href="../npcs/anton-adler.html">Anton Adler</a></li>
-<li><a href="../npcs/benoit-chasseloup.html">Benoit Chasseloup</a></li>
-<li><a href="../npcs/captain-king.html">Captain King</a></li>
-<li><a href="../npcs/captain-richard-forsyth.html">Captain Richard Forsyth</a></li>
-<li><a href="../npcs/captain-thomas-keene.html">Captain Thomas Keene</a></li>
-<li><a href="../npcs/caroline-hartley.html">Caroline Hartley</a></li>
-<li><a href="../npcs/cecile-vaillant.html">Cecile Vaillant</a></li>
-<li><a href="../npcs/charles-duval.html">Charles Duval</a></li>
-<li><a href="../npcs/charlotte-thorne.html">Charlotte Thorne</a></li>
-<li><a href="../npcs/clara-fen.html">Clara Fen</a></li>
-<li><a href="../npcs/clementine-delaroche.html">Clementine Delaroche</a></li>
-<li><a href="../npcs/collarbone-jack.html">Collarbone Jack</a></li>
-<li><a href="../npcs/colonel-alastair-mccrae.html">Colonel Alastair McCrae</a></li>
-<li><a href="../npcs/colonel-etienne-moreau.html">Colonel Etienne Moreau</a></li>
-<li><a href="../npcs/colonel-fittlewick.html">Colonel Fittlewick</a></li>
-<li><a href="../npcs/colonel-maarten-van-hoorne.html">Colonel Maarten van Hoorne</a></li>
-<li><a href="../npcs/commissaire-jules-delaroche.html">Commissaire Jules Delaroche</a></li>
-<li><a href="../npcs/comte-henri-vallin.html">Comte Henri Vallin</a></li>
-<li><a href="../npcs/doctor-emile-carreau.html">Doctor Emile Carreau</a></li>
-<li><a href="../npcs/dr-ambrose-hargreaves.html">Dr Ambrose Hargreaves</a></li>
-<li><a href="../npcs/dr-erasmus-hume.html">Dr Erasmus Hume</a></li>
-<li><a href="../npcs/dr-heinrich-voss.html">Dr Heinrich Voss</a></li>
-<li><a href="../npcs/dr-odilon-mercier.html">Dr Odilon Mercier</a></li>
-<li><a href="../npcs/dr-thornton-beamish.html">Dr Thornton Beamish</a></li>
-<li><a href="../npcs/duchesse-de-brissac.html">Duchesse de Brissac</a></li>
-<li><a href="../npcs/edna-greaves.html">Edna Greaves</a></li>
-<li><a href="../npcs/elbert-fenwick.html">Elbert Fenwick</a></li>
-<li><a href="../npcs/eli-barlow.html">Eli Barlow</a></li>
-<li><a href="../npcs/eli-tadcombe.html">Eli Tadcombe</a></li>
-<li><a href="../npcs/eliza-sharpe.html">Eliza Sharpe</a></li>
-<li><a href="../npcs/emeric-de-puyrault.html">Emeric de Puyrault</a></li>
-<li><a href="../npcs/emile-fouchard.html">Emile Fouchard</a></li>
-<li><a href="../npcs/ephraim-colley.html">Ephraim Colley</a></li>
-<li><a href="../npcs/ernst-falkner.html">Ernst Falkner</a></li>
-<li><a href="../npcs/father-jeremiah-creel.html">Father Jeremiah Creel</a></li>
-<li><a href="../npcs/francois-barbier.html">Francois Barbier</a></li>
-<li><a href="../npcs/franz-huber.html">Franz Huber</a></li>
-<li><a href="../npcs/franz-kaunitz.html">Franz Kaunitz</a></li>
-<li><a href="../npcs/giles-mercer.html">Giles Mercer</a></li>
-<li><a href="../npcs/gottfried-reiner.html">Gottfried Reiner</a></li>
-<li><a href="../npcs/gustav-metzger.html">Gustav Metzger</a></li>
-<li><a href="../npcs/henri-marchand.html">Henri Marchand</a></li>
-<li><a href="../npcs/herr-grillparzer.html">Herr Grillparzer</a></li>
-<li><a href="../npcs/imogen-bellamy.html">Imogen Bellamy</a></li>
-<li><a href="../npcs/ingrid-sperl.html">Ingrid Sperl</a></li>
-<li><a href="../npcs/josiah-hartley.html">Josiah Hartley</a></li>
-<li><a href="../npcs/jules-steward.html">Jules Steward</a></li>
-<li><a href="../npcs/klaus-bauer.html">Klaus Bauer</a></li>
-<li><a href="../npcs/lady-bagtonbury.html">Lady Bagtonbury</a></li>
-<li><a href="../npcs/lady-bletchley.html">Lady Bletchley</a></li>
-<li><a href="../npcs/lady-euphemia-langridge.html">Lady Euphemia Langridge</a></li>
-<li><a href="../npcs/lady-honoria-lyndhurst.html">Lady Honoria Lyndhurst</a></li>
-<li><a href="../npcs/lady-octavia-danforth.html">Lady Octavia Danforth</a></li>
-<li><a href="../npcs/lady-rowena-calthorpe.html">Lady Rowena Calthorpe</a></li>
-<li><a href="../npcs/lady-wilhelmina-danvers.html">Lady Wilhelmina Danvers</a></li>
-<li><a href="../npcs/leopold-fischbein.html">Leopold Fischbein</a></li>
-<li><a href="../npcs/leopold-von-trautmannsdorff.html">Leopold von Trautmannsdorff</a></li>
-<li><a href="../npcs/liesel-hartmann.html">Liesel Hartmann</a></li>
-<li><a href="../npcs/lieut-john-orville.html">Lieut John Orville</a></li>
-<li><a href="../npcs/lieutenant-jonathan-pellam.html">Lieutenant Jonathan Pellam</a></li>
-<li><a href="../npcs/lord-cosgrove.html">Lord Cosgrove</a></li>
-<li><a href="../npcs/lord-digby-wycombe.html">Lord Digby Wycombe</a></li>
-<li><a href="../npcs/lord-felix-montroy.html">Lord Felix Montroy</a></li>
-<li><a href="../npcs/lord-percival-harcourt.html">Lord Percival Harcourt</a></li>
-<li><a href="../npcs/lord-ratcliffe.html">Lord Ratcliffe</a></li>
-<li><a href="../npcs/luc-fouchard.html">Luc Fouchard</a></li>
-<li><a href="../npcs/lucien-goupil.html">Lucien Goupil</a></li>
-<li><a href="../npcs/lucien-stablehand.html">Lucien Stablehand</a></li>
-<li><a href="../npcs/lucienne-moreau.html">Lucienne Moreau</a></li>
-<li><a href="../npcs/ludwig-vogel.html">Ludwig Vogel</a></li>
-<li><a href="../npcs/lydia-hartley.html">Lydia Hartley</a></li>
-<li><a href="../npcs/madame-beauregard.html">Madame Beauregard</a></li>
-<li><a href="../npcs/madame-delacroix.html">Madame Delacroix</a></li>
-<li><a href="../npcs/madame-elodie-marchand.html">Madame Elodie Marchand</a></li>
-<li><a href="../npcs/madame-sylvie-de-noyelles.html">Madame Sylvie de Noyelles</a></li>
-<li><a href="../npcs/magistrate-beraud.html">Magistrate Beraud</a></li>
-<li><a href="../npcs/major-lionel-ashcombe.html">Major Lionel Ashcombe</a></li>
-<li><a href="../npcs/maria-von-thun.html">Maria von Thun</a></li>
-<li><a href="../npcs/marquise-eloise-de-camberonne.html">Marquise Eloise de Camberonne</a></li>
-<li><a href="../npcs/mathieu-durand.html">Mathieu Durand</a></li>
-<li><a href="../npcs/mathilde-savarin.html">Mathilde Savarin</a></li>
-<li><a href="../npcs/maximilian-von-sternberg.html">Maximilian von Sternberg</a></li>
-<li><a href="../npcs/miriam-doyle.html">Miriam Doyle</a></li>
-<li><a href="../npcs/miss-alice-wetherby.html">Miss Alice Wetherby</a></li>
-<li><a href="../npcs/miss-aurelia-fairchild.html">Miss Aurelia Fairchild</a></li>
-<li><a href="../npcs/miss-beatrice-harrow.html">Miss Beatrice Harrow</a></li>
-<li><a href="../npcs/miss-bridget-clarke.html">Miss Bridget Clarke</a></li>
-<li><a href="../npcs/miss-dorothea-bexley.html">Miss Dorothea Bexley</a></li>
-<li><a href="../npcs/miss-edith-talbot.html">Miss Edith Talbot</a></li>
-<li><a href="../npcs/miss-eleanor-finch.html">Miss Eleanor Finch</a></li>
-<li><a href="../npcs/miss-eleanor-mortimer.html">Miss Eleanor Mortimer</a></li>
-<li><a href="../npcs/miss-isabel-glossop.html">Miss Isabel Glossop</a></li>
-<li><a href="../npcs/miss-mary-glossop.html">Miss Mary Glossop</a></li>
-<li><a href="../npcs/miss-theodosia-dawes.html">Miss Theodosia Dawes</a></li>
-<li><a href="../npcs/mlle-marie-lucile-dumain.html">Mlle Marie Lucile Dumain</a></li>
-<li><a href="../npcs/mr-alfred-smythe.html">Mr Alfred Smythe</a></li>
-<li><a href="../npcs/mr-aurelian-dean.html">Mr Aurelian Dean</a></li>
-<li><a href="../npcs/mr-benedict-fairfax.html">Mr Benedict Fairfax</a></li>
-<li><a href="../npcs/mr-berkley.html">Mr Berkley</a></li>
-<li><a href="../npcs/mr-bernard-hathaway.html">Mr Bernard Hathaway</a></li>
-<li><a href="../npcs/mr-gideon-crow.html">Mr Gideon Crow</a></li>
-<li><a href="../npcs/mr-hampton.html">Mr Hampton</a></li>
-<li><a href="../npcs/mr-horatio-fairbourne.html">Mr Horatio Fairbourne</a></li>
-<li><a href="../npcs/mr-jameson.html">Mr Jameson</a></li>
-<li><a href="../npcs/mr-oliver-hawksley.html">Mr Oliver Hawksley</a></li>
-<li><a href="../npcs/mr-thomas-wickes.html">Mr Thomas Wickes</a></li>
-<li><a href="../npcs/mr-tipple.html">Mr Tipple</a></li>
-<li><a href="../npcs/mr-tobias-whitmore.html">Mr Tobias Whitmore</a></li>
-<li><a href="../npcs/mrs-agnes-rothwell.html">Mrs Agnes Rothwell</a></li>
-<li><a href="../npcs/mrs-charlotte-mortimer.html">Mrs Charlotte Mortimer</a></li>
-<li><a href="../npcs/mrs-hampton.html">Mrs Hampton</a></li>
-<li><a href="../npcs/mrs-margaret-fairchild.html">Mrs Margaret Fairchild</a></li>
-<li><a href="../npcs/mrs-pemberton-brighton.html">Mrs Pemberton Brighton</a></li>
-<li><a href="../npcs/mrs-winifred-fowler.html">Mrs Winifred Fowler</a></li>
-<li><a href="../npcs/ms-amelia-cooper.html">Ms Amelia Cooper</a></li>
-<li><a href="../npcs/ms-hannah-shibden.html">Ms Hannah Shibden</a></li>
-<li><a href="../npcs/nathan-pryce.html">Nathan Pryce</a></li>
-<li><a href="../npcs/nathaniel-rooke.html">Nathaniel Rooke</a></li>
-<li><a href="../npcs/nell-coker.html">Nell Coker</a></li>
-<li><a href="../npcs/nikolai-volkonsky.html">Nikolai Volkonsky</a></li>
-<li><a href="../npcs/old-jenkins.html">Old Jenkins</a></li>
-<li><a href="../npcs/pemberton.html">Pemberton</a></li>
-<li><a href="../npcs/phineas-lang.html">Phineas Lang</a></li>
-<li><a href="../npcs/professor-cyrus-elliston.html">Professor Cyrus Elliston</a></li>
-<li><a href="../npcs/prudence-middleham.html">Prudence Middleham</a></li>
-<li><a href="../npcs/rev-henry-mortimer.html">Rev Henry Mortimer</a></li>
-<li><a href="../npcs/russian-officers-volkonsky-detail.html">Russian Officers Volkonsky Detail</a></li>
-<li><a href="../npcs/sabine.html">Sabine</a></li>
-<li><a href="../npcs/sabine-lambert.html">Sabine Lambert</a></li>
-<li><a href="../npcs/silent-nun.html">Silent Nun</a></li>
-<li><a href="../npcs/sir-andrew-duncan.html">Sir Andrew Duncan</a></li>
-<li><a href="../npcs/sir-jasper-dulfrey.html">Sir Jasper Dulfrey</a></li>
-<li><a href="../npcs/sir-lionel-peregrine.html">Sir Lionel Peregrine</a></li>
-<li><a href="../npcs/slade.html">Slade</a></li>
-<li><a href="../npcs/squire-anthony-goodwin.html">Squire Anthony Goodwin</a></li>
-<li><a href="../npcs/therese.html">Therese</a></li>
-<li><a href="../npcs/thomas-wyndham.html">Thomas Wyndham</a></li>
-<li><a href="../npcs/thomlin-kerridge.html">Thomlin Kerridge</a></li>
-<li><a href="../npcs/tobias-greaves.html">Tobias Greaves</a></li>
-<li><a href="../npcs/vicomte-henri-lavigne.html">Vicomte Henri Lavigne</a></li>
-<li><a href="../npcs/victoire-lefevre.html">Victoire Lefevre</a></li>
-<li><a href="../npcs/victoire-lenoir.html">Victoire Lenoir</a></li>
-<li><a href="../npcs/walter-baines.html">Walter Baines</a></li>
-<li><a href="../npcs/walter-pennyman.html">Walter Pennyman</a></li>
-<li><a href="../npcs/werner-bauer.html">Werner Bauer</a></li>
-<li><a href="../npcs/wilhelm-brenner.html">Wilhelm Brenner</a></li>
-<li><a href="../npcs/wilkins.html">Wilkins</a></li>
-<li><a href="../npcs/william-thurner.html">William Thurner</a></li>
-</ul>
-<h2>Factions &amp; Organizations</h2>
-<ul>
-<li><a href="../../factions/aeternum-choir.html">Aeternum Choir</a></li>
-<li><a href="../../factions/blue-sashes.html">Blue Sashes</a></li>
-<li><a href="../../factions/brotherhood-of-the-open-measure.html">Brotherhood of the Open Measure</a></li>
-<li><a href="../../factions/confraternita-del-bel-canto.html">Confraternita del Bel Canto</a></li>
-<li><a href="../../factions/congress-of-vienna.html">Congress of Vienna</a></li>
-<li><a href="../../factions/geheimpolizei.html">Geheimpolizei</a></li>
-<li><a href="../../factions/order-of-st-aelfric.html">Order of St Aelfric</a></li>
-<li><a href="../../factions/orphean-society.html">Orphean Society</a></li>
-<li><a href="../../factions/polizeidirektion.html">Polizeidirektion</a></li>
-<li><a href="../../factions/soci-t-harmonique-de-l-aube.html">Société Harmonique de l Aube</a></li>
-</ul>
-<h2>Events</h2>
-<ul>
-<li><a href="../../events/goupil-masquerade.html">Goupil Masquerade</a></li>
-<li><a href="../../events/grand-masquerade-palais-lobkowitz.html">Grand Masquerade Palais Lobkowitz</a></li>
-<li><a href="../../events/harcourt-reunion.html">Harcourt Reunion</a></li>
-<li><a href="../../events/long-corridor-incident.html">Long Corridor Incident</a></li>
-<li><a href="../../events/marina-recruitment-portsmouth.html">Marina Recruitment Portsmouth</a></li>
-<li><a href="../../events/moreau-graben-assassination.html">Moreau Graben Assassination</a></li>
-<li><a href="../../events/nightgaunt-attack-palais-kinsky.html">Nightgaunt Attack Palais Kinsky</a></li>
-<li><a href="../../events/orphans-hospital-raid.html">Orphans Hospital Raid</a></li>
-<li><a href="../../events/osney-grange-incident.html">Osney Grange Incident</a></li>
-<li><a href="../../events/silkweavers-guild-assault.html">Silkweavers Guild Assault</a></li>
-<li><a href="../../events/stonehenge-ritual.html">Stonehenge Ritual</a></li>
-</ul>
-<h2>Locations</h2>
-<ul>
-<li><a href="../../locations/auberge-des-deux-chenes.html">Auberge des Deux Chenes</a></li>
-<li><a href="../../locations/beauregard-modiste.html">Beauregard Modiste</a></li>
-<li><a href="../../locations/brighton.html">Brighton</a></li>
-<li><a href="../../locations/brighton-assembly-rooms.html">Brighton Assembly Rooms</a></li>
-<li><a href="../../locations/brighton-harbormasters-office.html">Brighton Harbormasters Office</a></li>
-<li><a href="../../locations/british-museum-montagu-house.html">British Museum Montagu House</a></li>
-<li><a href="../../locations/cafe-frauenhuber.html">Cafe Frauenhuber</a></li>
-<li><a href="../../locations/captain-kings-drawing-room.html">Captain Kings Drawing Room</a></li>
-<li><a href="../../locations/crooked-chimney-tavern.html">Crooked Chimney Tavern</a></li>
-<li><a href="../../locations/fourviere.html">Fourviere</a></li>
-<li><a href="../../locations/fox-and-hound-portsmouth.html">Fox and Hound Portsmouth</a></li>
-<li><a href="../../locations/foxglove-and-thistle.html">Foxglove and Thistle</a></li>
-<li><a href="../../locations/gasthof-schwarzer-bar.html">Gasthof Schwarzer Bar</a></li>
-<li><a href="../../locations/gasthof-weisser-ochsen.html">Gasthof Weisser Ochsen</a></li>
-<li><a href="../../locations/goldener-hirsch.html">Goldener Hirsch</a></li>
-<li><a href="../../locations/gough-square-no7.html">Gough Square No7</a></li>
-<li><a href="../../locations/greaves-and-sons.html">Greaves and Sons</a></li>
-<li><a href="../../locations/grosvenor-works.html">Grosvenor Works</a></li>
-<li><a href="../../locations/hampton-residence.html">Hampton Residence</a></li>
-<li><a href="../../locations/hartwell-house.html">Hartwell House</a></li>
-<li><a href="../../locations/hawkswood-and-shaw.html">Hawkswood and Shaw</a></li>
-<li><a href="../../locations/hawthorne-grange.html">Hawthorne Grange</a></li>
-<li><a href="../../locations/hofburg-palace.html">Hofburg Palace</a></li>
-<li><a href="../../locations/hopital-de-la-charite.html">Hopital de la Charite</a></li>
-<li><a href="../../locations/hotel-de-brissac.html">Hotel de Brissac</a></li>
-<li><a href="../../locations/hotel-de-camberonne.html">Hotel de Camberonne</a></li>
-<li><a href="../../locations/kensington-coach-stables.html">Kensington Coach Stables</a></li>
-<li><a href="../../locations/la-belle-esperance.html">La Belle Esperance</a></li>
-<li><a href="../../locations/le-coteau-des-ombres.html">Le Coteau des Ombres</a></li>
-<li><a href="../../locations/le-lys-de-marbre.html">Le Lys de Marbre</a></li>
-<li><a href="../../locations/leopoldstadt.html">Leopoldstadt</a></li>
-<li><a href="../../locations/maison-des-cinq-portes.html">Maison des Cinq Portes</a></li>
-<li><a href="../../locations/maison-du-corbeau.html">Maison du Corbeau</a></li>
-<li><a href="../../locations/marchbank-terrace.html">Marchbank Terrace</a></li>
-<li><a href="../../locations/northlake-hall.html">Northlake Hall</a></li>
-<li><a href="../../locations/orphean-society-building.html">Orphean Society Building</a></li>
-<li><a href="../../locations/osney-grange.html">Osney Grange</a></li>
-<li><a href="../../locations/palais-kinsky.html">Palais Kinsky</a></li>
-<li><a href="../../locations/palais-lobkowitz.html">Palais Lobkowitz</a></li>
-<li><a href="../../locations/palais-modena.html">Palais Modena</a></li>
-<li><a href="../../locations/palais-thun-hohenstein.html">Palais Thun Hohenstein</a></li>
-<li><a href="../../locations/ravenwood-house.html">Ravenwood House</a></li>
-<li><a href="../../locations/roman-temple-aeternox.html">Roman Temple Aeternox</a></li>
-<li><a href="../../locations/royal-academy-of-music.html">Royal Academy of Music</a></li>
-<li><a href="../../locations/schonbrunn-palace.html">Schonbrunn Palace</a></li>
-<li><a href="../../locations/sealed-anatomical-theatre.html">Sealed Anatomical Theatre</a></li>
-<li><a href="../../locations/silkweavers-guild.html">Silkweavers Guild</a></li>
-<li><a href="../../locations/silver-quay-tavern.html">Silver Quay Tavern</a></li>
-<li><a href="../../locations/society-of-antiquaries.html">Society of Antiquaries</a></li>
-<li><a href="../../locations/st-stephens-cathedral.html">St Stephens Cathedral</a></li>
-<li><a href="../../locations/stonehenge.html">Stonehenge</a></li>
-<li><a href="../../locations/tarryford.html">Tarryford</a></li>
-<li><a href="../../locations/thaliastrasse-12-safehouse.html">Thaliastrasse 12 Safehouse</a></li>
-<li><a href="../../locations/the-laughing-fox.html">The Laughing Fox</a></li>
-<li><a href="../../locations/thistle-lane.html">Thistle Lane</a></li>
-<li><a href="../../locations/university-of-vienna.html">University of Vienna</a></li>
-<li><a href="../../locations/vienna-conservatory.html">Vienna Conservatory</a></li>
-<li><a href="../../locations/vienna-overview.html">Vienna Overview</a></li>
-<li><a href="../../locations/whitlow-and-sons.html">Whitlow and Sons</a></li>
-<li><a href="../../locations/widow-katz-boarding-house.html">Widow Katz Boarding House</a></li>
-</ul>
-<h2>Items &amp; Artifacts</h2>
-<ul>
-<li><a href="../../items/adler-brotherhood-signet-ring.html">Adler Brotherhood Signet Ring</a></li>
-<li><a href="../../items/aelfric-brooch.html">Aelfric Brooch</a></li>
-<li><a href="../../items/aelfric-cravat-pin.html">Aelfric Cravat Pin</a></li>
-<li><a href="../../items/command-tuning-fork.html">Command Tuning Fork</a></li>
-<li><a href="../../items/northlake-jewel.html">Northlake Jewel</a></li>
-<li><a href="../../items/revelations-of-glaaki.html">Revelations of Glaaki</a></li>
-</ul>
-<h2>Documents</h2>
-<ul>
-<li><a href="../../documents/bauer-release-order.html">Bauer Release Order</a></li>
-<li><a href="../../documents/herzfeld-letter-to-savarin.html">Herzfeld Letter to Savarin</a></li>
-<li><a href="../../documents/thurner-operational-packet.html">Thurner Operational Packet</a></li>
-</ul>
-<h2>Clues</h2>
-<ul>
-<li><a href="../../clues/5-of-8-ritual-requirement.html">5 of 8 Ritual Requirement</a></li>
-<li><a href="../../clues/a432hz-engine-resonance.html">A432Hz Engine Resonance</a></li>
-<li><a href="../../clues/august-15-ritual-date.html">August 15 Ritual Date</a></li>
-<li><a href="../../clues/backerstrasse-14-adler-rooms.html">Backerstrasse 14 Adler Rooms</a></li>
-<li><a href="../../clues/black-bear-tavern-bauer-lodging.html">Black Bear Tavern Bauer Lodging</a></li>
-<li><a href="../../clues/der-kantor-munich-coordination.html">Der Kantor Munich Coordination</a></li>
-<li><a href="../../clues/engine-beneath-university.html">Engine Beneath University</a></li>
-</ul>
-<h2>Chapters</h2>
-<ul>
-<li><a href="../../chapters/Chapter 0.1 - The Beginning/chapter-0-1-wrap-up.html">Chapter 0.1 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 1 - London/chapter-1-wrap-up.html">Chapter 1 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 2 - Lyon/chapter-2-wrap-up.html">Chapter 2 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/One_Shot_The_Audition/one-shot-the-audition.html">One Shot The Audition</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 1/session-01-wrap-up.html">Session 01 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 2/session-02-wrap-up.html">Session 02 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 7/session-07-wrap-up.html">Session 07 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 8/session-08-wrap-up.html">Session 08 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 9/session-09-wrap-up.html">Session 09 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 10/session-10-wrap-up.html">Session 10 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/vienna-chapter-summary.html">Vienna Chapter Summary</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/vienna-events-calendar-handout.html">Vienna Events Calendar Handout</a></li>
-</ul>
-<h2>Creatures</h2>
-<ul>
-<li><a href="../../creatures/chakota.html">Chakota</a></li>
-<li><a href="../../creatures/ciimba-children.html">Ciimba Children</a></li>
-<li><a href="../../creatures/harmonic-engine-victims.html">Harmonic Engine Victims</a></li>
-<li><a href="../../creatures/harmonische-wachter.html">Harmonische Wachter</a></li>
-<li><a href="../../creatures/horror-long-corridor.html">Horror Long Corridor</a></li>
-<li><a href="../../creatures/hound-of-tindalos.html">Hound of Tindalos</a></li>
-<li><a href="../../creatures/nightgaunt.html">Nightgaunt</a></li>
-<li><a href="../../creatures/yog-sothoth.html">Yog Sothoth</a></li>
-</ul>
-
-</nav>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3>Story</h3>
+  <ul>
+    <li><a href="../../chapters/index.html">Story</a></li>
+    <li><a href="../../timeline.html">Events</a></li>
+  </ul>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../../player-characters.html">Player Characters</a></li>
+    <li><a href="../npcs/index.html">NPCs</a></li>
+    <li><a href="../../creatures/index.html">Creatures</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../../locations/index.html">Locations</a></li>
+    <li><a href="../../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../../documents/index.html">Documents</a></li>
+    <li><a href="../../clues/index.html">Clues</a></li>
+    <li><a href="../../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
 
 <main class="content">
-
-<div class="char-header">
-  
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span class="sep">&rsaquo;</span>Characters<span class="sep">&rsaquo;</span><a href="index.html">Player Characters</a><span class="sep">&rsaquo;</span>Katherine Ward</nav>
+<div class="hero-cinematic hero-cinematic-no-img">
+  <div class="pc-portrait" style="width:5rem;height:5rem;font-size:2rem;margin-bottom:1rem">KW</div>
   <h1>Katherine Ward</h1>
-  <p class="concept">Trained thief and infiltrator, Moral code (no harm to innocents, no children, violence only in self-defense), Encountered and contained Hound of Tindalos, Recruited by Order after St. Margaret's Academy incident</p>
   <div class="meta">
     <span><span class="label">Player</span> Juel</span>
+    <span><span class="label">Occupation</span> Spy / Order operative / Companion-Chaperone (cover)</span>
     <span><span class="label">Age</span> 31</span>
     <span><span class="label">Nationality</span> British</span>
-    <span><span class="label">Background</span> Spy / Order operative / Companion/Chaperone</span>
     <span><span class="label">Status</span> alive</span>
   </div>
 </div>
-<nav class="section-nav" aria-label="Sheet sections"><a href="#background">Background</a>
-<a href="#attributes">Attributes</a>
+<div class="pull-quote">Invisible by training, Reads rooms before entering them, Moral code — no innocents, no children, violence only in self-defence, Contained a Hound of Tindalos by disrupting angles, Professional restraint under pressure</div>
+<div class="tab-bar">
+  <button class="pc-tab active" data-tab="sheet" onclick="switchTab('sheet')">Character Sheet</button>
+  <button class="pc-tab" data-tab="equipment" onclick="switchTab('equipment')">Equipment</button>
+  <button class="pc-tab" data-tab="story" onclick="switchTab('story')">Story</button>
+  <button class="pc-tab" data-tab="journey" onclick="switchTab('journey')">Journey</button>
+</div>
+<div class="tab-panel active" id="tab-sheet">
+<nav class="section-nav" aria-label="Sheet sections"><a href="#stat-sheet">Stat Sheet</a>
+<a href="#background">Background</a>
 <a href="#cover-identity">Cover Identity</a>
-<a href="#background-the-hound-of-tindalos">Background: The Hound of Tindalos</a>
-<a href="#professional-mentor">Professional Mentor</a>
-<a href="#moral-code">Moral Code</a>
 <a href="#skills">Skills</a>
-<a href="#masquerade-ball-session-9">Masquerade Ball — Session 9</a>
+<a href="#injuries-scars">Injuries &amp; Scars</a>
+<a href="#phobias-manias">Phobias &amp; Manias</a>
+<a href="#arcane-tomes-spells">Arcane Tomes &amp; Spells</a>
+<a href="#encounters-with-strange-entities">Encounters with Strange Entities</a>
+<a href="#combat">Combat</a>
+<a href="#fellow-investigators">Fellow Investigators</a>
 <a href="#current-status">Current Status</a>
-<a href="#current-status">Current Status</a></nav>
+<a href="#notes">Notes</a></nav>
+
+<div class="accordion" id="stat-sheet">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Stat Sheet</button>
+  <div class="accordion-body">
+    <h3>Characteristics</h3>
+<table>
+<thead>
+<tr>
+<th>Characteristic</th>
+<th>Regular</th>
+<th>Half</th>
+<th>Fifth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STR</td>
+<td>55</td>
+<td>27</td>
+<td>11</td>
+</tr>
+<tr>
+<td>CON</td>
+<td>60</td>
+<td>30</td>
+<td>12</td>
+</tr>
+<tr>
+<td>DEX</td>
+<td>60</td>
+<td>30</td>
+<td>12</td>
+</tr>
+<tr>
+<td>INT</td>
+<td>70</td>
+<td>35</td>
+<td>14</td>
+</tr>
+<tr>
+<td>SIZ</td>
+<td>40</td>
+<td>20</td>
+<td>8</td>
+</tr>
+<tr>
+<td>POW</td>
+<td>70</td>
+<td>35</td>
+<td>14</td>
+</tr>
+<tr>
+<td>APP</td>
+<td>50</td>
+<td>25</td>
+<td>10</td>
+</tr>
+<tr>
+<td>EDU</td>
+<td>60</td>
+<td>30</td>
+<td>12</td>
+</tr>
+</tbody>
+</table>
+<h3>Derived</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Max</th>
+<th>Current</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HP</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td>MP</td>
+<td>14</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Luck</td>
+<td>—</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Sanity</td>
+<td>99</td>
+<td>70</td>
+</tr>
+</tbody>
+</table>
+<h3>Combat</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Move</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Build</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Damage Bonus</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Dodge (Regular)</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Dodge (Half)</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Dodge (Fifth)</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<h3>Status</h3>
+<ul>
+<li>[ ] Temporary Insanity</li>
+<li>[ ] Indefinite Insanity</li>
+<li>[ ] Major Wound</li>
+<li>[ ] Unconscious</li>
+<li>[ ] Dying</li>
+</ul>
+
+  </div>
+</div>
 
 <div class="accordion" id="background">
   <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Background</button>
   <div class="accordion-body">
-    <p>Katherine Ward is the real name and alias “the Rook” — a trained spy and thief working for the Order of St. Aelfric. Her actual name is Katherine Langley. She was born into lower-class circumstances but received education through charity.</p>
-
-  </div>
-</div>
-
-<div class="accordion" id="attributes">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Attributes</button>
-  <div class="accordion-body">
-    <p><em>Character statistics not yet recorded.</em></p>
+    <p><strong>Personal Description:</strong> Petite and sharp-featured, with alert, observant brown eyes and brown hair. Small stature and narrow build — the sort of frame that once allowed her to pass as a boy on the streets of London. Dresses for practicality in modest widow’s weeds, favouring clothing that helps her blend into service corridors and drawing rooms alike. She carries herself with the quiet confidence of someone who learned long ago that the best way to go unnoticed is to look entirely unremarkable.</p>
+<p><strong>Traits:</strong> Katherine reads rooms before she enters them and counts exits before she sits down. When entering a space she may casually move an object slightly into a corner — a chair leg, a walking stick, her cloak draped over something. To others it seems like absent-minded tidying. Before sleeping in an unfamiliar place she rearranges something: a chair moved, a trunk turned, a cloak hung across a corner. Subtle, but deliberate. She listens more than she speaks and pays close attention to how authority works in practice.</p>
+<p><strong>Ideology &amp; Beliefs:</strong> Katherine operates under strict ethical constraints, self-imposed and unbreakable. She will not harm an innocent person. She will not accept work involving children or coercion. She uses violence only in self-defence or in defence of others. She was careful throughout her career as “the Rook” to ensure that planted evidence revealed the truth rather than harming the innocent. She refused to fabricate crimes or unjustly ruin lives. These boundaries are known to those who have worked with her. People who approached her did so with caution because they understood that persuasion would not change her mind.</p>
+<p><strong>Significant People:</strong></p>
+<ul>
+<li>Jonathan Pike (“Jon”) — Locksmith-turned-broker, mentor, manages her professional identity. He first noticed her because she was watching him. He agreed to teach her on the condition that she walk away from any job he told her to refuse, without explanation. He never treated her like an apprentice in public, spoke to her as an equal in private, paid her fairly, and never asked questions about her past. He eventually became her broker — a buffer between Katherine and the world, vetting requests, screening motives, and refusing work before it ever reached her.</li>
+<li><a href="../npcs/lord-percival-harcourt.html">Lord_Percival_Harcourt</a> — The man who dispatched her to Vienna. The Order’s chain of command.</li>
+<li><strong>Thomas and Margaret Langley</strong> (deceased) — Parents. Her father handled maintenance and groundskeeping at St. Margaret’s Academy; her mother worked laundry and domestic management. Both died of influenza before Katherine could graduate. Their deaths ended her charity education and began her life on the streets.</li>
+</ul>
+<p><strong>Meaningful Locations:</strong></p>
+<ul>
+<li>St. Margaret’s Academy for Young Ladies — Outside Helmsley, on the southern edge of the North York Moors, about twenty-five miles north of York. Where she was raised as a charity student. Where her parents worked and died. Where, years later, she returned under a servant’s disguise and contained a <a href="../../creatures/hound-of-tindalos.html">Hound_of_Tindalos</a> by disrupting the angles that gave it access. The place that made her twice — once as a thief, once as someone the Order considered useful.</li>
+<li><strong>Helmsley</strong> — The town nearest St. Margaret’s. The edge of the world she knew as a child.</li>
+<li><strong>London (Southwark rookeries)</strong> — Where she learned to survive. The streets where Jon found her, or rather where she found him. Where <a href="../npcs/nell-coker.html">Nell</a> came from.</li>
+</ul>
+<p><strong>Treasured Possessions:</strong></p>
+<ul>
+<li><strong>Sword cane</strong> — Inherited from Jon Pike. A gentleman’s accessory concealing a blade. The closest thing to a sentimental object she carries.</li>
+<li><strong>Rosary case lockpicks</strong> — A worn wooden rosary case that opens to reveal lockpicks, small files, and slim tension wrenches. The tools of her trade disguised as the tools of devotion.</li>
+</ul>
 
   </div>
 </div>
@@ -386,37 +282,11 @@
 <div class="accordion" id="cover-identity">
   <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Cover Identity</button>
   <div class="accordion-body">
-    <p><strong>Mrs. Katherine Ward</strong>, widow of Captain Edward Ward (Royal Navy). Works professionally as a companion and chaperone for young ladies, which provides cover for her movements and access to society circles.</p>
-
-  </div>
-</div>
-
-<div class="accordion" id="background-the-hound-of-tindalos">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Background: The Hound of Tindalos</button>
-  <div class="accordion-body">
-    <p>Before joining the active party, Katherine encountered a Hound of Tindalos at St. Margaret’s Academy. She successfully contained the creature by disrupting angles — preventing its multi-dimensional pursuit. This encounter brought her to the Order’s attention and led to her recruitment.</p>
-
-  </div>
-</div>
-
-<div class="accordion" id="professional-mentor">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Professional Mentor</button>
-  <div class="accordion-body">
-    <p>Jonathan Pike (“Jon”), a locksmith-turned-broker, mentors Katherine and manages her professional identity. He is a trusted contact outside the Order structure.</p>
-
-  </div>
-</div>
-
-<div class="accordion" id="moral-code">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Moral Code</button>
-  <div class="accordion-body">
-    <p>Katherine operates under strict ethical constraints:</p>
-<ul>
-<li>Will not harm innocents</li>
-<li>Will not accept jobs involving children</li>
-<li>Will not engage in violence except in self-defense</li>
-<li>Professional restraint even in dangerous situations</li>
-</ul>
+    <p><strong>Mrs. Katherine Ward</strong>, widow of Captain Edward Ward, Royal Navy.</p>
+<p><strong>Husband (fabricated):</strong> Captain Edward Ward. Older by about ten years. Sandy hair, quiet temperament. Disliked London, preferred the sea. Once promised she would travel with him after the war. Met Edward through naval family connections near Portsmouth. He returned to sea after the wedding, contracted fever while stationed in the Mediterranean, and died. She has been a widow for four years.</p>
+<p><strong>Cover Story:</strong> Lives modestly on a small officer’s widow pension. Works as a companion or chaperone for young ladies, which provides natural cover for her movements and access to society circles. The role explains her presence at social events, her proximity to well-born women, and her modest but respectable appearance.</p>
+<p><strong>Prepared Deflections:</strong> She never names a specific ship unless forced. She avoids discussing naval battles or strategy. She keeps focus on Edward rather than naval matters. Her fallback line: <em>“My husband rarely spoke of his work. He thought it unseemly to trouble me with such things.”</em></p>
+<p><strong>Order Support for the Cover:</strong> Quiet parish record adjustments. Verified ship name fitting naval timelines. A reference family who are real people known to the Order. Occasional discreet introductions for social access. The widow’s letter of reference, naval death notice, marriage record extract, Barings Brothers letter of credit, and travel letter establishing her chaperone role are all carried on her person.</p>
 
   </div>
 </div>
@@ -424,65 +294,794 @@
 <div class="accordion" id="skills">
   <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Skills</button>
   <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Base</th>
+<th>Regular</th>
+<th>Half</th>
+<th>Fifth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Accounting</td>
+<td>05</td>
+<td>5</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Appraise</td>
+<td>05</td>
+<td>5</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Charm</td>
+<td>15</td>
+<td>15</td>
+<td>7</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Climb</td>
+<td>20</td>
+<td>20</td>
+<td>10</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Credit Rating</td>
+<td>00</td>
+<td>20</td>
+<td>10</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Dancing</td>
+<td>12</td>
+<td>12</td>
+<td>6</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Disguise</td>
+<td>05</td>
+<td>10</td>
+<td>5</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Dodge</td>
+<td>—</td>
+<td>30</td>
+<td>15</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Drive Carriage</td>
+<td>20</td>
+<td>20</td>
+<td>10</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Etiquette</td>
+<td>14</td>
+<td>45</td>
+<td>22</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Fashion</td>
+<td>10</td>
+<td>10</td>
+<td>5</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Fast Talk</td>
+<td>05</td>
+<td>50</td>
+<td>25</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Fighting (Brawl)</td>
+<td>25</td>
+<td>25</td>
+<td>12</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Firearms (Pistol)</td>
+<td>20</td>
+<td>20</td>
+<td>10</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Firearms (Rifle/Blunderbuss)</td>
+<td>25</td>
+<td>25</td>
+<td>12</td>
+<td>5</td>
+</tr>
+<tr>
+<td>First Aid</td>
+<td>30</td>
+<td>30</td>
+<td>15</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Gaming</td>
+<td>10</td>
+<td>10</td>
+<td>5</td>
+<td>2</td>
+</tr>
+<tr>
+<td>History</td>
+<td>05</td>
+<td>5</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Intimidate</td>
+<td>15</td>
+<td>15</td>
+<td>7</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Jump</td>
+<td>20</td>
+<td>20</td>
+<td>10</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Language (English, Own)</td>
+<td>EDU</td>
+<td>60</td>
+<td>30</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Language (Latin)</td>
+<td>01</td>
+<td>11</td>
+<td>5</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Law</td>
+<td>05</td>
+<td>5</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Library Use</td>
+<td>20</td>
+<td>30</td>
+<td>15</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Listen</td>
+<td>20</td>
+<td>40</td>
+<td>20</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Locksmith</td>
+<td>01</td>
+<td>50</td>
+<td>25</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Mech. Repair</td>
+<td>10</td>
+<td>10</td>
+<td>5</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Medicine</td>
+<td>01</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Natural World</td>
+<td>10</td>
+<td>10</td>
+<td>5</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Navigate</td>
+<td>10</td>
+<td>10</td>
+<td>5</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Occult</td>
+<td>05</td>
+<td>5</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Persuade</td>
+<td>10</td>
+<td>10</td>
+<td>5</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Psychology</td>
+<td>10</td>
+<td>50</td>
+<td>25</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Reassure</td>
+<td>10</td>
+<td>10</td>
+<td>5</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Religion</td>
+<td>10</td>
+<td>10</td>
+<td>5</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Ride</td>
+<td>05</td>
+<td>5</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Sleight of Hand</td>
+<td>10</td>
+<td>50</td>
+<td>25</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Spot Hidden</td>
+<td>25</td>
+<td>50</td>
+<td>25</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Stealth</td>
+<td>20</td>
+<td>50</td>
+<td>25</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Swim</td>
+<td>20</td>
+<td>20</td>
+<td>10</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Throw</td>
+<td>20</td>
+<td>30</td>
+<td>15</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Track</td>
+<td>10</td>
+<td>10</td>
+<td>5</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
+
+<div class="accordion" id="injuries-scars">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Injuries &amp; Scars</button>
+  <div class="accordion-body">
+    <p>No injuries or permanent scars recorded through Session 10.</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="phobias-manias">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Phobias &amp; Manias</button>
+  <div class="accordion-body">
+    <p>No formal phobias or manias acquired through sanity loss. Katherine’s habit of disrupting angles in rooms — moving furniture, draping cloaks across corners, rearranging objects before sleeping in an unfamiliar place — is a behavioural response to her encounter with the <a href="../../creatures/hound-of-tindalos.html">Hound_of_Tindalos</a> at St. Margaret’s Academy, not a clinical phobia. It is a deliberate, conscious practice: she learned the rule and she obeys it. The nightmare in Session 10 — the Hound stepping out of the corner, the geometry opening wide — suggests the Engine’s influence may be pressing against this controlled response.</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="arcane-tomes-spells">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Arcane Tomes &amp; Spells</button>
+  <div class="accordion-body">
+    <p>None. Katherine’s approach to the supernatural is structural rather than scholarly — she denies access rather than seeking understanding.</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="encounters-with-strange-entities">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Encounters with Strange Entities</button>
+  <div class="accordion-body">
+    <p><strong><a href="../../creatures/hound-of-tindalos.html">Hound_of_Tindalos</a> — St. Margaret’s Academy (pre-campaign).</strong> Years after leaving the school, Katherine returned under a servant’s disguise to investigate a child’s death. She discovered the headmistress had been tracking when rooms were empty and corridors were silent — places where angles remained perfectly uninterrupted. Katherine understood the problem as a structural hazard. She altered cleaning schedules, left doors ajar, moved furniture to break perfect angles, cluttered stairwells. Within weeks the presence withdrew. Not destroyed — starved. She kept her sanity because she never tried to see the creature clearly. The Order was already watching; by the time their agent arrived, the situation was contained.</p>
+<p><strong><a href="../../creatures/harmonische-wachter.html">Harmonische_Wachter</a> — Palais Lobkowitz, Sessions 8-9.</strong> Two bronze-scaled creatures deployed by <a href="../npcs/anton-adler.html">Adler</a> via the <a href="../../items/command-tuning-fork.html">command tuning fork</a> during the Grand Masquerade. Katherine witnessed their attacks on <a href="../npcs/russian-officers-volkonsky-detail.html">Mikhail</a> and other guests. Both creatures were destroyed by fire — <a href="varrio-harrowmont.html">Varrio’s</a> improvised torches.</p>
+<p><strong><a href="../../items/command-tuning-fork.html">Command_Tuning_Fork</a> — First contact vision, Session 9.</strong> When Katherine’s fingers closed around the fork after Adler’s capture, she experienced a brief, disorienting vision she has not described to the rest of the party. The nature of the vision remains her private knowledge. She handed the fork to <a href="georgiana-wentworth.html">Georgiana</a> without comment when asked.</p>
+<p><strong>Engine nightmares — Session 10.</strong> The Engine reached into Katherine’s sleep. A London rebuilt from geometry, the fork’s hum in every corner, dark oil pooling in the angles, the Hound stepping out of the corner at St. Margaret’s. She woke screaming and lunged at <a href="georgiana-wentworth.html">Georgiana</a>, mistaking her for the creature. The nightmare drew an explicit connection between the predator in the angles and the predator in the harmony.</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="combat">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Combat</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Weapon</th>
+<th>Skill %</th>
+<th>Damage</th>
+<th>Attacks</th>
+<th>Range</th>
+<th>Ammo</th>
+<th>Malf</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unarmed (Brawl)</td>
+<td>25/12/5</td>
+<td>1D3+DB</td>
+<td>1</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Flintlock Pistol (x4)</td>
+<td>20/10/4</td>
+<td>1D6+1</td>
+<td>1/4</td>
+<td>10 yds</td>
+<td>1</td>
+<td>95</td>
+</tr>
+<tr>
+<td>Knife (hairpin dagger / ring blade)</td>
+<td>25/12/5</td>
+<td>1D4+DB</td>
+<td>1</td>
+<td>Touch</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Sword Cane (from Pike)</td>
+<td>1/0/0</td>
+<td>1D6+DB</td>
+<td>1</td>
+<td>Touch</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Mourning Fan (steel blade ribs)</td>
+<td>25/12/5</td>
+<td>1D4+DB</td>
+<td>1</td>
+<td>Touch</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Throwing Knife (x2, cloak lining)</td>
+<td>30/15/6</td>
+<td>1D4+DB</td>
+<td>1</td>
+<td>STRx2</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
+
+<div class="accordion" id="fellow-investigators">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Fellow Investigators</button>
+  <div class="accordion-body">
     <ul>
-<li>Trained lockpick and infiltrator</li>
-<li>Extensive knowledge of security, access, and social movement</li>
-<li>Tactical awareness and counter-surveillance</li>
+<li><a href="adrien-de-montferrand.html">Adrien_de_Montferrand</a> — French aristocrat, Order member, tactical leader of the Vienna party</li>
+<li><a href="emma-wentworth.html">Emma_Wentworth</a> — Elder Wentworth sister; Katherine administered first aid to her knife wound at the safehouse</li>
+<li><a href="freddy-cavendish.html">Freddy_Cavendish</a> — English gentleman, newest party member; running logistics and Russian liaison</li>
+<li><a href="georgiana-wentworth.html">Georgiana_Wentworth</a> — Younger Wentworth sister; carries the <a href="../../items/command-tuning-fork.html">command fork</a>; Katherine’s operational partner at the Polizeidirektion</li>
+<li><a href="varrio-harrowmont.html">Varrio_Harrowmont</a> — Order member, physician, combatant; killed two <a href="../../creatures/harmonische-wachter.html">Wachter</a> with improvised torches</li>
 </ul>
 
   </div>
 </div>
 
-<div class="accordion" id="masquerade-ball-session-9">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Masquerade Ball — Session 9</button>
+<div class="accordion" id="current-status">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Current Status</button>
   <div class="accordion-body">
-    <p>Katherine played a critical operational role across the Session 9 combat and aftermath:</p>
+    <p>Katherine was dispatched directly to Vienna by <a href="../npcs/lord-percival-harcourt.html">Lord Harcourt</a> after the party sent too many notes requesting support. She arrived on the morning of 8 August 1814, was introduced to the party at <a href="../../locations/palais-kinsky.html">Palais_Kinsky</a>, and replaced <a href="charlotte-thorne.html">Charlotte_Thorne</a> as the active Order operative in the field.</p>
+<p>As of the afternoon of 9 August 1814, Katherine is at <a href="../../locations/thaliastrasse-12-safehouse.html">Thaliastrasse 12</a>, functioning as the party’s operational foreman. She participated in the <a href="../../factions/polizeidirektion.html">Polizeidirektion</a> heist that recovered the <a href="../../items/liber-ivonis.html">Liber_Ivonis</a>, De_Vermis_Mysteriis, and <a href="marina-garrick.html">Marina’s</a> notebook. <a href="../npcs/nell-coker.html">Nell</a> fled independently during the masquerade combat and has not been located — Katherine has not yet pursued the thread.</p>
+<p><strong>Unresolved personal threads:</strong></p>
 <ul>
-<li>Shouted across the ballroom for the party to make for the windows, directing the escape route</li>
-<li>Fired her pistol at the fleeing <a href="../npcs/anton-adler.html">Adler</a>, forcing him to the ground and halting his progress</li>
-<li>Dove for and secured the <a href="../../items/command-tuning-fork.html">command fork</a> after <a href="varrio-harrowmont.html">Varrio</a> burned it from Adler’s hand — experienced a brief, disorienting vision on first contact</li>
-<li>Handed the fork to <a href="georgiana-wentworth.html">Georgiana</a> without protest when asked in the withdrawing room</li>
-<li>Dispatched <a href="../npcs/charles-duval.html">Charles</a> with the urgent note to <a href="../npcs/lady-honoria-lyndhurst.html">Honoria</a></li>
-<li>Administered first aid to <a href="emma-wentworth.html">Emma’s</a> wound at the safehouse</li>
+<li>The <a href="../../items/command-tuning-fork.html">fork</a> vision from Session 9 remains unshared with the party</li>
+<li><a href="../npcs/nell-coker.html">Nell’s</a> whereabouts are unknown; the loyalty contract from the masquerade is untested</li>
+<li>The Session 10 nightmare drew an explicit connection between the <a href="../../creatures/hound-of-tindalos.html">Hound</a> and the Engine — the predator in the geometry and the predator in the harmony</li>
 </ul>
 
   </div>
 </div>
 
-<div class="accordion" id="current-status">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Current Status</button>
+<div class="accordion" id="notes">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Notes</button>
   <div class="accordion-body">
-    <h3>Order Insignia</h3>
-<p>Katherine carries an <a href="../../items/aelfric-brooch.html">Aelfric_Brooch</a>, symbol of her initiation into the Order.</p>
-
-  </div>
-</div>
-
-<div class="accordion" id="current-status">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Current Status</button>
-  <div class="accordion-body">
-    <p>Katherine was dispatched directly to Vienna by Lord Harcourt after the party sent too many notes requesting support. She was introduced to the party at Session 7 and has replaced Charlotte Thorne as the active Order operative in the field.</p>
-<p>As of dawn on 9 August 1814, Katherine is at <a href="../../locations/thaliastrasse-12-safehouse.html">Thaliastraße 12</a>, functioning as the party’s operational foreman. <a href="../npcs/nell-coker.html">Nell</a> fled independently during the combat — Katherine’s newest asset exited without instructions, and where Nell is by dawn is an open question.</p>
+    <p>{Player-facing notes. Protected — skills never modify.}</p>
 
   </div>
 </div>
 <h2>Relationships</h2>
 <ul class="relationship-list">
-<li><strong class="rel-label">Serves</strong> <a href="../npcs/lord-percival-harcourt.html" class="entity-link">Lord Percival Harcourt</a> &mdash; Dispatched by Harcourt to join party directly</li>
-<li><strong class="rel-label">Member of</strong> <a href="../../factions/order-of-st-aelfric.html" class="entity-link">Order of St Aelfric</a> &mdash; Order operative and spy</li>
-<li><strong class="rel-label">Knows</strong> Jonathan Pike &mdash; Locksmith-turned-broker, mentor, manages her professional identity</li>
-<li><strong class="rel-label">Knows</strong> <a href="emma-wentworth.html" class="entity-link">Emma Wentworth</a> &mdash; Party member</li>
-<li><strong class="rel-label">Knows</strong> <a href="georgiana-wentworth.html" class="entity-link">Georgiana Wentworth</a> &mdash; Party member</li>
+<li><strong class="rel-label">Serves</strong> <a href="../npcs/lord-percival-harcourt.html" class="entity-link">Lord Percival Harcourt</a> &mdash; Dispatched by Harcourt to join the Vienna party directly</li>
+<li><strong class="rel-label">Member of</strong> <a href="../../factions/order-of-st-aelfric.html" class="entity-link">Order of St Aelfric</a> &mdash; Order operative and spy, recruited after St. Margaret's Academy incident</li>
+<li><strong class="rel-label">Mentored by</strong> Jonathan Pike &mdash; Locksmith-turned-broker, mentor, manages her professional identity as 'the Rook'</li>
+<li><strong class="rel-label">Handler of</strong> <a href="../npcs/nell-coker.html" class="entity-link">Nell Coker</a> &mdash; Recruited at the masquerade — protection for intelligence. Fled during combat; whereabouts unknown as of Session 10</li>
+<li><strong class="rel-label">Knows</strong> <a href="emma-wentworth.html" class="entity-link">Emma Wentworth</a> &mdash; Party member; administered first aid to Emma's wound at Thaliastrasse 12</li>
+<li><strong class="rel-label">Knows</strong> <a href="georgiana-wentworth.html" class="entity-link">Georgiana Wentworth</a> &mdash; Party member; operational partner at the Polizeidirektion heist; handed the command fork to Georgiana without protest</li>
 <li><strong class="rel-label">Knows</strong> <a href="adrien-de-montferrand.html" class="entity-link">Adrien de Montferrand</a> &mdash; Party member, Order member</li>
 <li><strong class="rel-label">Knows</strong> <a href="varrio-harrowmont.html" class="entity-link">Varrio Harrowmont</a> &mdash; Party member, Order member</li>
+<li><strong class="rel-label">Knows</strong> <a href="freddy-cavendish.html" class="entity-link">Freddy Cavendish</a> &mdash; Party member</li>
+<li><strong class="rel-label">Located at</strong> <a href="../../locations/thaliastrasse-12-safehouse.html" class="entity-link">Thaliastrasse 12 Safehouse</a> &mdash; Current base of operations as of 9 August 1814</li>
 </ul>
+</div>
+<div class="tab-panel" id="tab-equipment">
+<h3>Equipment</h3>
+<p><strong>Concealed Tools:</strong></p>
+<ul>
+<li>Worn wooden rosary case containing lockpicks, small files, and slim tension wrenches</li>
+<li>Small metal compact with hidden compartment holding a thin disk of soft wax and key blanks</li>
+</ul>
+<p><strong>Concealed Weapons:</strong></p>
+<ul>
+<li>Widow’s mourning fan with steel blade ribs and locking mechanism (functions as a short dagger)</li>
+<li>Hairpin dagger — tempered steel, sharpened to a narrow point</li>
+<li>Ring blade with a tiny needle</li>
+<li>Sword cane (inherited from Jon Pike)</li>
+<li>Two throwing knives hidden in cloak lining</li>
+<li>Two small flintlock pocket pistols</li>
+<li>Two standard flintlock pistols</li>
+</ul>
+<p><strong>Clothing Adaptations:</strong></p>
+<ul>
+<li>Leather coat with stitched channels for concealment</li>
+<li>Boots with hollowed heels</li>
+<li>Sock pockets sewn inside stockings</li>
+<li>Walking dresses with hidden ties for gathering up during movement</li>
+<li>Night cloak with concealed tool pockets</li>
+<li>Dark kid leather gloves</li>
+</ul>
+<p><strong>Documents:</strong></p>
+<ul>
+<li>Widow’s letter of reference from a gentry family (Order-verified)</li>
+<li>Naval death notice for Captain Edward Ward</li>
+<li>Marriage record extract</li>
+<li>Barings Brothers &amp; Company letter of credit</li>
+<li>Travel letter establishing her role as a companion-chaperone</li>
+</ul>
+<p><strong>Order Insignia:</strong></p>
+<ul>
+<li><a href="../../items/aelfric-brooch.html">Aelfric_Brooch</a> — symbol of her initiation into the <a href="../../factions/order-of-st-aelfric.html">Order</a>, worn in a style distinct from the Wentworth sisters’ brooches</li>
+</ul>
+<p><strong>Wealth:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spending Level</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Cash</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Assets</td>
+<td>100</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+<div class="tab-panel" id="tab-story">
+  <div class="story-prose">
+    <h2>Session 7 — Whispers, Widows, and Wounded Warriors</h2>
+<p>Katherine arrived at the breakfast table of <a href="../../locations/palais-kinsky.html">Palais_Kinsky</a> on the morning of 8 August dressed in widow’s weeds, carrying a letter of introduction from <a href="../npcs/lord-percival-harcourt.html">Lord Harcourt</a> and wearing her <a href="../../items/aelfric-brooch.html">Aelfric_Brooch</a> in a style distinct from those of the <a href="emma-wentworth.html">Wentworth</a> sisters. She presented herself as Mrs. Katherine Ward, chaperone — the cover she had worn for years, built on a dead man’s name and a naval death notice the <a href="../../factions/order-of-st-aelfric.html">Order</a> had verified down to the parish register. The party received her with the exhausted wariness of people who had survived a <a href="../../creatures/nightgaunt.html">Nightgaunt</a> the previous night and were not yet ready to trust a stranger who claimed to be on their side. <a href="../npcs/thomas-wyndham.html">Thomas_Wyndham</a> checked in on the meeting. She laid out her skills plainly — lockpicking, stealth, information gathering — and then settled into the role of someone who intended to be useful rather than liked.</p>
+<p>While the men split up to draw <a href="../../factions/brotherhood-of-the-open-measure.html">Brotherhood</a> watchers away from the carriages, Katherine visited <a href="charlotte-thorne.html">Charlotte</a> at <a href="../../locations/palais-kinsky.html">Palais_Kinsky</a>, where the retired operative lay sedated with laudanum and barely coherent. Through careful, patient questioning, she extracted a full accounting of the London and Lyon operations — the <a href="../../factions/orphean-society.html">Orphean_Society</a>, the <a href="../../factions/aeternum-choir.html">Aeternum_Choir</a>, the horrors beneath the streets, and the shape of the conspiracy driving the party across the continent. It was the kind of debrief Katherine understood: quiet, thorough, conducted while everyone else was making noise.</p>
+<p>That afternoon she accompanied <a href="emma-wentworth.html">Emma</a>, <a href="georgiana-wentworth.html">Georgiana</a>, and <a href="adrien-de-montferrand.html">Adrien</a> to the <a href="../npcs/maria-von-thun.html">Countess von Thun’s</a> salon on the Minoritenplatz and vanished into the gathering as she had been trained to do — another unremarkable widow in a room of thirty. <a href="../npcs/franz-kaunitz.html">Baron von Kaunitz</a> watched from a window with predatory stillness. <a href="../npcs/anton-adler.html">Adler</a> stood at the back in grey. And when <a href="../npcs/anna-lindqvist.html">Anna_Lindqvist</a> rose to sing, the windows vibrated, a wine glass cracked, and the bone-deep resonance of the cult’s machine pressed against every chest in the room. Katherine recognised it — not the specific frequency, but the quality. There were predators that lived in geometry, and now there was something that lived in harmony, and she understood with professional certainty that the two were kin.</p>
+<h2>Session 8 — The Duel, the Diva, and the Demon</h2>
+<p>The Grand Masquerade at <a href="../../locations/palais-lobkowitz.html">Palais_Lobkowitz</a> was Katherine’s first operational deployment with this party, and she treated it accordingly. She identified the service corridors that bypassed the ballroom before anyone else had finished admiring the chandeliers — three enormous crystal fixtures throwing prismatic light across a vaulted ceiling, five languages in the air, and somewhere in the crowd a woman she had not expected to see. <a href="../npcs/nell-coker.html">Nell</a> — sharp-featured, clever-eyed, from the Southwark rookeries — approached her with the directness of someone who knew the price of a favour. Nell had been watching the University district. Heavy crates, chemical smells, unusual traffic at odd hours. Katherine gave her terms: stay in sight, do not stand at her side. In exchange, protection and the prospect of something better than fencing stolen silverware in a foreign city. It was the kind of contract Katherine had learned from Jon Pike — clear, pragmatic, built on mutual self-interest rather than trust.</p>
+<p>The extraction plan assembled itself from three threads the party had gathered independently: <a href="../npcs/nikolai-volkonsky.html">Volkonsky’s</a> grief over his missing friend, the intelligence from <a href="../npcs/william-thurner.html">Major Thurner</a> about the Brotherhood’s operations, and Nell’s street-level knowledge of the city. When <a href="../npcs/anna-lindqvist.html">Anna</a> finished her aria — three seconds of universal breathlessness, a resonance so strong that <a href="varrio-harrowmont.html">Varrio</a> bit through his champagne glass — Katherine threw her own cape over the soprano’s shoulders, pulled up the hood, and disappeared her from the watching crowd in the confusion of the applause. The substitution worked. <a href="../npcs/anton-adler.html">Adler</a>, blocked by four Russian officers, struck a steel tuning fork against the refreshment table and vaulted onto the wreckage.</p>
+<p>Then the great stained-glass window exploded inward. A <a href="../../creatures/harmonische-wachter.html">bronze-scaled creature</a> dropped from the chandelier and killed a man on the dance floor while Katherine was still processing the glass in the air. A second creature came through the withdrawing room, and the session ended with half a woman sliding down a wall and every exit blocked. Katherine was off the dance floor, fighting toward the corridor with Georgiana, and the world had narrowed to angles and distances and the sound of screaming.</p>
+<h2>Session 9 — The Burning Ball and the Broken Baron</h2>
+<p>Katherine shouted the party toward the windows as the <a href="../../creatures/harmonische-wachter.html">Wachter</a> rose from a headless corpse on the dance floor. <a href="emma-wentworth.html">Emma</a> smashed a chair through the nearest glass, opening a route onto the port-cochere roof. Katherine fired her pistol at the fleeing <a href="../npcs/anton-adler.html">Adler</a>, forcing him to the ground and halting his escape — a shot made in the chaos of a stampeding crowd, aimed with the control of someone who had learned long ago that panic was a luxury she could not afford. When <a href="georgiana-wentworth.html">Georgiana</a> hamstrung Adler with a single stroke and the tuning fork clattered free of his burned hand, Katherine dove for it.</p>
+<p>The moment her fingers closed around the <a href="../../items/command-tuning-fork.html">fork</a>, the world shifted. A brief, disorienting vision — something she could not quite explain then and has not spoken of since. She held the fork only long enough for Georgiana to ask for it, and then handed it across without protest. Whatever the fork had shown her was hers alone, a private sensory datum she carried into the night like a lockpick concealed in a rosary case.</p>
+<p>The escape from the <a href="../../locations/palais-lobkowitz.html">Palais_Lobkowitz</a> was a scramble through broken windows and darkened gardens. Katherine dispatched <a href="../npcs/charles-duval.html">Charles</a> with an urgent note to <a href="../npcs/lady-honoria-lyndhurst.html">Honoria</a> — the kind of operational decision that came naturally to someone who thought in terms of communication lines and fallback contacts. At <a href="../../locations/thaliastrasse-12-safehouse.html">Thaliastrasse 12</a>, while <a href="varrio-harrowmont.html">Varrio</a> hauled <a href="../npcs/anton-adler.html">Adler</a> down the cellar steps and the interrogation began, Katherine administered first aid to <a href="emma-wentworth.html">Emma’s</a> knife wound and took stock of the safehouse with the methodical eye of someone cataloguing assets and exits. <a href="../npcs/nell-coker.html">Nell</a> had fled independently during the combat — Katherine’s newest asset had vanished without instructions, and as dawn crept over the Josefstadt rooftops, that absence settled into something colder than worry.</p>
+<h2>Session 10 — The Fork in the Road</h2>
+<p>The Engine reached into Katherine’s sleep. She was small again — a child in a London rebuilt from geometry, every doorway frame too clean, the hum of the <a href="../../items/command-tuning-fork.html">tuning fork</a> seeping from every corner. Dark oil pooled in the angles and thickened into something that was not a face but a set of planes too sharp for bone. The dream shifted to St. Margaret’s Academy and the creature stepped out of the corner and opened its geometry wide. She woke screaming, lunging at <a href="georgiana-wentworth.html">Georgiana</a> who had leaned over to check on her — mistaking her for the <a href="../../creatures/hound-of-tindalos.html">Hound</a> before Georgiana caught her hand and held her face still. The nightmare had done what no amount of professional composure could prevent: it had drawn a line between the predator in the angles and the predator in the harmony and told her they were the same thing.</p>
+<p>The morning demanded practicality. Katherine attempted to calm a hyperventilating <a href="../npcs/anna-lindqvist.html">Anna</a>, failed, resorted to a slap that also failed, and yielded to <a href="emma-wentworth.html">Emma’s</a> gentler hand before the laudanum took over. At the Ballhausplatz, she stood among the investigators as <a href="../npcs/lord-percival-harcourt.html">Harcourt</a> presented <a href="../npcs/anton-adler.html">Adler</a> to Prince Metternich and the party laid out what they knew. Metternich’s three seconds of silence when <a href="../npcs/franz-kaunitz.html">Kaunitz</a> was named told Katherine everything she needed about how power actually operated in this city — the things that mattered most were the things that would never appear in any report.</p>
+<p>That afternoon, she moved on the <a href="../../factions/polizeidirektion.html">Polizeidirektion</a> with <a href="georgiana-wentworth.html">Georgiana</a> and <a href="../npcs/leopold-fischbein.html">Fischbein</a>. Fischbein argued with the desk sergeant. Georgiana produced the writ. Katherine watched the exits and the evidence clerk’s hands and the angle of Leutnant Gruber’s attention as the <a href="../../items/liber-ivonis.html">Liber_Ivonis</a>, the De_Vermis_Mysteriis, and <a href="marina-garrick.html">Marina’s</a> notebook were brought up from the strong room. Three items recovered. One swift exit. The kind of operation she understood — in, out, nothing broken, nothing left behind. The books were back in hand, <a href="../npcs/nell-coker.html">Nell</a> was still in the wind, the fork vision remained unshared, and the University waited in the dark with five days left on the clock.</p>
+<h2>Session 11 — The Duelling Ground</h2>
+<p>Katherine waited outside <a href="../npcs/andrei-volkonsky.html">Major Volkonsky’s</a> office at the Palais_Razumovsky while <a href="georgiana-wentworth.html">Georgiana</a> brokered the Russian alliance inside. It was the kind of operational position Katherine understood instinctively: close enough to intervene, far enough to deny involvement, watching the corridor and the guards and the angles of the building with the professional eye of someone who catalogued exits the way other women catalogued bonnets. The deal was struck. Five Russian soldiers, conditional on intelligence the party did not yet possess. Katherine filed the terms and moved on.</p>
+<p>The payoff came that afternoon, when <a href="../npcs/nell-coker.html">Nell Coker</a> appeared at the safehouse door asking for “Mrs. Ward.” Katherine’s Session 8 recruitment had not vanished into the chaos of the masquerade after all. Nell was lean, sharp-eyed, and carrying a bruise on her jaw from an encounter with a stocky enforcer near the university, a man with a heavy marked metal rod at his waist. The intelligence she brought was operational gold: the criminal underworld around the university had gone completely silent, deliveries halted, local pickpockets and fencers pulled out entirely, guards doubled with professional killers who were not hiring locals. Something was happening inside the university, and the underworld knew it even if it did not know what. Nell offered her services in exchange for payment, protection, and a clean exit when it was over.</p>
+<p>Katherine and Nell planned to scout the university together that evening. The spy who worked alone now had an asset who had tracked the party across two days of careful listening in the right taverns, who carried a reticule heavier than it should have been, and who understood the back routes of Vienna the way Katherine understood the back routes of Krakow. The fork vision that connected the <a href="../../creatures/hound-of-tindalos.html">Hound</a> to the Engine remained locked inside Katherine’s head, unshared with anyone. And yet the operational picture was sharpening. The university was locked down tight, the guards were professional, the underworld had retreated, and Katherine Ward had a partner for the reconnaissance that would determine whether the assault was possible at all.</p>
+<h2>Session 12 — The War Council</h2>
+<p>The rooftops above Vienna were Katherine’s territory in a way the salons never could be. She and <a href="../npcs/nell-coker.html">Nell</a> slipped out of <a href="../../locations/thaliastrasse-12-safehouse.html">Thaliastraße 12</a> after dark on the night of August 10th, navigating canal paths and service alleys to reach the Universitätsplatz, where the <a href="../../locations/university-of-vienna.html">university</a> loomed three stories into the dark with its lower windows shuttered tight. Katherine mapped the guard patterns the way Jon Pike had taught her: count the circuit, time the gap, note the blind spots. Five guards. A fifteen-minute patrol. A two-minute window at the side door every twenty to thirty minutes. Workable. Through a lit second-floor window, a gaunt figure paced behind the glass, twin discs of candlelight catching the reflection of his spectacles. <a href="../npcs/albin-herzfeld.html">Herzfeld</a>, working through the night.</p>
+<p>What she had not expected was the vibration. Lying flat on the rooftop beside Nell, watching the interior courtyard, she felt it settle into her chest: a low rhythmic pressure below the threshold of hearing, unmistakably physical. The same quality she had recognised in the geometry at St. Margaret’s, translated into a different key. Nell translated the guards’ overheard German with professional calm. The professor wanted everything finished in three nights. Not the 15th. The 13th. The planning window had collapsed by two days.</p>
+<p>The descent cost her a fall from the drainpipe, a muffled landing on cobblestones that she felt in her shoulder and hip for the rest of the night, while Nell dropped beside her like a bird settling on a wire. Back at the safehouse, she laid the intelligence on the table and watched the room recalculate. At the <a href="../../locations/heuriger-zum-rebstock.html">Heuriger Zum Rebstock</a> that evening, the coalition assembled and the plan took shape: <a href="../npcs/werner-bauer.html">Bauer</a> would dismiss the guards, two teams would enter simultaneously, the assault set for pre-dawn on the 12th. Katherine listened to the assignments, assessed the entry points, and kept her own counsel. The fork vision, the private knowledge that connected the <a href="../../creatures/hound-of-tindalos.html">Hound</a> to the Engine in a symmetry she could not yet articulate, stayed locked inside her head. She had reasons. The vision was hers, the interpretation uncertain, and sharing it risked questions she could not answer about what she had seen when the <a href="../../items/command-tuning-fork.html">fork</a> touched her hand. Then the pergola shattered above them and the <a href="../../creatures/harmonische-wachter.html">Wächter</a> dropped into the firelight, and there was no more time for secrets.</p>
+
+  </div>
+</div>
+<div class="tab-panel" id="tab-journey">
+<h2>Connections</h2>
+<div class="relationship-graph"><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="font-family: var(--font-body, system-ui);">
+  <line x1="300" y1="200" x2="300" y2="80" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="324.1558224106392" y2="82.45640704970066" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="347.3227026135982" y2="89.72506260557233" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="368.55218581137507" y2="101.50838705512685" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="386.9751344674944" y2="117.32396971091762" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="401.8373108993701" y2="136.52431876076452" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="412.53025585764965" y2="158.32336965862157" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="418.61619891937335" y2="181.8286666994508" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="419.8459808605263" y2="206.07790026064552" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="416.1692542639445" y2="230.07830387104644" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="407.736544748489" y2="252.84729818691613" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="394.8930884325239" y2="273.4527179057195" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="378.1646979266667" y2="291.0509747231349" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="358.23623550372974" y2="304.9215939373498" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="335.92357475680296" y2="314.49671076800587" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="312.14019863849194" y2="319.3843188070274" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="287.8598013615082" y2="319.3843188070274" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="264.07642524319704" y2="314.49671076800587" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="241.7637644962703" y2="304.9215939373499" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="221.83530207333337" y2="291.0509747231349" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="205.10691156747617" y2="273.4527179057195" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="192.263455251511" y2="252.8472981869161" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="183.83074573605552" y2="230.07830387104656" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="180.1540191394737" y2="206.0779002606456" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="181.38380108062665" y2="181.8286666994508" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="187.46974414235035" y2="158.32336965862157" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="198.1626891006299" y2="136.52431876076452" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="213.0248655325056" y2="117.32396971091762" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="231.44781418862493" y2="101.50838705512685" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="252.67729738640176" y2="89.72506260557233" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="275.8441775893607" y2="82.45640704970069" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <a href="katherine-ward.html"><g opacity="1">
+    <circle cx="300" cy="200" r="28" fill="var(--accent, #58a6ff)" stroke="var(--accent, #58a6ff)" stroke-width="2"/>
+    <text x="300" y="243" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Katherine Ward</text>
+  </g></a>
+  <a href="../npcs/lord-percival-harcourt.html"><g opacity="1">
+    <circle cx="300" cy="80" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Lord Percival…</text>
+  </g></a>
+  <a href="../../factions/order-of-st-aelfric.html"><g opacity="1">
+    <polygon points="341.476330486328,72.45640704970066 341.476330486328,92.45640704970066 324.1558224106392,102.45640704970066 306.8353143349504,92.45640704970066 306.8353143349504,72.45640704970066 324.1558224106392,62.45640704970066" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="324.1558224106392" y="117.45640704970066" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Order of St A…</text>
+  </g></a>
+  <g opacity="1">
+    <circle cx="347.3227026135982" cy="89.72506260557233" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="347.3227026135982" y="124.72506260557233" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Jonathan Pike</text>
+  </g>
+  <a href="../npcs/nell-coker.html"><g opacity="1">
+    <circle cx="368.55218581137507" cy="101.50838705512685" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="368.55218581137507" y="136.50838705512683" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Nell Coker</text>
+  </g></a>
+  <a href="emma-wentworth.html"><g opacity="1">
+    <circle cx="386.9751344674944" cy="117.32396971091762" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="386.9751344674944" y="152.32396971091762" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Emma Wentworth</text>
+  </g></a>
+  <a href="georgiana-wentworth.html"><g opacity="1">
+    <circle cx="401.8373108993701" cy="136.52431876076452" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="401.8373108993701" y="171.52431876076452" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Georgiana Wen…</text>
+  </g></a>
+  <a href="adrien-de-montferrand.html"><g opacity="1">
+    <circle cx="412.53025585764965" cy="158.32336965862157" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="412.53025585764965" y="193.32336965862157" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Adrien de Mon…</text>
+  </g></a>
+  <a href="varrio-harrowmont.html"><g opacity="1">
+    <circle cx="418.61619891937335" cy="181.8286666994508" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="418.61619891937335" y="216.8286666994508" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Varrio Harrow…</text>
+  </g></a>
+  <a href="freddy-cavendish.html"><g opacity="1">
+    <circle cx="419.8459808605263" cy="206.07790026064552" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="419.8459808605263" y="241.07790026064552" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Freddy Cavend…</text>
+  </g></a>
+  <a href="../../locations/thaliastrasse-12-safehouse.html"><g opacity="1">
+    <rect x="396.1692542639445" y="210.07830387104644" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="416.1692542639445" y="265.07830387104644" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Thaliastrasse…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 10/session-10-wrap-up.html"><g opacity="1">
+    <circle cx="407.736544748489" cy="252.84729818691613" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="407.736544748489" y="287.84729818691613" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 10 Wr…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 11/session-11-wrap-up.html"><g opacity="1">
+    <circle cx="394.8930884325239" cy="273.4527179057195" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="394.8930884325239" y="308.4527179057195" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 11 Wr…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 12/session-12-wrap-up.html"><g opacity="1">
+    <circle cx="378.1646979266667" cy="291.0509747231349" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="378.1646979266667" y="326.0509747231349" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 12 Wr…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 7/session-07-wrap-up.html"><g opacity="1">
+    <circle cx="358.23623550372974" cy="304.9215939373498" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="358.23623550372974" y="339.9215939373498" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 07 Wr…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 8/session-08-wrap-up.html"><g opacity="1">
+    <circle cx="335.92357475680296" cy="314.49671076800587" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="335.92357475680296" y="349.49671076800587" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 08 Wr…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 9/session-09-wrap-up.html"><g opacity="1">
+    <circle cx="312.14019863849194" cy="319.3843188070274" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="312.14019863849194" y="354.3843188070274" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 09 Wr…</text>
+  </g></a>
+  <a href="../npcs/andrei-volkonsky.html"><g opacity="1">
+    <circle cx="287.8598013615082" cy="319.3843188070274" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="287.8598013615082" y="354.3843188070274" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Andrei Volkon…</text>
+  </g></a>
+  <a href="../npcs/anna-lindqvist.html"><g opacity="1">
+    <circle cx="264.07642524319704" cy="314.49671076800587" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="264.07642524319704" y="349.49671076800587" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Anna Lindqvist</text>
+  </g></a>
+  <a href="../npcs/anton-adler.html"><g opacity="1">
+    <circle cx="241.7637644962703" cy="304.9215939373499" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="241.7637644962703" y="339.9215939373499" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Anton Adler</text>
+  </g></a>
+  <a href="../npcs/ludwig-vogel.html"><g opacity="1">
+    <circle cx="221.83530207333337" cy="291.0509747231349" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="221.83530207333337" y="326.0509747231349" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Ludwig Vogel</text>
+  </g></a>
+  <a href="charlotte-thorne.html"><g opacity="1">
+    <circle cx="205.10691156747617" cy="273.4527179057195" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="205.10691156747617" y="308.4527179057195" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Charlotte Tho…</text>
+  </g></a>
+  <a href="jane-radcliffe.html"><g opacity="1">
+    <circle cx="192.263455251511" cy="252.8472981869161" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="192.263455251511" y="287.8472981869161" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Jane Radcliffe</text>
+  </g></a>
+  <a href="../../clues/backerstrasse-14-adler-rooms.html"><g opacity="1">
+    <circle cx="183.83074573605552" cy="230.07830387104656" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="183.83074573605552" y="265.07830387104656" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Backerstrasse…</text>
+  </g></a>
+  <a href="../../creatures/harmonische-wachter.html"><g opacity="1">
+    <circle cx="180.1540191394737" cy="206.0779002606456" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="180.1540191394737" y="241.0779002606456" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Harmonische W…</text>
+  </g></a>
+  <a href="../../events/nightgaunt-attack-palais-kinsky.html"><g opacity="1">
+    <circle cx="181.38380108062665" cy="181.8286666994508" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="181.38380108062665" y="216.8286666994508" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Nightgaunt At…</text>
+  </g></a>
+  <a href="../../items/command-tuning-fork.html"><g opacity="1">
+    <polygon points="187.46974414235035,138.32336965862157 207.46974414235035,158.32336965862157 187.46974414235035,178.32336965862157 167.46974414235035,158.32336965862157" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="187.46974414235035" y="193.32336965862157" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Command Tunin…</text>
+  </g></a>
+  <a href="../../items/liber-ivonis.html"><g opacity="1">
+    <polygon points="198.1626891006299,116.52431876076452 218.1626891006299,136.52431876076452 198.1626891006299,156.52431876076452 178.1626891006299,136.52431876076452" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="198.1626891006299" y="171.52431876076452" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Liber Ivonis</text>
+  </g></a>
+  <a href="../../locations/university-of-vienna.html"><g opacity="1">
+    <rect x="193.0248655325056" y="97.32396971091762" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="213.0248655325056" y="152.32396971091762" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">University of…</text>
+  </g></a>
+  <a href="../../player-characters/readme.html"><g opacity="1">
+    <circle cx="231.44781418862493" cy="101.50838705512685" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="231.44781418862493" y="136.50838705512683" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">README</text>
+  </g></a>
+  <a href="../../campaign/timeline.html"><g opacity="1">
+    <circle cx="252.67729738640176" cy="89.72506260557233" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="252.67729738640176" y="124.72506260557233" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Timeline</text>
+  </g></a>
+  <a href="../../player-characters.html"><g opacity="1">
+    <circle cx="275.8441775893607" cy="82.45640704970069" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="275.8441775893607" y="117.45640704970069" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">player charac…</text>
+  </g></a>
+</svg></div>
+</div>
+
+<script>
+function switchTab(tab) {
+  document.querySelectorAll('.pc-tab').forEach(function(t) { t.classList.remove('active'); });
+  document.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
+  document.getElementById('tab-' + tab).classList.add('active');
+  document.querySelector('[data-tab="' + tab + '"]').classList.add('active');
+  history.replaceState(null, '', '#' + tab);
+}
+function openAccordion(id) {
+  var el = document.getElementById(id);
+  if (el && el.classList.contains('accordion')) {
+    el.classList.add('open');
+    var btn = el.querySelector('.accordion-header');
+    if (btn) btn.setAttribute('aria-expanded', 'true');
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('.section-nav a');
+  if (link) {
+    e.preventDefault();
+    var id = link.getAttribute('href').slice(1);
+    openAccordion(id);
+  }
+});
+(function() {
+  var hash = location.hash.slice(1);
+  if (['sheet', 'equipment', 'story', 'journey'].includes(hash)) switchTab(hash);
+  else if (hash) openAccordion(hash);
+})();
+</script>
 </main>
 
 
 
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../../js/nav.js"></script>
+<script src="../../js/lightbox.js"></script>
+<script src="../../js/search.js"></script>
 <script>
-document.querySelectorAll('.site-nav a').forEach(a => {
-  a.addEventListener('click', () => document.getElementById('nav').classList.remove('open'));
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
 });
 </script>
 

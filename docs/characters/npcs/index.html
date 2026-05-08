@@ -5,1137 +5,1427 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NPCs — Canticle of the End</title>
   <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/themes/horror.css">
   <link rel="stylesheet" href="../../css/theme.css">
 </head>
 <body>
 
-<header class="site-header">
-  <button class="menu-toggle" onclick="document.getElementById('nav').classList.add('open')" aria-label="Menu">&#9776;</button>
-  <h1><a href="../../index.html">Canticle of the End</a></h1>
+<header class="top-nav">
+  <a href="../../index.html" class="nav-brand">Canticle of the End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <button class="nav-group-toggle">Story</button>
+        <div class="nav-dropdown">
+        <a href="../../chapters/index.html">Story</a>
+        <a href="../../timeline.html">Events</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../../player-characters.html">Player Characters</a>
+        <a href="index.html">NPCs</a>
+        <a href="../../creatures/index.html">Creatures</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../../locations/index.html">Locations</a>
+        <a href="../../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../../documents/index.html">Documents</a>
+        <a href="../../clues/index.html">Clues</a>
+        <a href="../../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
 </header>
-
-<nav id="nav" class="site-nav">
-  <button class="nav-close" onclick="document.getElementById('nav').classList.remove('open')" aria-label="Close">&times;</button>
-  <h2>Campaign</h2>
-<ul>
-<li><a href="../../player-characters.html">player characters</a></li>
-<li><a href="../../campaign/regency-slang-glossary.html">Regency Slang Glossary</a></li>
-<li><a href="../../campaign/timeline.html">Timeline</a></li>
-</ul>
-<h2>Player Characters</h2>
-<ul>
-<li><a href="../pcs/adrien-de-montferrand.html">Adrien de Montferrand</a></li>
-<li><a href="../pcs/augustus-bolt.html">Augustus Bolt</a></li>
-<li><a href="../pcs/charlotte-thorne.html">Charlotte Thorne</a></li>
-<li><a href="../pcs/emma-wentworth.html">Emma Wentworth</a></li>
-<li><a href="../pcs/freddy-cavendish.html">Freddy Cavendish</a></li>
-<li><a href="../pcs/georgiana-dillwyn.html">Georgiana Dillwyn</a></li>
-<li><a href="../pcs/georgiana-wentworth.html">Georgiana Wentworth</a></li>
-<li><a href="../pcs/jacob.html">Jacob</a></li>
-<li><a href="../pcs/james-bennet.html">James Bennet</a></li>
-<li><a href="../pcs/jane-radcliffe.html">Jane Radcliffe</a></li>
-<li><a href="../pcs/katherine-ward.html">Katherine Ward</a></li>
-<li><a href="../pcs/marina-garrick.html">Marina Garrick</a></li>
-<li><a href="../pcs/varrio-harrowmont.html">Varrio Harrowmont</a></li>
-</ul>
-<h2>NPCs</h2>
-<ul>
-<li><a href="abbe-etienne-duplessis.html">Abbe Etienne Duplessis</a></li>
-<li><a href="abbe-ferrant.html">Abbe Ferrant</a></li>
-<li><a href="agnes-hartley.html">Agnes Hartley</a></li>
-<li><a href="albert-lambert.html">Albert Lambert</a></li>
-<li><a href="albin-herzfeld.html">Albin Herzfeld</a></li>
-<li><a href="andrei-volkonsky.html">Andrei Volkonsky</a></li>
-<li><a href="anna-lindqvist.html">Anna Lindqvist</a></li>
-<li><a href="annika-laughton.html">Annika Laughton</a></li>
-<li><a href="antoine-lefevre.html">Antoine Lefevre</a></li>
-<li><a href="anton-adler.html">Anton Adler</a></li>
-<li><a href="benoit-chasseloup.html">Benoit Chasseloup</a></li>
-<li><a href="captain-king.html">Captain King</a></li>
-<li><a href="captain-richard-forsyth.html">Captain Richard Forsyth</a></li>
-<li><a href="captain-thomas-keene.html">Captain Thomas Keene</a></li>
-<li><a href="caroline-hartley.html">Caroline Hartley</a></li>
-<li><a href="cecile-vaillant.html">Cecile Vaillant</a></li>
-<li><a href="charles-duval.html">Charles Duval</a></li>
-<li><a href="charlotte-thorne.html">Charlotte Thorne</a></li>
-<li><a href="clara-fen.html">Clara Fen</a></li>
-<li><a href="clementine-delaroche.html">Clementine Delaroche</a></li>
-<li><a href="collarbone-jack.html">Collarbone Jack</a></li>
-<li><a href="colonel-alastair-mccrae.html">Colonel Alastair McCrae</a></li>
-<li><a href="colonel-etienne-moreau.html">Colonel Etienne Moreau</a></li>
-<li><a href="colonel-fittlewick.html">Colonel Fittlewick</a></li>
-<li><a href="colonel-maarten-van-hoorne.html">Colonel Maarten van Hoorne</a></li>
-<li><a href="commissaire-jules-delaroche.html">Commissaire Jules Delaroche</a></li>
-<li><a href="comte-henri-vallin.html">Comte Henri Vallin</a></li>
-<li><a href="doctor-emile-carreau.html">Doctor Emile Carreau</a></li>
-<li><a href="dr-ambrose-hargreaves.html">Dr Ambrose Hargreaves</a></li>
-<li><a href="dr-erasmus-hume.html">Dr Erasmus Hume</a></li>
-<li><a href="dr-heinrich-voss.html">Dr Heinrich Voss</a></li>
-<li><a href="dr-odilon-mercier.html">Dr Odilon Mercier</a></li>
-<li><a href="dr-thornton-beamish.html">Dr Thornton Beamish</a></li>
-<li><a href="duchesse-de-brissac.html">Duchesse de Brissac</a></li>
-<li><a href="edna-greaves.html">Edna Greaves</a></li>
-<li><a href="elbert-fenwick.html">Elbert Fenwick</a></li>
-<li><a href="eli-barlow.html">Eli Barlow</a></li>
-<li><a href="eli-tadcombe.html">Eli Tadcombe</a></li>
-<li><a href="eliza-sharpe.html">Eliza Sharpe</a></li>
-<li><a href="emeric-de-puyrault.html">Emeric de Puyrault</a></li>
-<li><a href="emile-fouchard.html">Emile Fouchard</a></li>
-<li><a href="ephraim-colley.html">Ephraim Colley</a></li>
-<li><a href="ernst-falkner.html">Ernst Falkner</a></li>
-<li><a href="father-jeremiah-creel.html">Father Jeremiah Creel</a></li>
-<li><a href="francois-barbier.html">Francois Barbier</a></li>
-<li><a href="franz-huber.html">Franz Huber</a></li>
-<li><a href="franz-kaunitz.html">Franz Kaunitz</a></li>
-<li><a href="giles-mercer.html">Giles Mercer</a></li>
-<li><a href="gottfried-reiner.html">Gottfried Reiner</a></li>
-<li><a href="gustav-metzger.html">Gustav Metzger</a></li>
-<li><a href="henri-marchand.html">Henri Marchand</a></li>
-<li><a href="herr-grillparzer.html">Herr Grillparzer</a></li>
-<li><a href="imogen-bellamy.html">Imogen Bellamy</a></li>
-<li><a href="ingrid-sperl.html">Ingrid Sperl</a></li>
-<li><a href="josiah-hartley.html">Josiah Hartley</a></li>
-<li><a href="jules-steward.html">Jules Steward</a></li>
-<li><a href="klaus-bauer.html">Klaus Bauer</a></li>
-<li><a href="lady-bagtonbury.html">Lady Bagtonbury</a></li>
-<li><a href="lady-bletchley.html">Lady Bletchley</a></li>
-<li><a href="lady-euphemia-langridge.html">Lady Euphemia Langridge</a></li>
-<li><a href="lady-honoria-lyndhurst.html">Lady Honoria Lyndhurst</a></li>
-<li><a href="lady-octavia-danforth.html">Lady Octavia Danforth</a></li>
-<li><a href="lady-rowena-calthorpe.html">Lady Rowena Calthorpe</a></li>
-<li><a href="lady-wilhelmina-danvers.html">Lady Wilhelmina Danvers</a></li>
-<li><a href="leopold-fischbein.html">Leopold Fischbein</a></li>
-<li><a href="leopold-von-trautmannsdorff.html">Leopold von Trautmannsdorff</a></li>
-<li><a href="liesel-hartmann.html">Liesel Hartmann</a></li>
-<li><a href="lieut-john-orville.html">Lieut John Orville</a></li>
-<li><a href="lieutenant-jonathan-pellam.html">Lieutenant Jonathan Pellam</a></li>
-<li><a href="lord-cosgrove.html">Lord Cosgrove</a></li>
-<li><a href="lord-digby-wycombe.html">Lord Digby Wycombe</a></li>
-<li><a href="lord-felix-montroy.html">Lord Felix Montroy</a></li>
-<li><a href="lord-percival-harcourt.html">Lord Percival Harcourt</a></li>
-<li><a href="lord-ratcliffe.html">Lord Ratcliffe</a></li>
-<li><a href="luc-fouchard.html">Luc Fouchard</a></li>
-<li><a href="lucien-goupil.html">Lucien Goupil</a></li>
-<li><a href="lucien-stablehand.html">Lucien Stablehand</a></li>
-<li><a href="lucienne-moreau.html">Lucienne Moreau</a></li>
-<li><a href="ludwig-vogel.html">Ludwig Vogel</a></li>
-<li><a href="lydia-hartley.html">Lydia Hartley</a></li>
-<li><a href="madame-beauregard.html">Madame Beauregard</a></li>
-<li><a href="madame-delacroix.html">Madame Delacroix</a></li>
-<li><a href="madame-elodie-marchand.html">Madame Elodie Marchand</a></li>
-<li><a href="madame-sylvie-de-noyelles.html">Madame Sylvie de Noyelles</a></li>
-<li><a href="magistrate-beraud.html">Magistrate Beraud</a></li>
-<li><a href="major-lionel-ashcombe.html">Major Lionel Ashcombe</a></li>
-<li><a href="maria-von-thun.html">Maria von Thun</a></li>
-<li><a href="marquise-eloise-de-camberonne.html">Marquise Eloise de Camberonne</a></li>
-<li><a href="mathieu-durand.html">Mathieu Durand</a></li>
-<li><a href="mathilde-savarin.html">Mathilde Savarin</a></li>
-<li><a href="maximilian-von-sternberg.html">Maximilian von Sternberg</a></li>
-<li><a href="miriam-doyle.html">Miriam Doyle</a></li>
-<li><a href="miss-alice-wetherby.html">Miss Alice Wetherby</a></li>
-<li><a href="miss-aurelia-fairchild.html">Miss Aurelia Fairchild</a></li>
-<li><a href="miss-beatrice-harrow.html">Miss Beatrice Harrow</a></li>
-<li><a href="miss-bridget-clarke.html">Miss Bridget Clarke</a></li>
-<li><a href="miss-dorothea-bexley.html">Miss Dorothea Bexley</a></li>
-<li><a href="miss-edith-talbot.html">Miss Edith Talbot</a></li>
-<li><a href="miss-eleanor-finch.html">Miss Eleanor Finch</a></li>
-<li><a href="miss-eleanor-mortimer.html">Miss Eleanor Mortimer</a></li>
-<li><a href="miss-isabel-glossop.html">Miss Isabel Glossop</a></li>
-<li><a href="miss-mary-glossop.html">Miss Mary Glossop</a></li>
-<li><a href="miss-theodosia-dawes.html">Miss Theodosia Dawes</a></li>
-<li><a href="mlle-marie-lucile-dumain.html">Mlle Marie Lucile Dumain</a></li>
-<li><a href="mr-alfred-smythe.html">Mr Alfred Smythe</a></li>
-<li><a href="mr-aurelian-dean.html">Mr Aurelian Dean</a></li>
-<li><a href="mr-benedict-fairfax.html">Mr Benedict Fairfax</a></li>
-<li><a href="mr-berkley.html">Mr Berkley</a></li>
-<li><a href="mr-bernard-hathaway.html">Mr Bernard Hathaway</a></li>
-<li><a href="mr-gideon-crow.html">Mr Gideon Crow</a></li>
-<li><a href="mr-hampton.html">Mr Hampton</a></li>
-<li><a href="mr-horatio-fairbourne.html">Mr Horatio Fairbourne</a></li>
-<li><a href="mr-jameson.html">Mr Jameson</a></li>
-<li><a href="mr-oliver-hawksley.html">Mr Oliver Hawksley</a></li>
-<li><a href="mr-thomas-wickes.html">Mr Thomas Wickes</a></li>
-<li><a href="mr-tipple.html">Mr Tipple</a></li>
-<li><a href="mr-tobias-whitmore.html">Mr Tobias Whitmore</a></li>
-<li><a href="mrs-agnes-rothwell.html">Mrs Agnes Rothwell</a></li>
-<li><a href="mrs-charlotte-mortimer.html">Mrs Charlotte Mortimer</a></li>
-<li><a href="mrs-hampton.html">Mrs Hampton</a></li>
-<li><a href="mrs-margaret-fairchild.html">Mrs Margaret Fairchild</a></li>
-<li><a href="mrs-pemberton-brighton.html">Mrs Pemberton Brighton</a></li>
-<li><a href="mrs-winifred-fowler.html">Mrs Winifred Fowler</a></li>
-<li><a href="ms-amelia-cooper.html">Ms Amelia Cooper</a></li>
-<li><a href="ms-hannah-shibden.html">Ms Hannah Shibden</a></li>
-<li><a href="nathan-pryce.html">Nathan Pryce</a></li>
-<li><a href="nathaniel-rooke.html">Nathaniel Rooke</a></li>
-<li><a href="nell-coker.html">Nell Coker</a></li>
-<li><a href="nikolai-volkonsky.html">Nikolai Volkonsky</a></li>
-<li><a href="old-jenkins.html">Old Jenkins</a></li>
-<li><a href="pemberton.html">Pemberton</a></li>
-<li><a href="phineas-lang.html">Phineas Lang</a></li>
-<li><a href="professor-cyrus-elliston.html">Professor Cyrus Elliston</a></li>
-<li><a href="prudence-middleham.html">Prudence Middleham</a></li>
-<li><a href="rev-henry-mortimer.html">Rev Henry Mortimer</a></li>
-<li><a href="russian-officers-volkonsky-detail.html">Russian Officers Volkonsky Detail</a></li>
-<li><a href="sabine.html">Sabine</a></li>
-<li><a href="sabine-lambert.html">Sabine Lambert</a></li>
-<li><a href="silent-nun.html">Silent Nun</a></li>
-<li><a href="sir-andrew-duncan.html">Sir Andrew Duncan</a></li>
-<li><a href="sir-jasper-dulfrey.html">Sir Jasper Dulfrey</a></li>
-<li><a href="sir-lionel-peregrine.html">Sir Lionel Peregrine</a></li>
-<li><a href="slade.html">Slade</a></li>
-<li><a href="squire-anthony-goodwin.html">Squire Anthony Goodwin</a></li>
-<li><a href="therese.html">Therese</a></li>
-<li><a href="thomas-wyndham.html">Thomas Wyndham</a></li>
-<li><a href="thomlin-kerridge.html">Thomlin Kerridge</a></li>
-<li><a href="tobias-greaves.html">Tobias Greaves</a></li>
-<li><a href="vicomte-henri-lavigne.html">Vicomte Henri Lavigne</a></li>
-<li><a href="victoire-lefevre.html">Victoire Lefevre</a></li>
-<li><a href="victoire-lenoir.html">Victoire Lenoir</a></li>
-<li><a href="walter-baines.html">Walter Baines</a></li>
-<li><a href="walter-pennyman.html">Walter Pennyman</a></li>
-<li><a href="werner-bauer.html">Werner Bauer</a></li>
-<li><a href="wilhelm-brenner.html">Wilhelm Brenner</a></li>
-<li><a href="wilkins.html">Wilkins</a></li>
-<li><a href="william-thurner.html">William Thurner</a></li>
-</ul>
-<h2>Factions &amp; Organizations</h2>
-<ul>
-<li><a href="../../factions/aeternum-choir.html">Aeternum Choir</a></li>
-<li><a href="../../factions/blue-sashes.html">Blue Sashes</a></li>
-<li><a href="../../factions/brotherhood-of-the-open-measure.html">Brotherhood of the Open Measure</a></li>
-<li><a href="../../factions/confraternita-del-bel-canto.html">Confraternita del Bel Canto</a></li>
-<li><a href="../../factions/congress-of-vienna.html">Congress of Vienna</a></li>
-<li><a href="../../factions/geheimpolizei.html">Geheimpolizei</a></li>
-<li><a href="../../factions/order-of-st-aelfric.html">Order of St Aelfric</a></li>
-<li><a href="../../factions/orphean-society.html">Orphean Society</a></li>
-<li><a href="../../factions/polizeidirektion.html">Polizeidirektion</a></li>
-<li><a href="../../factions/soci-t-harmonique-de-l-aube.html">Société Harmonique de l Aube</a></li>
-</ul>
-<h2>Events</h2>
-<ul>
-<li><a href="../../events/goupil-masquerade.html">Goupil Masquerade</a></li>
-<li><a href="../../events/grand-masquerade-palais-lobkowitz.html">Grand Masquerade Palais Lobkowitz</a></li>
-<li><a href="../../events/harcourt-reunion.html">Harcourt Reunion</a></li>
-<li><a href="../../events/long-corridor-incident.html">Long Corridor Incident</a></li>
-<li><a href="../../events/marina-recruitment-portsmouth.html">Marina Recruitment Portsmouth</a></li>
-<li><a href="../../events/moreau-graben-assassination.html">Moreau Graben Assassination</a></li>
-<li><a href="../../events/nightgaunt-attack-palais-kinsky.html">Nightgaunt Attack Palais Kinsky</a></li>
-<li><a href="../../events/orphans-hospital-raid.html">Orphans Hospital Raid</a></li>
-<li><a href="../../events/osney-grange-incident.html">Osney Grange Incident</a></li>
-<li><a href="../../events/silkweavers-guild-assault.html">Silkweavers Guild Assault</a></li>
-<li><a href="../../events/stonehenge-ritual.html">Stonehenge Ritual</a></li>
-</ul>
-<h2>Locations</h2>
-<ul>
-<li><a href="../../locations/auberge-des-deux-chenes.html">Auberge des Deux Chenes</a></li>
-<li><a href="../../locations/beauregard-modiste.html">Beauregard Modiste</a></li>
-<li><a href="../../locations/brighton.html">Brighton</a></li>
-<li><a href="../../locations/brighton-assembly-rooms.html">Brighton Assembly Rooms</a></li>
-<li><a href="../../locations/brighton-harbormasters-office.html">Brighton Harbormasters Office</a></li>
-<li><a href="../../locations/british-museum-montagu-house.html">British Museum Montagu House</a></li>
-<li><a href="../../locations/cafe-frauenhuber.html">Cafe Frauenhuber</a></li>
-<li><a href="../../locations/captain-kings-drawing-room.html">Captain Kings Drawing Room</a></li>
-<li><a href="../../locations/crooked-chimney-tavern.html">Crooked Chimney Tavern</a></li>
-<li><a href="../../locations/fourviere.html">Fourviere</a></li>
-<li><a href="../../locations/fox-and-hound-portsmouth.html">Fox and Hound Portsmouth</a></li>
-<li><a href="../../locations/foxglove-and-thistle.html">Foxglove and Thistle</a></li>
-<li><a href="../../locations/gasthof-schwarzer-bar.html">Gasthof Schwarzer Bar</a></li>
-<li><a href="../../locations/gasthof-weisser-ochsen.html">Gasthof Weisser Ochsen</a></li>
-<li><a href="../../locations/goldener-hirsch.html">Goldener Hirsch</a></li>
-<li><a href="../../locations/gough-square-no7.html">Gough Square No7</a></li>
-<li><a href="../../locations/greaves-and-sons.html">Greaves and Sons</a></li>
-<li><a href="../../locations/grosvenor-works.html">Grosvenor Works</a></li>
-<li><a href="../../locations/hampton-residence.html">Hampton Residence</a></li>
-<li><a href="../../locations/hartwell-house.html">Hartwell House</a></li>
-<li><a href="../../locations/hawkswood-and-shaw.html">Hawkswood and Shaw</a></li>
-<li><a href="../../locations/hawthorne-grange.html">Hawthorne Grange</a></li>
-<li><a href="../../locations/hofburg-palace.html">Hofburg Palace</a></li>
-<li><a href="../../locations/hopital-de-la-charite.html">Hopital de la Charite</a></li>
-<li><a href="../../locations/hotel-de-brissac.html">Hotel de Brissac</a></li>
-<li><a href="../../locations/hotel-de-camberonne.html">Hotel de Camberonne</a></li>
-<li><a href="../../locations/kensington-coach-stables.html">Kensington Coach Stables</a></li>
-<li><a href="../../locations/la-belle-esperance.html">La Belle Esperance</a></li>
-<li><a href="../../locations/le-coteau-des-ombres.html">Le Coteau des Ombres</a></li>
-<li><a href="../../locations/le-lys-de-marbre.html">Le Lys de Marbre</a></li>
-<li><a href="../../locations/leopoldstadt.html">Leopoldstadt</a></li>
-<li><a href="../../locations/maison-des-cinq-portes.html">Maison des Cinq Portes</a></li>
-<li><a href="../../locations/maison-du-corbeau.html">Maison du Corbeau</a></li>
-<li><a href="../../locations/marchbank-terrace.html">Marchbank Terrace</a></li>
-<li><a href="../../locations/northlake-hall.html">Northlake Hall</a></li>
-<li><a href="../../locations/orphean-society-building.html">Orphean Society Building</a></li>
-<li><a href="../../locations/osney-grange.html">Osney Grange</a></li>
-<li><a href="../../locations/palais-kinsky.html">Palais Kinsky</a></li>
-<li><a href="../../locations/palais-lobkowitz.html">Palais Lobkowitz</a></li>
-<li><a href="../../locations/palais-modena.html">Palais Modena</a></li>
-<li><a href="../../locations/palais-thun-hohenstein.html">Palais Thun Hohenstein</a></li>
-<li><a href="../../locations/ravenwood-house.html">Ravenwood House</a></li>
-<li><a href="../../locations/roman-temple-aeternox.html">Roman Temple Aeternox</a></li>
-<li><a href="../../locations/royal-academy-of-music.html">Royal Academy of Music</a></li>
-<li><a href="../../locations/schonbrunn-palace.html">Schonbrunn Palace</a></li>
-<li><a href="../../locations/sealed-anatomical-theatre.html">Sealed Anatomical Theatre</a></li>
-<li><a href="../../locations/silkweavers-guild.html">Silkweavers Guild</a></li>
-<li><a href="../../locations/silver-quay-tavern.html">Silver Quay Tavern</a></li>
-<li><a href="../../locations/society-of-antiquaries.html">Society of Antiquaries</a></li>
-<li><a href="../../locations/st-stephens-cathedral.html">St Stephens Cathedral</a></li>
-<li><a href="../../locations/stonehenge.html">Stonehenge</a></li>
-<li><a href="../../locations/tarryford.html">Tarryford</a></li>
-<li><a href="../../locations/thaliastrasse-12-safehouse.html">Thaliastrasse 12 Safehouse</a></li>
-<li><a href="../../locations/the-laughing-fox.html">The Laughing Fox</a></li>
-<li><a href="../../locations/thistle-lane.html">Thistle Lane</a></li>
-<li><a href="../../locations/university-of-vienna.html">University of Vienna</a></li>
-<li><a href="../../locations/vienna-conservatory.html">Vienna Conservatory</a></li>
-<li><a href="../../locations/vienna-overview.html">Vienna Overview</a></li>
-<li><a href="../../locations/whitlow-and-sons.html">Whitlow and Sons</a></li>
-<li><a href="../../locations/widow-katz-boarding-house.html">Widow Katz Boarding House</a></li>
-</ul>
-<h2>Items &amp; Artifacts</h2>
-<ul>
-<li><a href="../../items/adler-brotherhood-signet-ring.html">Adler Brotherhood Signet Ring</a></li>
-<li><a href="../../items/aelfric-brooch.html">Aelfric Brooch</a></li>
-<li><a href="../../items/aelfric-cravat-pin.html">Aelfric Cravat Pin</a></li>
-<li><a href="../../items/command-tuning-fork.html">Command Tuning Fork</a></li>
-<li><a href="../../items/northlake-jewel.html">Northlake Jewel</a></li>
-<li><a href="../../items/revelations-of-glaaki.html">Revelations of Glaaki</a></li>
-</ul>
-<h2>Documents</h2>
-<ul>
-<li><a href="../../documents/bauer-release-order.html">Bauer Release Order</a></li>
-<li><a href="../../documents/herzfeld-letter-to-savarin.html">Herzfeld Letter to Savarin</a></li>
-<li><a href="../../documents/thurner-operational-packet.html">Thurner Operational Packet</a></li>
-</ul>
-<h2>Clues</h2>
-<ul>
-<li><a href="../../clues/5-of-8-ritual-requirement.html">5 of 8 Ritual Requirement</a></li>
-<li><a href="../../clues/a432hz-engine-resonance.html">A432Hz Engine Resonance</a></li>
-<li><a href="../../clues/august-15-ritual-date.html">August 15 Ritual Date</a></li>
-<li><a href="../../clues/backerstrasse-14-adler-rooms.html">Backerstrasse 14 Adler Rooms</a></li>
-<li><a href="../../clues/black-bear-tavern-bauer-lodging.html">Black Bear Tavern Bauer Lodging</a></li>
-<li><a href="../../clues/der-kantor-munich-coordination.html">Der Kantor Munich Coordination</a></li>
-<li><a href="../../clues/engine-beneath-university.html">Engine Beneath University</a></li>
-</ul>
-<h2>Chapters</h2>
-<ul>
-<li><a href="../../chapters/Chapter 0.1 - The Beginning/chapter-0-1-wrap-up.html">Chapter 0.1 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 1 - London/chapter-1-wrap-up.html">Chapter 1 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 2 - Lyon/chapter-2-wrap-up.html">Chapter 2 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/One_Shot_The_Audition/one-shot-the-audition.html">One Shot The Audition</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 1/session-01-wrap-up.html">Session 01 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 2/session-02-wrap-up.html">Session 02 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 7/session-07-wrap-up.html">Session 07 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 8/session-08-wrap-up.html">Session 08 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 9/session-09-wrap-up.html">Session 09 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/Session 10/session-10-wrap-up.html">Session 10 Wrap Up</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/vienna-chapter-summary.html">Vienna Chapter Summary</a></li>
-<li><a href="../../chapters/Chapter 3 - Vienna/vienna-events-calendar-handout.html">Vienna Events Calendar Handout</a></li>
-</ul>
-<h2>Creatures</h2>
-<ul>
-<li><a href="../../creatures/chakota.html">Chakota</a></li>
-<li><a href="../../creatures/ciimba-children.html">Ciimba Children</a></li>
-<li><a href="../../creatures/harmonic-engine-victims.html">Harmonic Engine Victims</a></li>
-<li><a href="../../creatures/harmonische-wachter.html">Harmonische Wachter</a></li>
-<li><a href="../../creatures/horror-long-corridor.html">Horror Long Corridor</a></li>
-<li><a href="../../creatures/hound-of-tindalos.html">Hound of Tindalos</a></li>
-<li><a href="../../creatures/nightgaunt.html">Nightgaunt</a></li>
-<li><a href="../../creatures/yog-sothoth.html">Yog Sothoth</a></li>
-</ul>
-
-</nav>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3>Story</h3>
+  <ul>
+    <li><a href="../../chapters/index.html">Story</a></li>
+    <li><a href="../../timeline.html">Events</a></li>
+  </ul>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../../player-characters.html">Player Characters</a></li>
+    <li><a href="index.html">NPCs</a></li>
+    <li><a href="../../creatures/index.html">Creatures</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../../locations/index.html">Locations</a></li>
+    <li><a href="../../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../../documents/index.html">Documents</a></li>
+    <li><a href="../../clues/index.html">Clues</a></li>
+    <li><a href="../../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
 
 <main class="content">
-<h1 class="page-title">NPCs</h1>
-<div class="roster">
-<div class="roster-card">
-  <h3><a href="abbe-etienne-duplessis.html">Abbe Etienne Duplessis</a></h3>
-  <div class="role">Priest, Order of St. Aelfric operative</div>
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span class="sep">&rsaquo;</span>Characters<span class="sep">&rsaquo;</span>NPCs</nav>
+
+<div class="index-header">
+  <h1 class="page-title">NPCs</h1>
+  <span class="index-count">Showing 161 of 161</span>
+  
+</div>
+
+<input class="name-filter" type="text" placeholder="Filter by name..." aria-label="Filter by name">
+
+<div class="npc-table-filters"><select class="npc-filter" data-col="status" aria-label="Filter by status">
+  <option value="">All Statuses</option>
+  <option value="Austrian state custody (transferred from party custody at the Ballhausplatz, 9 August 1814)">Austrian state custody (transferred from party custody at the Ballhausplatz, 9 August 1814)</option>
+<option value="alive">Alive</option>
+<option value="alive (ghoulified)">Alive (ghoulified)</option>
+<option value="alive — testified to Metternich; being removed from Vienna under state protection (9 August 1814)">Alive — testified to Metternich; being removed from Vienna under state protection (9 August 1814)</option>
+<option value="arrested — relieved of credentials and sidearm by Gentz at the Ballhausplatz, 6pm 9 August 1814">Arrested — relieved of credentials and sidearm by Gentz at the Ballhausplatz, 6pm 9 August 1814</option>
+<option value="captive">Captive</option>
+<option value="captured">Captured</option>
+<option value="dead">Dead</option>
+<option value="dead (killed August 4, 1814, by Varrio Harrowmont)">Dead (killed August 4, 1814, by Varrio Harrowmont)</option>
+<option value="deceased">Deceased</option>
+<option value="inside the University since morning of 9 August 1814 — status unknown; likely held by Herzfeld">Inside the University since morning of 9 August 1814 — status unknown; likely held by Herzfeld</option>
+<option value="unknown">Unknown</option>
+</select></div>
+<div class="npc-table-wrap">
+<table class="npc-table sortable-table">
+<thead>
+<tr>
+  <th data-sort-col="name" class="sort-active sort-asc">Name</th>
+  <th data-sort-col="occupation">Role</th>
+  <th data-sort-col="status">Status</th>
+  <th data-sort-col="first">First Appearance</th>
+  <th data-sort-col="session">Last Updated</th>
+  <th data-sort-col="confidence">Confidence</th>
+</tr>
+</thead>
+<tbody>
+<tr data-entity-type="npc" data-entity-name="Abbe Etienne Duplessis" data-entity-status="alive" data-session="">
+  <td><a href="abbe-etienne-duplessis.html">Abbe Etienne Duplessis</a></td>
+  <td>Priest, Order of St. Aelfric operative</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Lyon, pre-ball briefing</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Abbe Ferrant" data-entity-status="alive" data-session="">
+  <td><a href="abbe-ferrant.html">Abbe Ferrant</a></td>
+  <td>Priest of St. Nizier Church, cult evangelist</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Lyon, Ball at Château de Camberonne (The Two Abbés scene)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Agnes Hartley" data-entity-status="alive" data-session="">
+  <td><a href="agnes-hartley.html">Agnes Hartley</a></td>
+  <td>English businessman's wife; ambitious matchmaker</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 1 — Vienna (Palais Kinsky bar, evening of 3 August 1814)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Albert Lambert" data-entity-status="alive" data-session="">
+  <td><a href="albert-lambert.html">Albert Lambert</a></td>
+  <td>Antiquarian scholar</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Paris, Ball at Hôtel de Brissac</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Albin Herzfeld" data-entity-status="alive" data-session="">
+  <td><a href="albin-herzfeld.html">Albin Herzfeld</a></td>
+  <td>Professor of Music Theory, University of Vienna; Cult Leader</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 1 (referenced in Lyon letter)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Andrei Volkonsky" data-entity-status="alive" data-session="">
+  <td><a href="andrei-volkonsky.html">Andrei Volkonsky</a></td>
+  <td>Major, Russian Imperial Guard; Intelligence Officer</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 1 (referenced in intelligence); Session 11 (first in-play appearance)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Anna Lindqvist" data-entity-status="alive — testified to Metternich; being removed from Vienna under state protection (9 August 1814)" data-session="">
+  <td><a href="anna-lindqvist.html">Anna Lindqvist</a></td>
+  <td>Opera Singer; Swedish Soprano</td>
+  <td><span class="status-badge status-alive-—-testified-to-metternich;-being-removed-from-vienna-under-state-protection-(9-august-1814)">Alive — testified to Metternich; being removed from Vienna under state protection (9 August 1814)</span></td>
+  <td>Session 7 (referenced in intelligence)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Annika Laughton" data-entity-status="captive" data-session="">
+  <td><a href="annika-laughton.html">Annika Laughton</a></td>
+  <td>Academy Student (Vocal Theory, Sacred Music)</td>
+  <td><span class="status-badge status-captive">Captive</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Antoine Lefevre" data-entity-status="alive" data-session="">
+  <td><a href="antoine-lefevre.html">Antoine Lefevre</a></td>
+  <td>Civil Clerk in Lyon city offices</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 — Lyon</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Anton Adler" data-entity-status="Austrian state custody (transferred from party custody at the Ballhausplatz, 9 August 1814)" data-session="">
+  <td><a href="anton-adler.html">Anton Adler</a></td>
+  <td>Kapellmeister (Music Director) at Vienna Conservatory; Cult Lieutenant</td>
+  <td><span class="status-badge status-austrian-state-custody-(transferred-from-party-custody-at-the-ballhausplatz,-9-august-1814)">Austrian state custody (transferred from party custody at the Ballhausplatz, 9 August 1814)</span></td>
+  <td>Session 1 (referenced in Lyon intelligence)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Baronin von Kessel" data-entity-status="alive" data-session="">
+  <td><a href="baronin-von-kessel.html">Baronin von Kessel</a></td>
+  <td>Diplomat's wife</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 11 (von Thun salon, 10 August 1814)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Benoit Chasseloup" data-entity-status="unknown" data-session="">
+  <td><a href="benoit-chasseloup.html">Benoit Chasseloup</a></td>
+  <td>Silkweaver Contact / Former Guild Member</td>
+  <td><span class="status-badge status-unknown">Unknown</span></td>
+  <td>Chapter 2 — Lyon</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Capitano Luca Ferrante" data-entity-status="alive" data-session="">
+  <td><a href="capitano-luca-ferrante.html">Capitano Luca Ferrante</a></td>
+  <td>Mercenary Captain; Former Piedmontese Army</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 11 (von Thun's evening, introduced by Morosi)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Captain King" data-entity-status="alive" data-session="">
+  <td><a href="captain-king.html">Captain King</a></td>
+  <td>Revolutionary / Air Loom Gang Leader (posing as Royal Navy Captain)</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 — Loom &amp; Lucidity (Brighton/London)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Captain Richard Forsyth" data-entity-status="alive" data-session="">
+  <td><a href="captain-richard-forsyth.html">Captain Richard Forsyth</a></td>
+  <td>Military officer, Order operative</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Paris, Ball at Hôtel de Brissac</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Captain Thomas Keene" data-entity-status="alive" data-session="">
+  <td><a href="captain-thomas-keene.html">Captain Thomas Keene</a></td>
+  <td>Packet boat captain</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Lyon, Dover docks (opening scene)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Captain von Straussen" data-entity-status="alive" data-session="">
+  <td><a href="captain-von-straussen.html">Captain von Straussen</a></td>
+  <td>Austrian Army Officer</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 11 (Sternberg duel, dawn 10 August 1814)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Caroline Hartley" data-entity-status="inside the University since morning of 9 August 1814 — status unknown; likely held by Herzfeld" data-session="">
+  <td><a href="caroline-hartley.html">Caroline Hartley</a></td>
+  <td>Gentlewoman; daughter of an English businessman</td>
+  <td><span class="status-badge status-inside-the-university-since-morning-of-9-august-1814-—-status-unknown;-likely-held-by-herzfeld">Inside the University since morning of 9 August 1814 — status unknown; likely held by Herzfeld</span></td>
+  <td>Session 1 — Vienna (Palais Kinsky bar, evening of 3 August 1814)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Cecile Vaillant" data-entity-status="alive" data-session="">
+  <td><a href="cecile-vaillant.html">Cecile Vaillant</a></td>
+  <td>Translator, scholar, Order operative</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Paris, Le Lys de Marbre inn</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Charles Duval" data-entity-status="alive" data-session="">
+  <td><a href="charles-duval.html">Charles Duval</a></td>
+  <td>Driver (Carriage)</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 1 (Vienna — customs gate)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Charlotte Thorne" data-entity-status="alive" data-session="">
+  <td><a href="charlotte-thorne.html">Charlotte Thorne</a></td>
+  <td>Archaeologist, Author (writes under a male pseudonym)</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.6 — The Viscount Who Loves Me</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Clara Fen" data-entity-status="alive" data-session="">
+  <td><a href="clara-fen.html">Clara Fen</a></td>
+  <td>Former Vocalist, Coffeehouse Singer</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Clementine Delaroche" data-entity-status="alive" data-session="">
+  <td><a href="clementine-delaroche.html">Clementine Delaroche</a></td>
+  <td>Cult Agent / Former Musician</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 — Lyon</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Collarbone Jack" data-entity-status="alive" data-session="">
+  <td><a href="collarbone-jack.html">Collarbone Jack</a></td>
+  <td>Coffeehouse Regular</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Colonel Alastair McCrae" data-entity-status="alive" data-session="">
+  <td><a href="colonel-alastair-mccrae.html">Colonel Alastair McCrae</a></td>
+  <td>Retired military officer, veteran</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Paris, Ball at Hôtel de Brissac</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Colonel Etienne Moreau" data-entity-status="alive" data-session="">
+  <td><a href="colonel-etienne-moreau.html">Colonel Etienne Moreau</a></td>
+  <td>Former Imperial artillery officer (half-pay); civic observer</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Lyon, Ball at Château de Camberonne</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Colonel Fittlewick" data-entity-status="alive" data-session="">
+  <td><a href="colonel-fittlewick.html">Colonel Fittlewick</a></td>
+  <td>Retired Military Officer</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 — Loom &amp; Lucidity (London Soirée)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Colonel Maarten van Hoorne" data-entity-status="alive" data-session="">
+  <td><a href="colonel-maarten-van-hoorne.html">Colonel Maarten van Hoorne</a></td>
+  <td>Dutch military officer</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Paris, Ball at Hôtel de Brissac</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Commissaire Jules Delaroche" data-entity-status="dead" data-session="">
+  <td><a href="commissaire-jules-delaroche.html">Commissaire Jules Delaroche</a></td>
+  <td>Police Commissioner</td>
+  <td><span class="status-badge status-dead">Dead</span></td>
+  <td>Chapter 2 - Lyon, Ball at Château de Camberonne (Blue Sash Incident)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Comte Henri Vallin" data-entity-status="alive" data-session="">
+  <td><a href="comte-henri-vallin.html">Comte Henri Vallin</a></td>
+  <td>Aristocratic patron, occult financier</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Lyon, Masquerade Soirée</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Doctor Emile Carreau" data-entity-status="dead" data-session="">
+  <td><a href="doctor-emile-carreau.html">Doctor Emile Carreau</a></td>
+  <td>Surgeon, composer, cult experimenter</td>
+  <td><span class="status-badge status-dead">Dead</span></td>
+  <td>Chapter 2 - Lyon, Masquerade Soirée</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Dr Ambrose Hargreaves" data-entity-status="alive" data-session="">
+  <td><a href="dr-ambrose-hargreaves.html">Dr Ambrose Hargreaves</a></td>
+  <td>Naval Surgeon (retired)</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 (Portsmouth, September 1812)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Dr Erasmus Hume" data-entity-status="dead" data-session="">
+  <td><a href="dr-erasmus-hume.html">Dr Erasmus Hume</a></td>
+  <td>Composer, Theorist, High Conductor of the Orphean Society</td>
+  <td><span class="status-badge status-dead">Dead</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Dr Heinrich Voss" data-entity-status="alive" data-session="">
+  <td><a href="dr-heinrich-voss.html">Dr Heinrich Voss</a></td>
+  <td>Physician, Josefstadt district</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 10 — Vienna (Thaliastrasse 12 Safehouse|Thaliastraße 12 safehouse, dawn of 9 August 1814)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Dr Odilon Mercier" data-entity-status="alive" data-session="">
+  <td><a href="dr-odilon-mercier.html">Dr Odilon Mercier</a></td>
+  <td>Occultist, critic</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Paris, Ball at Hôtel de Brissac</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Dr Thornton Beamish" data-entity-status="deceased" data-session="">
+  <td><a href="dr-thornton-beamish.html">Dr Thornton Beamish</a></td>
+  <td>Physician / Occultist</td>
+  <td><span class="status-badge status-deceased">Deceased</span></td>
+  <td>Chapter 0.1 — Curate &amp; Curability (Osney Grange)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Duchesse de Brissac" data-entity-status="alive" data-session="">
+  <td><a href="duchesse-de-brissac.html">Duchesse de Brissac</a></td>
+  <td>Hostess, widow</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Paris, Ball at Hôtel de Brissac</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Edna Greaves" data-entity-status="alive" data-session="">
+  <td><a href="edna-greaves.html">Edna Greaves</a></td>
+  <td>Pawnshop Clerk</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Elbert Fenwick" data-entity-status="alive" data-session="">
+  <td><a href="elbert-fenwick.html">Elbert Fenwick</a></td>
+  <td>Head Clerk</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Eli Barlow" data-entity-status="alive" data-session="">
+  <td><a href="eli-barlow.html">Eli Barlow</a></td>
+  <td>Building Caretaker, Watchman</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Eli Tadcombe" data-entity-status="alive" data-session="">
+  <td><a href="eli-tadcombe.html">Eli Tadcombe</a></td>
+  <td>Custodian, Orphean Society</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Eliza Sharpe" data-entity-status="alive" data-session="">
+  <td><a href="eliza-sharpe.html">Eliza Sharpe</a></td>
+  <td>Actress</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.5 — The Scandal Beneath the Stage (Drury Lane)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Emeric de Puyrault" data-entity-status="alive" data-session="">
+  <td><a href="emeric-de-puyrault.html">Emeric de Puyrault</a></td>
+  <td>Aristocrat, swordsman</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Lyon, Ball at Château de Camberonne</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Emile Fouchard" data-entity-status="alive" data-session="">
+  <td><a href="emile-fouchard.html">Emile Fouchard</a></td>
+  <td></td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 1 — Paris Ball</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Ephraim Colley" data-entity-status="alive" data-session="">
+  <td><a href="ephraim-colley.html">Ephraim Colley</a></td>
+  <td>Night Watchman</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Ernst Falkner" data-entity-status="alive" data-session="">
+  <td><a href="ernst-falkner.html">Ernst Falkner</a></td>
+  <td>Geologist, Naturhistorisches Institut</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 1 (contact letter from Lyon)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Father Jeremiah Creel" data-entity-status="captive" data-session="">
+  <td><a href="father-jeremiah-creel.html">Father Jeremiah Creel</a></td>
+  <td>Elderly Preacher</td>
+  <td><span class="status-badge status-captive">Captive</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Francois Barbier" data-entity-status="alive" data-session="">
+  <td><a href="francois-barbier.html">Francois Barbier</a></td>
+  <td>Driver (Carriage)</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 1 (Vienna — customs gate)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Franz Huber" data-entity-status="alive" data-session="">
+  <td><a href="franz-huber.html">Franz Huber</a></td>
+  <td>Sergeant, Vienna Police (Geheimpolizei)</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 1 (referenced in intelligence)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Franz Kaunitz" data-entity-status="alive" data-session="">
+  <td><a href="franz-kaunitz.html">Franz Kaunitz</a></td>
+  <td>Generalfeldmarschall (retired officer); Cult Sympathizer; Society Patron</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 2 (Opera intermission, August 4)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Giles Mercer" data-entity-status="deceased" data-session="">
+  <td><a href="giles-mercer.html">Giles Mercer</a></td>
+  <td>Order Investigator</td>
+  <td><span class="status-badge status-deceased">Deceased</span></td>
+  <td>Prelude (Before Chapter 1)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Gottfried Reiner" data-entity-status="alive" data-session="">
+  <td><a href="gottfried-reiner.html">Gottfried Reiner</a></td>
+  <td>Chemist, University of Vienna</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 1 (referenced in intelligence)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Gustav Metzger" data-entity-status="alive" data-session="">
+  <td><a href="gustav-metzger.html">Gustav Metzger</a></td>
+  <td>Master Instrument Maker, Vienna</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 1 (referenced in intelligence)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Henri Marchand" data-entity-status="alive" data-session="">
+  <td><a href="henri-marchand.html">Henri Marchand</a></td>
+  <td>Innkeeper's son, staff</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Paris, Le Lys de Marbre inn</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Herr Grillparzer" data-entity-status="alive" data-session="">
+  <td><a href="herr-grillparzer.html">Herr Grillparzer</a></td>
+  <td>Innkeeper, Gasthof zum Weissen Ochsen</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 7</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Imogen Bellamy" data-entity-status="alive" data-session="">
+  <td><a href="imogen-bellamy.html">Imogen Bellamy</a></td>
+  <td>Order Field Agent, Linguist, Vocalist</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Ingrid Sperl" data-entity-status="alive" data-session="">
+  <td><a href="ingrid-sperl.html">Ingrid Sperl</a></td>
+  <td>Housekeeper; Sealed Theatre Maintenance</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 1 (referenced in intelligence)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Josiah Hartley" data-entity-status="alive" data-session="">
+  <td><a href="josiah-hartley.html">Josiah Hartley</a></td>
+  <td>English businessman</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 1 — Vienna (Palais Kinsky bar, evening of 3 August 1814)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Jules Steward" data-entity-status="alive" data-session="">
+  <td><a href="jules-steward.html">Jules Steward</a></td>
+  <td>Steward</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Lyon, Le Coteau des Ombres estate</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Klaus Bauer" data-entity-status="dead" data-session="">
+  <td><a href="klaus-bauer.html">Klaus Bauer</a></td>
+  <td>Grave-Robber; Hired Muscle</td>
+  <td><span class="status-badge status-dead">Dead</span></td>
+  <td>Session 1 (referenced in intelligence)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Lady Bagtonbury" data-entity-status="alive" data-session="">
+  <td><a href="lady-bagtonbury.html">Lady Bagtonbury</a></td>
+  <td>Dowager Duchess</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 — Loom &amp; Lucidity (London Soirée)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Lady Bletchley" data-entity-status="alive" data-session="">
+  <td><a href="lady-bletchley.html">Lady Bletchley</a></td>
+  <td>Lady</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0 — Huntley Wedding Reception, Bath</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Lady Euphemia Langridge" data-entity-status="alive" data-session="">
+  <td><a href="lady-euphemia-langridge.html">Lady Euphemia Langridge</a></td>
+  <td>Debutante</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0 — Huntley Wedding Reception, Bath</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Lady Honoria Lyndhurst" data-entity-status="alive" data-session="">
+  <td><a href="lady-honoria-lyndhurst.html">Lady Honoria Lyndhurst</a></td>
+  <td>Investigator &amp; Field Agent, Order of St. Aelfric</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 (Portsmouth, Summer 1813)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Lady Octavia Danforth" data-entity-status="dead" data-session="">
+  <td><a href="lady-octavia-danforth.html">Lady Octavia Danforth</a></td>
+  <td>Society Hostess, Deputy Conductor, Vocal Harmonics Specialist</td>
+  <td><span class="status-badge status-dead">Dead</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Lady Rowena Calthorpe" data-entity-status="alive" data-session="">
+  <td><a href="lady-rowena-calthorpe.html">Lady Rowena Calthorpe</a></td>
+  <td>Society Matron</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0 — Huntley Wedding Reception, Bath</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Lady Wilhelmina Danvers" data-entity-status="alive" data-session="">
+  <td><a href="lady-wilhelmina-danvers.html">Lady Wilhelmina Danvers</a></td>
+  <td>Order's Mistress of Social Etiquette &amp; Discretion</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 (Hartwell House, Winter 1813 — Training Montage)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Leopold Fischbein" data-entity-status="alive" data-session="">
+  <td><a href="leopold-fischbein.html">Leopold Fischbein</a></td>
+  <td>Lawyer, Vienna</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 6 (improvised NPC)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Leopold von Trautmannsdorff" data-entity-status="captured" data-session="">
+  <td><a href="leopold-von-trautmannsdorff.html">Leopold von Trautmannsdorff</a></td>
+  <td>Nobleman; Financier; Cult Backer</td>
+  <td><span class="status-badge status-captured">Captured</span></td>
+  <td>Session 1 (referenced in Lyon intelligence)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Liesel Hartmann" data-entity-status="alive" data-session="">
+  <td><a href="liesel-hartmann.html">Liesel Hartmann</a></td>
+  <td>Nurse; Engine Support</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 1 (referenced in intelligence)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Lieut John Orville" data-entity-status="alive" data-session="">
+  <td><a href="lieut-john-orville.html">Lieut John Orville</a></td>
+  <td>Admiralty Clerk</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 — Loom &amp; Lucidity (Brighton/London)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Lieutenant Jonathan Pellam" data-entity-status="alive" data-session="">
+  <td><a href="lieutenant-jonathan-pellam.html">Lieutenant Jonathan Pellam</a></td>
+  <td>Military engineer</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Paris, Ball at Hôtel de Brissac</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Lord Cosgrove" data-entity-status="deceased" data-session="">
+  <td><a href="lord-cosgrove.html">Lord Cosgrove</a></td>
+  <td>Nobleman</td>
+  <td><span class="status-badge status-deceased">Deceased</span></td>
+  <td>Chapter 0.1 — Loom &amp; Lucidity (Brighton/London)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Lord Digby Wycombe" data-entity-status="alive" data-session="">
+  <td><a href="lord-digby-wycombe.html">Lord Digby Wycombe</a></td>
+  <td>Retired Colonial Officer</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0 — Huntley Wedding Reception, Bath</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Lord Felix Montroy" data-entity-status="alive" data-session="">
+  <td><a href="lord-felix-montroy.html">Lord Felix Montroy</a></td>
+  <td>Viscount</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0 — Huntley Wedding Reception, Bath</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Lord Percival Harcourt" data-entity-status="alive" data-session="">
+  <td><a href="lord-percival-harcourt.html">Lord Percival Harcourt</a></td>
+  <td>Earl of Wrexham / Order of St. Aelfric Commander</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 (Ravenwood House, Summer 1813)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Lord Ratcliffe" data-entity-status="alive" data-session="">
+  <td><a href="lord-ratcliffe.html">Lord Ratcliffe</a></td>
+  <td>Nobleman</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 — Loom &amp; Lucidity (London Soirée)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Luc Fouchard" data-entity-status="dead" data-session="">
+  <td><a href="luc-fouchard.html">Luc Fouchard</a></td>
+  <td>Cultist lieutenant, enforcer, leader of Blue Sash militia</td>
+  <td><span class="status-badge status-dead">Dead</span></td>
+  <td>Chapter 2 - Lyon, Ball at Château de Camberonne</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Lucien Goupil" data-entity-status="alive" data-session="">
+  <td><a href="lucien-goupil.html">Lucien Goupil</a></td>
+  <td>Inherited aristocrat, amateur occult patron</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Lyon, Masquerade Soirée</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Lucien Stablehand" data-entity-status="alive" data-session="">
+  <td><a href="lucien-stablehand.html">Lucien Stablehand</a></td>
+  <td>Stablehand and groundskeeper</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Lyon, Le Coteau des Ombres estate</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Lucienne Moreau" data-entity-status="alive" data-session="">
+  <td><a href="lucienne-moreau.html">Lucienne Moreau</a></td>
+  <td>Debutante</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Paris, Ball at Hôtel de Brissac</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Ludwig Vogel" data-entity-status="arrested — relieved of credentials and sidearm by Gentz at the Ballhausplatz, 6pm 9 August 1814" data-session="">
+  <td><a href="ludwig-vogel.html">Ludwig Vogel</a></td>
+  <td>Captain, Geheimpolizei (Secret Police)</td>
+  <td><span class="status-badge status-arrested-—-relieved-of-credentials-and-sidearm-by-gentz-at-the-ballhausplatz,-6pm-9-august-1814">Arrested — relieved of credentials and sidearm by Gentz at the Ballhausplatz, 6pm 9 August 1814</span></td>
+  <td>Session 1 (referenced in intelligence)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Lydia Hartley" data-entity-status="alive" data-session="">
+  <td><a href="lydia-hartley.html">Lydia Hartley</a></td>
+  <td>Gentlewoman; daughter of an English businessman; amateur pianist (practises every afternoon)</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 1 — Vienna (Palais Kinsky bar, evening of 3 August 1814)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Madame Beauregard" data-entity-status="alive" data-session="">
+  <td><a href="madame-beauregard.html">Madame Beauregard</a></td>
+  <td>Modiste / Dressmaker</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Loom &amp; Lucidity (Chapter 0.1)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Madame Delacroix" data-entity-status="alive" data-session="">
+  <td><a href="madame-delacroix.html">Madame Delacroix</a></td>
+  <td>French widow seeking a pension; society fixture in [[Maria_von_Thun|Countess von Thun]]'s circle</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 1 — Vienna gate (3 August 1814, customs inspection)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Madame Elodie Marchand" data-entity-status="alive" data-session="">
+  <td><a href="madame-elodie-marchand.html">Madame Elodie Marchand</a></td>
+  <td>Innkeeper, widow</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Paris, Le Lys de Marbre inn</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Madame Sylvie de Noyelles" data-entity-status="alive" data-session="">
+  <td><a href="madame-sylvie-de-noyelles.html">Madame Sylvie de Noyelles</a></td>
+  <td>Aristocratic socialite</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Paris, Ball at Hôtel de Brissac</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Magistrate Beraud" data-entity-status="alive" data-session="">
+  <td><a href="magistrate-beraud.html">Magistrate Beraud</a></td>
+  <td>Magistrate in Lyon courts</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 — Lyon</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Major Lionel Ashcombe" data-entity-status="alive" data-session="">
+  <td><a href="major-lionel-ashcombe.html">Major Lionel Ashcombe</a></td>
+  <td>Military officer</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Paris, Ball at Hôtel de Brissac</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Maria von Thun" data-entity-status="alive" data-session="">
+  <td><a href="maria-von-thun.html">Maria von Thun</a></td>
+  <td>Society Hostess; Salon Owner</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 8 (August 5, salon)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Marquise Eloise de Camberonne" data-entity-status="alive" data-session="">
+  <td><a href="marquise-eloise-de-camberonne.html">Marquise Eloise de Camberonne</a></td>
+  <td>Hostess, widow, Order sympathizer</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Lyon, Ball at Château de Camberonne</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Mathieu Durand" data-entity-status="alive" data-session="">
+  <td><a href="mathieu-durand.html">Mathieu Durand</a></td>
+  <td>Innkeeper (cover), bandit leader</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Lyon, Auberge des Deux Chênes</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Mathilde Savarin" data-entity-status="dead" data-session="">
+  <td><a href="mathilde-savarin.html">Mathilde Savarin</a></td>
+  <td>Composer, cult leader (Présidente of Société Harmonique)</td>
+  <td><span class="status-badge status-dead">Dead</span></td>
+  <td>Chapter 2 - Lyon, Ball at Château de Camberonne</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Maximilian von Sternberg" data-entity-status="alive" data-session="">
+  <td><a href="maximilian-von-sternberg.html">Maximilian von Sternberg</a></td>
+  <td>Count; Austrian Cavalry Officer (4th Hussars)</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 8 (placement at Von Thun's salon or Imperial Reception)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Miriam Doyle" data-entity-status="captive" data-session="">
+  <td><a href="miriam-doyle.html">Miriam Doyle</a></td>
+  <td>Royal Academy Student</td>
+  <td><span class="status-badge status-captive">Captive</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Miss Alice Wetherby" data-entity-status="alive" data-session="">
+  <td><a href="miss-alice-wetherby.html">Miss Alice Wetherby</a></td>
+  <td>Lady's Maid</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 (Tarryford, Wiltshire)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Miss Aurelia Fairchild" data-entity-status="alive" data-session="">
+  <td><a href="miss-aurelia-fairchild.html">Miss Aurelia Fairchild</a></td>
+  <td>Gentlewoman</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0 — Huntley Wedding Reception, Bath</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Miss Beatrice Harrow" data-entity-status="alive" data-session="">
+  <td><a href="miss-beatrice-harrow.html">Miss Beatrice Harrow</a></td>
+  <td>Order Field Investigator &amp; Duellist</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 (Hartwell House, Summer 1813)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Miss Bridget Clarke" data-entity-status="alive" data-session="">
+  <td><a href="miss-bridget-clarke.html">Miss Bridget Clarke</a></td>
+  <td>Housemaid</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 (Tarryford, Wiltshire)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Miss Dorothea Bexley" data-entity-status="alive" data-session="">
+  <td><a href="miss-dorothea-bexley.html">Miss Dorothea Bexley</a></td>
+  <td>Occultist &amp; Symbologist (Order of St. Aelfric)</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 (Hartwell House, Winter 1813 — Training Montage)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Miss Edith Talbot" data-entity-status="alive" data-session="">
+  <td><a href="miss-edith-talbot.html">Miss Edith Talbot</a></td>
+  <td>Senior Housemaid</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 (Tarryford, Wiltshire)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Miss Eleanor Finch" data-entity-status="alive" data-session="">
+  <td><a href="miss-eleanor-finch.html">Miss Eleanor Finch</a></td>
+  <td>Lady's Maid / Order Informant</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 (Hartwell House, Summer 1813)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Miss Eleanor Mortimer" data-entity-status="deceased" data-session="">
+  <td><a href="miss-eleanor-mortimer.html">Miss Eleanor Mortimer</a></td>
+  <td>Gentlewoman</td>
+  <td><span class="status-badge status-deceased">Deceased</span></td>
+  <td>Chapter 0.1 — Curate &amp; Curability (Osney Grange)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Miss Isabel Glossop" data-entity-status="alive" data-session="">
+  <td><a href="miss-isabel-glossop.html">Miss Isabel Glossop</a></td>
+  <td>Gentlewoman</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 — Loom &amp; Lucidity (London Soirée)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Miss Mary Glossop" data-entity-status="alive" data-session="">
+  <td><a href="miss-mary-glossop.html">Miss Mary Glossop</a></td>
+  <td>Gentlewoman</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 — Loom &amp; Lucidity (London Soirée)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Miss Theodosia Dawes" data-entity-status="alive" data-session="">
+  <td><a href="miss-theodosia-dawes.html">Miss Theodosia Dawes</a></td>
+  <td>Gentlewoman</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 — Loom &amp; Lucidity (London Soirée)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Mlle Marie Lucile Dumain" data-entity-status="alive" data-session="">
+  <td><a href="mlle-marie-lucile-dumain.html">Mlle Marie Lucile Dumain</a></td>
+  <td>Natural Philosopher / Inventor</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 — Loom &amp; Lucidity (Brighton/London)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Mr Alfred Smythe" data-entity-status="alive" data-session="">
+  <td><a href="mr-alfred-smythe.html">Mr Alfred Smythe</a></td>
+  <td>Linguist &amp; Cryptologist (Order of St. Aelfric)</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 (Hartwell House, Winter 1813 — Training Montage)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Mr Aurelian Dean" data-entity-status="alive" data-session="">
+  <td><a href="mr-aurelian-dean.html">Mr Aurelian Dean</a></td>
+  <td>Academic / Antiquarian</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0 — Huntley Wedding Reception, Bath</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Mr Benedict Fairfax" data-entity-status="alive" data-session="">
+  <td><a href="mr-benedict-fairfax.html">Mr Benedict Fairfax</a></td>
+  <td>Tactical Instructor (Retired Officer / Occult Field Operative)</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 (Hartwell House, Winter 1813 — Training Montage)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Mr Berkley" data-entity-status="alive" data-session="">
+  <td><a href="mr-berkley.html">Mr Berkley</a></td>
+  <td>Gentleman of independent means</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 — Loom &amp; Lucidity (London Soirée)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Mr Bernard Hathaway" data-entity-status="alive" data-session="">
+  <td><a href="mr-bernard-hathaway.html">Mr Bernard Hathaway</a></td>
+  <td>Butler</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 (Tarryford, Wiltshire)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Mr Gideon Crow" data-entity-status="deceased" data-session="">
+  <td><a href="mr-gideon-crow.html">Mr Gideon Crow</a></td>
+  <td>Former Bedlam Inmate</td>
+  <td><span class="status-badge status-deceased">Deceased</span></td>
+  <td>Chapter 0.1 — Loom &amp; Lucidity (Brighton/London)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Mr Hampton" data-entity-status="alive" data-session="">
+  <td><a href="mr-hampton.html">Mr Hampton</a></td>
+  <td>Gentleman</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 — Loom &amp; Lucidity (Brighton/London)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Mr Horatio Fairbourne" data-entity-status="alive" data-session="">
+  <td><a href="mr-horatio-fairbourne.html">Mr Horatio Fairbourne</a></td>
+  <td>Antiquarian</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 (London, Winter 1813)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Mr Jameson" data-entity-status="alive" data-session="">
+  <td><a href="mr-jameson.html">Mr Jameson</a></td>
+  <td>Factory Worker</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Mr Oliver Hawksley" data-entity-status="alive" data-session="">
+  <td><a href="mr-oliver-hawksley.html">Mr Oliver Hawksley</a></td>
+  <td>Military Officer (Lieutenant)</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0 — Huntley Wedding Reception, Bath</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Mr Thomas Wickes" data-entity-status="alive" data-session="">
+  <td><a href="mr-thomas-wickes.html">Mr Thomas Wickes</a></td>
+  <td>Coachman &amp; Stablemaster</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 (Tarryford, Wiltshire)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Mr Tipple" data-entity-status="alive" data-session="">
+  <td><a href="mr-tipple.html">Mr Tipple</a></td>
+  <td>Coffeehouse Owner</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Mr Tobias Whitmore" data-entity-status="alive" data-session="">
+  <td><a href="mr-tobias-whitmore.html">Mr Tobias Whitmore</a></td>
+  <td>Historian &amp; Occult Scholar (Order of St. Aelfric)</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 (Hartwell House, Summer 1813)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Mrs Agnes Rothwell" data-entity-status="alive" data-session="">
+  <td><a href="mrs-agnes-rothwell.html">Mrs Agnes Rothwell</a></td>
+  <td>Housekeeper</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 (Hartwell House, Summer 1813)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Mrs Charlotte Mortimer" data-entity-status="alive (ghoulified)" data-session="">
+  <td><a href="mrs-charlotte-mortimer.html">Mrs Charlotte Mortimer</a></td>
+  <td>Vicar's wife (formerly)</td>
+  <td><span class="status-badge status-alive-(ghoulified)">Alive (ghoulified)</span></td>
+  <td>Chapter 0.1 — Curate &amp; Curability (Osney Grange)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Mrs Hampton" data-entity-status="alive" data-session="">
+  <td><a href="mrs-hampton.html">Mrs Hampton</a></td>
+  <td>Gentlewoman</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 — Loom &amp; Lucidity (Brighton/London)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Mrs Margaret Fairchild" data-entity-status="alive" data-session="">
+  <td><a href="mrs-margaret-fairchild.html">Mrs Margaret Fairchild</a></td>
+  <td>Innkeeper's Wife</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 (Portsmouth, Summer 1813)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Mrs Pemberton Brighton" data-entity-status="alive" data-session="">
+  <td><a href="mrs-pemberton-brighton.html">Mrs Pemberton Brighton</a></td>
+  <td>Matron / Society figure</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 — Loom &amp; Lucidity (London Soirée)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Mrs Winifred Fowler" data-entity-status="alive" data-session="">
+  <td><a href="mrs-winifred-fowler.html">Mrs Winifred Fowler</a></td>
+  <td>Cook</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 (Tarryford, Wiltshire)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Ms Amelia Cooper" data-entity-status="alive" data-session="">
+  <td><a href="ms-amelia-cooper.html">Ms Amelia Cooper</a></td>
+  <td>Village resident</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 — Curate &amp; Curability (Osney Grange)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Ms Hannah Shibden" data-entity-status="alive" data-session="">
+  <td><a href="ms-hannah-shibden.html">Ms Hannah Shibden</a></td>
+  <td>Village resident</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 — Curate &amp; Curability (Osney Grange)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Nathan Pryce" data-entity-status="alive" data-session="">
+  <td><a href="nathan-pryce.html">Nathan Pryce</a></td>
+  <td>Cult Guard</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Nathaniel Rooke" data-entity-status="alive" data-session="">
+  <td><a href="nathaniel-rooke.html">Nathaniel Rooke</a></td>
+  <td>Order Agent, Antiquarian, Former Magistrate</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Nell Coker" data-entity-status="alive" data-session="">
+  <td><a href="nell-coker.html">Nell Coker</a></td>
+  <td>Pickpocket; Fence; Confidence Trickster</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 8 (Masquerade)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Nikolai Volkonsky" data-entity-status="alive" data-session="">
+  <td><a href="nikolai-volkonsky.html">Nikolai Volkonsky</a></td>
+  <td>Count; Cavalry Officer, Russian Imperial Guard</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 8 (Masquerade)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Old Jenkins" data-entity-status="alive" data-session="">
+  <td><a href="old-jenkins.html">Old Jenkins</a></td>
+  <td>Publican</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 — Curate &amp; Curability (Osney Grange)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Pemberton" data-entity-status="alive" data-session="">
+  <td><a href="pemberton.html">Pemberton</a></td>
+  <td>Valet / Field Support Operative</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Vienna (Chapter 3)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Phineas Lang" data-entity-status="alive" data-session="">
+  <td><a href="phineas-lang.html">Phineas Lang</a></td>
+  <td>Administrator, Academy of Music</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Professor Cyrus Elliston" data-entity-status="alive" data-session="">
+  <td><a href="professor-cyrus-elliston.html">Professor Cyrus Elliston</a></td>
+  <td>Classical Scholar / Professor</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0 — Huntley Wedding Reception, Bath</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Prudence Middleham" data-entity-status="alive" data-session="">
+  <td><a href="prudence-middleham.html">Prudence Middleham</a></td>
+  <td>Landlady</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Rev Henry Mortimer" data-entity-status="deceased" data-session="">
+  <td><a href="rev-henry-mortimer.html">Rev Henry Mortimer</a></td>
+  <td>Vicar of Osney Grange</td>
+  <td><span class="status-badge status-deceased">Deceased</span></td>
+  <td>Chapter 0.1 — Curate &amp; Curability (Osney Grange)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Sabine" data-entity-status="alive" data-session="">
+  <td><a href="sabine.html">Sabine</a></td>
+  <td>Serving maid (cover), knife-fighter</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Lyon, Auberge des Deux Chênes</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Sabine Lambert" data-entity-status="alive" data-session="">
+  <td><a href="sabine-lambert.html">Sabine Lambert</a></td>
+  <td>Music Tutor (cover)</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 — Lyon</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Signor Morosi" data-entity-status="alive" data-session="">
+  <td><a href="signor-morosi.html">Signor Morosi</a></td>
+  <td>Diplomatic Secretary, Kingdom of Sardinia</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 4 (August 6, Sardinian Delegation offices)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Silent Nun" data-entity-status="unknown" data-session="">
+  <td><a href="silent-nun.html">Silent Nun</a></td>
+  <td>Unknown (spectral entity)</td>
+  <td><span class="status-badge status-unknown">Unknown</span></td>
+  <td>Chapter 2 — Lyon (tunnels, first expedition)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Sir Andrew Duncan" data-entity-status="alive" data-session="">
+  <td><a href="sir-andrew-duncan.html">Sir Andrew Duncan</a></td>
+  <td>Junior Government Minister</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 — Loom &amp; Lucidity (London Soirée)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Sir Jasper Dulfrey" data-entity-status="alive" data-session="">
+  <td><a href="sir-jasper-dulfrey.html">Sir Jasper Dulfrey</a></td>
+  <td>Gentleman</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 — Note &amp; Notoriety (Brighton Assembly Rooms)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Sir Lionel Peregrine" data-entity-status="alive" data-session="">
+  <td><a href="sir-lionel-peregrine.html">Sir Lionel Peregrine</a></td>
+  <td>Gentleman (Widower)</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0 — Huntley Wedding Reception, Bath</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Slade" data-entity-status="unknown" data-session="">
+  <td><a href="slade.html">Slade</a></td>
+  <td>Associate, Order of St. Aelfric</td>
+  <td><span class="status-badge status-unknown">Unknown</span></td>
+  <td>Prelude (Before Chapter 1)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Squire Anthony Goodwin" data-entity-status="alive" data-session="">
+  <td><a href="squire-anthony-goodwin.html">Squire Anthony Goodwin</a></td>
+  <td>Squire / County Magistrate</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 0.1 — Curate &amp; Curability (Osney Grange)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">DRAFT</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Therese" data-entity-status="alive" data-session="">
+  <td><a href="therese.html">Therese</a></td>
+  <td>Cook and maid</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Lyon, Le Coteau des Ombres estate</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Thomas Wyndham" data-entity-status="alive" data-session="">
+  <td><a href="thomas-wyndham.html">Thomas Wyndham</a></td>
+  <td>British Infantry Officer</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Vienna (Chapter 3)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Thomlin Kerridge" data-entity-status="captive" data-session="">
+  <td><a href="thomlin-kerridge.html">Thomlin Kerridge</a></td>
+  <td>Street Fiddler</td>
+  <td><span class="status-badge status-captive">Captive</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Tobias Greaves" data-entity-status="alive" data-session="">
+  <td><a href="tobias-greaves.html">Tobias Greaves</a></td>
+  <td>Pawnmaster, Antiquarian</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Vicomte Henri Lavigne" data-entity-status="alive" data-session="">
+  <td><a href="vicomte-henri-lavigne.html">Vicomte Henri Lavigne</a></td>
+  <td>Impoverished music patron</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Paris, Ball at Hôtel de Brissac</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Victoire Lefevre" data-entity-status="alive" data-session="">
+  <td><a href="victoire-lefevre.html">Victoire Lefevre</a></td>
+  <td>Music critic, salon philosopher</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Paris, Ball at Hôtel de Brissac</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Victoire Lenoir" data-entity-status="alive" data-session="">
+  <td><a href="victoire-lenoir.html">Victoire Lenoir</a></td>
+  <td>Soprano, performer, cultist-in-training</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 2 - Lyon, Masquerade Soirée</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Walter Baines" data-entity-status="alive" data-session="">
+  <td><a href="walter-baines.html">Walter Baines</a></td>
+  <td>Cult Guard, Veteran</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Walter Pennyman" data-entity-status="alive" data-session="">
+  <td><a href="walter-pennyman.html">Walter Pennyman</a></td>
+  <td>Stablemaster, Body Disposal Specialist</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Werner Bauer" data-entity-status="captured" data-session="">
+  <td><a href="werner-bauer.html">Werner Bauer</a></td>
+  <td>Grave-Robber; Hired Muscle</td>
+  <td><span class="status-badge status-captured">Captured</span></td>
+  <td>Session 1 (referenced in intelligence)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Wilhelm Brenner" data-entity-status="dead (killed August 4, 1814, by Varrio Harrowmont)" data-session="">
+  <td><a href="wilhelm-brenner.html">Wilhelm Brenner</a></td>
+  <td>Surgeon (formerly University of Vienna)</td>
+  <td><span class="status-badge status-dead-(killed-august-4,-1814,-by-varrio-harrowmont)">Dead (killed August 4, 1814, by Varrio Harrowmont)</span></td>
+  <td>Session 7 (Leopoldstadt boarding house)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Wilkins" data-entity-status="alive" data-session="">
+  <td><a href="wilkins.html">Wilkins</a></td>
+  <td>Factory Foreman</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Chapter 1 - London</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">STUB</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="William Thurner" data-entity-status="alive" data-session="">
+  <td><a href="william-thurner.html">William Thurner</a></td>
+  <td>Major, Austrian Army; Order Operative</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 7 (expected Masquerade contact)</td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+</tbody>
+</table>
 </div>
-
-<div class="roster-card">
-  <h3><a href="abbe-ferrant.html">Abbe Ferrant</a></h3>
-  <div class="role">Priest of St. Nizier Church, cult evangelist</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="agnes-hartley.html">Agnes Hartley</a></h3>
-  <div class="role">English businessman's wife; ambitious matchmaker</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="albert-lambert.html">Albert Lambert</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Antiquarian scholar</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="albin-herzfeld.html">Albin Herzfeld</a></h3>
-  <div class="role">Professor of Music Theory, University of Vienna; Cult Leader</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="andrei-volkonsky.html">Andrei Volkonsky</a></h3>
-  <div class="role">Major, Russian Imperial Army; Military Intelligence</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="anna-lindqvist.html">Anna Lindqvist</a></h3>
-  <div class="role">Opera Singer; Swedish Soprano</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="annika-laughton.html">Annika Laughton</a></h3>
-  <div class="role">Academy Student (Vocal Theory, Sacred Music)</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="antoine-lefevre.html">Antoine Lefevre</a></h3>
-  <div class="role">Civil Clerk in Lyon city offices</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="anton-adler.html">Anton Adler</a></h3>
-  <div class="role">Kapellmeister (Music Director) at Vienna Conservatory; Cult Lieutenant</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="benoit-chasseloup.html">Benoit Chasseloup</a></h3>
-  <div class="role">Silkweaver Contact / Former Guild Member</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="captain-king.html">Captain King</a></h3>
-  <div class="role">Revolutionary / Air Loom Gang Leader (posing as Royal Navy Captain)</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="captain-richard-forsyth.html">Captain Richard Forsyth</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Military officer, Order operative</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="captain-thomas-keene.html">Captain Thomas Keene</a></h3>
-  <div class="role">Packet boat captain</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="caroline-hartley.html">Caroline Hartley</a></h3>
-  <div class="role">Gentlewoman; daughter of an English businessman</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="cecile-vaillant.html">Cecile Vaillant</a></h3>
-  <div class="role">Translator, scholar, Order operative</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="charles-duval.html">Charles Duval</a></h3>
-  <div class="role">Driver (Carriage)</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="charlotte-thorne.html">Charlotte Thorne</a></h3>
-  <div class="role">Archaeologist, Author (writes under a male pseudonym)</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="clara-fen.html">Clara Fen</a></h3>
-  <div class="role">Former Vocalist, Coffeehouse Singer</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="clementine-delaroche.html">Clementine Delaroche</a></h3>
-  <div class="role">Cult Agent / Former Musician</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="collarbone-jack.html">Collarbone Jack</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Coffeehouse Regular</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="colonel-alastair-mccrae.html">Colonel Alastair McCrae</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Retired military officer, veteran</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="colonel-etienne-moreau.html">Colonel Etienne Moreau</a></h3>
-  <div class="role">Former Imperial artillery officer (half-pay); civic observer</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="colonel-fittlewick.html">Colonel Fittlewick</a></h3>
-  <div class="role">Retired Military Officer</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="colonel-maarten-van-hoorne.html">Colonel Maarten van Hoorne</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Dutch military officer</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="commissaire-jules-delaroche.html">Commissaire Jules Delaroche</a></h3>
-  <div class="role">Police Commissioner</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="comte-henri-vallin.html">Comte Henri Vallin</a></h3>
-  <div class="role">Aristocratic patron, occult financier</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="doctor-emile-carreau.html">Doctor Emile Carreau</a></h3>
-  <div class="role">Surgeon, composer, cult experimenter</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="dr-ambrose-hargreaves.html">Dr Ambrose Hargreaves</a></h3>
-  <div class="role">Naval Surgeon (retired)</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="dr-erasmus-hume.html">Dr Erasmus Hume</a></h3>
-  <div class="role">Composer, Theorist, High Conductor of the Orphean Society</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="dr-heinrich-voss.html">Dr Heinrich Voss</a></h3>
-  <div class="role">Physician, Josefstadt district</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="dr-odilon-mercier.html">Dr Odilon Mercier</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Occultist, critic</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="dr-thornton-beamish.html">Dr Thornton Beamish</a></h3>
-  <div class="role">Physician / Occultist</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="duchesse-de-brissac.html">Duchesse de Brissac</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Hostess, widow</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="edna-greaves.html">Edna Greaves</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Pawnshop Clerk</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="elbert-fenwick.html">Elbert Fenwick</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Head Clerk</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="eli-barlow.html">Eli Barlow</a></h3>
-  <div class="role">Building Caretaker, Watchman</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="eli-tadcombe.html">Eli Tadcombe</a></h3>
-  <div class="role">Custodian, Orphean Society</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="eliza-sharpe.html">Eliza Sharpe</a></h3>
-  <div class="role">Actress</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="emeric-de-puyrault.html">Emeric de Puyrault</a></h3>
-  <div class="role">Aristocrat, swordsman</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="emile-fouchard.html">Emile Fouchard</a></h3>
-  <div class="role">npc</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="ephraim-colley.html">Ephraim Colley</a></h3>
-  <div class="role">Night Watchman</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="ernst-falkner.html">Ernst Falkner</a></h3>
-  <div class="role">Geologist, Naturhistorisches Institut</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="father-jeremiah-creel.html">Father Jeremiah Creel</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Elderly Preacher</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="francois-barbier.html">Francois Barbier</a></h3>
-  <div class="role">Driver (Carriage)</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="franz-huber.html">Franz Huber</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Sergeant, Vienna Police (Geheimpolizei)</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="franz-kaunitz.html">Franz Kaunitz</a></h3>
-  <div class="role">Generalfeldmarschall (retired officer); Cult Sympathizer; Society Patron</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="giles-mercer.html">Giles Mercer</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Order Investigator</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="gottfried-reiner.html">Gottfried Reiner</a></h3>
-  <div class="role">Chemist, University of Vienna</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="gustav-metzger.html">Gustav Metzger</a></h3>
-  <div class="role">Master Instrument Maker, Vienna</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="henri-marchand.html">Henri Marchand</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Innkeeper's son, staff</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="herr-grillparzer.html">Herr Grillparzer</a></h3>
-  <div class="role">Innkeeper, Gasthof zum Weissen Ochsen</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="imogen-bellamy.html">Imogen Bellamy</a></h3>
-  <div class="role">Order Field Agent, Linguist, Vocalist</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="ingrid-sperl.html">Ingrid Sperl</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Housekeeper; Sealed Theatre Maintenance</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="josiah-hartley.html">Josiah Hartley</a></h3>
-  <div class="role">English businessman</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="jules-steward.html">Jules Steward</a></h3>
-  <div class="role">Steward</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="klaus-bauer.html">Klaus Bauer</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Grave-Robber; Hired Muscle</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="lady-bagtonbury.html">Lady Bagtonbury</a></h3>
-  <div class="role">Dowager Duchess</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="lady-bletchley.html">Lady Bletchley</a></h3>
-  <div class="role">Lady</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="lady-euphemia-langridge.html">Lady Euphemia Langridge</a></h3>
-  <div class="role">Debutante</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="lady-honoria-lyndhurst.html">Lady Honoria Lyndhurst</a></h3>
-  <div class="role">Investigator &amp; Field Agent, Order of St. Aelfric</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="lady-octavia-danforth.html">Lady Octavia Danforth</a></h3>
-  <div class="role">Society Hostess, Deputy Conductor, Vocal Harmonics Specialist</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="lady-rowena-calthorpe.html">Lady Rowena Calthorpe</a></h3>
-  <div class="role">Society Matron</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="lady-wilhelmina-danvers.html">Lady Wilhelmina Danvers</a></h3>
-  <div class="role">Order's Mistress of Social Etiquette &amp; Discretion</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="leopold-fischbein.html">Leopold Fischbein</a></h3>
-  <div class="role">Lawyer, Vienna</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="leopold-von-trautmannsdorff.html">Leopold von Trautmannsdorff</a></h3>
-  <div class="role">Nobleman; Financier; Cult Backer</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="liesel-hartmann.html">Liesel Hartmann</a></h3>
-  <div class="role">Nurse; Engine Support</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="lieut-john-orville.html">Lieut John Orville</a></h3>
-  <div class="role">Admiralty Clerk</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="lieutenant-jonathan-pellam.html">Lieutenant Jonathan Pellam</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Military engineer</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="lord-cosgrove.html">Lord Cosgrove</a></h3>
-  <div class="role">Nobleman</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="lord-digby-wycombe.html">Lord Digby Wycombe</a></h3>
-  <div class="role">Retired Colonial Officer</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="lord-felix-montroy.html">Lord Felix Montroy</a></h3>
-  <div class="role">Viscount</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="lord-percival-harcourt.html">Lord Percival Harcourt</a></h3>
-  <div class="role">Earl of Wrexham / Order of St. Aelfric Commander</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="lord-ratcliffe.html">Lord Ratcliffe</a></h3>
-  <div class="role">Nobleman</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="luc-fouchard.html">Luc Fouchard</a></h3>
-  <div class="role">Cultist lieutenant, enforcer, leader of Blue Sash militia</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="lucien-goupil.html">Lucien Goupil</a></h3>
-  <div class="role">Inherited aristocrat, amateur occult patron</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="lucien-stablehand.html">Lucien Stablehand</a></h3>
-  <div class="role">Stablehand and groundskeeper</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="lucienne-moreau.html">Lucienne Moreau</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Debutante</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="ludwig-vogel.html">Ludwig Vogel</a></h3>
-  <div class="role">Captain, Geheimpolizei (Secret Police)</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="lydia-hartley.html">Lydia Hartley</a></h3>
-  <div class="role">Gentlewoman; daughter of an English businessman; amateur pianist (practises every afternoon)</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="madame-beauregard.html">Madame Beauregard</a></h3>
-  <div class="role">Modiste / Dressmaker</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="madame-delacroix.html">Madame Delacroix</a></h3>
-  <div class="role">French widow seeking a pension; society fixture in [[Maria_von_Thun|Countess von Thun]]'s circle</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="madame-elodie-marchand.html">Madame Elodie Marchand</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Innkeeper, widow</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="madame-sylvie-de-noyelles.html">Madame Sylvie de Noyelles</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Aristocratic socialite</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="magistrate-beraud.html">Magistrate Beraud</a></h3>
-  <div class="role">Magistrate in Lyon courts</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="major-lionel-ashcombe.html">Major Lionel Ashcombe</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Military officer</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="maria-von-thun.html">Maria von Thun</a></h3>
-  <div class="role">Society Hostess; Salon Owner</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="marquise-eloise-de-camberonne.html">Marquise Eloise de Camberonne</a></h3>
-  <div class="role">Hostess, widow, Order sympathizer</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="mathieu-durand.html">Mathieu Durand</a></h3>
-  <div class="role">Innkeeper (cover), bandit leader</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="mathilde-savarin.html">Mathilde Savarin</a></h3>
-  <div class="role">Composer, cult leader (Présidente of Société Harmonique)</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="maximilian-von-sternberg.html">Maximilian von Sternberg</a></h3>
-  <div class="role">Count; Austrian Cavalry Officer (4th Hussars)</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="miriam-doyle.html">Miriam Doyle</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Royal Academy Student</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="miss-alice-wetherby.html">Miss Alice Wetherby</a></h3>
-  <div class="role">Lady's Maid</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="miss-aurelia-fairchild.html">Miss Aurelia Fairchild</a></h3>
-  <div class="role">Gentlewoman</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="miss-beatrice-harrow.html">Miss Beatrice Harrow</a></h3>
-  <div class="role">Order Field Investigator &amp; Duellist</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="miss-bridget-clarke.html">Miss Bridget Clarke</a></h3>
-  <div class="role">Housemaid</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="miss-dorothea-bexley.html">Miss Dorothea Bexley</a></h3>
-  <div class="role">Occultist &amp; Symbologist (Order of St. Aelfric)</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="miss-edith-talbot.html">Miss Edith Talbot</a></h3>
-  <div class="role">Senior Housemaid</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="miss-eleanor-finch.html">Miss Eleanor Finch</a></h3>
-  <div class="role">Lady's Maid / Order Informant</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="miss-eleanor-mortimer.html">Miss Eleanor Mortimer</a></h3>
-  <div class="role">Gentlewoman</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="miss-isabel-glossop.html">Miss Isabel Glossop</a></h3>
-  <div class="role">Gentlewoman</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="miss-mary-glossop.html">Miss Mary Glossop</a></h3>
-  <div class="role">Gentlewoman</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="miss-theodosia-dawes.html">Miss Theodosia Dawes</a></h3>
-  <div class="role">Gentlewoman</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="mlle-marie-lucile-dumain.html">Mlle Marie Lucile Dumain</a></h3>
-  <div class="role">Natural Philosopher / Inventor</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="mr-alfred-smythe.html">Mr Alfred Smythe</a></h3>
-  <div class="role">Linguist &amp; Cryptologist (Order of St. Aelfric)</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="mr-aurelian-dean.html">Mr Aurelian Dean</a></h3>
-  <div class="role">Academic / Antiquarian</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="mr-benedict-fairfax.html">Mr Benedict Fairfax</a></h3>
-  <div class="role">Tactical Instructor (Retired Officer / Occult Field Operative)</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="mr-berkley.html">Mr Berkley</a></h3>
-  <div class="role">Gentleman of independent means</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="mr-bernard-hathaway.html">Mr Bernard Hathaway</a></h3>
-  <div class="role">Butler</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="mr-gideon-crow.html">Mr Gideon Crow</a></h3>
-  <div class="role">Former Bedlam Inmate</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="mr-hampton.html">Mr Hampton</a></h3>
-  <div class="role">Gentleman</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="mr-horatio-fairbourne.html">Mr Horatio Fairbourne</a></h3>
-  <div class="role">Antiquarian</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="mr-jameson.html">Mr Jameson</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Factory Worker</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="mr-oliver-hawksley.html">Mr Oliver Hawksley</a></h3>
-  <div class="role">Military Officer (Lieutenant)</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="mr-thomas-wickes.html">Mr Thomas Wickes</a></h3>
-  <div class="role">Coachman &amp; Stablemaster</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="mr-tipple.html">Mr Tipple</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Coffeehouse Owner</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="mr-tobias-whitmore.html">Mr Tobias Whitmore</a></h3>
-  <div class="role">Historian &amp; Occult Scholar (Order of St. Aelfric)</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="mrs-agnes-rothwell.html">Mrs Agnes Rothwell</a></h3>
-  <div class="role">Housekeeper</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="mrs-charlotte-mortimer.html">Mrs Charlotte Mortimer</a></h3>
-  <div class="role">Vicar's wife (formerly)</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="mrs-hampton.html">Mrs Hampton</a></h3>
-  <div class="role">Gentlewoman</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="mrs-margaret-fairchild.html">Mrs Margaret Fairchild</a></h3>
-  <div class="role">Innkeeper's Wife</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="mrs-pemberton-brighton.html">Mrs Pemberton Brighton</a></h3>
-  <div class="role">Matron / Society figure</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="mrs-winifred-fowler.html">Mrs Winifred Fowler</a></h3>
-  <div class="role">Cook</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="ms-amelia-cooper.html">Ms Amelia Cooper</a></h3>
-  <div class="role">Village resident</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="ms-hannah-shibden.html">Ms Hannah Shibden</a></h3>
-  <div class="role">Village resident</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="nathan-pryce.html">Nathan Pryce</a></h3>
-  <div class="role">Cult Guard</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="nathaniel-rooke.html">Nathaniel Rooke</a></h3>
-  <div class="role">Order Agent, Antiquarian, Former Magistrate</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="nell-coker.html">Nell Coker</a></h3>
-  <div class="role">Pickpocket; Fence; Confidence Trickster</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="nikolai-volkonsky.html">Nikolai Volkonsky</a></h3>
-  <div class="role">Count; Cavalry Officer, Russian Imperial Guard</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="old-jenkins.html">Old Jenkins</a></h3>
-  <div class="role">Publican</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="pemberton.html">Pemberton</a></h3>
-  <div class="role">Valet / Field Support Operative</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="phineas-lang.html">Phineas Lang</a></h3>
-  <div class="role">Administrator, Academy of Music</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="professor-cyrus-elliston.html">Professor Cyrus Elliston</a></h3>
-  <div class="role">Classical Scholar / Professor</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="prudence-middleham.html">Prudence Middleham</a></h3>
-  <div class="role">Landlady</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="rev-henry-mortimer.html">Rev Henry Mortimer</a></h3>
-  <div class="role">Vicar of Osney Grange</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="russian-officers-volkonsky-detail.html">Russian Officers Volkonsky Detail</a></h3>
-  <div class="role">npc_group</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="sabine.html">Sabine</a></h3>
-  <div class="role">Serving maid (cover), knife-fighter</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="sabine-lambert.html">Sabine Lambert</a></h3>
-  <div class="role">Music Tutor (cover)</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="silent-nun.html">Silent Nun</a></h3>
-  <div class="role">Unknown (spectral entity)</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="sir-andrew-duncan.html">Sir Andrew Duncan</a></h3>
-  <div class="role">Junior Government Minister</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="sir-jasper-dulfrey.html">Sir Jasper Dulfrey</a></h3>
-  <div class="role">Gentleman</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="sir-lionel-peregrine.html">Sir Lionel Peregrine</a></h3>
-  <div class="role">Gentleman (Widower)</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="slade.html">Slade</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Associate, Order of St. Aelfric</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="squire-anthony-goodwin.html">Squire Anthony Goodwin</a></h3>
-  <div class="role">Squire / County Magistrate</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="therese.html">Therese</a></h3>
-  <div class="role">Cook and maid</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="thomas-wyndham.html">Thomas Wyndham</a></h3>
-  <div class="role">British Infantry Officer</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="thomlin-kerridge.html">Thomlin Kerridge</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Street Fiddler</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="tobias-greaves.html">Tobias Greaves</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Pawnmaster, Antiquarian</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="vicomte-henri-lavigne.html">Vicomte Henri Lavigne</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Impoverished music patron</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="victoire-lefevre.html">Victoire Lefevre</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Music critic, salon philosopher</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="victoire-lenoir.html">Victoire Lenoir</a></h3>
-  <div class="role">Soprano, performer, cultist-in-training</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="walter-baines.html">Walter Baines</a></h3>
-  <div class="role">Cult Guard, Veteran</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="walter-pennyman.html">Walter Pennyman</a></h3>
-  <div class="role">Stablemaster, Body Disposal Specialist</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="werner-bauer.html">Werner Bauer</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Grave-Robber; Hired Muscle</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="wilhelm-brenner.html">Wilhelm Brenner</a></h3>
-  <div class="role">Surgeon (formerly University of Vienna)</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="wilkins.html">Wilkins</a> <span class="stub-badge">Stub</span></h3>
-  <div class="role">Factory Foreman</div>
-</div>
-
-<div class="roster-card">
-  <h3><a href="william-thurner.html">William Thurner</a></h3>
-  <div class="role">Major, Austrian Army; Order Operative</div>
-</div></div>
 </main>
 
 
 
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../../js/nav.js"></script>
+<script src="../../js/lightbox.js"></script>
+<script src="../../js/search.js"></script>
+<script src="../../js/filters.js"></script>
 <script>
-document.querySelectorAll('.site-nav a').forEach(a => {
-  a.addEventListener('click', () => document.getElementById('nav').classList.remove('open'));
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
 });
 </script>
 

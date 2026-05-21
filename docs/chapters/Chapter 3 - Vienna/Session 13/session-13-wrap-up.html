@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 13 Wrap Up — Canticle of the End</title>
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="stylesheet" href="../../../css/themes/horror.css">
+  <link rel="stylesheet" href="../../../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../../../index.html" class="nav-brand">Canticle of the End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <button class="nav-group-toggle">Story</button>
+        <div class="nav-dropdown">
+        <a href="../../index.html">Story</a>
+        <a href="../../../timeline.html">Events</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../../../player-characters.html">Player Characters</a>
+        <a href="../../../characters/npcs/index.html">NPCs</a>
+        <a href="../../../creatures/index.html">Creatures</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../../../locations/index.html">Locations</a>
+        <a href="../../../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../../../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../../../documents/index.html">Documents</a>
+        <a href="../../../clues/index.html">Clues</a>
+        <a href="../../../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3>Story</h3>
+  <ul>
+    <li><a href="../../index.html">Story</a></li>
+    <li><a href="../../../timeline.html">Events</a></li>
+  </ul>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../../../player-characters.html">Player Characters</a></li>
+    <li><a href="../../../characters/npcs/index.html">NPCs</a></li>
+    <li><a href="../../../creatures/index.html">Creatures</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../../../locations/index.html">Locations</a></li>
+    <li><a href="../../../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../../../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../../../documents/index.html">Documents</a></li>
+    <li><a href="../../../clues/index.html">Clues</a></li>
+    <li><a href="../../../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../../index.html">Home</a><span class="sep">&rsaquo;</span>Chapters<span class="sep">&rsaquo;</span>Chapter 3   Vienna<span class="sep">&rsaquo;</span><a href="index.html">Session 13</a><span class="sep">&rsaquo;</span>Session 13 Wrap Up</nav>
+<div class="content-with-sidebar"><div class="main"><h1 class="page-title">Session 13 Wrap Up</h1>
+
+
+<blockquote>
+<p>[!info] Canon State
+Session 13 covers the evening of 11 August through pre-dawn 12 August 1814. All major planned threads through Scene 7 were addressed: the Wächter ambush, aftermath and preparations, counter-ritual synthesis, pre-dawn assembly, the breach, the ground floor, and the descent. The session ended with both teams inside the university, descending toward the <a href="../../../locations/sealed-anatomical-theatre.html">Sealed_Anatomical_Theatre</a> — the ritual active and progressing. Scenes 8 (The Sealed Anatomical Theatre) and 9 (The Cost) were not reached.</p>
+<p>Play notes are a gmassistant.app export; the Summary is adopted with wiki-links per the gmassistant path.</p>
+<p><strong>Transcription notes:</strong> The Play Notes render “Katherine” as “Catherine” — a recurring gmassistant.app artifact (same as Session 12). All references below use the canonical name <a href="../../../characters/pcs/katherine-ward.html">Katherine</a>. “Andrei Volkovsky” is corrected to <a href="../../../characters/npcs/andrei-volkonsky.html">Volkonsky</a> per vault spelling.</p>
+<p><strong>Identity confirmed:</strong> The woman mopping outside <a href="../../../characters/npcs/caroline-hartley.html">Caroline’s</a> room was <a href="../../../characters/npcs/liesel-hartmann.html">Liesel_Hartmann</a>. The Sardinians restrained her and bundled her into a cupboard, tied and gagged. The rescue team did not search her — the theatre key remains on her person, undiscovered. <a href="../../../characters/pcs/varrio-harrowmont.html">Varrio</a> was on the main assault team and never encountered her. The Liesel/Varrio/Brenner confrontation was bypassed entirely.</p>
+</blockquote>
+<hr>
+<h2>1. What Happened — Narrative Recap</h2>
+<p>The war council at the <a href="../../../locations/heuriger-zum-rebstock.html">Heuriger Zum Rebstöckl</a> had been going remarkably well, all things considered. Wine flowed, bread was passed, and a map was pinned to the trestle table with a bread knife while the lawyer <a href="../../../characters/npcs/leopold-fischbein.html">Fischbein</a> ensured every indemnity clause was legally sound. <a href="../../../characters/npcs/capitano-luca-ferrante.html">Captain Ferrante</a> and his Sardinian mercenaries sat across from the Russians, and the plan to assault the <a href="../../../locations/university-of-vienna.html">University_of_Vienna</a> was taking shape — right up until a bronze-scaled, wide-jawed creature crashed through the garden pergola, knocked a lantern onto the flagstones, and crouched atop the table with the patient, empty focus of something that used to be a person and had since moved on to far larger ambitions.</p>
+<p>The chaos that followed was swift and brutal. <a href="../../../characters/pcs/emma-wentworth.html">Emma</a> dove beneath the trestle table, and <a href="../../../characters/pcs/varrio-harrowmont.html">Varrio</a>, <a href="../../../characters/pcs/katherine-ward.html">Katherine</a>, <a href="../../../characters/pcs/georgiana-wentworth.html">Georgiana</a>, and Fischbein quickly joined her in the relative safety beneath the tablecloth. Ferrante, thinking fast, dragged a napkin through the spreading flames and advanced on the creature with fire in hand. Then <a href="../../../characters/npcs/andrei-volkonsky.html">Andrei Volkonsky</a>, grizzled war veteran that he was, pulled the bread knife from the map and hurled it across the garden with deadly precision, burying it directly in the creature’s eye. <a href="../../../characters/npcs/nikolai-volkonsky.html">Nikolai</a> drew his pistol and fired a shot that echoed through the night air, and the beast barely had a moment to react before <a href="../../../characters/pcs/freddy-cavendish.html">Freddy</a> calmly raised his own weapon, looked down the barrel, and said, “This is for <a href="../../../characters/npcs/colonel-henri-moreau.html">the Colonel</a>.” The shot went through the creature’s remaining eye and straight into its brain, and the monster collapsed dead onto the table.</p>
+<p>With the fire stomped out and the creature lying still, Varrio drew his sword and cut the thing open to examine its insides — a decision that sent a wave of revulsion through everyone present. The interior was unmistakably human in origin, a twisted arrangement of organs, though notably absent of lungs. <a href="../../../characters/pcs/adrien-de-montferrand.html">Adrien</a> was overcome entirely, the sight of viscera spilling across the table burning itself into his mind so deeply that he developed an immediate and profound aversion to meat. Ferrante, surveying the ruin of the garden, announced that his price had just doubled, and Fischbein was already scribbling the amendment into the contract before the words had finished leaving Ferrante’s mouth.</p>
+<p>Freddy and Adrien made their way to the <a href="../../../locations/palais-kinsky.html">Palais_Kinsky</a> to check on <a href="../../../characters/pcs/charlotte-thorne.html">Charlotte_Thorne</a> and the Hartley family. They found Charlotte annoyed and restless, frustrated at being left behind with only the hovering <a href="../../../characters/npcs/pemberton.html">Pemberton</a> for company, while upstairs, <a href="../../../characters/npcs/josiah-hartley.html">Mr. Hartley</a> answered the door with his collar undone and the look of a man who had been worrying himself to pieces. Adrien’s attempts at reassurance went poorly — his mention of “singing” only deepened Mr. Hartley’s distress — but Freddy stepped in with calm authority, explaining that a military-backed rescue mission was being organized, and the relief on the older man’s face was immediate. Pemberton, for his part, insisted on joining the mission, and he prepared himself with a medical bag, a hat, and a cane, wearing the expression of a man who had said “okay” when he very much meant anything but.</p>
+<p>On the walk back to the <a href="../../../locations/thaliastrasse-12-safehouse.html">safe house</a>, <a href="../../../characters/npcs/nell-coker.html">Nell</a> fell into step beside Katherine, pressing her for the truth about what they were dealing with. Katherine did not prevaricate for long — she told Nell plainly that the creatures they had encountered were made from pieces and parts of human beings, assembled into something monstrous. Nell went quiet for a long moment, then said “okay” in a voice that was doing a great deal of heavy lifting. Varrio, meanwhile, was drawn off course by the scent of thick Turkish coffee drifting from a night kitchen near the Naschmarkt, and he returned to the group with a tray of ceramic cups layered with honey and cream, enough for everyone including the coachmen.</p>
+<p>Back at the safe house, the party divided its efforts. <a href="../../../characters/npcs/werner-bauer.html">Bauer</a> was moved to the top floor and tied to a bed at his own request, and Freddy and Pemberton kept him company while he talked — casually, almost cheerfully — about grave robbing, carved-up bodies, and faked invoices for body parts delivered to Professor <a href="../../../characters/npcs/albin-herzfeld.html">Herzfeld</a> at the university. <a href="../../../characters/npcs/thomas-wyndham.html">Thomas</a> settled Emma onto the parlor sofa and stationed himself nearby, quietly maneuvering until her feet were resting in his lap, and he seemed entirely content with that arrangement. Georgiana and Adrien descended to the basement with the <a href="../../../items/de-vermiis-mysteriis.html">De Vermis Mysteriis</a>, the <a href="../../../items/liber-ivonis.html">Liber_Ivonis</a>, and <a href="../../../characters/pcs/marina-garrick.html">Marina’s</a> notebook, and they set to work.</p>
+<p>The counter-ritual was painstaking and dangerous. Adrien read aloud from the counter-frequency passages while Georgiana cross-referenced the two ancient texts, using the knowledge she had gained from the <a href="../../../items/revelations-of-glaaki.html">Revelations of Gla’aki</a> to bridge the gaps. When the theoretical framework was sound, she took the <a href="../../../items/command-tuning-fork.html">tuning fork</a> in hand and imposed her will upon it, forcing its harmonic to shift from the frequency it had been built to carry to the inversion note that would create destructive interference against Herzfeld’s machine. The effort was immense, and as the fork’s vibration changed beneath her fingers, a vision crashed into her mind: an operating theater deep beneath the university, victims wired into a great machine with their mouths open and their eyes closed, lungs bellowing in terrible synchronization, and a brain sealed inside a copper and glass case mounted on top. Herzfeld stood gaunt and calm at the center of it all, a tuning fork in his own hand, waiting. Georgiana came back to herself shaken but certain — the counter-ritual would work, and she needed to be inside the university for it to matter.</p>
+<p>The chaos upstairs interrupted the night’s preparations when Pemberton, pushed past his limit by Bauer’s casual recounting of horrors, snapped entirely and launched himself across the room at the tied-up prisoner. Freddy moved to intercept him and fumbled badly, taking an elbow directly to the face for his trouble. Katherine, arriving at a run from the floor below, grabbed a pitcher of water and threw it over Pemberton, who came back to his senses sputtering and deeply apologetic. The rest of the party crowded into the doorway to find the scene in complete disarray, and Bauer, still tied to the bed, demanded that someone get the madman off of him.</p>
+<p>In the pre-dawn dark, the party assembled and split into their two groups. The rescue team — Adrien, Katherine, Nell, and the Sardinian mercenaries under Ferrante — would enter through the back of the university and make for Caroline’s room. The main assault team — the Russians, Georgiana, Emma, Thomas, Freddy, and Varrio — would enter through the front after Bauer paid off the guards. <a href="../../../characters/npcs/william-thurner.html">Thurner</a> and Pemberton were assigned as lookouts. Bauer managed to dismiss the rear guards without incident, but the side guards grew suspicious and drew their weapons. Freddy left the entire remaining sum of money on the ground, told the guards coolly that he would be letting the boss know how much they had taken, and walked away — and the guards, deciding the money was too good to refuse, took it and ran.</p>
+<p>At the front, the main team arrived to find the guards still in place and no sign of Freddy’s group. Varrio stepped forward, threw a substantial sack of cash at the guards’ feet, and let the assembled wall of armed Russians behind him make the rest of the argument. The guards took the money and left without a word. Both teams entered the university, and the moment they crossed the threshold, the air changed — a low, resonant vibration set teeth on edge and hummed through the stone walls, the unmistakable sign that Herzfeld’s ritual had already begun. Varrio, his sanity already worn thin, became suddenly and completely convinced that Georgiana was a traitor who had sold them out, and he grabbed her arm and tried to drag her back toward the door before the Russians physically restrained him. He came back to himself after a moment, mortified, and the group pressed on.</p>
+<p>Georgiana struck the tuning fork against the stone rim of a courtyard fountain as they ran, and for a brief, strange moment, all sound around them went muffled and flat — their footsteps silenced, the vibration interrupted, the ritual knocked briefly off its rhythm. In the back corridors, the rescue team found a woman mopping the hallway outside <a href="../../../characters/npcs/caroline-hartley.html">Caroline’s</a> room; the Sardinians moved quickly to silence and restrain her, and Adrien recognised her as someone he had seen speaking with Varrio at the Imperial reception. The lock on Caroline’s door yielded to Katherine’s skilled hands, and the door swung open to reveal an empty cot, a wash basin, and a set of empty restraints. Caroline was already gone.</p>
+<p>The main assault team fought their way through the south wing lobby, where two fanatical student guards were disarmed and intimidated into fleeing by the combined presence of Emma’s disarming greeting, Andrei’s cold authority, Nikolai’s dual pistols, and Varrio’s pointed suggestion that they reconsider their life choices. In the back corridors, Ferrante shot one student guard without hesitation, and the other was frightened into flight. Both teams converged on their respective stairwells and began their descent, the rescue group winding down into ancient Roman tunnels beneath the university — narrow, damp, pitch-black passages worn smooth by centuries of footsteps — while the main team climbed to Herzfeld’s office.</p>
+<p>The office door opened to a shot that went wide, and Thomas crossed the room in three strides and knocked the student inside unconscious with a single punch. The desk was buried under loose pages of musical notation and anatomical diagrams, and among the bookshelves, Emma found a hidden mechanism — a click, and one of the bookcases swung open to reveal a secret passage leading downward. Georgiana gathered a handful of letters and papers from the desk, but there was no time to read them. Then the harmonics in the air shifted and deepened, and a new sound joined the vibration — the sound of voices, synchronized and hollow, rising from somewhere far below. Herzfeld’s ritual was back on track, and it was progressing.</p>
+<hr>
+<h2>Memorable Moments</h2>
+<p><strong><a href="../../../characters/npcs/andrei-volkonsky.html">Andrei Volkonsky</a> hurls a knife across the chaos of the garden ambush and buries it directly in the creature’s eye, stunning the monster before it can act.</strong></p>
+<p><em>The creature had just crashed through the pergola and crouched on the table when the grizzled Russian war veteran threw his map-pinning knife with deadly precision.</em></p>
+<blockquote>
+<p>“This is for <a href="../../../characters/npcs/colonel-henri-moreau.html">the Colonel</a>.”
+— <a href="../../../characters/pcs/freddy-cavendish.html">Freddy</a></p>
+</blockquote>
+<p><em>Calmly aiming at the blinded creature, Freddy fired a shot through its remaining eye and into its brain, killing it instantly.</em></p>
+<blockquote>
+<p>“My price just doubled.”
+— <a href="../../../characters/npcs/capitano-luca-ferrante.html">Captain Ferrante</a></p>
+</blockquote>
+<p><em>Delivered immediately after the party killed a supernatural monster at the war council dinner, with <a href="../../../characters/npcs/leopold-fischbein.html">Fischbein</a> already scribbling on the contract.</em></p>
+<p><strong><a href="../../../characters/pcs/georgiana-wentworth.html">Georgiana</a> receives a psychic vision of <a href="../../../characters/npcs/albin-herzfeld.html">Herzfeld’s</a> operating theater — victims wired into a machine, mouths open, lungs bellowing in unison, and a brain sealed in a copper and glass case — as she successfully retunes the <a href="../../../items/command-tuning-fork.html">tuning fork</a>.</strong></p>
+<p><em>The vision came as feedback from the fork itself during the counter-ritual, revealing the full horror of what the party is about to face.</em></p>
+<p><strong><a href="../../../characters/npcs/pemberton.html">Pemberton</a>, a mild-mannered gentleman, completely loses his composure after hearing <a href="../../../characters/npcs/werner-bauer.html">Bauer’s</a> casual descriptions of grave robbing and launches himself across the room to attack the tied-up prisoner, elbowing <a href="../../../characters/pcs/freddy-cavendish.html">Freddy</a> in the face in the process.</strong></p>
+<p><em>Freddy fumbled his attempt to intercept Pemberton, accidentally pulling at him and taking an elbow to the nose for his trouble.</em></p>
+<p><strong>The rescue team breaks into <a href="../../../characters/npcs/caroline-hartley.html">Caroline’s</a> room to find only an empty cot, a wash basin, and empty restraints — she has already been moved deeper into the university.</strong></p>
+<p><em>The discovery forces the rescue team to abandon their primary objective and push deeper into the tunnels toward the theater.</em></p>
+<p><strong><a href="../../../characters/pcs/varrio-harrowmont.html">Varrio</a> suddenly becomes convinced that <a href="../../../characters/pcs/georgiana-wentworth.html">Georgiana</a> is a traitor and attempts to drag her back out of the university, requiring the Russians to physically restrain him before he snaps back to his senses.</strong></p>
+<p><em>A bout of paranoid insanity triggered by the unnatural vibrations of <a href="../../../characters/npcs/albin-herzfeld.html">Herzfeld’s</a> ritual, with Varrio’s already-fragile sanity pushed over the edge the moment they entered the building.</em></p>
+<hr>
+<h2>2. PC Carry-Forward</h2>
+<h3><a href="../../../characters/pcs/freddy-cavendish.html">Freddy_Cavendish</a> (Jay) — Spotlight debt repaid</h3>
+<ul>
+<li><strong>Delivered the kill shot on the <a href="../../../creatures/harmonische-wachter.html">Wächter</a></strong> with the line “This is for <a href="../../../characters/npcs/colonel-henri-moreau.html">the Colonel</a>” — a direct invocation of Jay’s previous PC, assassinated in Session 5. Freddy had never killed anything supernatural before. He has now.</li>
+<li><strong>Visited <a href="../../../locations/palais-kinsky.html">Palais_Kinsky</a> with <a href="../../../characters/pcs/adrien-de-montferrand.html">Adrien</a>.</strong> Reassured <a href="../../../characters/npcs/josiah-hartley.html">Mr. Hartley</a> about the rescue mission where Adrien’s attempt failed. Social competence under pressure — Freddy’s core strength.</li>
+<li><strong>Guarded <a href="../../../characters/npcs/werner-bauer.html">Bauer</a> with <a href="../../../characters/npcs/pemberton.html">Pemberton</a>.</strong> Took an elbow to the face when Pemberton snapped. Freddy tried to intervene and fumbled — a humanising moment.</li>
+<li><strong>Fast-talked the suspicious side guards</strong> at the university, dropping the remaining money and framing the guards as thieves. The social operator turned field operative — exactly the arc beat the plan wanted.</li>
+<li><strong>Carries forward:</strong> On the main assault team, heading down through the secret passage behind the bookcase. Pemberton is outside as lookout. The transition from social operator to field participant is complete — what remains is what happens when the horror beneath the university is no longer theoretical.</li>
+</ul>
+<h3><a href="../../../characters/pcs/adrien-de-montferrand.html">Adrien_de_Montferrand</a> (Anna) — New phobia, Caroline still ahead</h3>
+<ul>
+<li><strong>New phobia: meat.</strong> The sight of the <a href="../../../creatures/harmonische-wachter.html">Wächter’s</a> human viscera burned itself into his mind. Mechanical consequence to be determined.</li>
+<li><strong>Failed to reassure <a href="../../../characters/npcs/josiah-hartley.html">Mr. Hartley</a></strong> — his mention of “singing” only deepened the man’s distress. Freddy stepped in to recover.</li>
+<li><strong>Assisted <a href="../../../characters/pcs/georgiana-wentworth.html">Georgiana</a> with the counter-ritual</strong>, reading counter-frequency passages aloud from the <a href="../../../items/de-vermiis-mysteriis.html">De_Vermiis_Mysteriis</a>. SAN cost likely (helper exposure per the plan’s mechanics).</li>
+<li><strong>On the rescue team</strong> with <a href="../../../characters/npcs/capitano-luca-ferrante.html">Ferrante</a>, <a href="../../../characters/pcs/katherine-ward.html">Katherine</a>, and <a href="../../../characters/npcs/nell-coker.html">Nell</a>.</li>
+<li><strong>Recognised <a href="../../../characters/npcs/liesel-hartmann.html">Liesel_Hartmann</a></strong> outside <a href="../../../characters/npcs/caroline-hartley.html">Caroline’s</a> room as someone seen speaking with <a href="../../../characters/pcs/varrio-harrowmont.html">Varrio</a> at the Imperial reception. The Sardinians restrained her and bundled her into a cupboard, tied and gagged. The team did not search her — the theatre key remains undiscovered on her person.</li>
+<li><strong>Found Caroline’s room empty.</strong> The rescue mission has become an assault mission — both teams are now converging on the theatre.</li>
+<li><strong>Carries forward:</strong> Descending into the Roman tunnels toward the <a href="../../../locations/sealed-anatomical-theatre.html">theatre</a>. Caroline’s fate is the driving question. The new meat phobia adds to his existing Pyrenees trauma. His worst fear — finding the person he cares about in the hands of something inhuman — is minutes away from resolution.</li>
+</ul>
+<h3><a href="../../../characters/pcs/emma-wentworth.html">Emma_Wentworth</a> (Missy) — Quiet competence</h3>
+<ul>
+<li><strong>Dove under the table</strong> during the <a href="../../../creatures/harmonische-wachter.html">Wächter</a> attack. <a href="../../../characters/npcs/thomas-wyndham.html">Thomas</a> helped her out afterward, concern for her injuries visible.</li>
+<li><strong>Thomas/Emma relationship:</strong> Thomas settled her on the parlor sofa and positioned himself with her feet in his lap. The protective dynamic continues.</li>
+<li><strong>Distracted student guards</strong> in the south wing lobby with “Hi” while <a href="../../../characters/npcs/andrei-volkonsky.html">Andrei</a> and <a href="../../../characters/npcs/nikolai-volkonsky.html">Nikolai</a> flanked them with drawn weapons. A small, perfectly-timed contribution.</li>
+<li><strong>Discovered the secret passage</strong> behind the bookcase in <a href="../../../characters/npcs/albin-herzfeld.html">Herzfeld’s</a> office. A significant find — this is the main team’s route to the theatre.</li>
+<li><strong>Carries forward:</strong> On the main assault team, heading down through the passage she found. The <a href="../../../locations/sealed-anatomical-theatre.html">theatre</a> below is literally a theatre — her phobia’s trigger architecture. The Major Wound (Session 9, knife under right arm) is still active. Both constraints create character decisions that belong to the player.</li>
+</ul>
+<h3><a href="../../../characters/pcs/georgiana-wentworth.html">Georgiana_Wentworth</a> (Beth) — Counter-ritual complete, fork bond deepened</h3>
+<ul>
+<li><strong>Successfully completed the counter-ritual synthesis.</strong> Cross-referenced the <a href="../../../items/liber-ivonis.html">Liber_Ivonis</a> and <a href="../../../items/de-vermiis-mysteriis.html">De_Vermiis_Mysteriis</a> with <a href="../../../characters/pcs/marina-garrick.html">Marina’s</a> notebook, using knowledge from the <a href="../../../items/revelations-of-glaaki.html">Revelations_of_Glaaki</a>. The <a href="../../../items/command-tuning-fork.html">tuning fork</a> now holds the inversion frequency.</li>
+<li><strong>Received the Conduit Flash vision.</strong> Saw the <a href="../../../locations/sealed-anatomical-theatre.html">theatre</a> interior: victims wired into the machine, mouths open, lungs bellowing in synchronisation, a brain in a copper-and-glass case, and <a href="../../../characters/npcs/albin-herzfeld.html">Herzfeld</a> waiting with his own fork. She knows what is down there.</li>
+<li><strong>First operational use of the retuned fork.</strong> Struck it against a courtyard fountain inside the university — created a zone of deadened sound that muffled footsteps and briefly disrupted the ritual’s harmonics. The counter-ritual works. But it snapped back — the ritual recovered.</li>
+<li><strong>Gathered letters and papers from Herzfeld’s desk</strong> but the party pressed on without reading them. These may contain the Calcutta intelligence and Brotherhood correspondence from the plan.</li>
+<li><strong>Carries forward:</strong> On the main assault team with the retuned fork. She knows she must be inside the theatre for the counter-ritual to achieve clean shutdown. She knows the cost (<em>“Wer den Schlüssel dreht, bezahlt den Preis”</em>). The fork bond has deepened — she felt it vibrating in her pocket as the ritual began. The sustained inversion inside the Engine’s resonant field is ahead of her.</li>
+</ul>
+<h3><a href="../../../characters/pcs/katherine-ward.html">Katherine_Ward</a> (Juel) — Operational execution</h3>
+<ul>
+<li><strong>Told <a href="../../../characters/npcs/nell-coker.html">Nell</a> the truth</strong> about the creatures being assembled from human body parts. A significant trust moment — Katherine chose honesty over operational security.</li>
+<li><strong>Picked the lock on the university’s back door.</strong> Clean entry for the rescue team.</li>
+<li><strong>Picked the lock on <a href="../../../characters/npcs/caroline-hartley.html">Caroline’s</a> room.</strong> Found it empty — restraints open, Caroline gone.</li>
+<li><strong>Threw a pitcher of water on <a href="../../../characters/npcs/pemberton.html">Pemberton</a></strong> to break his hysterical attack on <a href="../../../characters/npcs/werner-bauer.html">Bauer</a>. Quick, decisive action.</li>
+<li><strong>Carries forward:</strong> On the rescue team, descending into the Roman tunnels. The theatre door is locked — <a href="../../../characters/npcs/liesel-hartmann.html">Liesel</a> has the key but was bundled into a cupboard unsearched. Katherine’s Locksmith (Hard) is the primary option unless someone goes back for the key.</li>
+</ul>
+<h3><a href="../../../characters/pcs/varrio-harrowmont.html">Varrio_Harrowmont</a> (Phil) — SAN deteriorating</h3>
+<ul>
+<li><strong>Cut open the dead <a href="../../../creatures/harmonische-wachter.html">Wächter</a></strong> and examined the human-origin interior. No lungs. The party now has anatomical intelligence on the creatures.</li>
+<li><strong>Bought Turkish coffee</strong> from a night kitchen near the Naschmarkt for the entire group including the coachmen. A human beat.</li>
+<li><strong>Suffered a paranoid episode</strong> inside the university — the Engine’s vibrations triggered a bout of insanity. He became convinced <a href="../../../characters/pcs/georgiana-wentworth.html">Georgiana</a> was a traitor and tried to drag her out. The Russians restrained him. He came back to himself mortified.</li>
+<li><strong>Intimidated the front guards</strong> with a sack of cash and the wall of armed Russians behind him.</li>
+<li><strong>Carries forward:</strong> On the main assault team, heading down. SAN is clearly degrading — the paranoid episode is the second major mental break (after the magic mania from Session 12). The Brenner thread remains unresolved: <a href="../../../characters/npcs/liesel-hartmann.html">Liesel</a> was on the rescue team’s route, not his. He never encountered her. The Varrio/Liesel/Brenner confrontation may still detonate if they converge in the theatre.</li>
+</ul>
+<hr>
+<h2>3. What Carries Forward</h2>
+<h3>Unresolved Cliffhanger</h3>
+<p>Both teams are inside the <a href="../../../locations/university-of-vienna.html">University_of_Vienna</a> and descending toward the <a href="../../../locations/sealed-anatomical-theatre.html">Sealed_Anatomical_Theatre</a>. The main assault team is heading down through the secret passage behind the bookcase in <a href="../../../characters/npcs/albin-herzfeld.html">Herzfeld’s</a> office. The rescue team is navigating the Roman tunnels beneath the university. The ritual is active — synchronized voices are rising from below. <strong>Session 14 opens with the parties converging on the theatre.</strong></p>
+<h3>Player-Stated Intentions</h3>
+<ul>
+<li><strong>Reach and enter the <a href="../../../locations/sealed-anatomical-theatre.html">theatre</a>.</strong> Both teams are heading there by different routes.</li>
+<li><strong>Use the counter-ritual.</strong> <a href="../../../characters/pcs/georgiana-wentworth.html">Georgiana</a> has the retuned <a href="../../../items/command-tuning-fork.html">fork</a> and knows she must be inside the theatre. She struck it once at the fountain and proved it works.</li>
+<li><strong>Rescue <a href="../../../characters/npcs/caroline-hartley.html">Caroline</a>.</strong> Her room was empty — she has been moved to the theatre. <a href="../../../characters/pcs/adrien-de-montferrand.html">Adrien’s</a> rescue mission has become an assault mission.</li>
+<li><strong>Stop <a href="../../../characters/npcs/albin-herzfeld.html">Herzfeld</a>.</strong> The ritual is progressing. The party is racing the ritual clock from the moment they entered the building.</li>
+</ul>
+<h3>Unrealised Consequences</h3>
+<ul>
+<li><strong>Herzfeld’s papers are unread.</strong> <a href="../../../characters/pcs/georgiana-wentworth.html">Georgiana</a> grabbed letters and loose pages from the desk but the party pressed on. Per the plan, these may include the Calcutta letter (Chapter 4 intelligence), the Der Kantor letter (Brotherhood intelligence on the party), and Herzfeld’s unsent letter to Krakow. <strong>Reading them costs time on the ritual clock. Not reading them means no Chapter 4 intelligence bridge.</strong></li>
+<li><strong><a href="../../../characters/npcs/liesel-hartmann.html">Liesel_Hartmann</a> restrained but unsearched.</strong> Recognised by <a href="../../../characters/pcs/adrien-de-montferrand.html">Adrien</a>, restrained by the Sardinians, bundled into a cupboard tied and gagged. The rescue team did not search her — the theatre key is still on her person. The theatre door will be locked when the rescue team reaches it. <a href="../../../characters/pcs/katherine-ward.html">Katherine’s</a> Locksmith (Hard) or force are the options.</li>
+<li><strong>Varrio never encountered Liesel.</strong> He was on the main team. The planned Brenner confrontation (Scene 6 of the plan) was bypassed by the team split. The thread remains live if they converge in the theatre.</li>
+<li><strong>The ritual fires on breach.</strong> Per the plan’s Conduit Flash intelligence, Herzfeld fires the ritual the moment the perimeter is breached. The party entered the building and the ritual is already advancing — the voices are audible. The clock is running.</li>
+<li><strong><a href="../../../characters/npcs/werner-bauer.html">Bauer</a> has fled.</strong> He completed his task and ran. His story arc with the party may be over, but he is loose in Vienna with knowledge of the party’s operation.</li>
+</ul>
+<h3>NPCs Needing Follow-Up</h3>
+<ul>
+<li><strong><a href="../../../characters/npcs/liesel-hartmann.html">Liesel_Hartmann</a></strong> — Restrained, tied, gagged, in a cupboard. Not converted, not interrogated. The theatre key is on her person. If the party realises who she is and goes back, they can get the key and interior intelligence. Otherwise, the theatre door is a problem.</li>
+<li><strong><a href="../../../characters/npcs/caroline-hartley.html">Caroline_Hartley</a></strong> — Inside the <a href="../../../locations/sealed-anatomical-theatre.html">theatre</a>, connected to the machine. Her condition depends on the ritual stage when the party arrives.</li>
+<li><strong><a href="../../../characters/npcs/albin-herzfeld.html">Albin_Herzfeld</a></strong> — In the theatre, conducting the ritual. The plan establishes he will not fight — he will continue conducting until physically stopped.</li>
+<li><strong><a href="../../../characters/npcs/pemberton.html">Pemberton</a></strong> — Outside as lookout. Had a mental breakdown earlier in the session. His state after the assault is a concern.</li>
+<li><strong><a href="../../../characters/npcs/capitano-luca-ferrante.html">Ferrante</a></strong> — On the rescue team. Shot a student guard without hesitation. His men are not briefed on the Engine’s supernatural effects — mercenary panic is a risk inside the theatre.</li>
+</ul>
+<h3>Skipped Prep with Critical Intelligence</h3>
+<ul>
+<li><strong>Scene 8: The Sealed Anatomical Theatre</strong> — The entire climax (ritual clock, counter-ritual execution, Caroline’s rescue, Herzfeld’s behaviour, theatre defenders, endgame paths) carries forward to Session 14. All mechanics from the Session_13_Plan remain valid.</li>
+<li><strong>Scene 9: The Cost</strong> — Aftermath, structural damage, Caroline’s condition, dawn over Vienna. Carries forward.</li>
+<li><strong>Handout letters</strong> — Three letters planned for Herzfeld’s office (Calcutta, Der Kantor, Krakow). Georgiana grabbed papers but they are unread. The letters are in the party’s possession but their content is unknown.</li>
+</ul>
+<hr>
+<h2>4. World State</h2>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>State</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>In-game date</strong></td>
+<td>Pre-dawn, 12 August 1814 — inside the <a href="../../../locations/university-of-vienna.html">University_of_Vienna</a></td>
+</tr>
+<tr>
+<td><strong>Location</strong></td>
+<td>Both teams descending toward the <a href="../../../locations/sealed-anatomical-theatre.html">Sealed_Anatomical_Theatre</a>. Main team via secret passage (Herzfeld’s office). Rescue team via Roman tunnels.</td>
+</tr>
+<tr>
+<td><strong>Ritual status</strong></td>
+<td><strong>Active and progressing.</strong> Synchronized voices audible from below. Counter-ritual briefly disrupted the harmonics (fountain strike) but the ritual recovered. Stage unknown but at least Activation.</td>
+</tr>
+<tr>
+<td><strong>Alert Level</strong></td>
+<td>4 — Direct Action Authorised</td>
+</tr>
+<tr>
+<td><strong>Brotherhood status</strong></td>
+<td>Herzfeld alone in the theatre. Exterior guards bribed away. Student guards largely cleared (fled, knocked unconscious, or shot). Bauer has fled. The woman in the corridor is restrained.</td>
+</tr>
+<tr>
+<td><strong>Coalition forces</strong></td>
+<td><strong>Main team:</strong> Georgiana, Emma, Thomas, Freddy, Varrio, Andrei, Nikolai, + 3 Russian soldiers. <strong>Rescue team:</strong> Adrien, Katherine, Nell, Ferrante + 4 Sardinians. <strong>Lookouts:</strong> Thurner, <a href="../../../characters/npcs/pemberton.html">Pemberton</a>.</td>
+</tr>
+<tr>
+<td><strong>Counter-ritual</strong></td>
+<td><strong>READY.</strong> Fork retuned. Georgiana has the knowledge. First strike at the fountain proved the concept — deadened sound, disrupted harmonics — but the effect was temporary at range. Sustained inversion inside the theatre required for clean shutdown.</td>
+</tr>
+<tr>
+<td><strong>Engine</strong></td>
+<td>Running. Voices audible. Harmonics deepening. The ritual clock from the Session_13_Plan governs the theatre confrontation.</td>
+</tr>
+<tr>
+<td><strong>Wächter</strong></td>
+<td>Dead. The Heuriger Wächter was Herzfeld’s last deployed asset. No further Wächter expected.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>5. Keeper Checklist</h2>
+<ul>
+<li>[ ] <strong>Theatre door is locked.</strong> <a href="../../../characters/npcs/liesel-hartmann.html">Liesel_Hartmann</a> has the key but is tied up in a cupboard, unsearched. The rescue team must either: go back for Liesel (costs rounds on the clock), use <a href="../../../characters/pcs/katherine-ward.html">Katherine’s</a> Locksmith (Hard), or force the door (loud, costs rounds). This is a significant tactical decision.</li>
+<li>[ ] <strong>Determine ritual stage at arrival.</strong> How many rounds have elapsed on the ritual clock since the breach? The party has cleared the ground floor, reached the office, and is descending — approximately 5–7 rounds depending on time spent. This sets <a href="../../../characters/npcs/caroline-hartley.html">Caroline’s</a> condition when the party enters the theatre.</li>
+<li>[ ] <strong>Resolve Herzfeld’s papers.</strong> The letters are in <a href="../../../characters/pcs/georgiana-wentworth.html">Georgiana’s</a> possession but unread. When does the party read them — during the descent, after the theatre, or not at all? Each letter contains Chapter 4/5 intelligence.</li>
+<li>[ ] <strong>Theatre entry from two directions.</strong> The main team arrives from above (secret passage/spiral staircase). The rescue team arrives from below (Roman tunnels/theatre west wall). This creates a pincer. How does this affect the theatre confrontation?</li>
+<li>[ ] <strong>Varrio’s SAN.</strong> The paranoid episode suggests Varrio’s sanity is critically low. The theatre’s SAN costs could trigger further breaks. Phil should be aware of the risk.</li>
+<li>[ ] <strong>Adrien’s meat phobia.</strong> New phobia from the <a href="../../../creatures/harmonische-wachter.html">Wächter</a> dissection. The theatre contains surgical tables, viscera, and an operating procedure. Trigger conditions?</li>
+<li>[ ] <strong>Ferrante’s men and the supernatural.</strong> The Sardinians have witnessed a <a href="../../../creatures/harmonische-wachter.html">Wächter</a> (garden) and shot a student guard (corridor). They have NOT been briefed on the Engine or the theatre. Mercenary panic is a realistic risk.</li>
+<li>[ ] <s><strong>Katherine’s fork vision.</strong></s> <strong>Dropped.</strong> The fork has been Georgiana’s arc throughout. The vision never surfaced organically in 5 sessions. The party will see the Engine firsthand — the intelligence is about to become obsolete.</li>
+<li>[ ] <strong>Nikolai’s bloodied blade.</strong> Still unresolved from Session 12. Carry forward or resolve offscreen.</li>
+<li>[ ] <strong>The leather portfolio.</strong> Forged identity papers with <a href="../../../characters/npcs/lord-percival-harcourt.html">Harcourt’s</a> signature. Unresolved from Session 12. Carry forward to Chapter 4.</li>
+<li>[ ] <strong>Recycle Scene 8 and Scene 9 from the Session_13_Plan.</strong> The full ritual clock, theatre read-aloud, counter-ritual execution mechanics, Caroline’s rescue table, Herzfeld’s behaviour, theatre defenders, and endgame paths are all ready and unused.</li>
+</ul>
+<hr>
+<h2>6. Quality Notes</h2>
+<p>The gmassistant notes are rich and well-structured — the scene-by-scene breakdown provided excellent source material with clear dramatic beats.</p>
+<p><strong>Spotlight correction succeeded.</strong> <a href="../../../characters/pcs/freddy-cavendish.html">Freddy</a> (Jay) went from two sessions of background to arguably the session’s most memorable PC moments: the kill shot with “This is for the Colonel,” reassuring Mr. Hartley, fast-talking the guards, and the slapstick elbow from Pemberton. The plan identified a 2-session spotlight debt and the session paid it handsomely.</p>
+<p><strong><a href="../../../characters/pcs/emma-wentworth.html">Emma</a> (Missy) also improved.</strong> Finding the secret passage in Herzfeld’s office and the “Hi” distraction at the student guards are small moments that earn their place. Her big beat — the theatre phobia — is ahead in Session 14.</p>
+<p><strong>Counter-ritual synthesis worked as designed.</strong> The graduated-success framework from the plan produced a clear dramatic arc: research, calibration, vision, certainty. Georgiana’s scene in the basement was earned prep paying off.</p>
+<p><strong>The Liesel/Varrio bypass is interesting.</strong> The plan built an elaborate Brenner confrontation around Varrio encountering Liesel in the south corridor. The players’ own team-split decision put Varrio on the main team, bypassing the encounter entirely. The thread survives and may detonate in the theatre — a natural consequence of player agency rather than a missed beat.</p>
+<p><strong>Pacing:</strong> The session covered nine distinct scenes (Heuriger, Palais Kinsky, Coffee, Safe House, Counter-Ritual, Pemberton Chaos, Planning, Breach, Inside the University) and ended at the threshold of the climax. Strong cliffhanger — the voices from below.</p>
+<hr>
+<h2>Planned vs Played</h2>
+<table>
+<thead>
+<tr>
+<th>Planned Scene</th>
+<th>Status</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scene 1: The Heuriger</td>
+<td><strong>Played</strong></td>
+<td>Wächter killed quickly — Andrei’s knife, Nikolai’s shot, Freddy’s kill shot. No coalition casualties. Fire extinguished. Ferrante doubled his price.</td>
+</tr>
+<tr>
+<td>Scene 2: Aftermath &amp; Return</td>
+<td><strong>Played (modified)</strong></td>
+<td>Merged with preparations. Freddy/Adrien visited Palais Kinsky. Nell/Katherine conversation. Varrio’s coffee stop. Thomas/Emma moment.</td>
+</tr>
+<tr>
+<td>Scene 3: Counter-Ritual Synthesis</td>
+<td><strong>Played</strong></td>
+<td>Both phases succeeded. Vision received. Counter-ritual ready. Adrien assisted.</td>
+</tr>
+<tr>
+<td>Scene 4: Pre-Dawn Assembly</td>
+<td><strong>Played (merged)</strong></td>
+<td>Team assignments finalised during planning scene. Bauer briefed. Weapons and torches prepared.</td>
+</tr>
+<tr>
+<td>Scene 5: The Breach</td>
+<td><strong>Played (modified)</strong></td>
+<td>Bauer dismissed rear guards. Side guards suspicious — Freddy fast-talked. Front guards — Varrio bribed with Russian intimidation. Two separate guard encounters rather than one.</td>
+</tr>
+<tr>
+<td>Scene 6: The Ground Floor</td>
+<td><strong>Partially played</strong></td>
+<td>Caroline’s room empty ✓. Woman restrained (Liesel?) — but Varrio/Brenner confrontation bypassed (wrong team). Student guards dealt with.</td>
+</tr>
+<tr>
+<td>Scene 7: The Descent</td>
+<td><strong>In progress</strong></td>
+<td>Main team took the Purple Route (Herzfeld’s office → secret passage). Papers grabbed unread. Rescue team in Roman tunnels. Session ended here.</td>
+</tr>
+<tr>
+<td>Scene 8: The Sealed Anatomical Theatre</td>
+<td><strong>Not reached</strong></td>
+<td>Carries forward in full. All mechanics valid.</td>
+</tr>
+<tr>
+<td>Scene 9: The Cost</td>
+<td><strong>Not reached</strong></td>
+<td>Carries forward.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+
+<div class="relationship-graph"><h2>Connections</h2><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="font-family: var(--font-body, system-ui);">
+  <line x1="300" y1="200" x2="300" y2="80" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="80" x2="427.27922061357856" y2="72.72077938642146" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="460.3811743539062" y2="281.7182899531184" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="271.84179629275843" y2="377.7839013071248" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="122.21609869287522" y2="228.15820370724157" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="218.28171004688156" y2="39.618825646093796" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <a href="session-13-wrap-up.html"><g opacity="1">
+    <circle cx="300" cy="200" r="28" fill="var(--accent, #58a6ff)" stroke="var(--accent, #58a6ff)" stroke-width="2"/>
+    <text x="300" y="243" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 13 Wr…</text>
+  </g></a>
+  <a href="../../../events/wachter-ambush-heuriger-aug-11.html"><g opacity="1">
+    <circle cx="300" cy="80" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Wachter Ambus…</text>
+  </g></a>
+  <a href="../../../events/war-council-heuriger-aug-11.html"><g opacity="0.5">
+    <circle cx="427.27922061357856" cy="72.72077938642146" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="427.27922061357856" y="99.72077938642146" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">War Council H…</text>
+  </g></a>
+  <a href="../../../characters/npcs/albin-herzfeld.html"><g opacity="0.5">
+    <circle cx="460.3811743539062" cy="281.7182899531184" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="460.3811743539062" y="308.7182899531184" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Albin Herzfeld</text>
+  </g></a>
+  <a href="../Session 12/session-12-wrap-up.html"><g opacity="0.5">
+    <circle cx="271.84179629275843" cy="377.7839013071248" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="271.84179629275843" y="404.7839013071248" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Session 12 Wr…</text>
+  </g></a>
+  <a href="../../../characters/npcs/william-thurner.html"><g opacity="0.5">
+    <circle cx="122.21609869287522" cy="228.15820370724157" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="122.21609869287522" y="255.15820370724157" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">William Thurner</text>
+  </g></a>
+  <a href="../../../campaign/timeline.html"><g opacity="0.5">
+    <circle cx="218.28171004688156" cy="39.618825646093796" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="218.28171004688156" y="66.6188256460938" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Timeline</text>
+  </g></a>
+</svg></div></div><aside class="context-sidebar">
+<h3>Mentioned In</h3>
+<ul><li><a href="../../../events/wachter-ambush-heuriger-aug-11.html">Wachter Ambush Heuriger Aug 11</a> <span class="sidebar-badge">event</span></li></ul>
+</aside></div>
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../../../js/nav.js"></script>
+<script src="../../../js/lightbox.js"></script>
+<script src="../../../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>

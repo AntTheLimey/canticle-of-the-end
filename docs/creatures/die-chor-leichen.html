@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Die Chor Leichen — Canticle of the End</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/themes/horror.css">
+  <link rel="stylesheet" href="../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../index.html" class="nav-brand">Canticle of the End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <button class="nav-group-toggle">Story</button>
+        <div class="nav-dropdown">
+        <a href="../chapters/index.html">Story</a>
+        <a href="../timeline.html">Events</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../player-characters.html">Player Characters</a>
+        <a href="../characters/npcs/index.html">NPCs</a>
+        <a href="index.html">Creatures</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../locations/index.html">Locations</a>
+        <a href="../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../documents/index.html">Documents</a>
+        <a href="../clues/index.html">Clues</a>
+        <a href="../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3>Story</h3>
+  <ul>
+    <li><a href="../chapters/index.html">Story</a></li>
+    <li><a href="../timeline.html">Events</a></li>
+  </ul>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../player-characters.html">Player Characters</a></li>
+    <li><a href="../characters/npcs/index.html">NPCs</a></li>
+    <li><a href="index.html">Creatures</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../locations/index.html">Locations</a></li>
+    <li><a href="../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../documents/index.html">Documents</a></li>
+    <li><a href="../clues/index.html">Clues</a></li>
+    <li><a href="../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">&rsaquo;</span><a href="index.html">Creatures</a><span class="sep">&rsaquo;</span>Die Chor Leichen</nav>
+<div class="content-with-sidebar"><div class="main">
+<div class="char-header">
+  
+  <h1>Die Chor Leichen <span class="badge badge-draft">Draft</span></h1>
+</div>
+<div class="metadata-badges"><span class="metadata-badge">Engine-animated corpses</span></div>
+
+<div class="abilities"><h3>Abilities</h3><ul><li>Harmonic Field (sub-audible pressure waves; opposed POW vs Engine POW 80)</li><li>Synchronized movement</li><li>Resonating chamber (channels Engine's sound through ruined throats)</li></ul></div>
+<div class="weaknesses"><h3>Weaknesses</h3><ul><li>Fragile (HP 5, one solid hit collapses each body)</li><li>Cannot function outside the Engine's harmonic field</li><li>Counter-ritual weakens their field (Engine POW drops to 60)</li><li>Clean shutdown collapses all simultaneously</li></ul></div>
+<h2>Description</h2>
+<p>The discarded bodies of victims whose vocal cords have been extracted and integrated into the <a href="../items/harmonic-engine.html">Harmonic_Engine</a>. They should be dead — throats carved into red ruins, chests split where lungs were removed. But the Engine’s harmonic field has reanimated them. They stand in the tiered seating of the <a href="../locations/sealed-anatomical-theatre.html">Sealed_Anatomical_Theatre</a>, arranged in rows like a choir, mouths forced open, jaws surgically loosened to widen the aperture.</p>
+<p>The Engine uses their dead bodies as resonating chambers. Sound flows <em>backward</em> through their ruined throats — the dead singing without vocal cords. The sound is not heard but <em>felt</em>: a sub-audible pressure in the chest, the jaw, the soft tissue of the brain.</p>
+<h3>Appearance</h3>
+<ul>
+<li>Bodies in various states of surgical mutilation. Throats opened. Chests split. Dressed in the clothes they wore when taken — hospital gowns, street clothes, a nightgown.</li>
+<li>Eyes open, unfocused. Skin the colour of tallow. Mouths gaping.</li>
+<li>They stand with unnatural rigidity, weight distributed like instruments on stands.</li>
+<li>When they move, they move in unison — all turning at once, all stepping in time. Puppet-like: jerky, precise, inhuman.</li>
+</ul>
+<h2>Statistics</h2>
+<table>
+<thead>
+<tr>
+<th>Stat</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STR</td>
+<td>30</td>
+</tr>
+<tr>
+<td>CON</td>
+<td>—</td>
+</tr>
+<tr>
+<td>SIZ</td>
+<td>55-65 (varies)</td>
+</tr>
+<tr>
+<td>DEX</td>
+<td>25</td>
+</tr>
+<tr>
+<td>INT</td>
+<td>—</td>
+</tr>
+<tr>
+<td>POW</td>
+<td>— (channel Engine’s POW 80)</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Armor</td>
+<td>None</td>
+</tr>
+<tr>
+<td>MOV</td>
+<td>4</td>
+</tr>
+<tr>
+<td>DB</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Attacks</td>
+<td>None</td>
+</tr>
+<tr>
+<td>SAN</td>
+<td>1d3/1d6 (first sight)</td>
+</tr>
+</tbody>
+</table>
+<h2>Abilities</h2>
+<p><strong>Harmonic Field:</strong> Anyone within 10 feet of 3+ Chorus Dead must make an opposed POW roll vs. Engine POW 80 each round. Failure = lost action (involuntary muscle contraction, vertigo, bleeding from nose and ears). Success = act normally but at penalty die.</p>
+<p><strong>Synchronized Movement:</strong> All Chorus Dead move in unison. They surround rather than attack individually — closing distance in synchronised rows.</p>
+<p><strong>Resonating Chamber:</strong> The Engine channels sound through their ruined throats, amplifying and directing the harmonic field.</p>
+<h2>Weaknesses</h2>
+<p><strong>Fragile:</strong> One solid hit (any damage) collapses each body. Each destroyed body releases a burst of harmonic feedback — SAN 0/1.</p>
+<p><strong>Field-Dependent:</strong> Cannot function outside the Engine’s harmonic field. If removed from the theatre, they collapse.</p>
+<p><strong>Counter-Ritual Vulnerability:</strong> If the counter-ritual is active, Engine’s effective POW drops from 80 to 60 for field rolls. Clean shutdown collapses all Chorus Dead simultaneously.</p>
+<h2>Scaling</h2>
+<p>The Keeper decides how many are present. Minimum 4 (3+ needed for the harmonic field). Maximum 12 (fills the tiered seating). Suggest starting with enough to fill the lower tiers — the party realises there are more in the shadows above as their eyes adjust.</p>
+<h2>Encounters</h2>
+<p>The Chorus Dead are encountered only in the <a href="../locations/sealed-anatomical-theatre.html">Sealed_Anatomical_Theatre</a> during the assault on the <a href="../locations/university-of-vienna.html">University_of_Vienna</a>. They activate when intruders breach the theatre and step down from the tiered seating in synchronised rows.</p>
+<h2>Appearances</h2>
+<h2>Combat Procedure (Table Reference)</h2>
+<h3>Round-by-Round</h3>
+<ol>
+<li><strong>Activation:</strong> When intruders breach the theatre, all Chorus Dead step down from tiered seating simultaneously. First round: all begin moving (MOV 4). Second round: closest reach melee range of the rescue team.</li>
+<li><strong>Harmonic Field Check (each round):</strong> Any investigator within 10 feet of 3+ Chorus Dead → opposed POW vs. Engine POW 80 (or 60 if counter-ritual active).
+<ul>
+<li><strong>Fail:</strong> Lose action. Nosebleed, vertigo, involuntary muscle contraction.</li>
+<li><strong>Success:</strong> Act normally but at <strong>penalty die</strong>.</li>
+</ul>
+</li>
+<li><strong>Destruction:</strong> Any successful attack dealing any damage collapses the body. No HP tracking needed — one hit, one kill. Harmonic feedback on destruction: <strong>SAN 0/1</strong> per body.</li>
+<li><strong>Movement:</strong> All Chorus Dead move simultaneously. They surround — closing distance in synchronised rows. They have <strong>no attacks</strong>. Their threat is the harmonic field and the time they cost.</li>
+</ol>
+<h3>Quick Reference Card</h3>
+<pre><code>┌──────────────────────────────────────────┐
+│  DIE CHOR-LEICHEN — THE CHORUS DEAD      │
+├──────────────────────────────────────────┤
+│  HP: 5 (one hit kills)  MOV: 4  Armor: 0│
+│  STR: 30  DEX: 25  POW: — (Engine's 80) │
+│  Attacks: NONE                           │
+│                                          │
+│  HARMONIC FIELD (3+ bodies within 10ft): │
+│   → Opposed POW vs Engine POW 80         │
+│   → Fail: lose action                    │
+│   → Pass: penalty die on all actions     │
+│   → Counter-ritual active: POW drops to 60│
+│                                          │
+│  SAN:                                    │
+│   First sight: 1d3/1d6                   │
+│   Each body destroyed: 0/1               │
+│                                          │
+│  SCALING: Min 4, Max 12 (Keeper decides) │
+│  Clean shutdown = all collapse at once   │
+└──────────────────────────────────────────┘
+</code></pre>
+<h3>Tactical Notes for Keeper</h3>
+<ul>
+<li>The Chorus Dead are a <strong>time threat</strong>, not a military threat. Each round spent fighting through them is a round on the ritual clock.</li>
+<li>Destroying them is easy (one hit each). Reaching Caroline through them while the harmonic field pins you down is the problem.</li>
+<li>Start with enough to fill the lower tiers. As eyes adjust, reveal more in the shadows above.</li>
+<li>The Sardinians (POW 50 average, SAN ~46-49) are highly vulnerable to the harmonic field and the SAN cost. Mercenary panic is a realistic outcome when dead people start singing through surgical wounds.</li>
+<li>If the counter-ritual is active, the field weakens significantly (POW 60 vs 80). This makes the Chorus Dead less of an obstacle but does not destroy them — only clean shutdown or physical destruction does that.</li>
+</ul>
+<h2>Session 14 — Encountered and Destroyed (Pre-dawn, 12 August 1814)</h2>
+<p>The Chorus Dead appeared in the tiered seating of the <a href="../locations/sealed-anatomical-theatre.html">Sealed_Anatomical_Theatre</a> during the Session 14 assault on the <a href="../locations/university-of-vienna.html">University_of_Vienna</a>.</p>
+<h3>Appearance in Play</h3>
+<p>The Chorus Dead stood in rows in the tiered stone seating — bodies with flayed throats and split chests, some missing lungs, some missing hands. The harmonic singing note poured from the holes in their bodies rather than their mouths, a sub-audible pressure that was felt in the chest and jaw rather than heard with the ears.</p>
+<p>They moved in a slow, inexorable wave toward the assault teams once the breach was made. Synchronised, puppet-like, stepping down from the tiers in unison.</p>
+<h3>Effects on the Assault Teams</h3>
+<p>Close proximity caused nosebleeds, bleeding from the ears, and disorientation. <a href="../characters/npcs/thomas-wyndham.html">Thomas</a> suffered this directly — the harmonic field catching him as the Chorus Dead closed distance.</p>
+<h3>Destruction</h3>
+<p>The Chorus Dead became inert when the <a href="../items/harmonic-engine.html">Harmonic_Engine</a> was shut down by the counter-ritual (<a href="../characters/pcs/georgiana-wentworth.html">Georgiana</a>’s <a href="../items/command-tuning-fork.html">Command_Tuning_Fork</a>). The harmonic field that animated them collapsed, and they fell where they stood — returning to what they always were: the mutilated dead.</p>
+<h3>Status</h3>
+<ul>
+<li><strong>Status:</strong> DESTROYED (all instances)</li>
+<li><strong>Mechanism of destruction:</strong> Clean shutdown of the <a href="../items/harmonic-engine.html">Harmonic_Engine</a> via counter-ritual</li>
+<li><strong>Remains:</strong> Inert corpses in the wreckage of the <a href="../locations/sealed-anatomical-theatre.html">Sealed_Anatomical_Theatre</a></li>
+</ul>
+
+<h2>Relationships</h2>
+<ul class="relationship-list">
+<li><strong class="rel-label">Created by</strong> <a href="../items/harmonic-engine.html" class="entity-link">Harmonic Engine</a> &mdash; Animated by the Engine's harmonic field; extensions of the machine, not independent creatures</li>
+<li><strong class="rel-label">Created by</strong> <a href="../characters/npcs/albin-herzfeld.html" class="entity-link">Albin Herzfeld</a> &mdash; Created from the discarded bodies of Herzfeld's victims after vocal cord extraction</li>
+<li><strong class="rel-label">Located at</strong> <a href="../locations/sealed-anatomical-theatre.html" class="entity-link">Sealed Anatomical Theatre</a> &mdash; Cannot exist outside the theatre's resonant field</li>
+</ul>
+<div class="relationship-graph"><h2>Connections</h2><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="font-family: var(--font-body, system-ui);">
+  <line x1="300" y1="200" x2="300" y2="80" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="403.92304845413264" y2="140" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="403.92304845413264" y2="260" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="300" y2="320" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="196.0769515458674" y2="260.00000000000006" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="196.07695154586736" y2="140" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="80" x2="427.27922061357856" y2="72.72077938642146" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="471.84975597153823" y2="146.44945030606345" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="477.05158325048586" y2="232.44590680650302" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="441.693026509629" y2="311.00939707313773" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="373.87430498149627" y2="364.1419722785762" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="289.1318704639885" y2="379.6715997601972" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="206.87919344802174" y2="354.04062901426056" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="145.95937098573947" y2="293.12080655197826" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="120.32840023980285" y2="210.86812953601154" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="135.85802772142378" y2="126.12569501850382" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="188.99060292686227" y2="58.30697349037095" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="267.5540931934968" y2="22.948416749514195" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="353.55054969393655" y2="28.1502440284618" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <a href="die-chor-leichen.html"><g opacity="1">
+    <circle cx="300" cy="200" r="28" fill="var(--accent, #58a6ff)" stroke="var(--accent, #58a6ff)" stroke-width="2"/>
+    <text x="300" y="243" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Die Chor Leic…</text>
+  </g></a>
+  <a href="../items/harmonic-engine.html"><g opacity="1">
+    <polygon points="300,60 320,80 300,100 280,80" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Harmonic Engine</text>
+  </g></a>
+  <a href="../characters/npcs/albin-herzfeld.html"><g opacity="1">
+    <circle cx="403.92304845413264" cy="140" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="403.92304845413264" y="175" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Albin Herzfeld</text>
+  </g></a>
+  <a href="../locations/sealed-anatomical-theatre.html"><g opacity="1">
+    <rect x="383.92304845413264" y="240" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="403.92304845413264" y="295" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Sealed Anatom…</text>
+  </g></a>
+  <a href="../chapters/Chapter 3 - Vienna/Session 14/session-14-wrap-up.html"><g opacity="1">
+    <circle cx="300" cy="320" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="355" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 14 Wr…</text>
+  </g></a>
+  <a href="../events/assault-sealed-anatomical-theatre.html"><g opacity="1">
+    <circle cx="196.0769515458674" cy="260.00000000000006" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="196.0769515458674" y="295.00000000000006" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Assault Seale…</text>
+  </g></a>
+  <a href="../items/command-tuning-fork.html"><g opacity="1">
+    <polygon points="196.07695154586736,120 216.07695154586736,140 196.07695154586736,160 176.07695154586736,140" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="196.07695154586736" y="175" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Command Tunin…</text>
+  </g></a>
+  <a href="../characters/npcs/anna-lindqvist.html"><g opacity="0.5">
+    <circle cx="427.27922061357856" cy="72.72077938642146" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="427.27922061357856" y="99.72077938642146" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Anna Lindqvist</text>
+  </g></a>
+  <a href="harmonische-wachter.html"><g opacity="0.5">
+    <circle cx="471.84975597153823" cy="146.44945030606345" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="471.84975597153823" y="173.44945030606345" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Harmonische W…</text>
+  </g></a>
+  <a href="../factions/aeternum-choir.html"><g opacity="0.5">
+    <polygon points="489.175938903468,225.44590680650302 489.175938903468,239.44590680650302 477.05158325048586,246.44590680650302 464.9272275975037,239.44590680650302 464.9272275975037,225.44590680650302 477.05158325048586,218.44590680650302" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="477.05158325048586" y="259.445906806503" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Aeternum Choir</text>
+  </g></a>
+  <a href="../chapters/Chapter 3 - Vienna/Session 10/session-10-wrap-up.html"><g opacity="0.5">
+    <circle cx="441.693026509629" cy="311.00939707313773" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="441.693026509629" y="338.00939707313773" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Session 10 Wr…</text>
+  </g></a>
+  <a href="../characters/npcs/capitano-luca-ferrante.html"><g opacity="0.5">
+    <circle cx="373.87430498149627" cy="364.1419722785762" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="373.87430498149627" y="391.1419722785762" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Capitano Luca…</text>
+  </g></a>
+  <a href="../characters/npcs/caroline-hartley.html"><g opacity="0.5">
+    <circle cx="289.1318704639885" cy="379.6715997601972" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="289.1318704639885" y="406.6715997601972" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Caroline Hart…</text>
+  </g></a>
+  <a href="../characters/npcs/lady-honoria-lyndhurst.html"><g opacity="0.5">
+    <circle cx="206.87919344802174" cy="354.04062901426056" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="206.87919344802174" y="381.04062901426056" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Lady Honoria …</text>
+  </g></a>
+  <a href="../characters/npcs/liesel-hartmann.html"><g opacity="0.5">
+    <circle cx="145.95937098573947" cy="293.12080655197826" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="145.95937098573947" y="320.12080655197826" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Liesel Hartmann</text>
+  </g></a>
+  <a href="../characters/npcs/william-thurner.html"><g opacity="0.5">
+    <circle cx="120.32840023980285" cy="210.86812953601154" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="120.32840023980285" y="237.86812953601154" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">William Thurner</text>
+  </g></a>
+  <a href="../characters/pcs/adrien-de-montferrand.html"><g opacity="0.5">
+    <circle cx="135.85802772142378" cy="126.12569501850382" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="135.85802772142378" y="153.12569501850382" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Adrien de Mon…</text>
+  </g></a>
+  <a href="../characters/pcs/emma-wentworth.html"><g opacity="0.5">
+    <circle cx="188.99060292686227" cy="58.30697349037095" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="188.99060292686227" y="85.30697349037095" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Emma Wentworth</text>
+  </g></a>
+  <a href="../characters/pcs/georgiana-wentworth.html"><g opacity="0.5">
+    <circle cx="267.5540931934968" cy="22.948416749514195" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="267.5540931934968" y="49.948416749514195" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Georgiana Wen…</text>
+  </g></a>
+  <a href="../characters/pcs/katherine-ward.html"><g opacity="0.5">
+    <circle cx="353.55054969393655" cy="28.1502440284618" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="353.55054969393655" y="55.1502440284618" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Katherine Ward</text>
+  </g></a>
+</svg></div></div><aside class="context-sidebar">
+<h3>Relationships</h3>
+<ul><li><a href="../items/harmonic-engine.html">Harmonic Engine</a> <span class="sidebar-badge">created by</span></li>
+<li><a href="../characters/npcs/albin-herzfeld.html">Albin Herzfeld</a> <span class="sidebar-badge">created by</span></li>
+<li><a href="../locations/sealed-anatomical-theatre.html">Sealed Anatomical Theatre</a> <span class="sidebar-badge">located at</span></li></ul>
+<h3>Mentioned In</h3>
+<ul><li><a href="../chapters/Chapter 3 - Vienna/Session 14/session-14-wrap-up.html">Session 14 Wrap Up</a> <span class="sidebar-badge">session_wrap</span></li>
+<li><a href="../events/assault-sealed-anatomical-theatre.html">Assault Sealed Anatomical Theatre</a> <span class="sidebar-badge">event</span></li>
+<li><a href="../items/command-tuning-fork.html">Command Tuning Fork</a> <span class="sidebar-badge">item</span></li>
+<li><a href="../locations/sealed-anatomical-theatre.html">Sealed Anatomical Theatre</a> <span class="sidebar-badge">location</span></li></ul>
+</aside></div>
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../js/nav.js"></script>
+<script src="../js/lightbox.js"></script>
+<script src="../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>

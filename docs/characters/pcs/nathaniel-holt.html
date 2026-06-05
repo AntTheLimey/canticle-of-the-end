@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nathaniel Holt — Canticle of the End</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/themes/horror.css">
+  <link rel="stylesheet" href="../../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../../index.html" class="nav-brand">Canticle of the End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <button class="nav-group-toggle">Story</button>
+        <div class="nav-dropdown">
+        <a href="../../chapters/index.html">Story</a>
+        <a href="../../timeline.html">Events</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../../player-characters.html">Player Characters</a>
+        <a href="../npcs/index.html">NPCs</a>
+        <a href="../../creatures/index.html">Creatures</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../../locations/index.html">Locations</a>
+        <a href="../../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../../documents/index.html">Documents</a>
+        <a href="../../clues/index.html">Clues</a>
+        <a href="../../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3>Story</h3>
+  <ul>
+    <li><a href="../../chapters/index.html">Story</a></li>
+    <li><a href="../../timeline.html">Events</a></li>
+  </ul>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../../player-characters.html">Player Characters</a></li>
+    <li><a href="../npcs/index.html">NPCs</a></li>
+    <li><a href="../../creatures/index.html">Creatures</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../../locations/index.html">Locations</a></li>
+    <li><a href="../../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../../documents/index.html">Documents</a></li>
+    <li><a href="../../clues/index.html">Clues</a></li>
+    <li><a href="../../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span class="sep">&rsaquo;</span>Characters<span class="sep">&rsaquo;</span><a href="index.html">Player Characters</a><span class="sep">&rsaquo;</span>Nathaniel Holt</nav>
+<div class="hero-cinematic hero-cinematic-no-img">
+  <div class="pc-portrait" style="width:5rem;height:5rem;font-size:2rem;margin-bottom:1rem">NH</div>
+  <h1>Nathaniel Holt</h1>
+  <div class="meta">
+    <span><span class="label">Player</span> Phil</span>
+    <span><span class="label">Occupation</span> Lieutenant, Royal Navy (assigned to La Speranza as ship's doctor — actually an officer, not a doctor)</span>
+    <span><span class="label">Age</span> 29</span>
+    <span><span class="label">Nationality</span> British</span>
+    <span><span class="label">Status</span> alive</span>
+  </div>
+</div>
+<div class="pull-quote">Direct, Competent sailor, Unhurried under pressure, Keeps busy to avoid thinking, The man who knows ships</div>
+<div class="tab-bar">
+  <button class="pc-tab active" data-tab="sheet" onclick="switchTab('sheet')">Character Sheet</button>
+  <button class="pc-tab" data-tab="equipment" onclick="switchTab('equipment')">Equipment</button>
+  <button class="pc-tab" data-tab="story" onclick="switchTab('story')">Story</button>
+  <button class="pc-tab" data-tab="journey" onclick="switchTab('journey')">Journey</button>
+</div>
+<div class="tab-panel active" id="tab-sheet">
+<nav class="section-nav" aria-label="Sheet sections"><a href="#stat-sheet">Stat Sheet</a>
+<a href="#background">Background</a>
+<a href="#skills">Skills</a>
+<a href="#injuries-scars">Injuries &amp; Scars</a>
+<a href="#phobias-manias">Phobias &amp; Manias</a>
+<a href="#arcane-tomes-spells">Arcane Tomes &amp; Spells</a>
+<a href="#encounters-with-strange-entities">Encounters with Strange Entities</a>
+<a href="#combat">Combat</a>
+<a href="#fellow-investigators">Fellow Investigators</a>
+<a href="#notes">Notes</a></nav>
+
+<div class="accordion" id="stat-sheet">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Stat Sheet</button>
+  <div class="accordion-body">
+    <h3>Characteristics</h3>
+<p>Point assignment method (460 total). Age 29 (20-39 bracket: 1 EDU improvement check, rolled successfully, +5 to EDU).</p>
+<table>
+<thead>
+<tr>
+<th>Characteristic</th>
+<th>Regular</th>
+<th>Half</th>
+<th>Fifth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STR</td>
+<td>55</td>
+<td>27</td>
+<td>11</td>
+</tr>
+<tr>
+<td>CON</td>
+<td>60</td>
+<td>30</td>
+<td>12</td>
+</tr>
+<tr>
+<td>SIZ</td>
+<td>55</td>
+<td>27</td>
+<td>11</td>
+</tr>
+<tr>
+<td>DEX</td>
+<td>70</td>
+<td>35</td>
+<td>14</td>
+</tr>
+<tr>
+<td>INT</td>
+<td>65</td>
+<td>32</td>
+<td>13</td>
+</tr>
+<tr>
+<td>POW</td>
+<td>50</td>
+<td>25</td>
+<td>10</td>
+</tr>
+<tr>
+<td>APP</td>
+<td>50</td>
+<td>25</td>
+<td>10</td>
+</tr>
+<tr>
+<td>EDU</td>
+<td>60</td>
+<td>30</td>
+<td>12</td>
+</tr>
+</tbody>
+</table>
+<h3>Derived</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Max</th>
+<th>Current</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HP</td>
+<td>11</td>
+<td>11</td>
+</tr>
+<tr>
+<td>MP</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Luck</td>
+<td>—</td>
+<td>55</td>
+</tr>
+<tr>
+<td>Sanity</td>
+<td>50</td>
+<td>50</td>
+</tr>
+</tbody>
+</table>
+<h3>Reputation</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Starting Reputation</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Current Reputation</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Censure</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3>Combat</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Move</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Build</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Damage Bonus</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Dodge (Regular)</td>
+<td>35</td>
+</tr>
+<tr>
+<td>Dodge (Half)</td>
+<td>17</td>
+</tr>
+<tr>
+<td>Dodge (Fifth)</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<h3>Status</h3>
+<ul>
+<li>[ ] Temporary Insanity</li>
+<li>[ ] Indefinite Insanity</li>
+<li>[ ] Major Wound</li>
+<li>[ ] Unconscious</li>
+<li>[ ] Dying</li>
+</ul>
+
+  </div>
+</div>
+
+<div class="accordion" id="background">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Background</button>
+  <div class="accordion-body">
+    <p><strong>Personal Description:</strong> Medium height, lean and weathered in the way sailors are — the skin around his eyes is lined from years of squinting into glare. Dark brown hair, cut short, salted early at the temples. Clean-shaven. His hands are hard with rope calluses. He wears civilian clothes aboard (a plain dark coat, good boots, no lace) but carries himself like a man accustomed to a quarterdeck. Stands with his weight forward, balanced, the stance of someone who learned to walk on a moving surface. His face rests at neutral, not unfriendly, just waiting. When he speaks it is plainly and without hurry.</p>
+<p><strong>Traits:</strong> Direct. He says what he means and assumes others do the same, which occasionally makes him obtuse in social situations that run on subtext. Patient with physical hardship, impatient with disorder. Does his own maintenance — cleans his own pistol, mends his own coat, coils his own lines. Not because he must, but because idle hands make him restless. Underneath the steadiness is a man who keeps moving because stillness is where the thinking happens.</p>
+<p><strong>Ideology &amp; Beliefs:</strong> Duty. King and country, the Navy, the chain of command. He believes in competence, preparation, and the idea that a good officer keeps his people alive. He is not religious in any meaningful way — he has seen too much sea to believe in a benevolent God — but he respects the ritual of it. He believes the world is fundamentally knowable if you pay enough attention.</p>
+<p><strong>Significant People:</strong></p>
+<ul>
+<li>His brother, William Holt (dead). Lieutenant on HMS Colossus at Trafalgar. Killed by a splinter through the chest. Nathaniel was 20, serving on HMS Orion in the same engagement. He saw the Colossus take fire but did not know William was dead until three days later.</li>
+<li>Captain James Marsh (retired). Holt’s first captain, aboard HMS Seahorse. Taught him everything a midshipman needed to know and most of what an officer needed to forget.</li>
+</ul>
+<p><strong>Meaningful Locations:</strong></p>
+<ul>
+<li>The quarterdeck of HMS Dryad, his last posting. A frigate, 36 guns, two years in the Channel. He loved that ship.</li>
+<li>Portsmouth harbour. Where everything starts and ends.</li>
+</ul>
+<p><strong>Treasured Possessions:</strong></p>
+<ul>
+<li>William’s pocket watch. Returned with his effects. It stopped at 2:14, which was not the time William died, but Nathaniel has never had it repaired.</li>
+<li>A sextant, brass, well-used. His own, not Navy issue. The one piece of equipment he trusts absolutely.</li>
+</ul>
+
+  </div>
+</div>
+
+<div class="accordion" id="skills">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Skills</button>
+  <div class="accordion-body">
+    <p><strong>Occupation:</strong> Naval Officer
+<strong>Formula:</strong> EDU × 2 + DEX × 2 = 120 + 140 = 260 occupation points
+<strong>Personal Interest:</strong> INT × 2 = 130 points</p>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Base</th>
+<th>Regular</th>
+<th>Half</th>
+<th>Fifth</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Climb</td>
+<td>20</td>
+<td>40</td>
+<td>20</td>
+<td>8</td>
+<td>PI (+20)</td>
+</tr>
+<tr>
+<td>Credit Rating</td>
+<td>00</td>
+<td>15</td>
+<td>07</td>
+<td>03</td>
+<td>Occ (+15)</td>
+</tr>
+<tr>
+<td>Cthulhu Mythos</td>
+<td>00</td>
+<td>00</td>
+<td>00</td>
+<td>00</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Dodge</td>
+<td>—</td>
+<td>35</td>
+<td>17</td>
+<td>7</td>
+<td>Base only</td>
+</tr>
+<tr>
+<td>Fighting (Brawl)</td>
+<td>25</td>
+<td>50</td>
+<td>25</td>
+<td>10</td>
+<td>Occ (+25)</td>
+</tr>
+<tr>
+<td>Fighting (Cutlass)</td>
+<td>01</td>
+<td>40</td>
+<td>20</td>
+<td>8</td>
+<td>PI (+39)</td>
+</tr>
+<tr>
+<td>Firearms (Pistol)</td>
+<td>20</td>
+<td>55</td>
+<td>27</td>
+<td>11</td>
+<td>Occ (+35)</td>
+</tr>
+<tr>
+<td>First Aid</td>
+<td>30</td>
+<td>42</td>
+<td>21</td>
+<td>8</td>
+<td>PI (+12)</td>
+</tr>
+<tr>
+<td>Intimidate</td>
+<td>15</td>
+<td>40</td>
+<td>20</td>
+<td>8</td>
+<td>Occ (+25)</td>
+</tr>
+<tr>
+<td>Language (English, Own)</td>
+<td>60</td>
+<td>60</td>
+<td>30</td>
+<td>12</td>
+<td>EDU</td>
+</tr>
+<tr>
+<td>Language (French)</td>
+<td>01</td>
+<td>17</td>
+<td>08</td>
+<td>03</td>
+<td>Occ (+16)</td>
+</tr>
+<tr>
+<td>Listen</td>
+<td>20</td>
+<td>40</td>
+<td>20</td>
+<td>8</td>
+<td>PI (+20)</td>
+</tr>
+<tr>
+<td>Navigate</td>
+<td>10</td>
+<td>55</td>
+<td>27</td>
+<td>11</td>
+<td>Occ (+45)</td>
+</tr>
+<tr>
+<td>Pilot (Boat)</td>
+<td>01</td>
+<td>40</td>
+<td>20</td>
+<td>8</td>
+<td>Occ (+39)</td>
+</tr>
+<tr>
+<td>Psychology</td>
+<td>10</td>
+<td>25</td>
+<td>12</td>
+<td>5</td>
+<td>PI (+15)</td>
+</tr>
+<tr>
+<td>Science (Astronomy)</td>
+<td>01</td>
+<td>25</td>
+<td>12</td>
+<td>5</td>
+<td>PI (+24)</td>
+</tr>
+<tr>
+<td>Spot Hidden</td>
+<td>25</td>
+<td>55</td>
+<td>27</td>
+<td>11</td>
+<td>Occ (+30)</td>
+</tr>
+<tr>
+<td>Swim</td>
+<td>20</td>
+<td>50</td>
+<td>25</td>
+<td>10</td>
+<td>Occ (+30)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Occupation points spent:</strong> 25 + 35 + 30 + 45 + 39 + 25 + 30 + 16 + 15 = 260 ✓
+<strong>Personal interest spent:</strong> 20 + 39 + 12 + 20 + 15 + 24 = 130 ✓</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="injuries-scars">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Injuries &amp; Scars</button>
+  <div class="accordion-body">
+    <p>None at character creation. Old scars from splinters and rigging burns on both hands and forearms.</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="phobias-manias">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Phobias &amp; Manias</button>
+  <div class="accordion-body">
+    <p>None at character creation.</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="arcane-tomes-spells">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Arcane Tomes &amp; Spells</button>
+  <div class="accordion-body">
+    <p>None. Cthulhu Mythos 0%. Holt has seen nothing stranger than St. Elmo’s fire and a waterspout off Ushant.</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="encounters-with-strange-entities">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Encounters with Strange Entities</button>
+  <div class="accordion-body">
+    <p>None prior to boarding La Speranza.</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="combat">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Combat</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Weapon</th>
+<th>Skill %</th>
+<th>Damage</th>
+<th>Attacks</th>
+<th>Range</th>
+<th>Ammo</th>
+<th>Malf</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unarmed (Brawl)</td>
+<td>50/25/10</td>
+<td>1D3</td>
+<td>1</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Cutlass</td>
+<td>40/20/8</td>
+<td>1D8</td>
+<td>1</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Flintlock Pistol</td>
+<td>55/27/11</td>
+<td>1D6+1</td>
+<td>1</td>
+<td>15 yds</td>
+<td>1</td>
+<td>95</td>
+</tr>
+<tr>
+<td>Knife</td>
+<td>50/25/10</td>
+<td>1D4</td>
+<td>1</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
+
+<div class="accordion" id="fellow-investigators">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Fellow Investigators</button>
+  <div class="accordion-body">
+    <p>To be populated at the table. Holt is crew (assigned as ship’s doctor, though he is not one), not part of the party’s mission. He may be drawn in by events during the voyage.</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="notes">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Notes</button>
+  <div class="accordion-body">
+    <p>{Player-facing notes. Protected — skills never modify.}</p>
+
+  </div>
+</div>
+<h2>Relationships</h2>
+<ul class="relationship-list">
+<li><strong class="rel-label">Crew</strong> <a href="../../locations/la-speranza.html" class="entity-link">La Speranza</a> &mdash; Assigned as ship's doctor — except he's not a doctor. Begged and pulled strings to get a posting on a ship heading south and east. The crew got an unnecessary officer instead of a surgeon. Technically outranks everyone except the captain.</li>
+<li><strong class="rel-label">Professional</strong> <a href="../npcs/capitano-niccolo-zanier.html" class="entity-link">Capitano Niccolo Zanier</a> &mdash; Holt is technically Zanier's subordinate as crew, but outranks him in naval terms. The relationship is respectful — Holt defers to Zanier's authority aboard his own ship.</li>
+</ul>
+</div>
+<div class="tab-panel" id="tab-equipment">
+<h3>Equipment</h3>
+<p><strong>Personal Kit:</strong></p>
+<ul>
+<li>Flintlock pistol (Sea Service pattern, well-maintained)</li>
+<li>Cutlass (Navy issue, plain hilt)</li>
+<li>Folding knife</li>
+<li>Powder flask and shot (12 rounds)</li>
+<li>Sextant (brass, personal)</li>
+<li>William’s pocket watch (stopped at 2:14)</li>
+<li>Sea chest with spare clothes, shaving kit, letters of reassignment</li>
+<li>Oilskin coat</li>
+</ul>
+<p><strong>Wealth:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spending Level</td>
+<td>Officer on half-pay (modest)</td>
+</tr>
+<tr>
+<td>Cash</td>
+<td>~£15 (journey funds, Navy travel allowance)</td>
+</tr>
+<tr>
+<td>Assets</td>
+<td>Half-pay of £91/year while between active postings</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+<div class="tab-panel" id="tab-story">
+  <div class="story-prose">
+    <h2>Chapter 4, Session 1 — The Morning After</h2>
+<p>Lieutenant Nathaniel Holt of the Royal Navy stood on the Trieste docks with a trunk at his feet and the particular expression of a man who had begged and pulled strings to get assigned as ship’s doctor to a vessel heading south and east, and was now confronting the reality of what he had begged for. The crew had requested a surgeon. The Navy sent an officer with First Aid and a sextant. <a href="../../locations/la-speranza.html">La_Speranza</a> was ninety feet of salt-stained oak with blistering paint and rigging tarred nearly black, sitting low in the water with a chicken coop lashed to the foredeck and a leathery, nearly toothless Greek cook stirring something over a brick firebox that smelled of boiled onion and regret. Holt technically outranked everyone aboard except the captain, and could not set a bone. He spent his first evening aboard rather than at the Locanda_Grande with the party, pitching in with the crew’s preparations, coiling rope and checking rigging with the habitual competence of a man who had spent years at sea and could not stop his hands from finding work. Petar, the Ragusan bosun with two missing fingers and the genuine regard of every sailor aboard, strung up a hammock next to his own and told Holt that anyone who wanted to bother him would have to go through him first. The alliance was immediate and uncomplicated, the kind of respect that passed between men who understood ships and said so with their hands rather than their mouths.</p>
+<p>The next morning, when the party arrived to board, Holt directed Luka and Drago to load the supply crates and asserted quiet authority over <a href="../npcs/jasper-endicott.html">Endicott’s</a> fussing about the mysterious iron-banded crate in the hold. Endicott crumbled. The crew noticed. At dawn, the hawsers came off the bollards and <a href="../npcs/capitano-niccolo-zanier.html">Captain Zanier</a> stood at the wheel, and Holt stood where sailors stand, watching the harbour mouth pass on both sides and the open Adriatic stretch ahead. He was heading for the Indian Ocean squadron by way of the longest possible route, aboard a merchant brig that smelled of tar and onion, in the company of English aristocrats who carried more weapons than their luggage could reasonably explain and a Greek cook whose culinary ambitions exceeded his abilities by a considerable margin. The voyage would take six weeks. Lieutenant Holt intended to make himself useful for every one of them.</p>
+
+  </div>
+</div>
+<div class="tab-panel" id="tab-journey">
+<h2>Connections</h2>
+<div class="relationship-graph"><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="font-family: var(--font-body, system-ui);">
+  <line x1="300" y1="200" x2="300" y2="80" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="420" y2="200" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="300" y2="320" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="180" y2="200.00000000000003" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="80" x2="427.27922061357856" y2="72.72077938642146" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="468.0444767694963" y2="135.49376908184595" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="479.7533162558233" y2="209.4204721237299" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="320" x2="460.3811743539062" y2="281.7182899531184" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="320" x2="413.27767038897076" y2="339.88627306225476" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="320" x2="346.5874281184538" y2="373.8666487320323" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="180" y1="200.00000000000003" x2="271.84179629275843" y2="377.7839013071248" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="180" y1="200.00000000000003" x2="201.96497369729514" y2="350.96070223017637" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="180" y1="200.00000000000003" x2="149.0392977698237" y2="298.0350263027049" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="180" y1="200.00000000000003" x2="122.21609869287522" y2="228.15820370724157" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="180" y1="200.00000000000003" x2="126.1333512679677" y2="153.41257188154634" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="180" y1="200.00000000000003" x2="160.11372693774516" y2="86.72232961102937" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="180" y1="200.00000000000003" x2="218.28171004688156" y2="39.618825646093796" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="180" y1="200.00000000000003" x2="290.57952787627016" y2="20.246683744176693" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="180" y1="200.00000000000003" x2="364.5062309181541" y2="31.955523230503672" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <a href="nathaniel-holt.html"><g opacity="1">
+    <circle cx="300" cy="200" r="28" fill="var(--accent, #58a6ff)" stroke="var(--accent, #58a6ff)" stroke-width="2"/>
+    <text x="300" y="243" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Nathaniel Holt</text>
+  </g></a>
+  <a href="../../locations/la-speranza.html"><g opacity="1">
+    <rect x="280" y="60" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">La Speranza</text>
+  </g></a>
+  <a href="../npcs/capitano-niccolo-zanier.html"><g opacity="1">
+    <circle cx="420" cy="200" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="420" y="235" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Capitano Nicc…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 4 - Calcutta/Sessions/Session 01/session-01-wrap-up.html"><g opacity="1">
+    <circle cx="300" cy="320" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="355" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 01 Wr…</text>
+  </g></a>
+  <a href="../../player-characters.html"><g opacity="1">
+    <circle cx="180" cy="200.00000000000003" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="180" y="235.00000000000003" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">player charac…</text>
+  </g></a>
+  <a href="../../locations/calcutta-1814.html"><g opacity="0.5">
+    <rect x="413.27922061357856" y="58.720779386421455" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="427.27922061357856" y="99.72077938642146" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Calcutta 1814</text>
+  </g></a>
+  <a href="../npcs/jasper-endicott.html"><g opacity="0.5">
+    <circle cx="468.0444767694963" cy="135.49376908184595" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="468.0444767694963" y="162.49376908184595" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Jasper Endicott</text>
+  </g></a>
+  <a href="freddy-cavendish.html"><g opacity="0.5">
+    <circle cx="479.7533162558233" cy="209.4204721237299" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="479.7533162558233" y="236.4204721237299" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Freddy Cavend…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 1/session-01.html"><g opacity="0.5">
+    <circle cx="460.3811743539062" cy="281.7182899531184" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="460.3811743539062" y="308.7182899531184" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Session 1 — A…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 4 - Calcutta/Sessions/Session 01/session-01-the-morning-after.html"><g opacity="0.5">
+    <circle cx="413.27767038897076" cy="339.88627306225476" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="413.27767038897076" y="366.88627306225476" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Session 01 - …</text>
+  </g></a>
+  <a href="../../items/canticle-fragment-vienna.html"><g opacity="0.5">
+    <polygon points="346.5874281184538,359.8666487320323 360.5874281184538,373.8666487320323 346.5874281184538,387.8666487320323 332.5874281184538,373.8666487320323" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="346.5874281184538" y="400.8666487320323" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Canticle Frag…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 0.1 - The Beginning/chapter-0-1-wrap-up.html"><g opacity="0.5">
+    <circle cx="271.84179629275843" cy="377.7839013071248" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="271.84179629275843" y="404.7839013071248" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Chapter 0.1 W…</text>
+  </g></a>
+  <a href="../../chapters/Chapter 3 - Vienna/Session 9/session-09-wrap-up.html"><g opacity="0.5">
+    <circle cx="201.96497369729514" cy="350.96070223017637" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="201.96497369729514" y="377.96070223017637" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Session 09 Wr…</text>
+  </g></a>
+  <a href="charlotte-thorne.html"><g opacity="0.5">
+    <circle cx="149.0392977698237" cy="298.0350263027049" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="149.0392977698237" y="325.0350263027049" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Charlotte Tho…</text>
+  </g></a>
+  <a href="../../events/goupil-masquerade.html"><g opacity="0.5">
+    <circle cx="122.21609869287522" cy="228.15820370724157" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="122.21609869287522" y="255.15820370724157" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Goupil Masque…</text>
+  </g></a>
+  <a href="../../events/moreau-graben-assassination.html"><g opacity="0.5">
+    <circle cx="126.1333512679677" cy="153.41257188154634" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="126.1333512679677" y="180.41257188154634" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Moreau Graben…</text>
+  </g></a>
+  <a href="../../events/orphans-hospital-raid.html"><g opacity="0.5">
+    <circle cx="160.11372693774516" cy="86.72232961102937" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="160.11372693774516" y="113.72232961102937" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Orphans Hospi…</text>
+  </g></a>
+  <a href="../../events/silkweavers-guild-assault.html"><g opacity="0.5">
+    <circle cx="218.28171004688156" cy="39.618825646093796" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="218.28171004688156" y="66.6188256460938" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Silkweavers G…</text>
+  </g></a>
+  <a href="../../items/revelations-of-glaaki.html"><g opacity="0.5">
+    <polygon points="290.57952787627016,6.246683744176693 304.57952787627016,20.246683744176693 290.57952787627016,34.24668374417669 276.57952787627016,20.246683744176693" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="290.57952787627016" y="47.24668374417669" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Revelations o…</text>
+  </g></a>
+  <a href="../../player-characters/readme.html"><g opacity="0.5">
+    <circle cx="364.5062309181541" cy="31.955523230503672" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="364.5062309181541" y="58.95552323050367" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">README</text>
+  </g></a>
+</svg></div>
+</div>
+
+<script>
+function switchTab(tab) {
+  document.querySelectorAll('.pc-tab').forEach(function(t) { t.classList.remove('active'); });
+  document.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
+  document.getElementById('tab-' + tab).classList.add('active');
+  document.querySelector('[data-tab="' + tab + '"]').classList.add('active');
+  history.replaceState(null, '', '#' + tab);
+}
+function openAccordion(id) {
+  var el = document.getElementById(id);
+  if (el && el.classList.contains('accordion')) {
+    el.classList.add('open');
+    var btn = el.querySelector('.accordion-header');
+    if (btn) btn.setAttribute('aria-expanded', 'true');
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('.section-nav a');
+  if (link) {
+    e.preventDefault();
+    var id = link.getAttribute('href').slice(1);
+    openAccordion(id);
+  }
+});
+(function() {
+  var hash = location.hash.slice(1);
+  if (['sheet', 'equipment', 'story', 'journey'].includes(hash)) switchTab(hash);
+  else if (hash) openAccordion(hash);
+})();
+</script>
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../../js/nav.js"></script>
+<script src="../../js/lightbox.js"></script>
+<script src="../../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>

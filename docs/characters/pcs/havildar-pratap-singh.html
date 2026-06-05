@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Havildar Pratap Singh — Canticle of the End</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/themes/horror.css">
+  <link rel="stylesheet" href="../../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../../index.html" class="nav-brand">Canticle of the End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <button class="nav-group-toggle">Story</button>
+        <div class="nav-dropdown">
+        <a href="../../chapters/index.html">Story</a>
+        <a href="../../timeline.html">Events</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../../player-characters.html">Player Characters</a>
+        <a href="../npcs/index.html">NPCs</a>
+        <a href="../../creatures/index.html">Creatures</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../../locations/index.html">Locations</a>
+        <a href="../../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../../documents/index.html">Documents</a>
+        <a href="../../clues/index.html">Clues</a>
+        <a href="../../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3>Story</h3>
+  <ul>
+    <li><a href="../../chapters/index.html">Story</a></li>
+    <li><a href="../../timeline.html">Events</a></li>
+  </ul>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../../player-characters.html">Player Characters</a></li>
+    <li><a href="../npcs/index.html">NPCs</a></li>
+    <li><a href="../../creatures/index.html">Creatures</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../../locations/index.html">Locations</a></li>
+    <li><a href="../../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../../documents/index.html">Documents</a></li>
+    <li><a href="../../clues/index.html">Clues</a></li>
+    <li><a href="../../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span class="sep">&rsaquo;</span>Characters<span class="sep">&rsaquo;</span><a href="index.html">Player Characters</a><span class="sep">&rsaquo;</span>Havildar Pratap Singh</nav>
+<div class="hero-cinematic">
+  <img class="hero-cinematic-img" src="../../images/characters/havildar-pratap-singh.jpg" alt="Havildar Pratap Singh">
+  <div class="hero-cinematic-overlay">
+    <h1>Havildar Pratap Singh</h1>
+    <div class="meta">
+      <span><span class="label">Player</span> Phil</span>
+      <span><span class="label">Occupation</span> Havildar (Sergeant), 67th Bengal Native Infantry (cover) / Thuggee Operative (true)</span>
+    <span><span class="label">Age</span> 30</span>
+    <span><span class="label">Nationality</span> Indian</span>
+      <span><span class="label">Status</span> alive</span>
+    </div>
+  </div>
+</div>
+<div class="pull-quote">Excellent English, Impeccable military bearing, Patient beyond reason, Devout servant of Kali, The man who carried their bags</div>
+<div class="tab-bar">
+  <button class="pc-tab active" data-tab="sheet" onclick="switchTab('sheet')">Character Sheet</button>
+  <button class="pc-tab" data-tab="equipment" onclick="switchTab('equipment')">Equipment</button>
+  <button class="pc-tab" data-tab="story" onclick="switchTab('story')">Story</button>
+  <button class="pc-tab" data-tab="journey" onclick="switchTab('journey')">Journey</button>
+</div>
+<div class="tab-panel active" id="tab-sheet">
+<nav class="section-nav" aria-label="Sheet sections"><a href="#stat-sheet">Stat Sheet</a>
+<a href="#background">Background</a>
+<a href="#skills">Skills</a>
+<a href="#injuries-scars">Injuries &amp; Scars</a>
+<a href="#phobias-manias">Phobias &amp; Manias</a>
+<a href="#arcane-tomes-spells">Arcane Tomes &amp; Spells</a>
+<a href="#encounters-with-strange-entities">Encounters with Strange Entities</a>
+<a href="#combat">Combat</a>
+<a href="#fellow-investigators">Fellow Investigators</a>
+<a href="#the-cover">The Cover</a>
+<a href="#the-mission">The Mission</a>
+<a href="#notes">Notes</a></nav>
+
+<div class="accordion" id="stat-sheet">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Stat Sheet</button>
+  <div class="accordion-body">
+    <h3>Characteristics</h3>
+<p>Point assignment method (460 total). Age 30 (20-39 bracket: 1 EDU improvement check, rolled successfully, +5 to EDU).</p>
+<table>
+<thead>
+<tr>
+<th>Characteristic</th>
+<th>Regular</th>
+<th>Half</th>
+<th>Fifth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STR</td>
+<td>70</td>
+<td>35</td>
+<td>14</td>
+</tr>
+<tr>
+<td>CON</td>
+<td>55</td>
+<td>27</td>
+<td>11</td>
+</tr>
+<tr>
+<td>SIZ</td>
+<td>55</td>
+<td>27</td>
+<td>11</td>
+</tr>
+<tr>
+<td>DEX</td>
+<td>65</td>
+<td>32</td>
+<td>13</td>
+</tr>
+<tr>
+<td>INT</td>
+<td>65</td>
+<td>32</td>
+<td>13</td>
+</tr>
+<tr>
+<td>POW</td>
+<td>50</td>
+<td>25</td>
+<td>10</td>
+</tr>
+<tr>
+<td>APP</td>
+<td>50</td>
+<td>25</td>
+<td>10</td>
+</tr>
+<tr>
+<td>EDU</td>
+<td>55</td>
+<td>27</td>
+<td>11</td>
+</tr>
+</tbody>
+</table>
+<h3>Derived</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Max</th>
+<th>Current</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HP</td>
+<td>11</td>
+<td>11</td>
+</tr>
+<tr>
+<td>MP</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Luck</td>
+<td>—</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Sanity</td>
+<td>50</td>
+<td>50</td>
+</tr>
+</tbody>
+</table>
+<h3>Reputation</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Starting Reputation</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Current Reputation</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Censure</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3>Combat</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Move</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Build</td>
+<td>+1</td>
+</tr>
+<tr>
+<td>Damage Bonus</td>
+<td>+1D4</td>
+</tr>
+<tr>
+<td>Dodge (Regular)</td>
+<td>32</td>
+</tr>
+<tr>
+<td>Dodge (Half)</td>
+<td>16</td>
+</tr>
+<tr>
+<td>Dodge (Fifth)</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<h3>Status</h3>
+<ul>
+<li>[ ] Temporary Insanity</li>
+<li>[ ] Indefinite Insanity</li>
+<li>[ ] Major Wound</li>
+<li>[ ] Unconscious</li>
+<li>[ ] Dying</li>
+</ul>
+
+  </div>
+</div>
+
+<div class="accordion" id="background">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Background</button>
+  <div class="accordion-body">
+    <p><strong>Personal Description:</strong> Lean and hard-muscled, with dark skin weathered by years of field service. A lush black beard frames his jaw, and his moustache is luxuriant, carefully groomed, the pride of a man who takes his appearance seriously. His uniform is immaculate. His bearing is military to the bone: straight back, steady hands, eyes that rest easily on whoever is speaking. When he smiles, which is often, it is wide and toothy, brilliant white teeth shining through the darkness of the beard. The smile is the thing people remember. He moves with the unhurried economy of a man who is never in a rush and never late.</p>
+<p><strong>Traits:</strong> Patient. He can wait for weeks. He anticipates needs and solves problems before they become problems, because that is how you become invisible. He speaks softly and listens carefully. He defers to authority with practised ease but never grovels. He is calm under pressure and calm under calm. The stillness is not performance. He is genuinely at peace.</p>
+<p><strong>Ideology &amp; Beliefs:</strong> Kali demands service. The rumaal is a sacrament. Death given in her name is prayer, not murder. He is devout. He is not conflicted. He does not enjoy killing and he does not shrink from it. It is duty, performed with the same quiet care as any other duty.</p>
+<p><strong>Significant People:</strong></p>
+<ul>
+<li><a href="../npcs/acharya-devendra-ghosh.html">Acharya_Devendra_Ghosh</a> — Spiritual authority. The man who showed him the path. Pratap does not question Ghosh’s orders. He trusts them as a priest’s guidance.</li>
+<li>The real Pratap Singh (dead) — The man whose name, habits, and life he has worn for eight months. He studied this man carefully. He does not think about him unless he has to.</li>
+</ul>
+<p><strong>Meaningful Locations:</strong></p>
+<ul>
+<li>The temple at Baranagar — Kali’s house. Where Ghosh holds court. Where the path leads.</li>
+<li>The 67th BNI barracks at Fort William — his cover, his daily life, the place where he is most visible and most invisible simultaneously.</li>
+</ul>
+<p><strong>Treasured Possessions:</strong></p>
+<ul>
+<li>The rumaal — a length of yellow silk, weighted at the corners with silver coins. Consecrated. It is not a weapon. It is a prayer cord. He keeps it folded inside his sash, against his skin.</li>
+<li>A small carved figure of Kali, hidden among personal effects. Black stone, palm-sized, worn smooth by handling.</li>
+</ul>
+
+  </div>
+</div>
+
+<div class="accordion" id="skills">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Skills</button>
+  <div class="accordion-body">
+    <p><strong>Occupation:</strong> Custom — Sepoy / Military Impostor
+<strong>Formula:</strong> EDU × 2 + STR × 2 = 110 + 140 = 250 occupation points
+<strong>Personal Interest:</strong> INT × 2 = 130 points</p>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Base</th>
+<th>Regular</th>
+<th>Half</th>
+<th>Fifth</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Climb</td>
+<td>20</td>
+<td>30</td>
+<td>15</td>
+<td>6</td>
+<td>PI</td>
+</tr>
+<tr>
+<td>Cthulhu Mythos</td>
+<td>00</td>
+<td>00</td>
+<td>00</td>
+<td>00</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Dodge</td>
+<td>—</td>
+<td>32</td>
+<td>16</td>
+<td>6</td>
+<td>Base only</td>
+</tr>
+<tr>
+<td>Etiquette</td>
+<td>15</td>
+<td>15</td>
+<td>7</td>
+<td>3</td>
+<td>Base only</td>
+</tr>
+<tr>
+<td>Fast Talk</td>
+<td>05</td>
+<td>05</td>
+<td>02</td>
+<td>01</td>
+<td>Base only</td>
+</tr>
+<tr>
+<td>Fighting (Brawl)</td>
+<td>25</td>
+<td>65</td>
+<td>32</td>
+<td>13</td>
+<td>Occ (+40)</td>
+</tr>
+<tr>
+<td>Fighting (Tulwar)</td>
+<td>01</td>
+<td>36</td>
+<td>18</td>
+<td>7</td>
+<td>PI (+35)</td>
+</tr>
+<tr>
+<td>Firearms (Rifle/Musket)</td>
+<td>25</td>
+<td>55</td>
+<td>27</td>
+<td>11</td>
+<td>Occ (+30)</td>
+</tr>
+<tr>
+<td>First Aid</td>
+<td>30</td>
+<td>45</td>
+<td>22</td>
+<td>9</td>
+<td>Occ (+15)</td>
+</tr>
+<tr>
+<td>Intimidate</td>
+<td>15</td>
+<td>20</td>
+<td>10</td>
+<td>4</td>
+<td>PI (+5)</td>
+</tr>
+<tr>
+<td>Language (Hindoostani, Own)</td>
+<td>55</td>
+<td>55</td>
+<td>27</td>
+<td>11</td>
+<td>EDU</td>
+</tr>
+<tr>
+<td>Language (English)</td>
+<td>01</td>
+<td>50</td>
+<td>25</td>
+<td>10</td>
+<td>Occ (+49)</td>
+</tr>
+<tr>
+<td>Listen</td>
+<td>20</td>
+<td>40</td>
+<td>20</td>
+<td>8</td>
+<td>PI (+20)</td>
+</tr>
+<tr>
+<td>Navigate</td>
+<td>10</td>
+<td>25</td>
+<td>12</td>
+<td>5</td>
+<td>PI (+15)</td>
+</tr>
+<tr>
+<td>Persuade</td>
+<td>10</td>
+<td>40</td>
+<td>20</td>
+<td>8</td>
+<td>Occ (+30)</td>
+</tr>
+<tr>
+<td>Psychology</td>
+<td>10</td>
+<td>35</td>
+<td>17</td>
+<td>7</td>
+<td>PI (+25)</td>
+</tr>
+<tr>
+<td>Ride</td>
+<td>05</td>
+<td>20</td>
+<td>10</td>
+<td>4</td>
+<td>PI (+15)</td>
+</tr>
+<tr>
+<td>Religion</td>
+<td>05</td>
+<td>05</td>
+<td>02</td>
+<td>01</td>
+<td>Base only</td>
+</tr>
+<tr>
+<td>Spot Hidden</td>
+<td>25</td>
+<td>55</td>
+<td>27</td>
+<td>11</td>
+<td>Occ (+30)</td>
+</tr>
+<tr>
+<td>Stealth</td>
+<td>20</td>
+<td>65</td>
+<td>32</td>
+<td>13</td>
+<td>Occ (+45)</td>
+</tr>
+<tr>
+<td>Survival (Wilderness)</td>
+<td>10</td>
+<td>10</td>
+<td>05</td>
+<td>02</td>
+<td>Base only</td>
+</tr>
+<tr>
+<td>Track</td>
+<td>10</td>
+<td>10</td>
+<td>05</td>
+<td>02</td>
+<td>Base only</td>
+</tr>
+<tr>
+<td>Credit Rating</td>
+<td>00</td>
+<td>11</td>
+<td>05</td>
+<td>02</td>
+<td>Occ (+11)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Occupation points spent:</strong> 40 + 30 + 45 + 30 + 15 + 49 + 30 + 11 = 250 ✓
+<strong>Personal interest spent:</strong> 10 + 35 + 20 + 5 + 15 + 25 + 15 = 130 (remaining 5 unspent) ✓</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="injuries-scars">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Injuries &amp; Scars</button>
+  <div class="accordion-body">
+    <p>None at character creation.</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="phobias-manias">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Phobias &amp; Manias</button>
+  <div class="accordion-body">
+    <p>None at character creation. His devotion to Kali is religious conviction, not mania.</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="arcane-tomes-spells">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Arcane Tomes &amp; Spells</button>
+  <div class="accordion-body">
+    <p>None. Cthulhu Mythos 0%. Pratap is a Thuggee operative, not a Mythos cultist. He believes in Kali, not in cosmic dissolution. Ghosh has not shared the cosmic truth with his enforcers.</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="encounters-with-strange-entities">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Encounters with Strange Entities</button>
+  <div class="accordion-body">
+    <p>None prior to meeting the investigators. The Thuggee arm of the <a href="../../factions/laya-sampradaya.html">Laya_Sampradaya</a> does the killing and the watching. They are not told what happens in the inner sanctum of the temple.</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="combat">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Combat</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Weapon</th>
+<th>Skill %</th>
+<th>Damage</th>
+<th>Attacks</th>
+<th>Range</th>
+<th>Ammo</th>
+<th>Malf</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unarmed (Brawl)</td>
+<td>65/32/13</td>
+<td>1D3+1D4</td>
+<td>1</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Rumaal (Grapple)</td>
+<td>65/32/13</td>
+<td>Special</td>
+<td>1</td>
+<td>Touch</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Tulwar</td>
+<td>36/18/7</td>
+<td>1D8+1D4</td>
+<td>1</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Brown Bess Musket</td>
+<td>55/27/11</td>
+<td>1D10+4</td>
+<td>1/3</td>
+<td>100 yds</td>
+<td>1</td>
+<td>95</td>
+</tr>
+<tr>
+<td>Knife</td>
+<td>65/32/13</td>
+<td>1D4+1D4</td>
+<td>1</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rumaal (strangulation cord):</strong> Initiates as a grapple attack using Fighting (Brawl). On success, the cord is around the target’s throat. Each subsequent round: opposed STR (Pratap’s STR 70 vs target). If the target fails to break free, they take 1D6 damage and begin suffocating. Strangulation is quiet. Unless the target breaks free and shouts, nobody hears.</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="fellow-investigators">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Fellow Investigators</button>
+  <div class="accordion-body">
+    <p>To be populated when the party reaches Calcutta. Pratap will be assigned to them as an escort by <a href="../npcs/charles-ashworth.html">Charles_Ashworth</a>. He will know their names and purpose before they know his.</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="the-cover">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">The Cover</button>
+  <div class="accordion-body">
+    <p>Pratap Singh is not his real name. It is the name of the man he killed and replaced eight months ago. The real Pratap Singh was a genuine havildar in the 67th Bengal Native Infantry — well-liked, competent, with clean records. The impostor studied the man’s habits, relationships, service history, and handwriting well enough to pass casual inspection. He has been in place for eight months.</p>
+<p>He was assigned to the investigators as a guide and liaison on <a href="../npcs/charles-ashworth.html">Ashworth</a>’s recommendation. Ashworth considers this a routine courtesy extended to visiting Britons of standing. He has no idea what he assigned.</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="the-mission">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">The Mission</button>
+  <div class="accordion-body">
+    <p>Orders from <a href="../npcs/acharya-devendra-ghosh.html">Ghosh</a>, delivered through a chain of contacts in the city:</p>
+<ol>
+<li><strong>Report everything.</strong> Who they talk to, where they go, what they ask about. If they meet allies while Pratap is present, those allies are immediately compromised.</li>
+<li><strong>Steer subtly.</strong> A “helpful” suggestion to visit this temple instead of that one. A route through the city that avoids the ghats where the journalist lives. Never insist. Always defer. Let the helpfulness do the work.</li>
+<li><strong>Wait.</strong> Do not act until ordered. The moment of maximum vulnerability has not arrived yet. Patience is devotion.</li>
+<li><strong>When ordered: kill.</strong> The most isolated investigator. The one who goes somewhere alone or with Pratap only. The rumaal, from behind, at the worst possible moment. The man who carried their bags trying to kill one of them with the same patient efficiency he brought to everything else.</li>
+</ol>
+
+  </div>
+</div>
+
+<div class="accordion" id="notes">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Notes</button>
+  <div class="accordion-body">
+    <p>{Player-facing notes. Protected — skills never modify.}</p>
+
+  </div>
+</div>
+<h2>Relationships</h2>
+<ul class="relationship-list">
+<li><strong class="rel-label">Serves</strong> <a href="../npcs/acharya-devendra-ghosh.html" class="entity-link">Acharya Devendra Ghosh</a> &mdash; Spiritual authority. Kills because Kali demands it.</li>
+<li><strong class="rel-label">Member of</strong> <a href="../../factions/laya-sampradaya.html" class="entity-link">Laya Sampradaya</a> &mdash; Thuggee operative. True believer in Kali, not the Canticle.</li>
+<li><strong class="rel-label">Assigned by</strong> <a href="../npcs/charles-ashworth.html" class="entity-link">Charles Ashworth</a> &mdash; Ashworth recommended the escort as a courtesy. Has no idea what he assigned.</li>
+<li><strong class="rel-label">Same regiment</strong> <a href="../npcs/valentine-frome.html" class="entity-link">Valentine Frome</a> &mdash; 67th BNI. Frome's journal documents Thuggee killings. The man Frome hunts serves in his own regiment.</li>
+</ul>
+</div>
+<div class="tab-panel" id="tab-equipment">
+<h3>Equipment</h3>
+<p><strong>Military Kit:</strong></p>
+<ul>
+<li>Brown Bess musket (.75 calibre smoothbore, standard issue for sepoys)</li>
+<li>Tulwar (short curved sword, regulation sidearm)</li>
+<li>Bayonet</li>
+<li>Ammunition pouch (20 rounds paper cartridge)</li>
+<li>Military bedroll and canteen</li>
+<li>Havildar’s rank insignia</li>
+</ul>
+<p><strong>Concealed:</strong></p>
+<ul>
+<li>The rumaal — yellow silk, weighted with silver coins, folded inside his sash against his skin</li>
+<li>Small carved figure of Kali — hidden in his pack, wrapped in cloth</li>
+</ul>
+<p><strong>Wealth:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spending Level</td>
+<td>Military NCO (modest)</td>
+</tr>
+<tr>
+<td>Cash</td>
+<td>~15 rupees (monthly pay)</td>
+</tr>
+<tr>
+<td>Assets</td>
+<td>None under this name</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+<div class="tab-panel" id="tab-story">
+  <div class="story-prose">
+    <p class="text-muted">No story content available.</p>
+  </div>
+</div>
+<div class="tab-panel" id="tab-journey">
+<h2>Connections</h2>
+<div class="relationship-graph"><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="font-family: var(--font-body, system-ui);">
+  <line x1="300" y1="200" x2="300" y2="80" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="377.13451316238474" y2="108.07466682572264" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="418.176930361465" y2="179.16221867996836" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="403.92304845413264" y2="260" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="341.04241719908026" y2="312.763114494309" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="258.95758280091974" y2="312.763114494309" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="196.0769515458674" y2="260.00000000000006" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="181.82306963853503" y2="179.1622186799684" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="222.86548683761526" y2="108.07466682572266" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="80" x2="427.27922061357856" y2="72.72077938642146" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="477.7839013071248" y2="171.84179629275843" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="460.3811743539062" y2="281.7182899531184" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="381.7182899531184" y2="360.3811743539062" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="271.84179629275843" y2="377.7839013071248" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="172.72077938642144" y2="327.27922061357856" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="122.21609869287522" y2="228.15820370724157" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="139.61882564609377" y2="118.2817100468816" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="218.28171004688156" y2="39.618825646093796" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="328.1582037072415" y2="22.216098692875192" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <a href="havildar-pratap-singh.html"><g opacity="1">
+    <circle cx="300" cy="200" r="28" fill="var(--accent, #58a6ff)" stroke="var(--accent, #58a6ff)" stroke-width="2"/>
+    <text x="300" y="243" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Havildar Prat…</text>
+  </g></a>
+  <a href="../npcs/acharya-devendra-ghosh.html"><g opacity="1">
+    <circle cx="300" cy="80" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Acharya Deven…</text>
+  </g></a>
+  <a href="../../factions/laya-sampradaya.html"><g opacity="1">
+    <polygon points="394.4550212380735,98.07466682572264 394.4550212380735,118.07466682572264 377.13451316238474,128.07466682572266 359.81400508669594,118.07466682572264 359.81400508669594,98.07466682572264 377.13451316238474,88.07466682572264" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="377.13451316238474" y="143.07466682572266" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Laya Sampradaya</text>
+  </g></a>
+  <a href="../npcs/charles-ashworth.html"><g opacity="1">
+    <circle cx="418.176930361465" cy="179.16221867996836" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="418.176930361465" y="214.16221867996836" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Charles Ashwo…</text>
+  </g></a>
+  <a href="../npcs/valentine-frome.html"><g opacity="1">
+    <circle cx="403.92304845413264" cy="260" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="403.92304845413264" y="295" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Valentine Frome</text>
+  </g></a>
+  <a href="../npcs/naik-deepak-rao.html"><g opacity="1">
+    <circle cx="341.04241719908026" cy="312.763114494309" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="341.04241719908026" y="347.763114494309" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Naik Deepak Rao</text>
+  </g></a>
+  <a href="../npcs/sepoy-jalal-khan.html"><g opacity="1">
+    <circle cx="258.95758280091974" cy="312.763114494309" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="258.95758280091974" y="347.763114494309" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Sepoy Jalal K…</text>
+  </g></a>
+  <a href="nathaniel-holt.html"><g opacity="1">
+    <circle cx="196.0769515458674" cy="260.00000000000006" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="196.0769515458674" y="295.00000000000006" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Nathaniel Holt</text>
+  </g></a>
+  <a href="../../locations/fort-william.html"><g opacity="1">
+    <rect x="161.82306963853503" y="159.1622186799684" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="181.82306963853503" y="214.1622186799684" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Fort William</text>
+  </g></a>
+  <a href="../../player-characters.html"><g opacity="1">
+    <circle cx="222.86548683761526" cy="108.07466682572266" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="222.86548683761526" y="143.07466682572266" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">player charac…</text>
+  </g></a>
+  <a href="../../factions/aeternum-choir.html"><g opacity="0.5">
+    <polygon points="439.4035762665607,65.72077938642146 439.4035762665607,79.72077938642146 427.27922061357856,86.72077938642146 415.1548649605964,79.72077938642146 415.1548649605964,65.72077938642146 427.27922061357856,58.720779386421455" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="427.27922061357856" y="99.72077938642146" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Aeternum Choir</text>
+  </g></a>
+  <a href="../npcs/albin-herzfeld.html"><g opacity="0.5">
+    <circle cx="477.7839013071248" cy="171.84179629275843" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="477.7839013071248" y="198.84179629275843" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Albin Herzfeld</text>
+  </g></a>
+  <a href="../../locations/mandir-mahakali.html"><g opacity="0.5">
+    <rect x="446.3811743539062" y="267.7182899531184" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="460.3811743539062" y="308.7182899531184" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Mandir Mahakali</text>
+  </g></a>
+  <a href="../npcs/otto-von-kaunitz.html"><g opacity="0.5">
+    <circle cx="381.7182899531184" cy="360.3811743539062" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="381.7182899531184" y="387.3811743539062" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Otto von Kaun…</text>
+  </g></a>
+  <a href="../npcs/tara.html"><g opacity="0.5">
+    <circle cx="271.84179629275843" cy="377.7839013071248" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="271.84179629275843" y="404.7839013071248" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Tara</text>
+  </g></a>
+  <a href="../npcs/apu.html"><g opacity="0.5">
+    <circle cx="172.72077938642144" cy="327.27922061357856" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="172.72077938642144" y="354.27922061357856" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Apu</text>
+  </g></a>
+  <a href="../npcs/baijnath-mullick.html"><g opacity="0.5">
+    <circle cx="122.21609869287522" cy="228.15820370724157" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="122.21609869287522" y="255.15820370724157" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Baijnath Mull…</text>
+  </g></a>
+  <a href="../npcs/ram-mohan-roy.html"><g opacity="0.5">
+    <circle cx="139.61882564609377" cy="118.2817100468816" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="139.61882564609377" y="145.28171004688159" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Ram Mohan Roy</text>
+  </g></a>
+  <a href="../npcs/reverend-arthur-jessop.html"><g opacity="0.5">
+    <circle cx="218.28171004688156" cy="39.618825646093796" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="218.28171004688156" y="66.6188256460938" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Reverend Arth…</text>
+  </g></a>
+  <a href="../npcs/tadeusz-kossowski.html"><g opacity="0.5">
+    <circle cx="328.1582037072415" cy="22.216098692875192" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="328.1582037072415" y="49.21609869287519" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Tadeusz Kosso…</text>
+  </g></a>
+</svg></div>
+</div>
+
+<script>
+function switchTab(tab) {
+  document.querySelectorAll('.pc-tab').forEach(function(t) { t.classList.remove('active'); });
+  document.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
+  document.getElementById('tab-' + tab).classList.add('active');
+  document.querySelector('[data-tab="' + tab + '"]').classList.add('active');
+  history.replaceState(null, '', '#' + tab);
+}
+function openAccordion(id) {
+  var el = document.getElementById(id);
+  if (el && el.classList.contains('accordion')) {
+    el.classList.add('open');
+    var btn = el.querySelector('.accordion-header');
+    if (btn) btn.setAttribute('aria-expanded', 'true');
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('.section-nav a');
+  if (link) {
+    e.preventDefault();
+    var id = link.getAttribute('href').slice(1);
+    openAccordion(id);
+  }
+});
+(function() {
+  var hash = location.hash.slice(1);
+  if (['sheet', 'equipment', 'story', 'journey'].includes(hash)) switchTab(hash);
+  else if (hash) openAccordion(hash);
+})();
+</script>
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../../js/nav.js"></script>
+<script src="../../js/lightbox.js"></script>
+<script src="../../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>

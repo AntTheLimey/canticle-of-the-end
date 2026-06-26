@@ -7,6 +7,6 @@
     "watch": "gm-apprentice-publish build --watch"
   },
   "dependencies": {
-    "gm-apprentice-publish": "file:../../.claude/plugins/cache/gm-apprentice/gm-apprentice/1.7.1/tools/publish"
+    "gm-apprentice-publish": "file:../../.claude/plugins/cache/gm-apprentice/gm-apprentice/1.7.2/tools/publish"
   }
 }

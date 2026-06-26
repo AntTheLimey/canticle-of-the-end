@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Give Rest — Canticle of the End</title>
+  <link rel="stylesheet" href="../../../../css/style.css">
+  <link rel="stylesheet" href="../../../../css/themes/horror.css">
+  <link rel="stylesheet" href="../../../../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../../../../index.html" class="nav-brand">Canticle of the End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <button class="nav-group-toggle">Story</button>
+        <div class="nav-dropdown">
+        <a href="../../../index.html">Story</a>
+        <a href="../../../../timeline.html">Events</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../../../../player-characters.html">Player Characters</a>
+        <a href="../../../../characters/npcs/index.html">NPCs</a>
+        <a href="../../../../creatures/index.html">Creatures</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../../../../locations/index.html">Locations</a>
+        <a href="../../../../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../../../../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../../../../documents/index.html">Documents</a>
+        <a href="../../../../clues/index.html">Clues</a>
+        <a href="../../../../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3>Story</h3>
+  <ul>
+    <li><a href="../../../index.html">Story</a></li>
+    <li><a href="../../../../timeline.html">Events</a></li>
+  </ul>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../../../../player-characters.html">Player Characters</a></li>
+    <li><a href="../../../../characters/npcs/index.html">NPCs</a></li>
+    <li><a href="../../../../creatures/index.html">Creatures</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../../../../locations/index.html">Locations</a></li>
+    <li><a href="../../../../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../../../../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../../../../documents/index.html">Documents</a></li>
+    <li><a href="../../../../clues/index.html">Clues</a></li>
+    <li><a href="../../../../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../../../index.html">Home</a><span class="sep">&rsaquo;</span>Chapters<span class="sep">&rsaquo;</span>Chapter 4   Calcutta<span class="sep">&rsaquo;</span>Sessions<span class="sep">&rsaquo;</span><a href="index.html">Session 03</a><span class="sep">&rsaquo;</span>Session 03 Give Rest</nav>
+<div class="story-nav"><a href="../../../../Chapter 3 - Vienna/Session 3/session-03.html">&larr; Session 3 — The Countess and the Salon</a><a href="../../../../Chapter 3 - Vienna/Session 4/session-04.html">Session 4 — The Hofburg Reception &rarr;</a></div>
+<h1 class="page-title">Give Rest</h1>
+
+<div class="metadata-badges"><span class="metadata-badge">3</span>
+<span class="metadata-badge">June 25, 2026</span>
+<span class="metadata-badge">wrap-up</span></div>
+<p>Opens mid-Night 2 of the becalming — the drowned faces at the rail, Stavros’s hum revealed as the dead’s chant. Resolves the becalming through The_Funeral_Rite (or a fight bought at a harder price), then the wind returns and the voyage crosses to <strong>Alexandria</strong> and up the Nile to <strong>Cairo</strong> — a breathing space. The becalming is expected to close mid-session, with Cairo opening the back half and likely spilling into Session 04.</p>
+<p><strong>Plan:</strong> Session_03_Plan · <strong>Wrap-Up:</strong> <a href="session-03-wrap-up.html">Session_03_Wrap_Up</a></p>
+<p><strong>Adventure:</strong> The_Becalmed_Ship · <strong>Antagonist:</strong> The_Drowned · <strong>Solution:</strong> The_Funeral_Rite</p>
+<p><strong>Then:</strong> Cairo_Rest_Stop → (next blow) The_Desert_Caravanserai</p>
+<h2>Documents</h2>
+<ul>
+<li>Endicott_Saria_Tablet — funerary register, half-translated (Path 4 to the rite)</li>
+</ul>
+
+
+
+<div class="story-nav"><a href="../../../../Chapter 3 - Vienna/Session 3/session-03.html">&larr; Session 3 — The Countess and the Salon</a><a href="../../../../Chapter 3 - Vienna/Session 4/session-04.html">Session 4 — The Hofburg Reception &rarr;</a></div>
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../../../../js/nav.js"></script>
+<script src="../../../../js/lightbox.js"></script>
+<script src="../../../../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>

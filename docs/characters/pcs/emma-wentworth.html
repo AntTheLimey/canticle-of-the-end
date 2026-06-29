@@ -77,15 +77,17 @@
 
 <main class="content">
 <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span class="sep">&rsaquo;</span>Characters<span class="sep">&rsaquo;</span><a href="index.html">Player Characters</a><span class="sep">&rsaquo;</span>Emma Wentworth</nav>
-<div class="hero-cinematic hero-cinematic-no-img">
-  <div class="pc-portrait" style="width:5rem;height:5rem;font-size:2rem;margin-bottom:1rem">EW</div>
-  <h1>Emma Wentworth</h1>
-  <div class="meta">
-    <span><span class="label">Player</span> Missy</span>
-    <span><span class="label">Occupation</span> Gentlewoman (Tarryford, Wiltshire)</span>
+<div class="hero-cinematic">
+  <img class="hero-cinematic-img" src="../../images/characters/emma-in-veil.png" alt="Emma Wentworth">
+  <div class="hero-cinematic-overlay">
+    <h1>Emma Wentworth</h1>
+    <div class="meta">
+      <span><span class="label">Player</span> Missy</span>
+      <span><span class="label">Occupation</span> Gentlewoman (Tarryford, Wiltshire)</span>
     <span><span class="label">Age</span> 17</span>
     <span><span class="label">Nationality</span> British</span>
-    <span><span class="label">Status</span> alive</span>
+      <span><span class="label">Status</span> alive</span>
+    </div>
   </div>
 </div>
 <div class="pull-quote">Theatre-obsessed, Brave in combat, Bit Nightgaunt's neck in Session 6, Subject of Graf Sternberg's pursuit, Phobia: children (from ciimba, Chapter 2), Phobia: theatre (from Drury Lane, Chapter 0.5)</div>
@@ -96,7 +98,8 @@
   <button class="pc-tab" data-tab="journey" onclick="switchTab('journey')">Journey</button>
 </div>
 <div class="tab-panel active" id="tab-sheet">
-<nav class="section-nav" aria-label="Sheet sections"><a href="#stat-sheet">Stat Sheet</a>
+<nav class="section-nav" aria-label="Sheet sections"><a href="#portrait">Portrait</a>
+<a href="#stat-sheet">Stat Sheet</a>
 <a href="#background">Background</a>
 <a href="#skills">Skills</a>
 <a href="#injuries-scars">Injuries &amp; Scars</a>
@@ -109,6 +112,15 @@
 <a href="#current-status">Current Status</a>
 <a href="#masquerade">Masquerade</a>
 <a href="#notes">Notes</a></nav>
+
+<div class="accordion" id="portrait">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Portrait</button>
+  <div class="accordion-body">
+    <p>!emma-in-veil.png</p>
+<p><em>Emma in the veil <a href="../npcs/thomas-wyndham.html">Thomas</a> gave her in Alexandria. Original art — the campaign’s public-facing likeness for Emma.</em></p>
+
+  </div>
+</div>
 
 <div class="accordion" id="stat-sheet">
   <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Stat Sheet</button>
@@ -257,6 +269,7 @@
   <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Background</button>
   <div class="accordion-body">
     <p><strong>Personal Description:</strong> A slight, pretty young woman of seventeen with an air of curiosity that outpaces her caution. Her bearing is that of a country gentlewoman — well-mannered and direct — but her eyes carry something older, the particular watchfulness of someone who has seen things that the polite world cannot account for.</p>
+<p><em>Source likeness (official Regency Cthulhu Investigator Pack pregen, Chaosium 2022, on which the character is based; see Portrait above):</em> fair-skinned and pretty, brown hair worn up in curls, a high-waisted white Regency gown with a coloured sash, a fan and “fashionable dress in a bright colour” among her things. The official line reads: “A young and pretty white girl. Emma spends most of her attention on her appearance, although her enthusiasm often spoils the demure look she is going for.”</p>
 <p><strong>Traits:</strong> Brave to the point of recklessness. Theatre-obsessed despite (or because of) her phobia. Curious. Warm and direct in social encounters. Capable of remarkable composure under pressure and of extraordinary violence when cornered.</p>
 <p><strong>Ideology &amp; Beliefs:</strong> Emma acts from instinct and compassion rather than ideology. She protects the people in front of her, confronts the things that frighten her, and has not yet learned to look away. Her courage is not philosophical — it is the practical courage of someone who has simply refused, each time, to stop.</p>
 <p><strong>Significant People:</strong> <a href="georgiana-wentworth.html">Georgiana Wentworth</a> (sister, constant companion since Tarryford), <a href="../npcs/thomas-wyndham.html">Thomas_Wyndham</a> (British officer in love with her, maintained armed vigil after the Nightgaunt attack), <a href="../npcs/miss-bridget-clarke.html">Bridie Clarke</a> (housemaid at Hawthorne Grange), <a href="../npcs/mr-horatio-fairbourne.html">Mr. Horatio Fairborn</a> (distant cousin, provided London household at Gough Square).</p>

@@ -77,15 +77,17 @@
 
 <main class="content">
 <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span class="sep">&rsaquo;</span>Characters<span class="sep">&rsaquo;</span><a href="index.html">Player Characters</a><span class="sep">&rsaquo;</span>Katherine Ward</nav>
-<div class="hero-cinematic hero-cinematic-no-img">
-  <div class="pc-portrait" style="width:5rem;height:5rem;font-size:2rem;margin-bottom:1rem">KW</div>
-  <h1>Katherine Ward</h1>
-  <div class="meta">
-    <span><span class="label">Player</span> Juel</span>
-    <span><span class="label">Occupation</span> Spy / Order operative / Companion-Chaperone (cover)</span>
+<div class="hero-cinematic">
+  <img class="hero-cinematic-img" src="../../images/characters/katherine-ward.jpg" alt="Katherine Ward">
+  <div class="hero-cinematic-overlay">
+    <h1>Katherine Ward</h1>
+    <div class="meta">
+      <span><span class="label">Player</span> Juel</span>
+      <span><span class="label">Occupation</span> Spy / Order operative / Companion-Chaperone (cover)</span>
     <span><span class="label">Age</span> 31</span>
     <span><span class="label">Nationality</span> British</span>
-    <span><span class="label">Status</span> alive</span>
+      <span><span class="label">Status</span> alive</span>
+    </div>
   </div>
 </div>
 <div class="pull-quote">Invisible by training, Reads rooms before entering them, Moral code — no innocents, no children, violence only in self-defence, Contained a Hound of Tindalos by disrupting angles, Professional restraint under pressure</div>
@@ -96,7 +98,8 @@
   <button class="pc-tab" data-tab="journey" onclick="switchTab('journey')">Journey</button>
 </div>
 <div class="tab-panel active" id="tab-sheet">
-<nav class="section-nav" aria-label="Sheet sections"><a href="#stat-sheet">Stat Sheet</a>
+<nav class="section-nav" aria-label="Sheet sections"><a href="#portrait">Portrait</a>
+<a href="#stat-sheet">Stat Sheet</a>
 <a href="#background">Background</a>
 <a href="#cover-identity">Cover Identity</a>
 <a href="#skills">Skills</a>
@@ -108,6 +111,15 @@
 <a href="#fellow-investigators">Fellow Investigators</a>
 <a href="#current-status">Current Status</a>
 <a href="#notes">Notes</a></nav>
+
+<div class="accordion" id="portrait">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Portrait</button>
+  <div class="accordion-body">
+    <p>!katherine-ward.jpg</p>
+<p><em>Katherine in her widow’s weeds, September 1814 — composed, watchful, mourning fan in hand. Original art; public-facing likeness.</em></p>
+
+  </div>
+</div>
 
 <div class="accordion" id="stat-sheet">
   <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Stat Sheet</button>

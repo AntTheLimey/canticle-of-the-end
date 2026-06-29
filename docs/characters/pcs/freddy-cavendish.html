@@ -77,15 +77,17 @@
 
 <main class="content">
 <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span class="sep">&rsaquo;</span>Characters<span class="sep">&rsaquo;</span><a href="index.html">Player Characters</a><span class="sep">&rsaquo;</span>Freddy Cavendish</nav>
-<div class="hero-cinematic hero-cinematic-no-img">
-  <div class="pc-portrait" style="width:5rem;height:5rem;font-size:2rem;margin-bottom:1rem">FC</div>
-  <h1>Freddy Cavendish</h1>
-  <div class="meta">
-    <span><span class="label">Player</span> Jay</span>
-    <span><span class="label">Occupation</span> Gentleman (Second Son)</span>
+<div class="hero-cinematic">
+  <img class="hero-cinematic-img" src="../../images/characters/freddy-cavendish.jpg" alt="Freddy Cavendish">
+  <div class="hero-cinematic-overlay">
+    <h1>Freddy Cavendish</h1>
+    <div class="meta">
+      <span><span class="label">Player</span> Jay</span>
+      <span><span class="label">Occupation</span> Gentleman (Second Son)</span>
     <span><span class="label">Age</span> 22</span>
     <span><span class="label">Nationality</span> British</span>
-    <span><span class="label">Status</span> alive</span>
+      <span><span class="label">Status</span> alive</span>
+    </div>
   </div>
 </div>
 <div class="pull-quote">Socially connected, Produced Masquerade invitations, Witnessed Nightgaunt attack, Fire doctrine (improvised torch), Order of St Aelfric member, Board of Control for India appointment</div>
@@ -96,7 +98,8 @@
   <button class="pc-tab" data-tab="journey" onclick="switchTab('journey')">Journey</button>
 </div>
 <div class="tab-panel active" id="tab-sheet">
-<nav class="section-nav" aria-label="Sheet sections"><a href="#stat-sheet">Stat Sheet</a>
+<nav class="section-nav" aria-label="Sheet sections"><a href="#portrait">Portrait</a>
+<a href="#stat-sheet">Stat Sheet</a>
 <a href="#background">Background</a>
 <a href="#skills">Skills</a>
 <a href="#injuries-scars">Injuries &amp; Scars</a>
@@ -107,6 +110,15 @@
 <a href="#fellow-investigators">Fellow Investigators</a>
 <a href="#current-status">Current Status</a>
 <a href="#notes">Notes</a></nav>
+
+<div class="accordion" id="portrait">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Portrait</button>
+  <div class="accordion-body">
+    <p>!freddy-cavendish.jpg</p>
+<p><em>Freddy in Egypt, September 1814 — the Order pin at his cravat, a glass of arak to hand. Original art; public-facing likeness.</em></p>
+
+  </div>
+</div>
 
 <div class="accordion" id="stat-sheet">
   <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Stat Sheet</button>

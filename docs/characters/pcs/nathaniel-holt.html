@@ -77,15 +77,17 @@
 
 <main class="content">
 <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span class="sep">&rsaquo;</span>Characters<span class="sep">&rsaquo;</span><a href="index.html">Player Characters</a><span class="sep">&rsaquo;</span>Nathaniel Holt</nav>
-<div class="hero-cinematic hero-cinematic-no-img">
-  <div class="pc-portrait" style="width:5rem;height:5rem;font-size:2rem;margin-bottom:1rem">NH</div>
-  <h1>Nathaniel Holt</h1>
-  <div class="meta">
-    <span><span class="label">Player</span> Phil</span>
-    <span><span class="label">Occupation</span> Lieutenant, Royal Navy (assigned to La Speranza as ship's doctor — actually an officer, not a doctor)</span>
+<div class="hero-cinematic">
+  <img class="hero-cinematic-img" src="../../images/characters/nathaniel-holt.jpg" alt="Nathaniel Holt">
+  <div class="hero-cinematic-overlay">
+    <h1>Nathaniel Holt</h1>
+    <div class="meta">
+      <span><span class="label">Player</span> Phil</span>
+      <span><span class="label">Occupation</span> Lieutenant, Royal Navy (assigned to La Speranza as ship's doctor — actually an officer, not a doctor)</span>
     <span><span class="label">Age</span> 29</span>
     <span><span class="label">Nationality</span> British</span>
-    <span><span class="label">Status</span> alive</span>
+      <span><span class="label">Status</span> alive</span>
+    </div>
   </div>
 </div>
 <div class="pull-quote">Direct, Competent sailor, Unhurried under pressure, Keeps busy to avoid thinking, The man who knows ships</div>
@@ -96,7 +98,8 @@
   <button class="pc-tab" data-tab="journey" onclick="switchTab('journey')">Journey</button>
 </div>
 <div class="tab-panel active" id="tab-sheet">
-<nav class="section-nav" aria-label="Sheet sections"><a href="#stat-sheet">Stat Sheet</a>
+<nav class="section-nav" aria-label="Sheet sections"><a href="#portrait">Portrait</a>
+<a href="#stat-sheet">Stat Sheet</a>
 <a href="#background">Background</a>
 <a href="#skills">Skills</a>
 <a href="#injuries-scars">Injuries &amp; Scars</a>
@@ -106,6 +109,15 @@
 <a href="#combat">Combat</a>
 <a href="#fellow-investigators">Fellow Investigators</a>
 <a href="#notes">Notes</a></nav>
+
+<div class="accordion" id="portrait">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Portrait</button>
+  <div class="accordion-body">
+    <p>!nathaniel-holt.jpg</p>
+<p><em>Holt at an Egyptian harbour, September 1814 — plain travelling coat, his brass sextant in hand. Original art; public-facing likeness.</em></p>
+
+  </div>
+</div>
 
 <div class="accordion" id="stat-sheet">
   <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Stat Sheet</button>
